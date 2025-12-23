@@ -183,5 +183,41 @@
     "label": "Bahasa",
     "current": "Bahasa saat ini",
     "switchTo": "Beralih ke {language}"
+  },
+  "quotes": {
+    "title": "Apa Kata Penelitian",
+    "subtitle": "Studi ilmiah mendukung manfaat entrainment gelombang otak",
+    "quote1": {
+      "text": "Kelompok yang mendengarkan binaural beats mengalami peningkatan aktivitas parasimpatis, melaporkan tingkat relaksasi yang lebih tinggi.",
+      "source": "McConnell et al. (2014)"
+    },
+    "quote2": {
+      "text": "Pada akhir penelitian, peserta melaporkan penurunan keseluruhan dalam gangguan, ketegangan, kecemasan, kebingungan, dan kelelahan. Selain itu, ada peningkatan dalam kualitas hidup yang dilaporkan sendiri.",
+      "source": "Multiple studies (Medical News Today, 2019)"
+    },
+    "quote3": {
+      "text": "Binaural beats dapat menginduksi sinyal otak yang diperlukan untuk tidur, berpotensi meningkatkan kualitas tidur.",
+      "source": "Lee et al. (2019)"
+    },
+    "quote4": {
+      "text": "Manfaat potensial binaural beats meliputi: pengurangan kecemasan dan stres, peningkatan suasana hati, peningkatan fokus dan konsentrasi, peningkatan kreativitas, peningkatan kebiasaan tidur, manajemen nyeri yang lebih baik.",
+      "source": "Healthline/WebMD reviews (2024-2025)"
+    },
+    "quote5": {
+      "text": "Mendengarkan mereka dapat membantu dengan fungsi kognitif, karena mereka adalah gelombang otak yang paling terlibat dalam fungsi eksekutif Anda.",
+      "source": "General articles (PopSci, 2021)"
+    },
+    "quote6": {
+      "text": "Binaural beats mungkin membantu dalam meningkatkan pelatihan dan pembelajaran.",
+      "source": "Huang & Charyton (2008)"
+    },
+    "quote7": {
+      "text": "Studi elektroensefalografi (EEG) telah menunjukkan bahwa paparan binaural beats dapat menyinkronkan pola gelombang otak, mengarah ke keadaan relaksasi yang ditingkatkan dan keadaan kesadaran yang berubah.",
+      "source": "Systematic review (2023, PMC10198548)"
+    },
+    "quote8": {
+      "text": "Nada isokronik dapat membantu otak Anda menyinkronkan dengan pola pendengaran spesifik yang dapat meredakan hal-hal seperti kecemasan.",
+      "source": "Healthline (2024)"
+    }
   }
 }

@@ -181,6 +181,42 @@
     "label": "Language",
     "current": "Current language",
     "switchTo": "Switch to {language}"
+  },
+  "quotes": {
+    "title": "What Research Says",
+    "subtitle": "Scientific studies support the benefits of brainwave entrainment",
+    "quote1": {
+      "text": "The group who listened to binaural beats experienced an increase in parasympathetic activity, reporting higher levels of relaxation.",
+      "source": "McConnell et al. (2014)"
+    },
+    "quote2": {
+      "text": "By the end of the study, participants reported an overall decrease in disturbance, tension, anxiety, confusion, and fatigue. What's more, there was an increase in self-reported quality of life.",
+      "source": "Multiple studies (Medical News Today, 2019)"
+    },
+    "quote3": {
+      "text": "Binaural beats could induce the brain signals required for sleep, potentially increasing the quality of sleep.",
+      "source": "Lee et al. (2019)"
+    },
+    "quote4": {
+      "text": "Potential binaural beats benefits include: reduced anxiety and stress, improved mood, increased focus and concentration, increased creativity, improved sleep habits, better pain management.",
+      "source": "Healthline/WebMD reviews (2024-2025)"
+    },
+    "quote5": {
+      "text": "Listening to them can help with cognitive functioning, as they are the brainwaves that are most involved in your executive functioning.",
+      "source": "General articles (PopSci, 2021)"
+    },
+    "quote6": {
+      "text": "Binaural beats may be helpful in enhancing training and learning.",
+      "source": "Huang & Charyton (2008)"
+    },
+    "quote7": {
+      "text": "Electroencephalography (EEG) studies have demonstrated that exposure to binaural beats can synchronize brainwave patterns, leading to states of enhanced relaxation and altered states of consciousness.",
+      "source": "Systematic review (2023, PMC10198548)"
+    },
+    "quote8": {
+      "text": "Isochronic tones may help your brain sync with a specific auditory pattern that could ease things like anxiety.",
+      "source": "Healthline (2024)"
+    }
   }
 }
 

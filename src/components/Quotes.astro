@@ -1,0 +1,144 @@
+---
+import { getLocale } from 'astro-i18n-aut';
+import { loadTranslations, t } from '../utils/i18n';
+import type { Locale } from '../i18n/types';
+
+const locale = getLocale(Astro.url) as Locale;
+const translations = await loadTranslations(locale);
+---
+
+<section id="quotes" class="py-20 px-4 sm:px-6 lg:px-8 bg-bhutan-primary">
+	<div class="max-w-7xl mx-auto">
+		<div class="text-center mb-16">
+			<h2 class="text-4xl md:text-5xl font-bold mb-4 text-bhutan-primary">
+				{t('quotes.title', locale, translations)}
+			</h2>
+			<p class="text-xl max-w-3xl mx-auto text-bhutan-secondary">
+				{t('quotes.subtitle', locale, translations)}
+			</p>
+		</div>
+
+		<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+			<!-- Quote 1 -->
+			<div class="p-8 rounded-2xl border hover:shadow-xl transition-all transform hover:scale-[1.02]" style="background-color: var(--bg-secondary); border-color: var(--border-light);">
+				<div class="mb-4">
+					<svg class="w-8 h-8 text-bhutan-accent opacity-50" fill="currentColor" viewBox="0 0 24 24">
+						<path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.996 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.984zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/>
+					</svg>
+				</div>
+				<p class="text-lg md:text-xl italic mb-4 leading-relaxed text-bhutan-primary">
+					"{t('quotes.quote1.text', locale, translations)}"
+				</p>
+				<p class="text-sm text-bhutan-secondary">
+					— {t('quotes.quote1.source', locale, translations)}
+				</p>
+			</div>
+
+			<!-- Quote 2 -->
+			<div class="p-8 rounded-2xl border hover:shadow-xl transition-all transform hover:scale-[1.02]" style="background-color: var(--bg-secondary); border-color: var(--border-light);">
+				<div class="mb-4">
+					<svg class="w-8 h-8 text-bhutan-accent opacity-50" fill="currentColor" viewBox="0 0 24 24">
+						<path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.996 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.984zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/>
+					</svg>
+				</div>
+				<p class="text-lg md:text-xl italic mb-4 leading-relaxed text-bhutan-primary">
+					"{t('quotes.quote2.text', locale, translations)}"
+				</p>
+				<p class="text-sm text-bhutan-secondary">
+					— {t('quotes.quote2.source', locale, translations)}
+				</p>
+			</div>
+
+			<!-- Quote 3 -->
+			<div class="p-8 rounded-2xl border hover:shadow-xl transition-all transform hover:scale-[1.02]" style="background-color: var(--bg-secondary); border-color: var(--border-light);">
+				<div class="mb-4">
+					<svg class="w-8 h-8 text-bhutan-accent opacity-50" fill="currentColor" viewBox="0 0 24 24">
+						<path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.996 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.984zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/>
+					</svg>
+				</div>
+				<p class="text-lg md:text-xl italic mb-4 leading-relaxed text-bhutan-primary">
+					"{t('quotes.quote3.text', locale, translations)}"
+				</p>
+				<p class="text-sm text-bhutan-secondary">
+					— {t('quotes.quote3.source', locale, translations)}
+				</p>
+			</div>
+
+			<!-- Quote 4 -->
+			<div class="p-8 rounded-2xl border hover:shadow-xl transition-all transform hover:scale-[1.02]" style="background-color: var(--bg-secondary); border-color: var(--border-light);">
+				<div class="mb-4">
+					<svg class="w-8 h-8 text-bhutan-accent opacity-50" fill="currentColor" viewBox="0 0 24 24">
+						<path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.996 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.984zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/>
+					</svg>
+				</div>
+				<p class="text-lg md:text-xl italic mb-4 leading-relaxed text-bhutan-primary">
+					"{t('quotes.quote4.text', locale, translations)}"
+				</p>
+				<p class="text-sm text-bhutan-secondary">
+					— {t('quotes.quote4.source', locale, translations)}
+				</p>
+			</div>
+
+			<!-- Quote 5 -->
+			<div class="p-8 rounded-2xl border hover:shadow-xl transition-all transform hover:scale-[1.02]" style="background-color: var(--bg-secondary); border-color: var(--border-light);">
+				<div class="mb-4">
+					<svg class="w-8 h-8 text-bhutan-accent opacity-50" fill="currentColor" viewBox="0 0 24 24">
+						<path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.996 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.984zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/>
+					</svg>
+				</div>
+				<p class="text-lg md:text-xl italic mb-4 leading-relaxed text-bhutan-primary">
+					"{t('quotes.quote5.text', locale, translations)}"
+				</p>
+				<p class="text-sm text-bhutan-secondary">
+					— {t('quotes.quote5.source', locale, translations)}
+				</p>
+			</div>
+
+			<!-- Quote 6 -->
+			<div class="p-8 rounded-2xl border hover:shadow-xl transition-all transform hover:scale-[1.02]" style="background-color: var(--bg-secondary); border-color: var(--border-light);">
+				<div class="mb-4">
+					<svg class="w-8 h-8 text-bhutan-accent opacity-50" fill="currentColor" viewBox="0 0 24 24">
+						<path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.996 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.984zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/>
+					</svg>
+				</div>
+				<p class="text-lg md:text-xl italic mb-4 leading-relaxed text-bhutan-primary">
+					"{t('quotes.quote6.text', locale, translations)}"
+				</p>
+				<p class="text-sm text-bhutan-secondary">
+					— {t('quotes.quote6.source', locale, translations)}
+				</p>
+			</div>
+
+			<!-- Quote 7 -->
+			<div class="p-8 rounded-2xl border hover:shadow-xl transition-all transform hover:scale-[1.02]" style="background-color: var(--bg-secondary); border-color: var(--border-light);">
+				<div class="mb-4">
+					<svg class="w-8 h-8 text-bhutan-accent opacity-50" fill="currentColor" viewBox="0 0 24 24">
+						<path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.996 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.984zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/>
+					</svg>
+				</div>
+				<p class="text-lg md:text-xl italic mb-4 leading-relaxed text-bhutan-primary">
+					"{t('quotes.quote7.text', locale, translations)}"
+				</p>
+				<p class="text-sm text-bhutan-secondary">
+					— {t('quotes.quote7.source', locale, translations)}
+				</p>
+			</div>
+
+			<!-- Quote 8 -->
+			<div class="p-8 rounded-2xl border hover:shadow-xl transition-all transform hover:scale-[1.02]" style="background-color: var(--bg-secondary); border-color: var(--border-light);">
+				<div class="mb-4">
+					<svg class="w-8 h-8 text-bhutan-accent opacity-50" fill="currentColor" viewBox="0 0 24 24">
+						<path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.996 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.984zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/>
+					</svg>
+				</div>
+				<p class="text-lg md:text-xl italic mb-4 leading-relaxed text-bhutan-primary">
+					"{t('quotes.quote8.text', locale, translations)}"
+				</p>
+				<p class="text-sm text-bhutan-secondary">
+					— {t('quotes.quote8.source', locale, translations)}
+				</p>
+			</div>
+		</div>
+	</div>
+</section>
+

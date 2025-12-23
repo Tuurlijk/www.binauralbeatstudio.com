@@ -183,5 +183,41 @@
     "label": "Idioma",
     "current": "Idioma actual",
     "switchTo": "Cambiar a {language}"
+  },
+  "quotes": {
+    "title": "Lo Que Dice la Investigación",
+    "subtitle": "Los estudios científicos respaldan los beneficios del arrastre de ondas cerebrales",
+    "quote1": {
+      "text": "El grupo que escuchó ritmos binaurales experimentó un aumento en la actividad parasimpática, reportando niveles más altos de relajación.",
+      "source": "McConnell et al. (2014)"
+    },
+    "quote2": {
+      "text": "Al final del estudio, los participantes reportaron una disminución general en perturbación, tensión, ansiedad, confusión y fatiga. Además, hubo un aumento en la calidad de vida autoinformada.",
+      "source": "Multiple studies (Medical News Today, 2019)"
+    },
+    "quote3": {
+      "text": "Los ritmos binaurales podrían inducir las señales cerebrales requeridas para el sueño, potencialmente aumentando la calidad del sueño.",
+      "source": "Lee et al. (2019)"
+    },
+    "quote4": {
+      "text": "Los beneficios potenciales de los ritmos binaurales incluyen: reducción de ansiedad y estrés, mejora del estado de ánimo, mayor enfoque y concentración, mayor creatividad, mejores hábitos de sueño, mejor manejo del dolor.",
+      "source": "Healthline/WebMD reviews (2024-2025)"
+    },
+    "quote5": {
+      "text": "Escucharlos puede ayudar con el funcionamiento cognitivo, ya que son las ondas cerebrales más involucradas en tu funcionamiento ejecutivo.",
+      "source": "General articles (PopSci, 2021)"
+    },
+    "quote6": {
+      "text": "Los ritmos binaurales pueden ser útiles para mejorar el entrenamiento y el aprendizaje.",
+      "source": "Huang & Charyton (2008)"
+    },
+    "quote7": {
+      "text": "Los estudios de electroencefalografía (EEG) han demostrado que la exposición a ritmos binaurales puede sincronizar los patrones de ondas cerebrales, llevando a estados de relajación mejorada y estados alterados de conciencia.",
+      "source": "Systematic review (2023, PMC10198548)"
+    },
+    "quote8": {
+      "text": "Los tonos isocrónicos pueden ayudar a tu cerebro a sincronizarse con un patrón auditivo específico que podría aliviar cosas como la ansiedad.",
+      "source": "Healthline (2024)"
+    }
   }
 }

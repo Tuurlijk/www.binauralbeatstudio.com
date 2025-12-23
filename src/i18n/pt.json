@@ -183,5 +183,41 @@
     "label": "Idioma",
     "current": "Idioma atual",
     "switchTo": "Alternar para {language}"
+  },
+  "quotes": {
+    "title": "O Que a Pesquisa Diz",
+    "subtitle": "Estudos científicos apoiam os benefícios do arrasto de ondas cerebrais",
+    "quote1": {
+      "text": "O grupo que ouviu batidas binaurais experimentou um aumento na atividade parassimpática, relatando níveis mais altos de relaxamento.",
+      "source": "McConnell et al. (2014)"
+    },
+    "quote2": {
+      "text": "No final do estudo, os participantes relataram uma diminuição geral em perturbação, tensão, ansiedade, confusão e fadiga. Além disso, houve um aumento na qualidade de vida auto-relatada.",
+      "source": "Multiple studies (Medical News Today, 2019)"
+    },
+    "quote3": {
+      "text": "Batidas binaurais poderiam induzir os sinais cerebrais necessários para o sono, potencialmente aumentando a qualidade do sono.",
+      "source": "Lee et al. (2019)"
+    },
+    "quote4": {
+      "text": "Benefícios potenciais de batidas binaurais incluem: redução de ansiedade e estresse, melhora do humor, maior foco e concentração, maior criatividade, melhores hábitos de sono, melhor gerenciamento da dor.",
+      "source": "Healthline/WebMD reviews (2024-2025)"
+    },
+    "quote5": {
+      "text": "Ouvir eles pode ajudar com o funcionamento cognitivo, pois são as ondas cerebrais mais envolvidas em seu funcionamento executivo.",
+      "source": "General articles (PopSci, 2021)"
+    },
+    "quote6": {
+      "text": "Batidas binaurais podem ser úteis para melhorar o treinamento e a aprendizagem.",
+      "source": "Huang & Charyton (2008)"
+    },
+    "quote7": {
+      "text": "Estudos de eletroencefalografia (EEG) demonstraram que a exposição a batidas binaurais pode sincronizar padrões de ondas cerebrais, levando a estados de relaxamento aprimorado e estados alterados de consciência.",
+      "source": "Systematic review (2023, PMC10198548)"
+    },
+    "quote8": {
+      "text": "Tons isocrônicos podem ajudar seu cérebro a sincronizar com um padrão auditivo específico que poderia aliviar coisas como ansiedade.",
+      "source": "Healthline (2024)"
+    }
   }
 }

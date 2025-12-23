@@ -183,5 +183,41 @@
     "label": "语言",
     "current": "当前语言",
     "switchTo": "切换到 {language}"
+  },
+  "quotes": {
+    "title": "研究怎么说",
+    "subtitle": "科学研究支持脑波夹带的益处",
+    "quote1": {
+      "text": "听双耳节拍的小组经历了副交感神经活动的增加，报告了更高水平的放松。",
+      "source": "McConnell et al. (2014)"
+    },
+    "quote2": {
+      "text": "在研究结束时，参与者报告了干扰、紧张、焦虑、困惑和疲劳的总体减少。此外，自我报告的生活质量有所提高。",
+      "source": "Multiple studies (Medical News Today, 2019)"
+    },
+    "quote3": {
+      "text": "双耳节拍可以诱导睡眠所需的大脑信号，可能提高睡眠质量。",
+      "source": "Lee et al. (2019)"
+    },
+    "quote4": {
+      "text": "双耳节拍的潜在益处包括：减少焦虑和压力，改善情绪，增加专注力和注意力，增加创造力，改善睡眠习惯，更好的疼痛管理。",
+      "source": "Healthline/WebMD reviews (2024-2025)"
+    },
+    "quote5": {
+      "text": "听它们可以帮助认知功能，因为它们是最涉及您执行功能的脑波。",
+      "source": "General articles (PopSci, 2021)"
+    },
+    "quote6": {
+      "text": "双耳节拍可能有助于增强训练和学习。",
+      "source": "Huang & Charyton (2008)"
+    },
+    "quote7": {
+      "text": "脑电图（EEG）研究已证明，接触双耳节拍可以同步脑波模式，导致增强的放松状态和改变的意识状态。",
+      "source": "Systematic review (2023, PMC10198548)"
+    },
+    "quote8": {
+      "text": "等时音调可以帮助您的大脑与特定的听觉模式同步，这可能缓解焦虑等问题。",
+      "source": "Healthline (2024)"
+    }
   }
 }

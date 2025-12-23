@@ -108,5 +108,17 @@ export interface Translations {
     current: string;
     switchTo: string;
   };
+  quotes: {
+    title: string;
+    subtitle: string;
+    quote1: { text: string; source: string };
+    quote2: { text: string; source: string };
+    quote3: { text: string; source: string };
+    quote4: { text: string; source: string };
+    quote5: { text: string; source: string };
+    quote6: { text: string; source: string };
+    quote7: { text: string; source: string };
+    quote8: { text: string; source: string };
+  };
 }
 
