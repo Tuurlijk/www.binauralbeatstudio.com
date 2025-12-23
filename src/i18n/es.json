@@ -55,7 +55,7 @@
     },
     "step2": {
       "title": "Agregar Múltiples Tipos de Pistas",
-      "description": "Superpone ritmos binaurales, ritmos monoaurales, tonos isocrónicos, generadores de ruido o importa tus propios archivos de audio."
+      "description": "Superpone ritmos binaurales, ritmos monoaurales, tonos isocrónicos, generadores de ruido o importa tus propios archivos de audio. Elige entre sonidos de fondo relajantes que incluyen ruido blanco, ruido rosa, ruido marrón, lluvia distante, disco antiguo y olas del océano. Importa tus propios archivos de audio en formato MP3, WAV o FLAC para reproducción de muestras temporizadas."
     },
     "step3": {
       "title": "Ajustar Frecuencias y Volúmenes",
@@ -96,6 +96,80 @@
     "benefit3": {
       "title": "✓ Gratis para Probar",
       "description": "Sesiones incluidas disponibles para todos los usuarios"
+    }
+  },
+  "aboutBinauralBeats": {
+    "heroTitle": "Desbloquea el Potencial de Tu Cerebro",
+    "heroSubtitle": "Transforma tu estado mental, mejora el enfoque, logra una relajación más profunda, desbloquea la creatividad y estados de flujo, y alcanza el máximo rendimiento a través del poder del arrastre de ondas cerebrales.",
+    "benefits": {
+      "title": "Beneficios Poderosos Que Puedes Experimentar",
+      "subtitle": "Los ritmos binaurales y el arrastre de ondas cerebrales pueden ayudarte a lograr estados mentales y resultados notables",
+      "benefit1": {
+        "title": "Relajación Profunda y Alivio del Estrés",
+        "description": "Logra una relajación profunda y elimina el estrés. Las frecuencias más bajas ayudan a tu cerebro a entrar en estados profundamente relajados, reduciendo la ansiedad y promoviendo la calma."
+      },
+      "benefit2": {
+        "title": "Enfoque y Concentración Mejorados",
+        "description": "Aumenta tu rendimiento cognitivo y mantén un enfoque agudo. Las frecuencias más altas ayudan a tu cerebro a entrar en estados óptimos para el trabajo, el estudio y las tareas creativas."
+      },
+      "benefit3": {
+        "title": "Mejor Calidad del Sueño",
+        "description": "Mejora tu sueño de forma natural. Las frecuencias delta y theta ayudan a tu cerebro a hacer la transición a estados de sueño profundo y reparador para un mejor descanso y recuperación."
+      },
+      "benefit4": {
+        "title": "Mejora de la Meditación",
+        "description": "Desbloquea estados de meditación más profundos y mejora tu práctica. Los ritmos binaurales pueden ayudarte a alcanzar estados theta y alpha con mayor facilidad, profundizando tu atención plena."
+      },
+      "benefit5": {
+        "title": "Creatividad y Estados de Flujo",
+        "description": "Accede a tu potencial creativo y entra en estados de flujo. Las frecuencias alpha se asocian con una creatividad mejorada, resolución de problemas y máximo rendimiento."
+      },
+      "benefit6": {
+        "title": "Mejora del Estado de Ánimo",
+        "description": "Eleva tu estado de ánimo y bienestar emocional. La investigación sugiere que los ritmos binaurales pueden ayudar a mejorar el estado de ánimo, reducir las emociones negativas y promover estados mentales positivos."
+      }
+    },
+    "howItWorks": {
+      "title": "Cómo Funciona el Arrastre de Ondas Cerebrales",
+      "subtitle": "La ciencia detrás de la transformación",
+      "explanation": "Cuando escuchas dos frecuencias ligeramente diferentes (una en cada oído), tu cerebro percibe naturalmente una tercera frecuencia: la diferencia entre ellas. Esto se llama ritmo binaural. Tu cerebro luego sincroniza su propia actividad eléctrica para coincidir con esta frecuencia percibida, un fenómeno conocido como arrastre de ondas cerebrales.",
+      "noHeadphones": "MindState también admite ritmos monoaurales y tonos isocrónicos, que funcionan sin auriculares. Los ritmos monoaurales se crean mezclando dos frecuencias antes de que lleguen a tus oídos, mientras que los tonos isocrónicos usan pulsos uniformemente espaciados de un solo tono. Ambos pueden arrastrar efectivamente tus ondas cerebrales cuando se reproducen a través de altavoces, facilitando disfrutar de los beneficios durante la meditación, el trabajo o el sueño, sin necesidad de auriculares.",
+      "personalization": "Diferentes frecuencias desbloquean diferentes estados mentales: Delta (0.5-4 Hz) para sueño profundo, Theta (4-8 Hz) para meditación y creatividad, Alpha (8-13 Hz) para enfoque relajado, Beta (13-30 Hz) para concentración activa, y Gamma (30-100 Hz) para máximo rendimiento. Al personalizar las frecuencias portadoras y las frecuencias de ritmo para que coincidan con tu sensibilidad única, puedes maximizar los beneficios y lograr tu estado mental deseado de manera más efectiva."
+    },
+    "safety": {
+      "title": "Seguro y Bien Estudiado",
+      "subtitle": "Los ritmos binaurales son generalmente seguros para la mayoría de las personas cuando se usan de manera responsable",
+      "general": "Los ritmos binaurales han sido estudiados durante décadas y se consideran seguros para la mayoría de los usuarios. Funcionan a través del arrastre natural de ondas cerebrales y no requieren procedimientos invasivos ni sustancias.",
+      "precautions": "Si tienes epilepsia o antecedentes de convulsiones, consulta con un proveedor de atención médica antes de usar. Mantén el volumen en niveles cómodos: el volumen excesivo puede causar daño auditivo. Si experimentas alguna molestia, suspende el uso. Los ritmos binaurales no son un reemplazo para el tratamiento médico o la atención profesional de salud mental."
+    },
+    "research": {
+      "title": "Respaldado por Investigación",
+      "subtitle": "Los estudios científicos respaldan los beneficios de los ritmos binaurales y el arrastre de ondas cerebrales",
+      "findings": "La investigación ha demostrado que los ritmos binaurales pueden ayudar a reducir la ansiedad, mejorar el enfoque, mejorar la práctica de meditación y apoyar un mejor sueño. Los estudios han encontrado efectos positivos en la relajación, la reducción del estrés y el rendimiento cognitivo. Si bien los resultados individuales pueden variar, la evidencia científica continúa creciendo, respaldando el uso de ritmos binaurales como una herramienta para el mejoramiento mental y el bienestar.",
+      "studiesTitle": "Estudios de Investigación Revisados por Pares",
+      "studiesSubtitle": "Explora la evidencia científica que respalda la eficacia de los ritmos binaurales",
+      "studies": {
+        "metaAnalysis": {
+          "title": "Metaanálisis: Cognición, Ansiedad y Dolor",
+          "description": "Un análisis exhaustivo de 22 estudios encontró efectos medianos y significativos en la memoria, atención, ansiedad y percepción del dolor (tamaño del efecto g = 0.45).",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/30073406/"
+        },
+        "anxiety": {
+          "title": "Estudio de Ansiedad y Calidad de Vida",
+          "description": "La exposición diaria a ritmos binaurales de frecuencia delta durante 60 días mostró disminuciones significativas en la ansiedad rasgo y aumentos en la calidad de vida.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/17309374/"
+        },
+        "memory": {
+          "title": "Investigación de Mejora de la Memoria",
+          "description": "La investigación encontró que los ritmos binaurales alpha, beta y gamma pueden modular las redes corticales y mejorar el rendimiento de la memoria a corto plazo.",
+          "url": "https://link.springer.com/article/10.1007/s00221-021-06132-6"
+        },
+        "tinnitus": {
+          "title": "Estudio de Manejo del Tinnitus",
+          "description": "Un ensayo controlado aleatorio encontró que los ritmos binaurales de frecuencia alpha combinados con musicoterapia llevaron a mejoras significativas en el tinnitus crónico.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/38723376/"
+        }
+      }
     }
   },
   "footer": {

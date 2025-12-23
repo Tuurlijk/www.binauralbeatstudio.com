@@ -55,7 +55,7 @@
     },
     "step2": {
       "title": "Adicionar Múltiplos Tipos de Faixas",
-      "description": "Sobreponha batidas binaurais, batidas monaurais, tons isocrônicos, geradores de ruído ou importe seus próprios arquivos de áudio."
+      "description": "Sobreponha batidas binaurais, batidas monaurais, tons isocrônicos, geradores de ruído ou importe seus próprios arquivos de áudio. Escolha entre sons de fundo calmantes, incluindo ruído branco, ruído rosa, ruído marrom, chuva distante, disco antigo e ondas do oceano. Importe seus próprios arquivos de áudio em formato MP3, WAV ou FLAC para reprodução de amostras temporizadas."
     },
     "step3": {
       "title": "Ajustar Frequências e Volumes",
@@ -96,6 +96,80 @@
     "benefit3": {
       "title": "✓ Grátis para Experimentar",
       "description": "Sessões incluídas disponíveis para todos os usuários"
+    }
+  },
+  "aboutBinauralBeats": {
+    "heroTitle": "Desbloqueie o Potencial do Seu Cérebro",
+    "heroSubtitle": "Transforme seu estado mental, melhore o foco, alcance relaxamento mais profundo, desbloqueie criatividade e estados de fluxo, e alcance o desempenho máximo através do poder do arrasto de ondas cerebrais.",
+    "benefits": {
+      "title": "Benefícios Poderosos Que Você Pode Experimentar",
+      "subtitle": "Batidas binaurais e arrasto de ondas cerebrais podem ajudá-lo a alcançar estados mentais e resultados notáveis",
+      "benefit1": {
+        "title": "Relaxamento Profundo e Alívio do Estresse",
+        "description": "Alcance relaxamento profundo e derreta o estresse. Frequências mais baixas ajudam seu cérebro a entrar em estados profundamente relaxados, reduzindo a ansiedade e promovendo calma."
+      },
+      "benefit2": {
+        "title": "Foco e Concentração Aprimorados",
+        "description": "Aumente seu desempenho cognitivo e mantenha foco aguçado. Frequências mais altas ajudam seu cérebro a entrar em estados ótimos para trabalho, estudo e tarefas criativas."
+      },
+      "benefit3": {
+        "title": "Melhor Qualidade do Sono",
+        "description": "Melhore seu sono naturalmente. Frequências delta e theta ajudam seu cérebro a fazer a transição para estados de sono profundo e restaurador para melhor descanso e recuperação."
+      },
+      "benefit4": {
+        "title": "Aprimoramento da Meditação",
+        "description": "Desbloqueie estados de meditação mais profundos e melhore sua prática. Batidas binaurais podem ajudá-lo a alcançar estados theta e alpha com mais facilidade, aprofundando sua atenção plena."
+      },
+      "benefit5": {
+        "title": "Criatividade e Estados de Fluxo",
+        "description": "Acesse seu potencial criativo e entre em estados de fluxo. Frequências alpha estão associadas a criatividade aprimorada, resolução de problemas e desempenho máximo."
+      },
+      "benefit6": {
+        "title": "Melhora do Humor",
+        "description": "Eleve seu humor e bem-estar emocional. A pesquisa sugere que batidas binaurais podem ajudar a melhorar o humor, reduzir emoções negativas e promover estados mentais positivos."
+      }
+    },
+    "howItWorks": {
+      "title": "Como Funciona o Arrasto de Ondas Cerebrais",
+      "subtitle": "A ciência por trás da transformação",
+      "explanation": "Quando você ouve duas frequências ligeiramente diferentes (uma em cada ouvido), seu cérebro percebe naturalmente uma terceira frequência—a diferença entre elas. Isso é chamado de batida binaural. Seu cérebro então sincroniza sua própria atividade elétrica para corresponder a essa frequência percebida, um fenômeno conhecido como arrasto de ondas cerebrais.",
+      "noHeadphones": "O MindState também suporta batidas monaurais e tons isocrônicos, que funcionam sem fones de ouvido. Batidas monaurais são criadas misturando duas frequências antes que cheguem aos seus ouvidos, enquanto tons isocrônicos usam pulsos uniformemente espaçados de um único tom. Ambos podem efetivamente arrastar suas ondas cerebrais quando reproduzidos através de alto-falantes, facilitando o aproveitamento dos benefícios durante meditação, trabalho ou sono—sem necessidade de fones de ouvido.",
+      "personalization": "Diferentes frequências desbloqueiam diferentes estados mentais: Delta (0.5-4 Hz) para sono profundo, Theta (4-8 Hz) para meditação e criatividade, Alpha (8-13 Hz) para foco relaxado, Beta (13-30 Hz) para concentração ativa, e Gamma (30-100 Hz) para desempenho máximo. Ao personalizar frequências portadoras e frequências de batida para corresponder à sua sensibilidade única, você pode maximizar os benefícios e alcançar seu estado mental desejado de forma mais eficaz."
+    },
+    "safety": {
+      "title": "Seguro e Bem Estudado",
+      "subtitle": "Batidas binaurais são geralmente seguras para a maioria das pessoas quando usadas de forma responsável",
+      "general": "Batidas binaurais têm sido estudadas há décadas e são consideradas seguras para a maioria dos usuários. Elas funcionam através do arrasto natural de ondas cerebrais e não requerem procedimentos invasivos ou substâncias.",
+      "precautions": "Se você tem epilepsia ou histórico de convulsões, consulte um provedor de saúde antes de usar. Mantenha o volume em níveis confortáveis—volume excessivo pode causar danos auditivos. Se você experimentar qualquer desconforto, interrompa o uso. Batidas binaurais não são um substituto para tratamento médico ou cuidados profissionais de saúde mental."
+    },
+    "research": {
+      "title": "Apoiado por Pesquisa",
+      "subtitle": "Estudos científicos apoiam os benefícios de batidas binaurais e arrasto de ondas cerebrais",
+      "findings": "A pesquisa mostrou que batidas binaurais podem ajudar a reduzir ansiedade, melhorar o foco, aprimorar a prática de meditação e apoiar melhor sono. Estudos encontraram efeitos positivos no relaxamento, redução de estresse e desempenho cognitivo. Embora resultados individuais possam variar, a evidência científica continua crescendo, apoiando o uso de batidas binaurais como uma ferramenta para aprimoramento mental e bem-estar.",
+      "studiesTitle": "Estudos de Pesquisa Revisados por Pares",
+      "studiesSubtitle": "Explore a evidência científica que apoia a eficácia de batidas binaurais",
+      "studies": {
+        "metaAnalysis": {
+          "title": "Meta-Análise: Cognição, Ansiedade e Dor",
+          "description": "Uma análise abrangente de 22 estudos encontrou efeitos médios e significativos na memória, atenção, ansiedade e percepção de dor (tamanho do efeito g = 0.45).",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/30073406/"
+        },
+        "anxiety": {
+          "title": "Estudo de Ansiedade e Qualidade de Vida",
+          "description": "Exposição diária a batidas binaurais de frequência delta ao longo de 60 dias mostrou diminuições significativas na ansiedade traço e aumentos na qualidade de vida.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/17309374/"
+        },
+        "memory": {
+          "title": "Pesquisa de Aprimoramento de Memória",
+          "description": "A pesquisa descobriu que batidas binaurais alpha, beta e gamma podem modular redes corticais e melhorar o desempenho da memória de curto prazo.",
+          "url": "https://link.springer.com/article/10.1007/s00221-021-06132-6"
+        },
+        "tinnitus": {
+          "title": "Estudo de Gerenciamento de Zumbido",
+          "description": "Um ensaio controlado randomizado descobriu que batidas binaurais de frequência alpha combinadas com musicoterapia levaram a melhorias significativas no zumbido crônico.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/38723376/"
+        }
+      }
     }
   },
   "footer": {

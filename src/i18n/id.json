@@ -55,7 +55,7 @@
     },
     "step2": {
       "title": "Tambahkan Beberapa Jenis Trek",
-      "description": "Lapisi binaural beats, monaural beats, nada isokronik, generator noise, atau impor file audio Anda sendiri."
+      "description": "Lapisi binaural beats, monaural beats, nada isokronik, generator noise, atau impor file audio Anda sendiri. Pilih dari suara latar yang menenangkan termasuk white noise, pink noise, brown noise, hujan jauh, rekaman lama, dan ombak laut. Impor file audio Anda sendiri dalam format MP3, WAV, atau FLAC untuk pemutaran sampel berjangka waktu."
     },
     "step3": {
       "title": "Sesuaikan Frekuensi & Volume",
@@ -96,6 +96,80 @@
     "benefit3": {
       "title": "✓ Gratis untuk Dicoba",
       "description": "Sesi yang disertakan tersedia untuk semua pengguna"
+    }
+  },
+  "aboutBinauralBeats": {
+    "heroTitle": "Buka Potensi Otak Anda",
+    "heroSubtitle": "Ubah keadaan mental Anda, tingkatkan fokus, capai relaksasi yang lebih dalam, buka kreativitas dan keadaan alir, dan raih kinerja puncak melalui kekuatan entrainment gelombang otak.",
+    "benefits": {
+      "title": "Manfaat Kuat yang Dapat Anda Alami",
+      "subtitle": "Binaural beats dan entrainment gelombang otak dapat membantu Anda mencapai keadaan mental dan hasil yang luar biasa",
+      "benefit1": {
+        "title": "Relaksasi Mendalam & Pelepasan Stres",
+        "description": "Capai relaksasi yang mendalam dan hilangkan stres. Frekuensi yang lebih rendah membantu otak Anda memasuki keadaan yang sangat rileks, mengurangi kecemasan dan mempromosikan ketenangan."
+      },
+      "benefit2": {
+        "title": "Fokus & Konsentrasi yang Ditingkatkan",
+        "description": "Tingkatkan kinerja kognitif Anda dan pertahankan fokus yang tajam. Frekuensi yang lebih tinggi membantu otak Anda memasuki keadaan optimal untuk bekerja, belajar, dan tugas kreatif."
+      },
+      "benefit3": {
+        "title": "Kualitas Tidur yang Lebih Baik",
+        "description": "Tingkatkan tidur Anda secara alami. Frekuensi delta dan theta membantu otak Anda beralih ke keadaan tidur yang dalam dan restoratif untuk istirahat dan pemulihan yang lebih baik."
+      },
+      "benefit4": {
+        "title": "Peningkatan Meditasi",
+        "description": "Buka keadaan meditasi yang lebih dalam dan tingkatkan latihan Anda. Binaural beats dapat membantu Anda mencapai keadaan theta dan alpha dengan lebih mudah, memperdalam kesadaran Anda."
+      },
+      "benefit5": {
+        "title": "Kreativitas & Keadaan Alir",
+        "description": "Akses potensi kreatif Anda dan masuki keadaan alir. Frekuensi alpha dikaitkan dengan peningkatan kreativitas, pemecahan masalah, dan kinerja puncak."
+      },
+      "benefit6": {
+        "title": "Peningkatan Suasana Hati",
+        "description": "Tingkatkan suasana hati dan kesejahteraan emosional Anda. Penelitian menunjukkan bahwa binaural beats dapat membantu meningkatkan suasana hati, mengurangi emosi negatif, dan mempromosikan keadaan mental yang positif."
+      }
+    },
+    "howItWorks": {
+      "title": "Bagaimana Entrainment Gelombang Otak Bekerja",
+      "subtitle": "Ilmu di balik transformasi",
+      "explanation": "Ketika Anda mendengarkan dua frekuensi yang sedikit berbeda (satu di setiap telinga), otak Anda secara alami merasakan frekuensi ketiga—perbedaan di antara mereka. Ini disebut binaural beat. Otak Anda kemudian menyinkronkan aktivitas listriknya sendiri untuk mencocokkan frekuensi yang dirasakan ini, fenomena yang dikenal sebagai entrainment gelombang otak.",
+      "noHeadphones": "MindState juga mendukung monaural beats dan nada isokronik, yang bekerja tanpa headphone. Monaural beats dibuat dengan mencampur dua frekuensi sebelum mencapai telinga Anda, sementara nada isokronik menggunakan pulsa yang dijarakkan secara merata dari satu nada. Keduanya dapat secara efektif mengentrain gelombang otak Anda ketika diputar melalui speaker, memudahkan untuk menikmati manfaat selama meditasi, kerja, atau tidur—tidak perlu headphone.",
+      "personalization": "Frekuensi yang berbeda membuka keadaan mental yang berbeda: Delta (0.5-4 Hz) untuk tidur dalam, Theta (4-8 Hz) untuk meditasi dan kreativitas, Alpha (8-13 Hz) untuk fokus yang rileks, Beta (13-30 Hz) untuk konsentrasi aktif, dan Gamma (30-100 Hz) untuk kinerja puncak. Dengan mempersonalisasi frekuensi pembawa dan frekuensi ketukan untuk mencocokkan sensitivitas unik Anda, Anda dapat memaksimalkan manfaat dan mencapai keadaan mental yang diinginkan dengan lebih efektif."
+    },
+    "safety": {
+      "title": "Aman & Telah Dipelajari dengan Baik",
+      "subtitle": "Binaural beats umumnya aman untuk kebanyakan orang ketika digunakan secara bertanggung jawab",
+      "general": "Binaural beats telah dipelajari selama puluhan tahun dan dianggap aman untuk mayoritas pengguna. Mereka bekerja melalui entrainment gelombang otak alami dan tidak memerlukan prosedur atau zat invasif apa pun.",
+      "precautions": "Jika Anda menderita epilepsi atau riwayat kejang, konsultasikan dengan penyedia layanan kesehatan sebelum digunakan. Jaga volume pada tingkat yang nyaman—volume berlebihan dapat menyebabkan kerusakan pendengaran. Jika Anda mengalami ketidaknyamanan, hentikan penggunaan. Binaural beats bukan pengganti untuk perawatan medis atau perawatan kesehatan mental profesional."
+    },
+    "research": {
+      "title": "Didukung oleh Penelitian",
+      "subtitle": "Studi ilmiah mendukung manfaat binaural beats dan entrainment gelombang otak",
+      "findings": "Penelitian telah menunjukkan bahwa binaural beats dapat membantu mengurangi kecemasan, meningkatkan fokus, meningkatkan praktik meditasi, dan mendukung tidur yang lebih baik. Studi telah menemukan efek positif pada relaksasi, pengurangan stres, dan kinerja kognitif. Meskipun hasil individu dapat bervariasi, bukti ilmiah terus berkembang, mendukung penggunaan binaural beats sebagai alat untuk peningkatan mental dan kesejahteraan.",
+      "studiesTitle": "Studi Penelitian yang Ditinjau oleh Rekan Sejawat",
+      "studiesSubtitle": "Jelajahi bukti ilmiah yang mendukung kemanjuran binaural beats",
+      "studies": {
+        "metaAnalysis": {
+          "title": "Meta-Analisis: Kognisi, Kecemasan & Nyeri",
+          "description": "Analisis komprehensif dari 22 studi menemukan efek sedang dan signifikan pada memori, perhatian, kecemasan, dan persepsi nyeri (ukuran efek g = 0.45).",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/30073406/"
+        },
+        "anxiety": {
+          "title": "Studi Kecemasan & Kualitas Hidup",
+          "description": "Paparan harian terhadap binaural beats frekuensi delta selama 60 hari menunjukkan penurunan signifikan dalam kecemasan sifat dan peningkatan kualitas hidup.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/17309374/"
+        },
+        "memory": {
+          "title": "Penelitian Peningkatan Memori",
+          "description": "Penelitian menemukan bahwa binaural beats alpha, beta, dan gamma dapat memodulasi jaringan kortikal dan meningkatkan kinerja memori jangka pendek.",
+          "url": "https://link.springer.com/article/10.1007/s00221-021-06132-6"
+        },
+        "tinnitus": {
+          "title": "Studi Manajemen Tinnitus",
+          "description": "Uji coba terkontrol acak menemukan bahwa binaural beats frekuensi alpha yang dikombinasikan dengan terapi musik menyebabkan peningkatan signifikan dalam tinnitus kronis.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/38723376/"
+        }
+      }
     }
   },
   "footer": {
