@@ -1,0 +1,158 @@
+---
+import { getLocale } from 'astro-i18n-aut';
+import { getLocalizedLink } from '../utils/i18n';
+import type { Locale } from '../i18n/types';
+
+const locale = getLocale(Astro.url) as Locale;
+const base = import.meta.env.BASE_URL;
+
+const languages = [
+	{ code: 'en' as Locale, name: 'English', nativeName: 'English' },
+	{ code: 'ar' as Locale, name: 'Arabic', nativeName: 'العربية' },
+	{ code: 'es' as Locale, name: 'Spanish', nativeName: 'Español' },
+	{ code: 'hi' as Locale, name: 'Hindi', nativeName: 'हिन्दी' },
+	{ code: 'id' as Locale, name: 'Indonesian', nativeName: 'Bahasa Indonesia' },
+	{ code: 'pt' as Locale, name: 'Portuguese', nativeName: 'Português' },
+	{ code: 'ru' as Locale, name: 'Russian', nativeName: 'Русский' },
+	{ code: 'zh' as Locale, name: 'Chinese', nativeName: '中文' },
+];
+
+function getCurrentPath(): string {
+	// Extract path without locale prefix
+	const path = Astro.url.pathname;
+	const localeMatch = path.match(/^\/(en|ar|es|hi|id|pt|ru|zh)\//);
+	if (localeMatch) {
+		return path.replace(`/${localeMatch[1]}/`, '/');
+	}
+	return path === '/' ? '/' : path;
+}
+
+const currentPath = getCurrentPath();
+const currentLang = languages.find((l) => l.code === locale) || languages[0];
+---
+
+<div class="language-switcher relative">
+	<input type="checkbox" id="language-menu-toggle" class="hidden" />
+	<div class="absolute right-0 mt-2 w-56 bg-bhutan-secondary border border-bhutan-light rounded-xl shadow-2xl overflow-hidden z-50 backdrop-blur-sm" id="language-menu" style="background-color: var(--bg-secondary); opacity: 0.98; max-height: 80vh; overflow-y: auto;">
+		<div class="py-2">
+			{languages.map((lang) => {
+				const langUrl = lang.code === 'en' 
+					? `${base}${currentPath === '/' ? '' : currentPath.slice(1)}`
+					: getLocalizedLink(currentPath === '/' ? '' : currentPath.slice(1), lang.code, base);
+				const isActive = lang.code === locale;
+				return (
+					<a
+						href={langUrl}
+						class={`block px-4 py-2.5 text-bhutan-primary transition-all duration-200 ${
+							isActive 
+								? 'font-semibold bg-bhutan-primary text-bhutan-accent' 
+								: 'hover:bg-bhutan-primary hover:pl-5'
+						}`}
+						lang={lang.code}
+						aria-current={isActive ? 'page' : undefined}
+					>
+						<div class="flex items-center justify-between">
+							<span>{lang.nativeName}</span>
+							{isActive && (
+								<svg class="w-4 h-4 text-bhutan-accent" fill="currentColor" viewBox="0 0 20 20">
+									<path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+								</svg>
+							)}
+						</div>
+					</a>
+				);
+			})}
+		</div>
+	</div>
+	<label 
+		for="language-menu-toggle" 
+		class="flex items-center gap-2 bg-bhutan-secondary border border-bhutan-light rounded-lg px-4 py-2 cursor-pointer hover:bg-bhutan-primary transition-all duration-200 hover:border-bhutan-accent group" 
+		aria-label="Select language" 
+		aria-expanded="false" 
+		aria-haspopup="true"
+	>
+		<span class="text-bhutan-primary font-medium">{currentLang.nativeName}</span>
+		<svg class="w-4 h-4 text-bhutan-secondary transition-transform duration-200 group-hover:text-bhutan-accent" id="language-chevron" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+			<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+		</svg>
+	</label>
+</div>
+
+<style>
+	/* CSS-only language menu toggle - menu is sibling of checkbox */
+	.language-switcher #language-menu-toggle:checked ~ #language-menu {
+		display: block !important;
+		animation: slideDown 0.2s ease-out;
+	}
+	
+	.language-switcher #language-menu-toggle:checked ~ label #language-chevron {
+		transform: rotate(180deg);
+		transition: transform 0.2s ease-out;
+	}
+	
+	.language-switcher #language-chevron {
+		transition: transform 0.2s ease-out;
+	}
+	
+	/* Default hidden state */
+	.language-switcher #language-menu {
+		display: none;
+	}
+
+	/* Smooth animations */
+	@keyframes slideDown {
+		from {
+			opacity: 0;
+			transform: translateY(-8px);
+		}
+		to {
+			opacity: 1;
+			transform: translateY(0);
+		}
+	}
+
+	/* Hover effects for menu items */
+	.language-switcher #language-menu a:not([aria-current="page"]):hover {
+		background-color: var(--bg-primary);
+		transform: translateX(4px);
+		transition: all 0.2s ease-out;
+	}
+	
+	.language-switcher #language-menu a {
+		transition: all 0.2s ease-out;
+	}
+
+	/* Active state styling */
+	.language-switcher #language-menu a[aria-current="page"] {
+		position: relative;
+	}
+
+	.language-switcher #language-menu a[aria-current="page"]::before {
+		content: '';
+		position: absolute;
+		left: 0;
+		top: 0;
+		bottom: 0;
+		width: 3px;
+		background-color: var(--accent);
+		border-radius: 0 2px 2px 0;
+	}
+
+	/* RTL adjustments */
+	:global([dir="rtl"]) .language-switcher {
+		direction: rtl;
+	}
+	:global([dir="rtl"]) .language-switcher #language-menu {
+		right: auto;
+		left: 0;
+	}
+	:global([dir="rtl"]) .language-switcher #language-menu a:not([aria-current="page"]):hover {
+		transform: translateX(-4px);
+	}
+	:global([dir="rtl"]) .language-switcher #language-menu a[aria-current="page"]::before {
+		left: auto;
+		right: 0;
+		border-radius: 2px 0 0 2px;
+	}
+</style>
+

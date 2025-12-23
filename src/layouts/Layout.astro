@@ -1,21 +1,39 @@
 ---
 import '../styles/global.css';
+import { getLocale } from 'astro-i18n-aut';
+import { loadTranslations, t, getLocalizedHashLink } from '../utils/i18n';
+import type { Locale } from '../i18n/types';
+import LanguageSwitcher from '../components/LanguageSwitcher.astro';
 
 interface Props {
 	title?: string;
 	description?: string;
 }
 
-const {
-	title = 'MindState - Create Personalized Binaural Beats Sessions',
-	description = 'The only binaural beats app that lets you design completely personalized audio sessions from scratch. Professional-grade tools for creating sessions that match your exact preferences.',
-} = Astro.props;
-
+const locale = getLocale(Astro.url) as Locale;
+const translations = await loadTranslations(locale);
 const base = import.meta.env.BASE_URL;
+
+const title = Astro.props.title || t('meta.title', locale, translations);
+const description = Astro.props.description || t('meta.description', locale, translations);
+
+// Generate hreflang tags for all locales
+const locales: Locale[] = ['en', 'ar', 'es', 'hi', 'id', 'pt', 'ru', 'zh'];
+// Extract path without locale prefix
+let currentPath = Astro.url.pathname;
+const localeMatch = currentPath.match(/^\/(en|ar|es|hi|id|pt|ru|zh)\//);
+if (localeMatch) {
+  currentPath = currentPath.replace(`/${localeMatch[1]}/`, '/');
+}
+// Ensure currentPath starts with /
+if (!currentPath.startsWith('/')) {
+  currentPath = '/' + currentPath;
+}
+const isRTL = locale === 'ar';
 ---
 
 <!doctype html>
-<html lang="en">
+<html lang={locale} dir={isRTL ? 'rtl' : 'ltr'}>
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -27,17 +45,44 @@ const base = import.meta.env.BASE_URL;
 		<meta name="title" content={title} />
 		<meta name="description" content={description} />
 		
+		<!-- hreflang tags for SEO -->
+		{locales.map((loc) => {
+			const localePath = loc === 'en' ? '' : `${loc}/`;
+			const cleanPath = currentPath === '/' ? '' : currentPath.slice(1);
+			return (
+				<link
+					rel="alternate"
+					hreflang={loc}
+					href={`https://binauralbeatstudio.com/${localePath}${cleanPath}`}
+				/>
+			);
+		})}
+		<link rel="alternate" hreflang="x-default" href={`https://binauralbeatstudio.com${currentPath === '/' ? '' : currentPath}`} />
+		
 		<!-- Open Graph / Facebook -->
 		<meta property="og:type" content="website" />
 		<meta property="og:title" content={title} />
 		<meta property="og:description" content={description} />
+		<meta property="og:locale" content={locale} />
+		{locales.map((loc) => (
+			<meta property="og:locale:alternate" content={loc} />
+		))}
 		
 		<!-- Twitter -->
 		<meta property="twitter:card" content="summary_large_image" />
 		<meta property="twitter:title" content={title} />
 		<meta property="twitter:description" content={description} />
+		<style>
+			/* CSS-only mobile menu toggle */
+			#mobile-menu-toggle:checked ~ #mobile-menu-wrapper #mobile-menu {
+				display: block !important;
+			}
+			#mobile-menu-toggle:not(:checked) ~ #mobile-menu-wrapper #mobile-menu {
+				display: none;
+			}
+		</style>
 	</head>
-	<body class="antialiased bg-bhutan-primary text-bhutan-primary">
+	<body class={`antialiased bg-bhutan-primary text-bhutan-primary ${isRTL ? 'rtl' : 'ltr'}`}>
 		<nav class="fixed top-0 left-0 right-0 z-50 backdrop-blur-sm border-b border-bhutan-light" style="background-color: var(--bg-primary); opacity: 0.95;">
 			<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 				<div class="flex justify-between items-center h-16">
@@ -51,26 +96,29 @@ const base = import.meta.env.BASE_URL;
 						</a>
 					</div>
 					<div class="hidden md:flex items-center space-x-8">
-						<a href={`${base}#features`} class="transition-colors text-bhutan-secondary hover:text-bhutan-accent">Features</a>
-						<a href={`${base}#how-it-works`} class="transition-colors text-bhutan-secondary hover:text-bhutan-accent">How It Works</a>
-						<a href={`${base}#screenshots`} class="transition-colors text-bhutan-secondary hover:text-bhutan-accent">Screenshots</a>
-						<a href={`${base}#download`} class="px-4 py-2 rounded-lg transition-colors text-white bg-bhutan-accent hover:opacity-90">
-							Download
+						<a href={getLocalizedHashLink('#features', locale, base)} class="transition-colors text-bhutan-secondary hover:text-bhutan-accent">{t('nav.features', locale, translations)}</a>
+						<a href={getLocalizedHashLink('#how-it-works', locale, base)} class="transition-colors text-bhutan-secondary hover:text-bhutan-accent">{t('nav.howItWorks', locale, translations)}</a>
+						<a href={getLocalizedHashLink('#screenshots', locale, base)} class="transition-colors text-bhutan-secondary hover:text-bhutan-accent">{t('nav.screenshots', locale, translations)}</a>
+						<a href={getLocalizedHashLink('#download', locale, base)} class="px-4 py-2 rounded-lg transition-colors text-white bg-bhutan-accent hover:opacity-90">
+							{t('nav.download', locale, translations)}
 						</a>
+						<LanguageSwitcher />
 					</div>
-					<button class="md:hidden p-2 text-bhutan-secondary" id="mobile-menu-button" aria-label="Toggle menu">
+					<label for="mobile-menu-toggle" class="md:hidden p-2 text-bhutan-secondary cursor-pointer" aria-label="Toggle menu">
 						<svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
 							<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
 						</svg>
-					</button>
+					</label>
+					<input type="checkbox" id="mobile-menu-toggle" class="hidden" />
 				</div>
 			</div>
-			<div class="md:hidden hidden bg-bhutan-primary border-t border-bhutan-light" id="mobile-menu">
+			<div id="mobile-menu-wrapper">
+				<div class="md:hidden hidden bg-bhutan-primary border-t border-bhutan-light" id="mobile-menu">
 				<div class="px-4 pt-2 pb-4 space-y-2">
-					<a href={`${base}#features`} class="block py-2 transition-colors text-bhutan-secondary hover:text-bhutan-accent">Features</a>
-					<a href={`${base}#how-it-works`} class="block py-2 transition-colors text-bhutan-secondary hover:text-bhutan-accent">How It Works</a>
-					<a href={`${base}#screenshots`} class="block py-2 transition-colors text-bhutan-secondary hover:text-bhutan-accent">Screenshots</a>
-					<a href={`${base}#download`} class="block py-2 text-white px-4 rounded-lg text-center transition-colors bg-bhutan-accent hover:opacity-90">Download</a>
+					<a href={getLocalizedHashLink('#features', locale, base)} class="block py-2 transition-colors text-bhutan-secondary hover:text-bhutan-accent">{t('nav.features', locale, translations)}</a>
+					<a href={getLocalizedHashLink('#how-it-works', locale, base)} class="block py-2 transition-colors text-bhutan-secondary hover:text-bhutan-accent">{t('nav.howItWorks', locale, translations)}</a>
+					<a href={getLocalizedHashLink('#screenshots', locale, base)} class="block py-2 transition-colors text-bhutan-secondary hover:text-bhutan-accent">{t('nav.screenshots', locale, translations)}</a>
+					<a href={getLocalizedHashLink('#download', locale, base)} class="block py-2 text-white px-4 rounded-lg text-center transition-colors bg-bhutan-accent hover:opacity-90">{t('nav.download', locale, translations)}</a>
 				</div>
 			</div>
 		</nav>
@@ -85,40 +133,33 @@ const base = import.meta.env.BASE_URL;
 					<div>
 						<h3 class="text-lg font-semibold mb-4 text-bhutan-primary">MindState</h3>
 						<p class="text-sm text-bhutan-secondary">
-							Create personalized binaural beats sessions tailored to your preferences.
+							{t('footer.description', locale, translations)}
 						</p>
 					</div>
 					<div>
-						<h4 class="font-semibold mb-4 text-bhutan-primary">Links</h4>
+						<h4 class="font-semibold mb-4 text-bhutan-primary">{t('footer.links', locale, translations)}</h4>
 						<ul class="space-y-2 text-sm">
-							<li><a href={`${base}#features`} class="transition-colors text-bhutan-secondary hover:text-bhutan-accent">Features</a></li>
-							<li><a href={`${base}#how-it-works`} class="transition-colors text-bhutan-secondary hover:text-bhutan-accent">How It Works</a></li>
-							<li><a href={`${base}#screenshots`} class="transition-colors text-bhutan-secondary hover:text-bhutan-accent">Screenshots</a></li>
+							<li><a href={getLocalizedHashLink('#features', locale, base)} class="transition-colors text-bhutan-secondary hover:text-bhutan-accent">{t('nav.features', locale, translations)}</a></li>
+							<li><a href={getLocalizedHashLink('#how-it-works', locale, base)} class="transition-colors text-bhutan-secondary hover:text-bhutan-accent">{t('nav.howItWorks', locale, translations)}</a></li>
+							<li><a href={getLocalizedHashLink('#screenshots', locale, base)} class="transition-colors text-bhutan-secondary hover:text-bhutan-accent">{t('nav.screenshots', locale, translations)}</a></li>
 						</ul>
 					</div>
 					<div>
-						<h4 class="font-semibold mb-4 text-bhutan-primary">Download</h4>
+						<h4 class="font-semibold mb-4 text-bhutan-primary">{t('footer.download', locale, translations)}</h4>
 						<p class="text-sm text-bhutan-secondary">
-							Available on the Google Play Store
+							{t('footer.downloadDescription', locale, translations)}
 						</p>
 					</div>
 				</div>
 				<div class="border-t border-bhutan-light mt-8 pt-8 text-center text-sm text-bhutan-secondary">
-					<p>&copy; 2024 MindState. All rights reserved.</p>
+					<p>{t('footer.copyright', locale, translations)}</p>
 				</div>
 			</div>
 		</footer>
 
 		<script>
-			// Mobile menu toggle
-			const menuButton = document.getElementById('mobile-menu-button');
-			const mobileMenu = document.getElementById('mobile-menu');
-			
-			if (menuButton && mobileMenu) {
-				menuButton.addEventListener('click', () => {
-					mobileMenu.classList.toggle('hidden');
-				});
-			}
+			// Mobile menu toggle (enhancement - works without JS via checkbox)
+			// The checkbox already handles visibility via CSS, this is just for smooth transitions
 		</script>
 	</body>
 </html>
