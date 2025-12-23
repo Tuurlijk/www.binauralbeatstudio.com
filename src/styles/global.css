@@ -1,0 +1,200 @@
+@import "tailwindcss";
+
+/* Bhutan-inspired color palette */
+@theme {
+	/* Primary Bhutan Colors */
+	--color-bhutan-orange: #FF6B35;
+	--color-bhutan-blue: #1E3A8A;
+	--color-bhutan-green: #166534;
+	--color-bhutan-burgundy: #7C2D12;
+	--color-bhutan-cream: #F9F7F3;
+
+	/* Light Theme Variants */
+	--color-bhutan-orange-light: #FF8A65;
+	--color-bhutan-blue-light: #3B82F6;
+	--color-bhutan-green-light: #22C55E;
+	--color-bhutan-burgundy-light: #DC2626;
+	--color-bhutan-cream-light: #FFFFFF;
+
+	/* Dark Theme Variants */
+	--color-bhutan-orange-dark: #9F3D00;
+	--color-bhutan-blue-dark: #13286B;
+	--color-bhutan-green-dark: #0D5728;
+	--color-bhutan-burgundy-dark: #651212;
+	--color-bhutan-cream-dark: #B2B2B2;
+
+	/* Neutral Background Colors */
+	--color-bhutan-surface: #FAFAF8;
+	--color-bhutan-surface-dark: #1C1917;
+	--color-bhutan-on-surface: #1C1917;
+	--color-bhutan-on-surface-dark: #F5F5F4;
+}
+
+/* Light theme (default) */
+:root {
+	--bg-primary: var(--color-bhutan-surface);
+	--bg-secondary: var(--color-bhutan-cream);
+	--text-primary: var(--color-bhutan-on-surface);
+	--text-secondary: #5D1F0F;
+	--primary: var(--color-bhutan-orange);
+	--primary-light: var(--color-bhutan-orange-light);
+	--secondary: var(--color-bhutan-blue);
+	--secondary-light: var(--color-bhutan-blue-light);
+	--tertiary: var(--color-bhutan-green);
+	--tertiary-light: var(--color-bhutan-green-light);
+	--accent: var(--color-bhutan-burgundy);
+	--accent-light: var(--color-bhutan-burgundy-light);
+	--border: rgba(124, 45, 18, 0.5);
+	--border-light: rgba(124, 45, 18, 0.25);
+}
+
+/* Dark theme */
+@media (prefers-color-scheme: dark) {
+	:root {
+		--bg-primary: var(--color-bhutan-surface-dark);
+		--bg-secondary: #252321;
+		--text-primary: var(--color-bhutan-on-surface-dark);
+		--text-secondary: #D7D3D0;
+		--primary: var(--color-bhutan-orange);
+		--primary-light: var(--color-bhutan-orange-dark);
+		--secondary: var(--color-bhutan-blue-dark);
+		--secondary-light: var(--color-bhutan-blue);
+		--tertiary: var(--color-bhutan-green-dark);
+		--tertiary-light: var(--color-bhutan-green);
+		--accent: var(--color-bhutan-burgundy-dark);
+		--accent-light: var(--color-bhutan-burgundy);
+		--border: #A8A29E;
+		--border-light: #57534E;
+	}
+}
+
+/* Smooth scrolling */
+html {
+	scroll-behavior: smooth;
+	background-color: var(--bg-primary);
+	color: var(--text-primary);
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+	width: 10px;
+}
+
+::-webkit-scrollbar-track {
+	background: var(--bg-secondary);
+}
+
+::-webkit-scrollbar-thumb {
+	background: var(--border);
+	border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+	background: var(--accent);
+}
+
+/* Focus styles for accessibility */
+*:focus-visible {
+	outline: 2px solid var(--primary);
+	outline-offset: 2px;
+}
+
+/* Utility classes for Bhutan theme */
+.bg-bhutan-primary {
+	background-color: var(--bg-primary);
+}
+
+.bg-bhutan-secondary {
+	background-color: var(--bg-secondary);
+}
+
+.text-bhutan-primary {
+	color: var(--text-primary);
+}
+
+.text-bhutan-secondary {
+	color: var(--text-secondary);
+}
+
+.text-bhutan-accent {
+	color: var(--primary);
+}
+
+.bg-bhutan-accent {
+	background-color: var(--primary);
+}
+
+.bg-bhutan-accent:hover {
+	background-color: var(--primary-light);
+}
+
+.border-bhutan {
+	border-color: var(--border);
+}
+
+.border-bhutan-light {
+	border-color: var(--border-light);
+}
+
+/* Feature card gradients */
+.feature-card-1 {
+	background: linear-gradient(to bottom right, rgba(255, 107, 53, 0.1), rgba(255, 138, 101, 0.1));
+	border-color: rgba(255, 107, 53, 0.3);
+}
+
+.feature-card-2 {
+	background: linear-gradient(to bottom right, rgba(30, 58, 138, 0.1), rgba(59, 130, 246, 0.1));
+	border-color: rgba(30, 58, 138, 0.3);
+}
+
+.feature-card-3 {
+	background: linear-gradient(to bottom right, rgba(22, 101, 52, 0.1), rgba(34, 197, 94, 0.1));
+	border-color: rgba(22, 101, 52, 0.3);
+}
+
+.feature-card-4 {
+	background: linear-gradient(to bottom right, rgba(124, 45, 18, 0.1), rgba(220, 38, 38, 0.1));
+	border-color: rgba(124, 45, 18, 0.3);
+}
+
+.feature-card-5 {
+	background: linear-gradient(to bottom right, rgba(30, 58, 138, 0.1), rgba(59, 130, 246, 0.1));
+	border-color: rgba(30, 58, 138, 0.3);
+}
+
+.feature-card-6 {
+	background: linear-gradient(to bottom right, rgba(22, 101, 52, 0.1), rgba(34, 197, 94, 0.1));
+	border-color: rgba(22, 101, 52, 0.3);
+}
+
+@media (prefers-color-scheme: dark) {
+	.feature-card-1 {
+		background: linear-gradient(to bottom right, rgba(159, 61, 0, 0.2), rgba(124, 45, 18, 0.2));
+		border-color: rgba(255, 107, 53, 0.4);
+	}
+
+	.feature-card-2 {
+		background: linear-gradient(to bottom right, rgba(19, 40, 107, 0.2), rgba(30, 58, 138, 0.2));
+		border-color: rgba(30, 58, 138, 0.4);
+	}
+
+	.feature-card-3 {
+		background: linear-gradient(to bottom right, rgba(13, 87, 40, 0.2), rgba(22, 101, 52, 0.2));
+		border-color: rgba(22, 101, 52, 0.4);
+	}
+
+	.feature-card-4 {
+		background: linear-gradient(to bottom right, rgba(101, 18, 18, 0.2), rgba(124, 45, 18, 0.2));
+		border-color: rgba(124, 45, 18, 0.4);
+	}
+
+	.feature-card-5 {
+		background: linear-gradient(to bottom right, rgba(19, 40, 107, 0.2), rgba(30, 58, 138, 0.2));
+		border-color: rgba(30, 58, 138, 0.4);
+	}
+
+	.feature-card-6 {
+		background: linear-gradient(to bottom right, rgba(13, 87, 40, 0.2), rgba(22, 101, 52, 0.2));
+		border-color: rgba(22, 101, 52, 0.4);
+	}
+}

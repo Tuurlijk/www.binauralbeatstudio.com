@@ -1,7 +1,12 @@
 # build output
 dist/
-# generated types
-.astro/
+.output/
+
+# beads
+.beads/
+issues.jsonl
+metadata.json
+config.yaml
 
 # dependencies
 node_modules/
@@ -12,7 +17,6 @@ yarn-debug.log*
 yarn-error.log*
 pnpm-debug.log*
 
-
 # environment variables
 .env
 .env.production
@@ -20,5 +24,13 @@ pnpm-debug.log*
 # macOS-specific files
 .DS_Store
 
-# jetbrains setting folder
+# IDE
+.vscode/
 .idea/
+
+# Astro
+.astro/
+
+# Temporary files
+screenshots/
+logo/

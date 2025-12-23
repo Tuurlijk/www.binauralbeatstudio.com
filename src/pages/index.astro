@@ -1,16 +1,19 @@
 ---
-
+import Layout from '../layouts/Layout.astro';
+import Hero from '../components/Hero.astro';
+import Features from '../components/Features.astro';
+import HowItWorks from '../components/HowItWorks.astro';
+import Screenshots from '../components/Screenshots.astro';
+import CTA from '../components/CTA.astro';
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
-</html>
+<Layout
+	title="MindState - Create Personalized Binaural Beats Sessions"
+	description="The only binaural beats app that lets you design completely personalized audio sessions from scratch. Professional-grade tools for creating sessions that match your exact preferences."
+>
+	<Hero />
+	<Features />
+	<HowItWorks />
+	<Screenshots />
+	<CTA />
+</Layout>
