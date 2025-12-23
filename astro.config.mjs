@@ -24,6 +24,9 @@ export default defineConfig({
   build: {
     format: 'directory',
   },
+  devToolbar: {
+    enabled: false, // Disable dev toolbar to prevent perf.js from reloading images
+  },
   integrations: [
     i18n({
       locales,
