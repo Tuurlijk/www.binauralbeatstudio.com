@@ -75,6 +75,7 @@ export interface Translations {
       title: string;
       subtitle: string;
       explanation: string;
+      noHeadphones: string;
       personalization: string;
     };
     safety: {

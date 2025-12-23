@@ -7,7 +7,7 @@ const locale = getLocale(Astro.url) as Locale;
 const translations = await loadTranslations(locale);
 ---
 
-<section id="about-binaural-beats" class="py-20 px-4 sm:px-6 lg:px-8" style="background: linear-gradient(to bottom right, rgba(255, 107, 53, 0.15), var(--bg-primary), rgba(34, 197, 94, 0.15));">
+<section id="about-binaural-beats" class="py-20 px-4 sm:px-6 lg:px-8 bg-bhutan-primary">
 	<div class="max-w-7xl mx-auto">
 		<!-- Hero Section -->
 		<div class="text-center mb-16">
@@ -137,6 +137,9 @@ const translations = await loadTranslations(locale);
 				<div class="bg-bhutan-secondary p-8 rounded-2xl border" style="border-color: var(--border-light);">
 					<p class="text-lg leading-relaxed text-bhutan-secondary mb-6">
 						{t('aboutBinauralBeats.howItWorks.explanation', locale, translations)}
+					</p>
+					<p class="text-lg leading-relaxed text-bhutan-secondary mb-6">
+						{t('aboutBinauralBeats.howItWorks.noHeadphones', locale, translations)}
 					</p>
 					<p class="text-lg leading-relaxed text-bhutan-secondary">
 						{t('aboutBinauralBeats.howItWorks.personalization', locale, translations)}

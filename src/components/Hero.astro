@@ -1,4 +1,10 @@
 ---
+import { getLocale } from 'astro-i18n-aut';
+import { loadTranslations, t, getLocalizedHashLink } from '../utils/i18n';
+import type { Locale } from '../i18n/types';
+
+const locale = getLocale(Astro.url) as Locale;
+const translations = await loadTranslations(locale);
 const base = import.meta.env.BASE_URL;
 ---
 
@@ -6,32 +12,31 @@ const base = import.meta.env.BASE_URL;
 	<div class="max-w-7xl mx-auto">
 		<div class="text-center">
 			<h1 class="text-5xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight" style="color: var(--text-primary);">
-				Create Personalized
-				<span style="color: var(--primary);">Binaural Beats</span>
+				{t('hero.title', locale, translations)}
+				<span style="color: var(--primary);">{t('hero.titleHighlight', locale, translations)}</span>
 				<br />
-				Sessions
+				{t('hero.titleSuffix', locale, translations)}
 			</h1>
 			<p class="text-xl md:text-2xl mb-8 max-w-3xl mx-auto leading-relaxed" style="color: var(--text-secondary);">
-				The only binaural beats app that lets you design completely personalized audio sessions from scratch. 
-				Every frequency, volume, and timing decision is yours to control.
+				{t('hero.subtitle', locale, translations)}
 			</p>
 			<div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
 				<a 
-					href={`${base}#download`}
+					href={getLocalizedHashLink('#download', locale, base)}
 					class="text-white px-8 py-4 rounded-lg text-lg font-semibold transition-all transform hover:scale-105 shadow-lg hover:shadow-xl bg-bhutan-accent hover:opacity-90"
 				>
-					Download on Play Store
+					{t('hero.ctaDownload', locale, translations)}
 				</a>
 				<a 
-					href={`${base}#features`}
+					href={getLocalizedHashLink('#features', locale, base)}
 					class="px-8 py-4 rounded-lg text-lg font-semibold border-2 transition-all bg-bhutan-primary hover:bg-bhutan-secondary text-bhutan-accent"
 					style="border-color: var(--primary);"
 				>
-					Learn More
+					{t('hero.ctaLearnMore', locale, translations)}
 				</a>
 			</div>
 			<p class="mt-6 text-sm" style="color: var(--text-secondary);">
-				Native Android app • Professional audio quality • Free to try
+				{t('hero.tagline', locale, translations)}
 			</p>
 		</div>
 	</div>

@@ -1,0 +1,113 @@
+{
+  "meta": {
+    "title": "MindState Binaural Beats Studio",
+    "description": "La única aplicación de ritmos binaurales que te permite diseñar sesiones de audio completamente personalizadas desde cero. Herramientas de nivel profesional para crear sesiones que se adapten a tus preferencias exactas."
+  },
+  "nav": {
+    "features": "Características",
+    "howItWorks": "Cómo Funciona",
+    "screenshots": "Capturas",
+    "download": "Descargar"
+  },
+  "hero": {
+    "title": "Crea Sesiones",
+    "titleHighlight": "Binaurales",
+    "titleSuffix": "Personalizadas",
+    "subtitle": "La única aplicación de ritmos binaurales que te permite diseñar sesiones de audio completamente personalizadas desde cero. Cada decisión sobre frecuencia, volumen y tiempo está bajo tu control.",
+    "ctaDownload": "Descargar en Play Store",
+    "ctaLearnMore": "Saber Más",
+    "tagline": "Aplicación Android nativa • Calidad de audio profesional • Gratis para probar"
+  },
+  "features": {
+    "title": "Control Total Sobre Tu Experiencia de Audio",
+    "subtitle": "A diferencia de las aplicaciones con presets fijos, MindState te ofrece herramientas de nivel profesional para crear sesiones que se adapten a tus preferencias, sensibilidad y objetivos exactos.",
+    "feature1": {
+      "title": "Personalización Completa",
+      "description": "Diseña sesiones desde cero, no presets. Establece frecuencias portadoras (80-600 Hz) y frecuencias de ritmo (0.5-40 Hz) para que coincidan con tu sensibilidad personal."
+    },
+    "feature2": {
+      "title": "Sesiones Multicapa",
+      "description": "Superpone múltiples tipos de pistas: ritmos binaurales, ritmos monoaurales, tonos isocrónicos, generadores de ruido y tus propios archivos de audio. Cada pista tiene control de volumen independiente."
+    },
+    "feature3": {
+      "title": "Editor de Puntos",
+      "description": "Crea transiciones de volumen suaves en el tiempo con envolventes de volumen a nivel de punto. Construye sesiones que comienzan suaves y aumentan la intensidad, o mantienen frecuencias estables."
+    },
+    "feature4": {
+      "title": "Editor Profesional",
+      "description": "Control granular sobre cada aspecto: frecuencias, volúmenes, tiempos y transiciones. Previsualiza antes de guardar para asegurar que tu sesión sea perfecta."
+    },
+    "feature5": {
+      "title": "Compartir con Código QR",
+      "description": "Genera códigos QR para compartir tus sesiones personalizadas al instante. Escanea códigos QR para descubrir sesiones creadas por otros, luego modifícalas para que coincidan con tus preferencias."
+    },
+    "feature6": {
+      "title": "Calidad de Audio Profesional",
+      "description": "Motor de audio nativo que ofrece sonido cristalino con conversión automática de frecuencia de muestreo, síntesis de fase continua y procesamiento de baja latencia."
+    }
+  },
+  "howItWorks": {
+    "title": "Cómo Funciona",
+    "subtitle": "Crea tu sesión perfecta de ritmos binaurales en solo unos pocos pasos simples",
+    "step1": {
+      "title": "Crear Sesión Personalizada",
+      "description": "Comienza con un lienzo en blanco o elige entre ejemplos incluidos. Nombra tu sesión y establece la duración."
+    },
+    "step2": {
+      "title": "Agregar Múltiples Tipos de Pistas",
+      "description": "Superpone ritmos binaurales, ritmos monoaurales, tonos isocrónicos, generadores de ruido o importa tus propios archivos de audio."
+    },
+    "step3": {
+      "title": "Ajustar Frecuencias y Volúmenes",
+      "description": "Establece frecuencias portadoras (80-600 Hz) y frecuencias de ritmo (0.5-40 Hz) para que coincidan con tu sensibilidad. Controla los volúmenes de las pistas y agrega envolventes de volumen."
+    },
+    "step4": {
+      "title": "Previsualizar y Guardar",
+      "description": "Prueba tu sesión con reproducción de vista previa antes de guardar. Realiza ajustes hasta que sea perfecta para ti."
+    },
+    "step5": {
+      "title": "Compartir con Código QR",
+      "description": "Genera un código QR para compartir tu sesión al instante. Escanea códigos de otros para descubrir nuevas sesiones, luego personalízalas según tus preferencias."
+    }
+  },
+  "screenshots": {
+    "title": "Véalo en Acción",
+    "subtitle": "Interfaz profesional con Material Design 3, modo oscuro y localización completa",
+    "sessionBrowser": "Navegador de Sesiones",
+    "sessionEditor": "Editor de Sesiones",
+    "trackEditor": "Editor de Pistas",
+    "mainPlayer": "Reproductor Principal",
+    "pointEditor": "Editor de Puntos",
+    "qrSharing": "Compartir con Código QR"
+  },
+  "cta": {
+    "title": "Comienza a Crear Tu Experiencia de Audio Perfecta",
+    "subtitle": "Deja de conformarte con presets que no encajan del todo. MindState te ofrece las herramientas para crear sesiones de ritmos binaurales que sean únicamente tuyas.",
+    "ctaDownload": "Descargar en Play Store",
+    "ctaViewFeatures": "Ver Características",
+    "benefit1": {
+      "title": "✓ Sesiones Ilimitadas",
+      "description": "Crea sesiones personalizadas ilimitadas adaptadas a tus preferencias"
+    },
+    "benefit2": {
+      "title": "✓ Calidad Profesional",
+      "description": "Audio cristalino con síntesis de fase continua"
+    },
+    "benefit3": {
+      "title": "✓ Gratis para Probar",
+      "description": "Sesiones incluidas disponibles para todos los usuarios"
+    }
+  },
+  "footer": {
+    "description": "Crea sesiones de ritmos binaurales personalizadas adaptadas a tus preferencias.",
+    "links": "Enlaces",
+    "download": "Descargar",
+    "downloadDescription": "Disponible en Google Play Store",
+    "copyright": "© 2024 MindState. Todos los derechos reservados."
+  },
+  "languageSwitcher": {
+    "label": "Idioma",
+    "current": "Idioma actual",
+    "switchTo": "Cambiar a {language}"
+  }
+}

@@ -1,14 +1,20 @@
 ---
+import { getLocale } from 'astro-i18n-aut';
+import { loadTranslations, t } from '../utils/i18n';
+import type { Locale } from '../i18n/types';
+
+const locale = getLocale(Astro.url) as Locale;
+const translations = await loadTranslations(locale);
 ---
 
-<section id="features" class="py-20 px-4 sm:px-6 lg:px-8 bg-bhutan-primary">
+<section id="features" class="py-20 px-4 sm:px-6 lg:px-8" style="background: linear-gradient(to bottom right, rgba(255, 107, 53, 0.1), var(--bg-primary), rgba(34, 197, 94, 0.1));">
 	<div class="max-w-7xl mx-auto">
 		<div class="text-center mb-16">
 			<h2 class="text-4xl md:text-5xl font-bold mb-4 text-bhutan-primary">
-				Complete Control Over Your Audio Experience
+				{t('features.title', locale, translations)}
 			</h2>
 			<p class="text-xl max-w-3xl mx-auto text-bhutan-secondary">
-				Unlike apps with fixed presets, MindState gives you professional-grade tools to create sessions that match your exact preferences, sensitivity, and goals.
+				{t('features.subtitle', locale, translations)}
 			</p>
 		</div>
 
@@ -20,9 +26,9 @@
 						<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
 					</svg>
 				</div>
-				<h3 class="text-2xl font-bold mb-3 text-bhutan-primary">Complete Personalization</h3>
+				<h3 class="text-2xl font-bold mb-3 text-bhutan-primary">{t('features.feature1.title', locale, translations)}</h3>
 				<p class="leading-relaxed text-bhutan-secondary">
-					Design sessions from scratch, not presets. Set carrier frequencies (80-600 Hz) and beat frequencies (0.5-40 Hz) to match your personal sensitivity.
+					{t('features.feature1.description', locale, translations)}
 				</p>
 			</div>
 
@@ -33,9 +39,9 @@
 						<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19V6l12-3v13M9 19c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zm12-3c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zM9 10l12-3" />
 					</svg>
 				</div>
-				<h3 class="text-2xl font-bold mb-3 text-bhutan-primary">Multi-Layered Sessions</h3>
+				<h3 class="text-2xl font-bold mb-3 text-bhutan-primary">{t('features.feature2.title', locale, translations)}</h3>
 				<p class="leading-relaxed text-bhutan-secondary">
-					Layer multiple track types: binaural beats, monaural beats, isochronic tones, noise generators, and your own audio files. Each track has independent volume control.
+					{t('features.feature2.description', locale, translations)}
 				</p>
 			</div>
 
@@ -46,9 +52,9 @@
 						<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4" />
 					</svg>
 				</div>
-				<h3 class="text-2xl font-bold mb-3 text-bhutan-primary">Point Editor</h3>
+				<h3 class="text-2xl font-bold mb-3 text-bhutan-primary">{t('features.feature3.title', locale, translations)}</h3>
 				<p class="leading-relaxed text-bhutan-secondary">
-					Create smooth volume transitions over time with point-level volume envelopes. Build sessions that start gentle and build intensity, or maintain steady frequencies.
+					{t('features.feature3.description', locale, translations)}
 				</p>
 			</div>
 
@@ -59,9 +65,9 @@
 						<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z" />
 					</svg>
 				</div>
-				<h3 class="text-2xl font-bold mb-3 text-bhutan-primary">Professional Editor</h3>
+				<h3 class="text-2xl font-bold mb-3 text-bhutan-primary">{t('features.feature4.title', locale, translations)}</h3>
 				<p class="leading-relaxed text-bhutan-secondary">
-					Granular control over every aspect: frequencies, volumes, timing, and transitions. Preview before saving to ensure your session is perfect.
+					{t('features.feature4.description', locale, translations)}
 				</p>
 			</div>
 
@@ -72,9 +78,9 @@
 						<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.684 13.342C8.886 12.938 9 12.482 9 12c0-.482-.114-.938-.316-1.342m0 2.684a3 3 0 110-2.684m0 2.684l6.632 3.316m-6.632-6l6.632-3.316m0 0a3 3 0 105.367-2.684 3 3 0 00-5.367 2.684zm0 9.316a3 3 0 105.368 2.684 3 3 0 00-5.368-2.684z" />
 					</svg>
 				</div>
-				<h3 class="text-2xl font-bold mb-3 text-bhutan-primary">QR Code Sharing</h3>
+				<h3 class="text-2xl font-bold mb-3 text-bhutan-primary">{t('features.feature5.title', locale, translations)}</h3>
 				<p class="leading-relaxed text-bhutan-secondary">
-					Generate QR codes to share your custom sessions instantly. Scan QR codes to discover sessions created by others, then modify them to match your preferences.
+					{t('features.feature5.description', locale, translations)}
 				</p>
 			</div>
 
@@ -85,9 +91,9 @@
 						<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
 					</svg>
 				</div>
-				<h3 class="text-2xl font-bold mb-3 text-bhutan-primary">Professional Audio Quality</h3>
+				<h3 class="text-2xl font-bold mb-3 text-bhutan-primary">{t('features.feature6.title', locale, translations)}</h3>
 				<p class="leading-relaxed text-bhutan-secondary">
-					Native audio engine delivers crystal-clear sound with automatic sample rate conversion, phase-continuous synthesis, and low-latency processing.
+					{t('features.feature6.description', locale, translations)}
 				</p>
 			</div>
 		</div>

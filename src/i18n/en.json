@@ -55,7 +55,7 @@
     },
     "step2": {
       "title": "Add Multiple Track Types",
-      "description": "Layer binaural beats, monaural beats, isochronic tones, noise generators, or import your own audio files."
+      "description": "Layer binaural beats, monaural beats, isochronic tones, noise generators, or import your own audio files. Choose from soothing background sounds including white noise, pink noise, brown noise, distant rain, old record, and ocean surf. Import your own audio files in MP3, WAV, or FLAC format for timed sample playback."
     },
     "step3": {
       "title": "Adjust Frequencies & Volumes",
@@ -133,6 +133,7 @@
       "title": "How Brainwave Entrainment Works",
       "subtitle": "The science behind the transformation",
       "explanation": "When you listen to two slightly different frequencies (one in each ear), your brain naturally perceives a third frequency—the difference between them. This is called a binaural beat. Your brain then synchronizes its own electrical activity to match this perceived frequency, a phenomenon known as brainwave entrainment.",
+      "noHeadphones": "MindState also supports monaural beats and isochronic tones, which work without headphones. Monaural beats are created by mixing two frequencies before they reach your ears, while isochronic tones use evenly spaced pulses of a single tone. Both can effectively entrain your brainwaves when played through speakers, making it easy to enjoy the benefits during meditation, work, or sleep—no headphones required.",
       "personalization": "Different frequencies unlock different mental states: Delta (0.5-4 Hz) for deep sleep, Theta (4-8 Hz) for meditation and creativity, Alpha (8-13 Hz) for relaxed focus, Beta (13-30 Hz) for active concentration, and Gamma (30-100 Hz) for peak performance. By personalizing carrier frequencies and beat frequencies to match your unique sensitivity, you can maximize the benefits and achieve your desired mental state more effectively."
     },
     "safety": {

@@ -1,0 +1,113 @@
+{
+  "meta": {
+    "title": "MindState Binaural Beats Studio",
+    "description": "O único aplicativo de batidas binaurais que permite criar sessões de áudio completamente personalizadas do zero. Ferramentas profissionais para criar sessões que correspondam às suas preferências exatas."
+  },
+  "nav": {
+    "features": "Recursos",
+    "howItWorks": "Como Funciona",
+    "screenshots": "Capturas",
+    "download": "Baixar"
+  },
+  "hero": {
+    "title": "Crie Sessões",
+    "titleHighlight": "Binaurais",
+    "titleSuffix": "Personalizadas",
+    "subtitle": "O único aplicativo de batidas binaurais que permite criar sessões de áudio completamente personalizadas do zero. Cada decisão sobre frequência, volume e tempo está sob seu controle.",
+    "ctaDownload": "Baixar na Play Store",
+    "ctaLearnMore": "Saiba Mais",
+    "tagline": "Aplicativo Android nativo • Qualidade de áudio profissional • Grátis para experimentar"
+  },
+  "features": {
+    "title": "Controle Total Sobre Sua Experiência de Áudio",
+    "subtitle": "Diferente de aplicativos com predefinições fixas, o MindState oferece ferramentas profissionais para criar sessões que correspondam às suas preferências, sensibilidade e objetivos exatos.",
+    "feature1": {
+      "title": "Personalização Completa",
+      "description": "Projete sessões do zero, não predefinições. Defina frequências portadoras (80-600 Hz) e frequências de batida (0.5-40 Hz) para corresponder à sua sensibilidade pessoal."
+    },
+    "feature2": {
+      "title": "Sessões Multicamadas",
+      "description": "Sobreponha múltiplos tipos de faixas: batidas binaurais, batidas monaurais, tons isocrônicos, geradores de ruído e seus próprios arquivos de áudio. Cada faixa tem controle de volume independente."
+    },
+    "feature3": {
+      "title": "Editor de Pontos",
+      "description": "Crie transições de volume suaves ao longo do tempo com envelopes de volume em nível de ponto. Construa sessões que começam suaves e aumentam a intensidade, ou mantenham frequências estáveis."
+    },
+    "feature4": {
+      "title": "Editor Profissional",
+      "description": "Controle granular sobre cada aspecto: frequências, volumes, tempos e transições. Visualize antes de salvar para garantir que sua sessão esteja perfeita."
+    },
+    "feature5": {
+      "title": "Compartilhamento por Código QR",
+      "description": "Gere códigos QR para compartilhar suas sessões personalizadas instantaneamente. Escaneie códigos QR de outros para descobrir novas sessões, depois personalize-as de acordo com suas preferências."
+    },
+    "feature6": {
+      "title": "Qualidade de Áudio Profissional",
+      "description": "Motor de áudio nativo que oferece som cristalino com conversão automática de taxa de amostragem, síntese de fase contínua e processamento de baixa latência."
+    }
+  },
+  "howItWorks": {
+    "title": "Como Funciona",
+    "subtitle": "Crie sua sessão perfeita de batidas binaurais em apenas alguns passos simples",
+    "step1": {
+      "title": "Criar Sessão Personalizada",
+      "description": "Comece com uma tela em branco ou escolha entre exemplos incluídos. Nomeie sua sessão e defina a duração."
+    },
+    "step2": {
+      "title": "Adicionar Múltiplos Tipos de Faixas",
+      "description": "Sobreponha batidas binaurais, batidas monaurais, tons isocrônicos, geradores de ruído ou importe seus próprios arquivos de áudio."
+    },
+    "step3": {
+      "title": "Ajustar Frequências e Volumes",
+      "description": "Defina frequências portadoras (80-600 Hz) e frequências de batida (0.5-40 Hz) para corresponder à sua sensibilidade. Controle os volumes das faixas e adicione envelopes de volume."
+    },
+    "step4": {
+      "title": "Visualizar e Salvar",
+      "description": "Teste sua sessão com reprodução de visualização antes de salvar. Faça ajustes até que esteja perfeita para você."
+    },
+    "step5": {
+      "title": "Compartilhar via Código QR",
+      "description": "Gere um código QR para compartilhar sua sessão instantaneamente. Escaneie códigos de outros para descobrir novas sessões, depois personalize-as de acordo com suas preferências."
+    }
+  },
+  "screenshots": {
+    "title": "Veja em Ação",
+    "subtitle": "Interface profissional com Material Design 3, modo escuro e localização completa",
+    "sessionBrowser": "Navegador de Sessões",
+    "sessionEditor": "Editor de Sessões",
+    "trackEditor": "Editor de Faixas",
+    "mainPlayer": "Reprodutor Principal",
+    "pointEditor": "Editor de Pontos",
+    "qrSharing": "Compartilhamento por Código QR"
+  },
+  "cta": {
+    "title": "Comece a Criar Sua Experiência de Áudio Perfeita",
+    "subtitle": "Pare de se contentar com predefinições que não se encaixam perfeitamente. O MindState oferece as ferramentas para criar sessões de batidas binaurais que são exclusivamente suas.",
+    "ctaDownload": "Baixar na Play Store",
+    "ctaViewFeatures": "Ver Recursos",
+    "benefit1": {
+      "title": "✓ Sessões Ilimitadas",
+      "description": "Crie sessões personalizadas ilimitadas adaptadas às suas preferências"
+    },
+    "benefit2": {
+      "title": "✓ Qualidade Profissional",
+      "description": "Áudio cristalino com síntese de fase contínua"
+    },
+    "benefit3": {
+      "title": "✓ Grátis para Experimentar",
+      "description": "Sessões incluídas disponíveis para todos os usuários"
+    }
+  },
+  "footer": {
+    "description": "Crie sessões de batidas binaurais personalizadas adaptadas às suas preferências.",
+    "links": "Links",
+    "download": "Baixar",
+    "downloadDescription": "Disponível na Google Play Store",
+    "copyright": "© 2024 MindState. Todos os direitos reservados."
+  },
+  "languageSwitcher": {
+    "label": "Idioma",
+    "current": "Idioma atual",
+    "switchTo": "Alternar para {language}"
+  }
+}

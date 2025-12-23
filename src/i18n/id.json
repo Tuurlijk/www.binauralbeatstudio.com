@@ -1,0 +1,113 @@
+{
+  "meta": {
+    "title": "MindState Binaural Beats Studio",
+    "description": "Satu-satunya aplikasi binaural beats yang memungkinkan Anda merancang sesi audio yang sepenuhnya dipersonalisasi dari awal. Alat tingkat profesional untuk membuat sesi yang sesuai dengan preferensi Anda yang tepat."
+  },
+  "nav": {
+    "features": "Fitur",
+    "howItWorks": "Cara Kerja",
+    "screenshots": "Tangkapan Layar",
+    "download": "Unduh"
+  },
+  "hero": {
+    "title": "Buat Sesi",
+    "titleHighlight": "Binaural Beats",
+    "titleSuffix": "Dipersonalisasi",
+    "subtitle": "Satu-satunya aplikasi binaural beats yang memungkinkan Anda merancang sesi audio yang sepenuhnya dipersonalisasi dari awal. Setiap keputusan tentang frekuensi, volume, dan waktu ada di bawah kendali Anda.",
+    "ctaDownload": "Unduh di Play Store",
+    "ctaLearnMore": "Pelajari Lebih Lanjut",
+    "tagline": "Aplikasi Android asli • Kualitas audio profesional • Gratis untuk dicoba"
+  },
+  "features": {
+    "title": "Kontrol Penuh Atas Pengalaman Audio Anda",
+    "subtitle": "Tidak seperti aplikasi dengan preset tetap, MindState memberi Anda alat tingkat profesional untuk membuat sesi yang sesuai dengan preferensi, sensitivitas, dan tujuan Anda yang tepat.",
+    "feature1": {
+      "title": "Personalisasi Lengkap",
+      "description": "Rancang sesi dari awal, bukan preset. Atur frekuensi pembawa (80-600 Hz) dan frekuensi ketukan (0.5-40 Hz) agar sesuai dengan sensitivitas pribadi Anda."
+    },
+    "feature2": {
+      "title": "Sesi Multi-Lapis",
+      "description": "Lapisi beberapa jenis trek: binaural beats, monaural beats, nada isokronik, generator noise, dan file audio Anda sendiri. Setiap trek memiliki kontrol volume independen."
+    },
+    "feature3": {
+      "title": "Editor Titik",
+      "description": "Buat transisi volume yang halus seiring waktu dengan envelope volume tingkat titik. Buat sesi yang dimulai dengan lembut dan membangun intensitas, atau mempertahankan frekuensi yang stabil."
+    },
+    "feature4": {
+      "title": "Editor Profesional",
+      "description": "Kontrol granular atas setiap aspek: frekuensi, volume, waktu, dan transisi. Pratinjau sebelum menyimpan untuk memastikan sesi Anda sempurna."
+    },
+    "feature5": {
+      "title": "Berbagi Kode QR",
+      "description": "Buat kode QR untuk berbagi sesi kustom Anda secara instan. Pindai kode QR dari orang lain untuk menemukan sesi baru, lalu modifikasi sesuai preferensi Anda."
+    },
+    "feature6": {
+      "title": "Kualitas Audio Profesional",
+      "description": "Mesin audio asli memberikan suara jernih dengan konversi laju sampel otomatis, sintesis fase kontinu, dan pemrosesan latensi rendah."
+    }
+  },
+  "howItWorks": {
+    "title": "Cara Kerja",
+    "subtitle": "Buat sesi binaural beats sempurna Anda hanya dalam beberapa langkah sederhana",
+    "step1": {
+      "title": "Buat Sesi Kustom",
+      "description": "Mulai dengan kanvas kosong atau pilih dari contoh yang disertakan. Beri nama sesi Anda dan atur durasinya."
+    },
+    "step2": {
+      "title": "Tambahkan Beberapa Jenis Trek",
+      "description": "Lapisi binaural beats, monaural beats, nada isokronik, generator noise, atau impor file audio Anda sendiri."
+    },
+    "step3": {
+      "title": "Sesuaikan Frekuensi & Volume",
+      "description": "Atur frekuensi pembawa (80-600 Hz) dan frekuensi ketukan (0.5-40 Hz) agar sesuai dengan sensitivitas Anda. Kontrol volume trek dan tambahkan envelope volume."
+    },
+    "step4": {
+      "title": "Pratinjau & Simpan",
+      "description": "Uji sesi Anda dengan pemutaran pratinjau sebelum menyimpan. Lakukan penyesuaian sampai sempurna untuk Anda."
+    },
+    "step5": {
+      "title": "Berbagi via Kode QR",
+      "description": "Buat kode QR untuk berbagi sesi Anda secara instan. Pindai kode dari orang lain untuk menemukan sesi baru, lalu sesuaikan dengan preferensi Anda."
+    }
+  },
+  "screenshots": {
+    "title": "Lihat dalam Aksi",
+    "subtitle": "Antarmuka profesional dengan Material Design 3, mode gelap, dan pelokalan penuh",
+    "sessionBrowser": "Penelusur Sesi",
+    "sessionEditor": "Editor Sesi",
+    "trackEditor": "Editor Trek",
+    "mainPlayer": "Pemutar Utama",
+    "pointEditor": "Editor Titik",
+    "qrSharing": "Berbagi Kode QR"
+  },
+  "cta": {
+    "title": "Mulai Membuat Pengalaman Audio Sempurna Anda",
+    "subtitle": "Berhenti puas dengan preset yang tidak cukup pas. MindState memberi Anda alat untuk membuat sesi binaural beats yang unik milik Anda.",
+    "ctaDownload": "Unduh di Play Store",
+    "ctaViewFeatures": "Lihat Fitur",
+    "benefit1": {
+      "title": "✓ Sesi Tanpa Batas",
+      "description": "Buat sesi kustom tanpa batas yang disesuaikan dengan preferensi Anda"
+    },
+    "benefit2": {
+      "title": "✓ Kualitas Profesional",
+      "description": "Audio jernih dengan sintesis fase kontinu"
+    },
+    "benefit3": {
+      "title": "✓ Gratis untuk Dicoba",
+      "description": "Sesi yang disertakan tersedia untuk semua pengguna"
+    }
+  },
+  "footer": {
+    "description": "Buat sesi binaural beats yang dipersonalisasi yang disesuaikan dengan preferensi Anda.",
+    "links": "Tautan",
+    "download": "Unduh",
+    "downloadDescription": "Tersedia di Google Play Store",
+    "copyright": "© 2024 MindState. Hak cipta dilindungi."
+  },
+  "languageSwitcher": {
+    "label": "Bahasa",
+    "current": "Bahasa saat ini",
+    "switchTo": "Beralih ke {language}"
+  }
+}

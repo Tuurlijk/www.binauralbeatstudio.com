@@ -1,0 +1,113 @@
+{
+  "meta": {
+    "title": "MindState Binaural Beats Studio",
+    "description": "唯一一款允许您从头开始设计完全个性化音频会话的双耳节拍应用。专业级工具，用于创建符合您精确偏好的会话。"
+  },
+  "nav": {
+    "features": "功能",
+    "howItWorks": "工作原理",
+    "screenshots": "截图",
+    "download": "下载"
+  },
+  "hero": {
+    "title": "创建个性化",
+    "titleHighlight": "双耳节拍",
+    "titleSuffix": "会话",
+    "subtitle": "唯一一款允许您从头开始设计完全个性化音频会话的双耳节拍应用。每个关于频率、音量和时间的决定都由您控制。",
+    "ctaDownload": "在 Play 商店下载",
+    "ctaLearnMore": "了解更多",
+    "tagline": "原生 Android 应用 • 专业音频质量 • 免费试用"
+  },
+  "features": {
+    "title": "完全控制您的音频体验",
+    "subtitle": "与具有固定预设的应用不同，MindState 为您提供专业级工具，用于创建符合您精确偏好、敏感度和目标的会话。",
+    "feature1": {
+      "title": "完全个性化",
+      "description": "从头开始设计会话，而不是预设。设置载波频率（80-600 Hz）和节拍频率（0.5-40 Hz）以匹配您的个人敏感度。"
+    },
+    "feature2": {
+      "title": "多层会话",
+      "description": "叠加多种音轨类型：双耳节拍、单耳节拍、等时音调、噪声发生器以及您自己的音频文件。每个音轨都有独立的音量控制。"
+    },
+    "feature3": {
+      "title": "点编辑器",
+      "description": "使用点级音量包络随时间创建平滑的音量过渡。构建从温和开始并增强强度的会话，或保持稳定的频率。"
+    },
+    "feature4": {
+      "title": "专业编辑器",
+      "description": "对每个方面的精细控制：频率、音量、时间和过渡。在保存前预览以确保您的会话完美。"
+    },
+    "feature5": {
+      "title": "二维码分享",
+      "description": "生成二维码以即时分享您的自定义会话。扫描其他人的二维码以发现新会话，然后根据您的偏好进行修改。"
+    },
+    "feature6": {
+      "title": "专业音频质量",
+      "description": "原生音频引擎提供水晶般清晰的声音，具有自动采样率转换、相位连续合成和低延迟处理。"
+    }
+  },
+  "howItWorks": {
+    "title": "工作原理",
+    "subtitle": "只需几个简单步骤即可创建完美的双耳节拍会话",
+    "step1": {
+      "title": "创建自定义会话",
+      "description": "从空白画布开始或从捆绑的示例中选择。命名您的会话并设置持续时间。"
+    },
+    "step2": {
+      "title": "添加多种音轨类型",
+      "description": "叠加双耳节拍、单耳节拍、等时音调、噪声发生器或导入您自己的音频文件。"
+    },
+    "step3": {
+      "title": "调整频率和音量",
+      "description": "设置载波频率（80-600 Hz）和节拍频率（0.5-40 Hz）以匹配您的敏感度。控制音轨音量并添加音量包络。"
+    },
+    "step4": {
+      "title": "预览和保存",
+      "description": "在保存前使用预览播放测试您的会话。进行调整直到它适合您。"
+    },
+    "step5": {
+      "title": "通过二维码分享",
+      "description": "生成二维码以即时分享您的会话。扫描其他人的代码以发现新会话，然后根据您的偏好进行自定义。"
+    }
+  },
+  "screenshots": {
+    "title": "查看实际效果",
+    "subtitle": "具有 Material Design 3、深色模式和完整本地化的专业界面",
+    "sessionBrowser": "会话浏览器",
+    "sessionEditor": "会话编辑器",
+    "trackEditor": "音轨编辑器",
+    "mainPlayer": "主播放器",
+    "pointEditor": "点编辑器",
+    "qrSharing": "二维码分享"
+  },
+  "cta": {
+    "title": "开始创建您完美的音频体验",
+    "subtitle": "停止满足于不太合适的预设。MindState 为您提供工具，用于创建独特的双耳节拍会话。",
+    "ctaDownload": "在 Play 商店下载",
+    "ctaViewFeatures": "查看功能",
+    "benefit1": {
+      "title": "✓ 无限会话",
+      "description": "创建根据您的偏好定制的无限自定义会话"
+    },
+    "benefit2": {
+      "title": "✓ 专业质量",
+      "description": "具有相位连续合成的清晰音频"
+    },
+    "benefit3": {
+      "title": "✓ 免费试用",
+      "description": "捆绑的会话可供所有用户使用"
+    }
+  },
+  "footer": {
+    "description": "创建根据您的偏好定制的个性化双耳节拍会话。",
+    "links": "链接",
+    "download": "下载",
+    "downloadDescription": "可在 Google Play 商店获取",
+    "copyright": "© 2024 MindState。保留所有权利。"
+  },
+  "languageSwitcher": {
+    "label": "语言",
+    "current": "当前语言",
+    "switchTo": "切换到 {language}"
+  }
+}

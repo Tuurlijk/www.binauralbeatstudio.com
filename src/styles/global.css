@@ -198,3 +198,61 @@ html {
 		border-color: rgba(22, 101, 52, 0.4);
 	}
 }
+
+/* RTL Support for Arabic */
+[dir="rtl"] {
+	direction: rtl;
+}
+
+/* RTL text alignment adjustments */
+[dir="rtl"] .text-left {
+	text-align: right;
+}
+
+[dir="rtl"] .text-right {
+	text-align: left;
+}
+
+/* RTL margin adjustments */
+[dir="rtl"] .ml-auto {
+	margin-left: 0;
+	margin-right: auto;
+}
+
+[dir="rtl"] .mr-auto {
+	margin-right: 0;
+	margin-left: auto;
+}
+
+/* RTL padding adjustments */
+[dir="rtl"] .pl-4 {
+	padding-left: 0;
+	padding-right: 1rem;
+}
+
+[dir="rtl"] .pr-4 {
+	padding-right: 0;
+	padding-left: 1rem;
+}
+
+/* RTL navigation adjustments */
+[dir="rtl"] nav .flex {
+	flex-direction: row-reverse;
+}
+
+[dir="rtl"] nav .space-x-8 > * + * {
+	margin-left: 0;
+	margin-right: 2rem;
+}
+
+/* RTL grid adjustments */
+[dir="rtl"] .grid {
+	direction: rtl;
+}
+
+/* RTL timeline adjustments for HowItWorks */
+[dir="rtl"] .timeline-line {
+	right: 50%;
+	left: auto;
+	transform: translateX(50%);
+}

@@ -1,14 +1,20 @@
 ---
+import { getLocale } from 'astro-i18n-aut';
+import { loadTranslations, t } from '../utils/i18n';
+import type { Locale } from '../i18n/types';
+
+const locale = getLocale(Astro.url) as Locale;
+const translations = await loadTranslations(locale);
 ---
 
-<section id="how-it-works" class="py-12 sm:py-20 px-4 sm:px-6 lg:px-8 bg-bhutan-secondary">
+<section id="how-it-works" class="py-12 sm:py-20 px-4 sm:px-6 lg:px-8 bg-bhutan-primary">
 	<div class="max-w-7xl mx-auto">
 		<div class="text-center mb-12 sm:mb-16">
 			<h2 class="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 text-bhutan-primary">
-				How It Works
+				{t('howItWorks.title', locale, translations)}
 			</h2>
 			<p class="text-lg sm:text-xl max-w-3xl mx-auto text-bhutan-secondary px-4">
-				Create your perfect binaural beats session in just a few simple steps
+				{t('howItWorks.subtitle', locale, translations)}
 			</p>
 		</div>
 
@@ -28,18 +34,18 @@
 							1
 						</div>
 						<div class="flex-1 pt-1">
-							<h3 class="text-xl sm:text-2xl font-bold mb-2 sm:mb-3 text-bhutan-primary">Create Custom Session</h3>
+							<h3 class="text-xl sm:text-2xl font-bold mb-2 sm:mb-3 text-bhutan-primary">{t('howItWorks.step1.title', locale, translations)}</h3>
 							<p class="text-sm sm:text-base leading-relaxed text-bhutan-secondary">
-								Start with a blank canvas or choose from bundled examples. Name your session and set the duration.
+								{t('howItWorks.step1.description', locale, translations)}
 							</p>
 						</div>
 					</div>
 					
 					<!-- Desktop: Left side content -->
 					<div class="hidden md:block md:w-1/2 md:pr-12 text-center md:text-right">
-						<h3 class="text-2xl font-bold mb-3 text-bhutan-primary">Create Custom Session</h3>
+						<h3 class="text-2xl font-bold mb-3 text-bhutan-primary">{t('howItWorks.step1.title', locale, translations)}</h3>
 						<p class="leading-relaxed text-bhutan-secondary">
-							Start with a blank canvas or choose from bundled examples. Name your session and set the duration.
+							{t('howItWorks.step1.description', locale, translations)}
 						</p>
 					</div>
 					
@@ -61,9 +67,9 @@
 							2
 						</div>
 						<div class="flex-1 pt-1">
-							<h3 class="text-xl sm:text-2xl font-bold mb-2 sm:mb-3 text-bhutan-primary">Add Multiple Track Types</h3>
+							<h3 class="text-xl sm:text-2xl font-bold mb-2 sm:mb-3 text-bhutan-primary">{t('howItWorks.step2.title', locale, translations)}</h3>
 							<p class="text-sm sm:text-base leading-relaxed text-bhutan-secondary">
-								Layer binaural beats, monaural beats, isochronic tones, noise generators, or import your own audio files.
+								{t('howItWorks.step2.description', locale, translations)}
 							</p>
 						</div>
 					</div>
@@ -79,9 +85,9 @@
 					
 					<!-- Desktop: Right side content -->
 					<div class="hidden md:block md:w-1/2 md:pl-12 text-center md:text-left">
-						<h3 class="text-2xl font-bold mb-3 text-bhutan-primary">Add Multiple Track Types</h3>
+						<h3 class="text-2xl font-bold mb-3 text-bhutan-primary">{t('howItWorks.step2.title', locale, translations)}</h3>
 						<p class="leading-relaxed text-bhutan-secondary">
-							Layer binaural beats, monaural beats, isochronic tones, noise generators, or import your own audio files.
+							{t('howItWorks.step2.description', locale, translations)}
 						</p>
 					</div>
 				</div>
@@ -94,18 +100,18 @@
 							3
 						</div>
 						<div class="flex-1 pt-1">
-							<h3 class="text-xl sm:text-2xl font-bold mb-2 sm:mb-3 text-bhutan-primary">Adjust Frequencies & Volumes</h3>
+							<h3 class="text-xl sm:text-2xl font-bold mb-2 sm:mb-3 text-bhutan-primary">{t('howItWorks.step3.title', locale, translations)}</h3>
 							<p class="text-sm sm:text-base leading-relaxed text-bhutan-secondary">
-								Set carrier frequencies (80-600 Hz) and beat frequencies (0.5-40 Hz) to match your sensitivity. Control track volumes and add volume envelopes.
+								{t('howItWorks.step3.description', locale, translations)}
 							</p>
 						</div>
 					</div>
 					
 					<!-- Desktop: Left side content -->
 					<div class="hidden md:block md:w-1/2 md:pr-12 text-center md:text-right">
-						<h3 class="text-2xl font-bold mb-3 text-bhutan-primary">Adjust Frequencies & Volumes</h3>
+						<h3 class="text-2xl font-bold mb-3 text-bhutan-primary">{t('howItWorks.step3.title', locale, translations)}</h3>
 						<p class="leading-relaxed text-bhutan-secondary">
-							Set carrier frequencies (80-600 Hz) and beat frequencies (0.5-40 Hz) to match your sensitivity. Control track volumes and add volume envelopes.
+							{t('howItWorks.step3.description', locale, translations)}
 						</p>
 					</div>
 					
@@ -127,9 +133,9 @@
 							4
 						</div>
 						<div class="flex-1 pt-1">
-							<h3 class="text-xl sm:text-2xl font-bold mb-2 sm:mb-3 text-bhutan-primary">Preview & Save</h3>
+							<h3 class="text-xl sm:text-2xl font-bold mb-2 sm:mb-3 text-bhutan-primary">{t('howItWorks.step4.title', locale, translations)}</h3>
 							<p class="text-sm sm:text-base leading-relaxed text-bhutan-secondary">
-								Test your session with preview playback before saving. Make adjustments until it's perfect for you.
+								{t('howItWorks.step4.description', locale, translations)}
 							</p>
 						</div>
 					</div>
@@ -145,9 +151,9 @@
 					
 					<!-- Desktop: Right side content -->
 					<div class="hidden md:block md:w-1/2 md:pl-12 text-center md:text-left">
-						<h3 class="text-2xl font-bold mb-3 text-bhutan-primary">Preview & Save</h3>
+						<h3 class="text-2xl font-bold mb-3 text-bhutan-primary">{t('howItWorks.step4.title', locale, translations)}</h3>
 						<p class="leading-relaxed text-bhutan-secondary">
-							Test your session with preview playback before saving. Make adjustments until it's perfect for you.
+							{t('howItWorks.step4.description', locale, translations)}
 						</p>
 					</div>
 				</div>
@@ -160,18 +166,18 @@
 							5
 						</div>
 						<div class="flex-1 pt-1">
-							<h3 class="text-xl sm:text-2xl font-bold mb-2 sm:mb-3 text-bhutan-primary">Share via QR Code</h3>
+							<h3 class="text-xl sm:text-2xl font-bold mb-2 sm:mb-3 text-bhutan-primary">{t('howItWorks.step5.title', locale, translations)}</h3>
 							<p class="text-sm sm:text-base leading-relaxed text-bhutan-secondary">
-								Generate a QR code to share your session instantly. Scan codes from others to discover new sessions, then customize them to your preferences.
+								{t('howItWorks.step5.description', locale, translations)}
 							</p>
 						</div>
 					</div>
 					
 					<!-- Desktop: Left side content -->
 					<div class="hidden md:block md:w-1/2 md:pr-12 text-center md:text-right">
-						<h3 class="text-2xl font-bold mb-3 text-bhutan-primary">Share via QR Code</h3>
+						<h3 class="text-2xl font-bold mb-3 text-bhutan-primary">{t('howItWorks.step5.title', locale, translations)}</h3>
 						<p class="leading-relaxed text-bhutan-secondary">
-							Generate a QR code to share your session instantly. Scan codes from others to discover new sessions, then customize them to your preferences.
+							{t('howItWorks.step5.description', locale, translations)}
 						</p>
 					</div>
 					
