@@ -12,10 +12,13 @@ const translations = await loadTranslations(locale);
 		<!-- Hero Section -->
 		<div class="text-center mb-16">
 			<h2 class="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight" style="color: var(--text-primary);">
-				{t('aboutBinauralBeats.heroTitle', locale, translations)}
+				{t('hero.title', locale, translations)}
+				<span style="color: var(--primary);">{t('hero.titleHighlight', locale, translations)}</span>
+				<br />
+				{t('hero.titleSuffix', locale, translations)}
 			</h2>
 			<p class="text-xl md:text-2xl max-w-4xl mx-auto leading-relaxed" style="color: var(--text-secondary);">
-				{t('aboutBinauralBeats.heroSubtitle', locale, translations)}
+				{t('hero.subtitle', locale, translations)}
 			</p>
 		</div>
 
