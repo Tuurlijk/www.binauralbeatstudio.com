@@ -1,0 +1,282 @@
+---
+import { getLocale } from 'astro-i18n-aut';
+import { loadTranslations, t } from '../utils/i18n';
+import type { Locale } from '../i18n/types';
+
+const locale = getLocale(Astro.url) as Locale;
+const translations = await loadTranslations(locale);
+---
+
+<section id="about-binaural-beats" class="py-20 px-4 sm:px-6 lg:px-8" style="background: linear-gradient(to bottom right, rgba(255, 107, 53, 0.15), var(--bg-primary), rgba(34, 197, 94, 0.15));">
+	<div class="max-w-7xl mx-auto">
+		<!-- Hero Section -->
+		<div class="text-center mb-16">
+			<h2 class="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight" style="color: var(--text-primary);">
+				{t('aboutBinauralBeats.heroTitle', locale, translations)}
+			</h2>
+			<p class="text-xl md:text-2xl max-w-4xl mx-auto leading-relaxed" style="color: var(--text-secondary);">
+				{t('aboutBinauralBeats.heroSubtitle', locale, translations)}
+			</p>
+		</div>
+
+		<!-- Benefits Section -->
+		<div class="mb-20">
+			<div class="text-center mb-12">
+				<h3 class="text-3xl md:text-4xl font-bold mb-4 text-bhutan-primary">
+					{t('aboutBinauralBeats.benefits.title', locale, translations)}
+				</h3>
+				<p class="text-lg md:text-xl max-w-3xl mx-auto text-bhutan-secondary">
+					{t('aboutBinauralBeats.benefits.subtitle', locale, translations)}
+				</p>
+			</div>
+
+			<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+				<!-- Benefit 1: Relaxation -->
+				<div class="p-8 rounded-2xl border hover:shadow-xl transition-all transform hover:scale-105" style="background-color: var(--bg-secondary); border-color: var(--border-light);">
+					<div class="w-12 h-12 rounded-lg flex items-center justify-center mb-4" style="background-color: var(--primary);">
+						<svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+							<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+						</svg>
+					</div>
+					<h4 class="text-2xl font-bold mb-3 text-bhutan-primary">
+						{t('aboutBinauralBeats.benefits.benefit1.title', locale, translations)}
+					</h4>
+					<p class="leading-relaxed text-bhutan-secondary">
+						{t('aboutBinauralBeats.benefits.benefit1.description', locale, translations)}
+					</p>
+				</div>
+
+				<!-- Benefit 2: Focus -->
+				<div class="p-8 rounded-2xl border hover:shadow-xl transition-all transform hover:scale-105" style="background-color: var(--bg-secondary); border-color: var(--border-light);">
+					<div class="w-12 h-12 rounded-lg flex items-center justify-center mb-4" style="background-color: var(--secondary);">
+						<svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+							<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+						</svg>
+					</div>
+					<h4 class="text-2xl font-bold mb-3 text-bhutan-primary">
+						{t('aboutBinauralBeats.benefits.benefit2.title', locale, translations)}
+					</h4>
+					<p class="leading-relaxed text-bhutan-secondary">
+						{t('aboutBinauralBeats.benefits.benefit2.description', locale, translations)}
+					</p>
+				</div>
+
+				<!-- Benefit 3: Sleep -->
+				<div class="p-8 rounded-2xl border hover:shadow-xl transition-all transform hover:scale-105" style="background-color: var(--bg-secondary); border-color: var(--border-light);">
+					<div class="w-12 h-12 rounded-lg flex items-center justify-center mb-4" style="background-color: var(--tertiary);">
+						<svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+							<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" />
+						</svg>
+					</div>
+					<h4 class="text-2xl font-bold mb-3 text-bhutan-primary">
+						{t('aboutBinauralBeats.benefits.benefit3.title', locale, translations)}
+					</h4>
+					<p class="leading-relaxed text-bhutan-secondary">
+						{t('aboutBinauralBeats.benefits.benefit3.description', locale, translations)}
+					</p>
+				</div>
+
+				<!-- Benefit 4: Meditation -->
+				<div class="p-8 rounded-2xl border hover:shadow-xl transition-all transform hover:scale-105" style="background-color: var(--bg-secondary); border-color: var(--border-light);">
+					<div class="w-12 h-12 rounded-lg flex items-center justify-center mb-4" style="background-color: var(--accent);">
+						<svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+							<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z" />
+						</svg>
+					</div>
+					<h4 class="text-2xl font-bold mb-3 text-bhutan-primary">
+						{t('aboutBinauralBeats.benefits.benefit4.title', locale, translations)}
+					</h4>
+					<p class="leading-relaxed text-bhutan-secondary">
+						{t('aboutBinauralBeats.benefits.benefit4.description', locale, translations)}
+					</p>
+				</div>
+
+				<!-- Benefit 5: Creativity -->
+				<div class="p-8 rounded-2xl border hover:shadow-xl transition-all transform hover:scale-105" style="background-color: var(--bg-secondary); border-color: var(--border-light);">
+					<div class="w-12 h-12 rounded-lg flex items-center justify-center mb-4" style="background-color: var(--primary);">
+						<svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+							<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z" />
+						</svg>
+					</div>
+					<h4 class="text-2xl font-bold mb-3 text-bhutan-primary">
+						{t('aboutBinauralBeats.benefits.benefit5.title', locale, translations)}
+					</h4>
+					<p class="leading-relaxed text-bhutan-secondary">
+						{t('aboutBinauralBeats.benefits.benefit5.description', locale, translations)}
+					</p>
+				</div>
+
+				<!-- Benefit 6: Mood -->
+				<div class="p-8 rounded-2xl border hover:shadow-xl transition-all transform hover:scale-105" style="background-color: var(--bg-secondary); border-color: var(--border-light);">
+					<div class="w-12 h-12 rounded-lg flex items-center justify-center mb-4" style="background-color: var(--secondary);">
+						<svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+							<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.828 14.828a4 4 0 01-5.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+						</svg>
+					</div>
+					<h4 class="text-2xl font-bold mb-3 text-bhutan-primary">
+						{t('aboutBinauralBeats.benefits.benefit6.title', locale, translations)}
+					</h4>
+					<p class="leading-relaxed text-bhutan-secondary">
+						{t('aboutBinauralBeats.benefits.benefit6.description', locale, translations)}
+					</p>
+				</div>
+			</div>
+		</div>
+
+		<!-- How It Works Section -->
+		<div class="mb-20">
+			<div class="max-w-4xl mx-auto">
+				<div class="text-center mb-12">
+					<h3 class="text-3xl md:text-4xl font-bold mb-4 text-bhutan-primary">
+						{t('aboutBinauralBeats.howItWorks.title', locale, translations)}
+					</h3>
+					<p class="text-lg md:text-xl text-bhutan-secondary mb-8">
+						{t('aboutBinauralBeats.howItWorks.subtitle', locale, translations)}
+					</p>
+				</div>
+				<div class="bg-bhutan-secondary p-8 rounded-2xl border" style="border-color: var(--border-light);">
+					<p class="text-lg leading-relaxed text-bhutan-secondary mb-6">
+						{t('aboutBinauralBeats.howItWorks.explanation', locale, translations)}
+					</p>
+					<p class="text-lg leading-relaxed text-bhutan-secondary">
+						{t('aboutBinauralBeats.howItWorks.personalization', locale, translations)}
+					</p>
+				</div>
+			</div>
+		</div>
+
+		<!-- Safety & Research Section -->
+		<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+			<!-- Safety -->
+			<div class="bg-bhutan-secondary p-8 rounded-2xl border" style="border-color: var(--border-light);">
+				<div class="w-12 h-12 rounded-lg flex items-center justify-center mb-4" style="background-color: var(--accent);">
+					<svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+						<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+					</svg>
+				</div>
+				<h3 class="text-2xl font-bold mb-3 text-bhutan-primary">
+					{t('aboutBinauralBeats.safety.title', locale, translations)}
+				</h3>
+				<p class="text-lg font-semibold mb-4 text-bhutan-secondary">
+					{t('aboutBinauralBeats.safety.subtitle', locale, translations)}
+				</p>
+				<p class="leading-relaxed text-bhutan-secondary mb-4">
+					{t('aboutBinauralBeats.safety.general', locale, translations)}
+				</p>
+				<p class="leading-relaxed text-bhutan-secondary text-sm">
+					{t('aboutBinauralBeats.safety.precautions', locale, translations)}
+				</p>
+			</div>
+
+			<!-- Research -->
+			<div class="bg-bhutan-secondary p-8 rounded-2xl border" style="border-color: var(--border-light);">
+				<div class="w-12 h-12 rounded-lg flex items-center justify-center mb-4" style="background-color: var(--tertiary);">
+					<svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+						<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
+					</svg>
+				</div>
+				<h3 class="text-2xl font-bold mb-3 text-bhutan-primary">
+					{t('aboutBinauralBeats.research.title', locale, translations)}
+				</h3>
+				<p class="text-lg font-semibold mb-4 text-bhutan-secondary">
+					{t('aboutBinauralBeats.research.subtitle', locale, translations)}
+				</p>
+				<p class="leading-relaxed text-bhutan-secondary">
+					{t('aboutBinauralBeats.research.findings', locale, translations)}
+				</p>
+			</div>
+		</div>
+
+		<!-- Research Studies Section -->
+		<div class="mt-12">
+			<div class="bg-bhutan-secondary p-8 rounded-2xl border" style="border-color: var(--border-light);">
+				<h3 class="text-2xl md:text-3xl font-bold mb-6 text-bhutan-primary text-center">
+					Peer-Reviewed Research Studies
+				</h3>
+				<div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+					<a 
+						href={t('aboutBinauralBeats.research.studies.metaAnalysis.url', locale, translations)} 
+						target="_blank" 
+						rel="noopener noreferrer"
+						class="block p-4 rounded-lg border transition-all hover:shadow-lg hover:border-bhutan-accent"
+						style="background-color: var(--bg-primary); border-color: var(--border-light);"
+					>
+						<h4 class="font-semibold text-bhutan-primary mb-2">
+							{t('aboutBinauralBeats.research.studies.metaAnalysis.title', locale, translations)}
+						</h4>
+						<p class="text-sm text-bhutan-secondary mb-2">
+							{t('aboutBinauralBeats.research.studies.metaAnalysis.description', locale, translations)}
+						</p>
+						<span class="text-xs text-bhutan-accent flex items-center gap-1">
+							Read study
+							<svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+								<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+							</svg>
+						</span>
+					</a>
+					<a 
+						href={t('aboutBinauralBeats.research.studies.anxiety.url', locale, translations)} 
+						target="_blank" 
+						rel="noopener noreferrer"
+						class="block p-4 rounded-lg border transition-all hover:shadow-lg hover:border-bhutan-accent"
+						style="background-color: var(--bg-primary); border-color: var(--border-light);"
+					>
+						<h4 class="font-semibold text-bhutan-primary mb-2">
+							{t('aboutBinauralBeats.research.studies.anxiety.title', locale, translations)}
+						</h4>
+						<p class="text-sm text-bhutan-secondary mb-2">
+							{t('aboutBinauralBeats.research.studies.anxiety.description', locale, translations)}
+						</p>
+						<span class="text-xs text-bhutan-accent flex items-center gap-1">
+							Read study
+							<svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+								<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+							</svg>
+						</span>
+					</a>
+					<a 
+						href={t('aboutBinauralBeats.research.studies.memory.url', locale, translations)} 
+						target="_blank" 
+						rel="noopener noreferrer"
+						class="block p-4 rounded-lg border transition-all hover:shadow-lg hover:border-bhutan-accent"
+						style="background-color: var(--bg-primary); border-color: var(--border-light);"
+					>
+						<h4 class="font-semibold text-bhutan-primary mb-2">
+							{t('aboutBinauralBeats.research.studies.memory.title', locale, translations)}
+						</h4>
+						<p class="text-sm text-bhutan-secondary mb-2">
+							{t('aboutBinauralBeats.research.studies.memory.description', locale, translations)}
+						</p>
+						<span class="text-xs text-bhutan-accent flex items-center gap-1">
+							Read study
+							<svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+								<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+							</svg>
+						</span>
+					</a>
+					<a 
+						href={t('aboutBinauralBeats.research.studies.tinnitus.url', locale, translations)} 
+						target="_blank" 
+						rel="noopener noreferrer"
+						class="block p-4 rounded-lg border transition-all hover:shadow-lg hover:border-bhutan-accent"
+						style="background-color: var(--bg-primary); border-color: var(--border-light);"
+					>
+						<h4 class="font-semibold text-bhutan-primary mb-2">
+							{t('aboutBinauralBeats.research.studies.tinnitus.title', locale, translations)}
+						</h4>
+						<p class="text-sm text-bhutan-secondary mb-2">
+							{t('aboutBinauralBeats.research.studies.tinnitus.description', locale, translations)}
+						</p>
+						<span class="text-xs text-bhutan-accent flex items-center gap-1">
+							Read study
+							<svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+								<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+							</svg>
+						</span>
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+

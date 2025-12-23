@@ -1,0 +1,185 @@
+{
+  "meta": {
+    "title": "MindState Binaural Beats Studio",
+    "description": "The only binaural beats app that lets you design completely personalized audio sessions from scratch. Professional-grade tools for creating sessions that match your exact preferences."
+  },
+  "nav": {
+    "features": "Features",
+    "howItWorks": "How It Works",
+    "screenshots": "Screenshots",
+    "download": "Download"
+  },
+  "hero": {
+    "title": "Create Personalized",
+    "titleHighlight": "Binaural Beats",
+    "titleSuffix": "Sessions",
+    "subtitle": "The only binaural beats app that lets you design completely personalized audio sessions from scratch. Every frequency, volume, and timing decision is yours to control.",
+    "ctaDownload": "Download on Play Store",
+    "ctaLearnMore": "Learn More",
+    "tagline": "Native Android app • Professional audio quality • Free to try"
+  },
+  "features": {
+    "title": "Complete Control Over Your Audio Experience",
+    "subtitle": "Unlike apps with fixed presets, MindState gives you professional-grade tools to create sessions that match your exact preferences, sensitivity, and goals.",
+    "feature1": {
+      "title": "Complete Personalization",
+      "description": "Design sessions from scratch, not presets. Set carrier frequencies (80-600 Hz) and beat frequencies (0.5-40 Hz) to match your personal sensitivity."
+    },
+    "feature2": {
+      "title": "Multi-Layered Sessions",
+      "description": "Layer multiple track types: binaural beats, monaural beats, isochronic tones, noise generators, and your own audio files. Each track has independent volume control."
+    },
+    "feature3": {
+      "title": "Point Editor",
+      "description": "Create smooth volume transitions over time with point-level volume envelopes. Build sessions that start gentle and build intensity, or maintain steady frequencies."
+    },
+    "feature4": {
+      "title": "Professional Editor",
+      "description": "Granular control over every aspect: frequencies, volumes, timing, and transitions. Preview before saving to ensure your session is perfect."
+    },
+    "feature5": {
+      "title": "QR Code Sharing",
+      "description": "Generate QR codes to share your custom sessions instantly. Scan QR codes to discover sessions created by others, then modify them to match your preferences."
+    },
+    "feature6": {
+      "title": "Professional Audio Quality",
+      "description": "Native audio engine delivers crystal-clear sound with automatic sample rate conversion, phase-continuous synthesis, and low-latency processing."
+    }
+  },
+  "howItWorks": {
+    "title": "How It Works",
+    "subtitle": "Create your perfect binaural beats session in just a few simple steps",
+    "step1": {
+      "title": "Create Custom Session",
+      "description": "Start with a blank canvas or choose from bundled examples. Name your session and set the duration."
+    },
+    "step2": {
+      "title": "Add Multiple Track Types",
+      "description": "Layer binaural beats, monaural beats, isochronic tones, noise generators, or import your own audio files."
+    },
+    "step3": {
+      "title": "Adjust Frequencies & Volumes",
+      "description": "Set carrier frequencies (80-600 Hz) and beat frequencies (0.5-40 Hz) to match your sensitivity. Control track volumes and add volume envelopes."
+    },
+    "step4": {
+      "title": "Preview & Save",
+      "description": "Test your session with preview playback before saving. Make adjustments until it's perfect for you."
+    },
+    "step5": {
+      "title": "Share via QR Code",
+      "description": "Generate a QR code to share your session instantly. Scan codes from others to discover new sessions, then customize them to your preferences."
+    }
+  },
+  "screenshots": {
+    "title": "See It In Action",
+    "subtitle": "Professional interface with Material Design 3, dark mode, and full localization",
+    "sessionBrowser": "Session Browser",
+    "sessionEditor": "Session Editor",
+    "trackEditor": "Track Editor",
+    "mainPlayer": "Main Player",
+    "pointEditor": "Point Editor",
+    "qrSharing": "QR Code Sharing"
+  },
+  "cta": {
+    "title": "Start Creating Your Perfect Audio Experience",
+    "subtitle": "Stop settling for presets that don't quite fit. MindState gives you the tools to create binaural beats sessions that are uniquely yours.",
+    "ctaDownload": "Download on Play Store",
+    "ctaViewFeatures": "View Features",
+    "benefit1": {
+      "title": "✓ Unlimited Sessions",
+      "description": "Create unlimited custom sessions tailored to your preferences"
+    },
+    "benefit2": {
+      "title": "✓ Professional Quality",
+      "description": "Crystal-clear audio with phase-continuous synthesis"
+    },
+    "benefit3": {
+      "title": "✓ Free to Try",
+      "description": "Bundled sessions available to all users"
+    }
+  },
+  "aboutBinauralBeats": {
+    "heroTitle": "Unlock Your Brain's Potential",
+    "heroSubtitle": "Transform your mental state, enhance focus, achieve deeper relaxation, and unlock peak performance through the power of brainwave entrainment.",
+    "benefits": {
+      "title": "Powerful Benefits You Can Experience",
+      "subtitle": "Binaural beats and brainwave entrainment can help you achieve remarkable mental states and outcomes",
+      "benefit1": {
+        "title": "Deep Relaxation & Stress Relief",
+        "description": "Achieve profound relaxation and melt away stress. Lower frequencies help your brain enter deeply relaxed states, reducing anxiety and promoting calm."
+      },
+      "benefit2": {
+        "title": "Enhanced Focus & Concentration",
+        "description": "Boost your cognitive performance and maintain laser-sharp focus. Higher frequencies help your brain enter optimal states for work, study, and creative tasks."
+      },
+      "benefit3": {
+        "title": "Better Sleep Quality",
+        "description": "Improve your sleep naturally. Delta and theta frequencies help your brain transition into deep, restorative sleep states for better rest and recovery."
+      },
+      "benefit4": {
+        "title": "Meditation Enhancement",
+        "description": "Unlock deeper meditation states and enhance your practice. Binaural beats can help you reach theta and alpha states more easily, deepening your mindfulness."
+      },
+      "benefit5": {
+        "title": "Creativity & Flow States",
+        "description": "Access your creative potential and enter flow states. Alpha frequencies are associated with enhanced creativity, problem-solving, and peak performance."
+      },
+      "benefit6": {
+        "title": "Mood Improvement",
+        "description": "Elevate your mood and emotional well-being. Research suggests binaural beats can help improve mood, reduce negative emotions, and promote positive mental states."
+      }
+    },
+    "howItWorks": {
+      "title": "How Brainwave Entrainment Works",
+      "subtitle": "The science behind the transformation",
+      "explanation": "When you listen to two slightly different frequencies (one in each ear), your brain naturally perceives a third frequency—the difference between them. This is called a binaural beat. Your brain then synchronizes its own electrical activity to match this perceived frequency, a phenomenon known as brainwave entrainment.",
+      "personalization": "Different frequencies unlock different mental states: Delta (0.5-4 Hz) for deep sleep, Theta (4-8 Hz) for meditation and creativity, Alpha (8-13 Hz) for relaxed focus, Beta (13-30 Hz) for active concentration, and Gamma (30-100 Hz) for peak performance. By personalizing carrier frequencies and beat frequencies to match your unique sensitivity, you can maximize the benefits and achieve your desired mental state more effectively."
+    },
+    "safety": {
+      "title": "Safe & Well-Studied",
+      "subtitle": "Binaural beats are generally safe for most people when used responsibly",
+      "general": "Binaural beats have been studied for decades and are considered safe for the majority of users. They work through natural brainwave entrainment and don't require any invasive procedures or substances.",
+      "precautions": "If you have epilepsy or a history of seizures, consult with a healthcare provider before use. Keep volume at comfortable levels—excessive volume can cause hearing damage. If you experience any discomfort, discontinue use. Binaural beats are not a replacement for medical treatment or professional mental health care."
+    },
+    "research": {
+      "title": "Backed by Research",
+      "subtitle": "Scientific studies support the benefits of binaural beats and brainwave entrainment",
+      "findings": "Research has shown that binaural beats can help reduce anxiety, improve focus, enhance meditation practice, and support better sleep. Studies have found positive effects on relaxation, stress reduction, and cognitive performance. While individual results may vary, the scientific evidence continues to grow, supporting the use of binaural beats as a tool for mental enhancement and well-being.",
+      "studies": {
+        "metaAnalysis": {
+          "title": "Meta-Analysis: Cognition, Anxiety & Pain",
+          "description": "A comprehensive analysis of 22 studies found medium, significant effects on memory, attention, anxiety, and pain perception (effect size g = 0.45).",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/30073406/"
+        },
+        "anxiety": {
+          "title": "Anxiety & Quality of Life Study",
+          "description": "Daily exposure to delta-frequency binaural beats over 60 days showed significant decreases in trait anxiety and increases in quality of life.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/17309374/"
+        },
+        "memory": {
+          "title": "Memory Enhancement Research",
+          "description": "Research found that alpha, beta, and gamma binaural beats can modulate cortical networks and improve short-term memory performance.",
+          "url": "https://link.springer.com/article/10.1007/s00221-021-06132-6"
+        },
+        "tinnitus": {
+          "title": "Tinnitus Management Study",
+          "description": "A randomized controlled trial found that alpha-frequency binaural beats combined with music therapy led to significant improvements in chronic tinnitus.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/38723376/"
+        }
+      }
+    }
+  },
+  "footer": {
+    "description": "Create personalized binaural beats sessions tailored to your preferences.",
+    "links": "Links",
+    "download": "Download",
+    "downloadDescription": "Available on the Google Play Store",
+    "copyright": "© 2024 MindState. All rights reserved."
+  },
+  "languageSwitcher": {
+    "label": "Language",
+    "current": "Current language",
+    "switchTo": "Switch to {language}"
+  }
+}
+
