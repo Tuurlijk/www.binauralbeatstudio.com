@@ -1,4 +1,5 @@
 ---
+const base = import.meta.env.BASE_URL;
 ---
 
 <section id="screenshots" class="py-20 px-4 sm:px-6 lg:px-8 bg-bhutan-primary">
@@ -16,9 +17,9 @@
 			<!-- Screenshot 1: Session Browser -->
 			<div class="bg-bhutan-secondary rounded-2xl p-4 shadow-lg hover:shadow-xl transition-shadow">
 				<picture>
-					<source srcset="/images/phone_session_browser_dark.png" media="(prefers-color-scheme: dark)" />
+					<source srcset={`${base}images/phone_session_browser_dark.png`} media="(prefers-color-scheme: dark)" />
 					<img 
-						src="/images/phone_session_browser_light.png" 
+						src={`${base}images/phone_session_browser_light.png`}
 						alt="Session Browser showing list of binaural beats sessions"
 						class="rounded-lg w-full aspect-[9/16] object-cover"
 						loading="lazy"
@@ -30,9 +31,9 @@
 			<!-- Screenshot 2: Session Editor -->
 			<div class="bg-bhutan-secondary rounded-2xl p-4 shadow-lg hover:shadow-xl transition-shadow">
 				<picture>
-					<source srcset="/images/phone_session_editor_dark.png" media="(prefers-color-scheme: dark)" />
+					<source srcset={`${base}images/phone_session_editor_dark.png`} media="(prefers-color-scheme: dark)" />
 					<img 
-						src="/images/phone_session_editor_light.png" 
+						src={`${base}images/phone_session_editor_light.png`}
 						alt="Session Editor for creating and editing binaural beats sessions"
 						class="rounded-lg w-full aspect-[9/16] object-cover"
 						loading="lazy"
@@ -44,9 +45,9 @@
 			<!-- Screenshot 3: Track Editor -->
 			<div class="bg-bhutan-secondary rounded-2xl p-4 shadow-lg hover:shadow-xl transition-shadow">
 				<picture>
-					<source srcset="/images/phone_track_editor_dark.png" media="(prefers-color-scheme: dark)" />
+					<source srcset={`${base}images/phone_track_editor_dark.png`} media="(prefers-color-scheme: dark)" />
 					<img 
-						src="/images/phone_track_editor_light.png" 
+						src={`${base}images/phone_track_editor_light.png`}
 						alt="Track Editor for configuring individual audio tracks"
 						class="rounded-lg w-full aspect-[9/16] object-cover"
 						loading="lazy"
@@ -58,9 +59,9 @@
 			<!-- Screenshot 4: Main Player -->
 			<div class="bg-bhutan-secondary rounded-2xl p-4 shadow-lg hover:shadow-xl transition-shadow">
 				<picture>
-					<source srcset="/images/phone_main_dark.png" media="(prefers-color-scheme: dark)" />
+					<source srcset={`${base}images/phone_main_dark.png`} media="(prefers-color-scheme: dark)" />
 					<img 
-						src="/images/phone_main_light.png" 
+						src={`${base}images/phone_main_light.png`}
 						alt="Main player screen for playing binaural beats sessions"
 						class="rounded-lg w-full aspect-[9/16] object-cover"
 						loading="lazy"
@@ -72,9 +73,9 @@
 			<!-- Screenshot 5: Point Editor -->
 			<div class="bg-bhutan-secondary rounded-2xl p-4 shadow-lg hover:shadow-xl transition-shadow">
 				<picture>
-					<source srcset="/images/phone_point_editor_dark.png" media="(prefers-color-scheme: dark)" />
+					<source srcset={`${base}images/phone_point_editor_dark.png`} media="(prefers-color-scheme: dark)" />
 					<img 
-						src="/images/phone_point_editor_light.png" 
+						src={`${base}images/phone_point_editor_light.png`}
 						alt="Point Editor for adjusting volume envelopes and timing"
 						class="rounded-lg w-full aspect-[9/16] object-cover"
 						loading="lazy"
@@ -86,9 +87,9 @@
 			<!-- Screenshot 6: QR Code Display -->
 			<div class="bg-bhutan-secondary rounded-2xl p-4 shadow-lg hover:shadow-xl transition-shadow">
 				<picture>
-					<source srcset="/images/phone_qr_display_dark.png" media="(prefers-color-scheme: dark)" />
+					<source srcset={`${base}images/phone_qr_display_dark.png`} media="(prefers-color-scheme: dark)" />
 					<img 
-						src="/images/phone_qr_display_light.png" 
+						src={`${base}images/phone_qr_display_light.png`}
 						alt="QR Code display for sharing binaural beats sessions"
 						class="rounded-lg w-full aspect-[9/16] object-cover"
 						loading="lazy"

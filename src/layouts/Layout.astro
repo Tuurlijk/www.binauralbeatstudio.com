@@ -10,6 +10,8 @@ const {
 	title = 'MindState - Create Personalized Binaural Beats Sessions',
 	description = 'The only binaural beats app that lets you design completely personalized audio sessions from scratch. Professional-grade tools for creating sessions that match your exact preferences.',
 } = Astro.props;
+
+const base = import.meta.env.BASE_URL;
 ---
 
 <!doctype html>
@@ -40,19 +42,19 @@ const {
 			<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 				<div class="flex justify-between items-center h-16">
 					<div class="flex items-center">
-						<a href="/" class="flex items-center transition-opacity hover:opacity-80">
+						<a href={base} class="flex items-center transition-opacity hover:opacity-80">
 							<img 
-								src="/images/LogoLarge.svg" 
+								src={`${base}images/LogoLarge.svg`}
 								alt="MindState - Create Personalized Binaural Beats Sessions"
 								class="h-10 w-auto"
 							/>
 						</a>
 					</div>
 					<div class="hidden md:flex items-center space-x-8">
-						<a href="#features" class="transition-colors text-bhutan-secondary hover:text-bhutan-accent">Features</a>
-						<a href="#how-it-works" class="transition-colors text-bhutan-secondary hover:text-bhutan-accent">How It Works</a>
-						<a href="#screenshots" class="transition-colors text-bhutan-secondary hover:text-bhutan-accent">Screenshots</a>
-						<a href="#download" class="px-4 py-2 rounded-lg transition-colors text-white bg-bhutan-accent hover:opacity-90">
+						<a href={`${base}#features`} class="transition-colors text-bhutan-secondary hover:text-bhutan-accent">Features</a>
+						<a href={`${base}#how-it-works`} class="transition-colors text-bhutan-secondary hover:text-bhutan-accent">How It Works</a>
+						<a href={`${base}#screenshots`} class="transition-colors text-bhutan-secondary hover:text-bhutan-accent">Screenshots</a>
+						<a href={`${base}#download`} class="px-4 py-2 rounded-lg transition-colors text-white bg-bhutan-accent hover:opacity-90">
 							Download
 						</a>
 					</div>
@@ -65,10 +67,10 @@ const {
 			</div>
 			<div class="md:hidden hidden bg-bhutan-primary border-t border-bhutan-light" id="mobile-menu">
 				<div class="px-4 pt-2 pb-4 space-y-2">
-					<a href="#features" class="block py-2 transition-colors text-bhutan-secondary hover:text-bhutan-accent">Features</a>
-					<a href="#how-it-works" class="block py-2 transition-colors text-bhutan-secondary hover:text-bhutan-accent">How It Works</a>
-					<a href="#screenshots" class="block py-2 transition-colors text-bhutan-secondary hover:text-bhutan-accent">Screenshots</a>
-					<a href="#download" class="block py-2 text-white px-4 rounded-lg text-center transition-colors bg-bhutan-accent hover:opacity-90">Download</a>
+					<a href={`${base}#features`} class="block py-2 transition-colors text-bhutan-secondary hover:text-bhutan-accent">Features</a>
+					<a href={`${base}#how-it-works`} class="block py-2 transition-colors text-bhutan-secondary hover:text-bhutan-accent">How It Works</a>
+					<a href={`${base}#screenshots`} class="block py-2 transition-colors text-bhutan-secondary hover:text-bhutan-accent">Screenshots</a>
+					<a href={`${base}#download`} class="block py-2 text-white px-4 rounded-lg text-center transition-colors bg-bhutan-accent hover:opacity-90">Download</a>
 				</div>
 			</div>
 		</nav>
@@ -89,9 +91,9 @@ const {
 					<div>
 						<h4 class="font-semibold mb-4 text-bhutan-primary">Links</h4>
 						<ul class="space-y-2 text-sm">
-							<li><a href="#features" class="transition-colors text-bhutan-secondary hover:text-bhutan-accent">Features</a></li>
-							<li><a href="#how-it-works" class="transition-colors text-bhutan-secondary hover:text-bhutan-accent">How It Works</a></li>
-							<li><a href="#screenshots" class="transition-colors text-bhutan-secondary hover:text-bhutan-accent">Screenshots</a></li>
+							<li><a href={`${base}#features`} class="transition-colors text-bhutan-secondary hover:text-bhutan-accent">Features</a></li>
+							<li><a href={`${base}#how-it-works`} class="transition-colors text-bhutan-secondary hover:text-bhutan-accent">How It Works</a></li>
+							<li><a href={`${base}#screenshots`} class="transition-colors text-bhutan-secondary hover:text-bhutan-accent">Screenshots</a></li>
 						</ul>
 					</div>
 					<div>
