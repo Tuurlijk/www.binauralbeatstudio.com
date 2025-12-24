@@ -109,9 +109,11 @@ const isRTL = locale === 'ar';
 						</a>
 					</div>
 					<div class="hidden md:flex items-center space-x-8">
+						<a href={getLocalizedHashLink('#benefits', locale, base)} class="transition-colors text-bhutan-secondary hover:text-bhutan-accent">{t('nav.benefits', locale, translations)}</a>
 						<a href={getLocalizedHashLink('#features', locale, base)} class="transition-colors text-bhutan-secondary hover:text-bhutan-accent">{t('nav.features', locale, translations)}</a>
 						<a href={getLocalizedHashLink('#how-it-works', locale, base)} class="transition-colors text-bhutan-secondary hover:text-bhutan-accent">{t('nav.howItWorks', locale, translations)}</a>
 						<a href={getLocalizedHashLink('#screenshots', locale, base)} class="transition-colors text-bhutan-secondary hover:text-bhutan-accent">{t('nav.screenshots', locale, translations)}</a>
+						<a href={getLocalizedHashLink('#about-binaural-beats', locale, base)} class="transition-colors text-bhutan-secondary hover:text-bhutan-accent">{t('nav.about', locale, translations)}</a>
 						<a href={getLocalizedHashLink('#download', locale, base)} class="px-4 py-2 rounded-lg transition-colors text-white bg-bhutan-accent hover:opacity-90">
 							{t('nav.download', locale, translations)}
 						</a>
@@ -128,9 +130,11 @@ const isRTL = locale === 'ar';
 			<div id="mobile-menu-wrapper">
 				<div class="md:hidden hidden bg-bhutan-primary border-t border-bhutan-light" id="mobile-menu">
 				<div class="px-4 pt-2 pb-4 space-y-2">
+					<a href={getLocalizedHashLink('#benefits', locale, base)} class="block py-2 transition-colors text-bhutan-secondary hover:text-bhutan-accent">{t('nav.benefits', locale, translations)}</a>
 					<a href={getLocalizedHashLink('#features', locale, base)} class="block py-2 transition-colors text-bhutan-secondary hover:text-bhutan-accent">{t('nav.features', locale, translations)}</a>
 					<a href={getLocalizedHashLink('#how-it-works', locale, base)} class="block py-2 transition-colors text-bhutan-secondary hover:text-bhutan-accent">{t('nav.howItWorks', locale, translations)}</a>
 					<a href={getLocalizedHashLink('#screenshots', locale, base)} class="block py-2 transition-colors text-bhutan-secondary hover:text-bhutan-accent">{t('nav.screenshots', locale, translations)}</a>
+					<a href={getLocalizedHashLink('#about-binaural-beats', locale, base)} class="block py-2 transition-colors text-bhutan-secondary hover:text-bhutan-accent">{t('nav.about', locale, translations)}</a>
 					<a href={getLocalizedHashLink('#download', locale, base)} class="block py-2 text-white px-4 rounded-lg text-center transition-colors bg-bhutan-accent hover:opacity-90">{t('nav.download', locale, translations)}</a>
 				</div>
 			</div>
@@ -152,9 +156,12 @@ const isRTL = locale === 'ar';
 					<div>
 						<h4 class="font-semibold mb-4 text-bhutan-primary">{t('footer.links', locale, translations)}</h4>
 						<ul class="space-y-2 text-sm">
+							<li><a href={getLocalizedHashLink('#benefits', locale, base)} class="transition-colors text-bhutan-secondary hover:text-bhutan-accent">{t('nav.benefits', locale, translations)}</a></li>
 							<li><a href={getLocalizedHashLink('#features', locale, base)} class="transition-colors text-bhutan-secondary hover:text-bhutan-accent">{t('nav.features', locale, translations)}</a></li>
 							<li><a href={getLocalizedHashLink('#how-it-works', locale, base)} class="transition-colors text-bhutan-secondary hover:text-bhutan-accent">{t('nav.howItWorks', locale, translations)}</a></li>
 							<li><a href={getLocalizedHashLink('#screenshots', locale, base)} class="transition-colors text-bhutan-secondary hover:text-bhutan-accent">{t('nav.screenshots', locale, translations)}</a></li>
+							<li><a href={getLocalizedHashLink('#about-binaural-beats', locale, base)} class="transition-colors text-bhutan-secondary hover:text-bhutan-accent">{t('nav.about', locale, translations)}</a></li>
+							<li><a href={getLocalizedHashLink('#download', locale, base)} class="transition-colors text-bhutan-secondary hover:text-bhutan-accent">{t('nav.download', locale, translations)}</a></li>
 						</ul>
 					</div>
 					<div>
