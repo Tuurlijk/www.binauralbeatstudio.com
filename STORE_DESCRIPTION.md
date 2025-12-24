@@ -1,0 +1,60 @@
+MindState is the only binaural beats app that lets you design completely personalized audio sessions from scratch. Transform your mental state, enhance focus, achieve deeper relaxation, unlock creativity and flow states, and reach peak performance through brainwave entrainment—all tailored to your unique sensitivity.
+
+Why Personalization Matters
+
+Every person responds differently to binaural beats. MindState puts you in complete control, allowing you to match frequencies to your personal response patterns for maximum effectiveness.
+
+Powerful Benefits Backed by Science
+
+Scientific studies support remarkable benefits:
+• Deep Relaxation & Stress Relief: Lower frequencies help your brain enter deeply relaxed states, reducing anxiety
+• Enhanced Focus & Concentration: Higher frequencies help your brain enter optimal states for work, study, and creativity
+• Better Sleep Quality: Delta and theta frequencies help your brain transition into deep, restorative sleep states
+• Meditation Enhancement: Unlock deeper meditation states and reach theta and alpha states more easily
+• Creativity & Flow States: Access your creative potential and enter flow states with alpha frequencies
+• Mood Improvement: Elevate your mood and emotional well-being with reduced anxiety and improved quality of life
+
+Complete Control Over Your Audio Experience
+
+Unlike apps with fixed presets, MindState gives you professional-grade tools:
+
+Precise Frequency Control
+Set carrier frequencies from 80-600 Hz and beat frequencies from 0.5-40 Hz to match your personal sensitivity. Target brainwave states: Delta (0.5-4 Hz) for sleep, Theta (4-8 Hz) for meditation, Alpha (8-13 Hz) for relaxed focus, Beta (13-30 Hz) for concentration, Gamma (30-100 Hz) for peak performance.
+
+Multi-Layered Session Builder
+Layer multiple track types: binaural beats (requires headphones), monaural beats (works on speakers), isochronic tones (no headphones needed), noise generators (white, pink, brown, distant rain, old record, ocean surf), and your own audio files.
+
+Professional Point Editor
+Create smooth volume transitions with point-level volume envelopes. Build sessions that start gentle and build intensity, or maintain steady frequencies.
+
+Granular Session Control
+Preview playback before saving. Adjust frequencies, volumes, timing, and transitions with precision. Create sessions for meditation, focus, sleep, stress relief, or experimentation.
+
+Share & Discover Personalized Sessions
+
+Generate QR codes to share your custom sessions instantly. Scan QR codes to discover sessions created by others, then modify them to match your preferences. Six bundled examples included.
+
+Professional Audio Quality
+
+Native audio engine delivers crystal-clear sound with automatic sample rate conversion, phase-continuous synthesis, and low-latency processing. Material Design 3 interface with dark mode and 8 language support.
+
+Safe & Well-Studied
+
+Binaural beats have been studied for decades and are considered safe for most users. A meta-analysis of 22 studies found significant effects on memory, attention, anxiety, and pain perception.
+
+Key Features
+✓ Create unlimited custom sessions
+✓ Precise frequency control (carrier: 80-600 Hz, beat: 0.5-40 Hz)
+✓ Multi-layered tracks: binaural beats, monaural beats, isochronic tones, noise generators, and audio files
+✓ Point editor for smooth volume transitions and time-based changes
+✓ Import your own audio files
+✓ QR code sharing to discover and share sessions
+✓ Preview playback before saving
+✓ Professional audio synthesis
+✓ Works with or without headphones
+✓ Material Design 3 interface with dark mode
+✓ 8 languages
+
+Start Creating Your Perfect Audio Experience
+
+Stop settling for presets that don't quite fit. MindState gives you the tools to create binaural beats sessions that are uniquely yours. Whether you need gentle frequencies for sensitive ears, powerful beats for deep meditation, or evolving sessions that adapt to your body's rhythms, MindState puts you in control.
