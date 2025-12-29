@@ -1,0 +1,198 @@
+---
+// Minimap component with pinch-to-zoom functionality
+// Displays a timeline overview that can be zoomed and panned
+---
+
+<div class="minimap-container">
+	<div id="minimap" class="minimap-content">
+		<svg class="minimap-svg" viewBox="0 0 1000 200" preserveAspectRatio="none">
+			<!-- Timeline background -->
+			<rect x="0" y="0" width="1000" height="200" fill="var(--bg-secondary)" />
+			
+			<!-- Grid lines -->
+			<defs>
+				<pattern id="minimap-grid" width="50" height="20" patternUnits="userSpaceOnUse">
+					<path d="M 50 0 L 0 0 0 20" fill="none" stroke="var(--border-light)" stroke-width="0.5" opacity="0.3"/>
+				</pattern>
+			</defs>
+			<rect x="0" y="0" width="1000" height="200" fill="url(#minimap-grid)" />
+			
+			<!-- Timeline markers (every 10 units) -->
+			<g class="timeline-markers">
+				{Array.from({ length: 11 }, (_, i) => {
+					const x = i * 100;
+					return (
+						<>
+							<line x1={x} y1="0" x2={x} y2="200" stroke="var(--border-light)" stroke-width="1" opacity="0.5"/>
+							<text x={x} y="15" fill="var(--text-secondary)" font-size="12" text-anchor="middle">{i * 10}s</text>
+						</>
+					);
+				})}
+			</g>
+			
+			<!-- Waveform visualization -->
+			<path 
+				class="waveform-path" 
+				d="M 0,100 Q 50,50 100,100 T 200,100 T 300,100 T 400,100 T 500,100 T 600,100 T 700,100 T 800,100 T 900,100 T 1000,100" 
+				fill="none" 
+				stroke="var(--primary)" 
+				stroke-width="2"
+			/>
+			
+			<!-- Volume envelope -->
+			<polygon 
+				class="volume-envelope" 
+				points="0,200 0,80 200,60 400,70 600,50 800,90 1000,100 1000,200" 
+				fill="var(--primary)" 
+				opacity="0.2"
+			/>
+			
+			<!-- Current position indicator -->
+			<line 
+				id="minimap-position" 
+				x1="300" 
+				y1="0" 
+				x2="300" 
+				y2="200" 
+				stroke="var(--accent)" 
+				stroke-width="3"
+			/>
+			
+			<!-- Viewport indicator (shows visible area) -->
+			<rect 
+				id="minimap-viewport" 
+				x="250" 
+				y="0" 
+				width="150" 
+				height="200" 
+				fill="none" 
+				stroke="var(--accent)" 
+				stroke-width="2" 
+				stroke-dasharray="5,5" 
+				opacity="0.6"
+			/>
+		</svg>
+	</div>
+	
+	<!-- Zoom controls -->
+	<div class="minimap-controls">
+		<button id="minimap-zoom-in" class="zoom-button" aria-label="Zoom in">
+			<svg width="20" height="20" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+				<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4" />
+			</svg>
+		</button>
+		<button id="minimap-zoom-out" class="zoom-button" aria-label="Zoom out">
+			<svg width="20" height="20" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+				<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 12H4" />
+			</svg>
+		</button>
+		<button id="minimap-reset" class="zoom-button" aria-label="Reset zoom">
+			<svg width="20" height="20" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+				<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
+			</svg>
+		</button>
+	</div>
+</div>
+
+<style>
+	.minimap-container {
+		position: relative;
+		width: 100%;
+		height: 200px;
+		background: var(--bg-secondary);
+		border-radius: 8px;
+		overflow: hidden;
+		border: 1px solid var(--border-light);
+	}
+
+	.minimap-content {
+		width: 100%;
+		height: 100%;
+		overflow: hidden;
+		position: relative;
+	}
+
+	.minimap-svg {
+		width: 100%;
+		height: 100%;
+		display: block;
+	}
+
+	.minimap-controls {
+		position: absolute;
+		top: 8px;
+		right: 8px;
+		display: flex;
+		gap: 4px;
+		z-index: 10;
+	}
+
+	.zoom-button {
+		width: 32px;
+		height: 32px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		background: var(--bg-primary);
+		border: 1px solid var(--border-light);
+		border-radius: 4px;
+		color: var(--text-primary);
+		cursor: pointer;
+		transition: all 0.2s;
+	}
+
+	.zoom-button:hover {
+		background: var(--bg-secondary);
+		border-color: var(--primary);
+	}
+
+	.zoom-button:active {
+		transform: scale(0.95);
+	}
+
+	@media (prefers-color-scheme: dark) {
+		.zoom-button {
+			background: rgba(255, 255, 255, 0.1);
+			border-color: rgba(255, 255, 255, 0.2);
+		}
+	}
+</style>
+
+<script>
+	import { PinchZoom } from '../utils/pinchZoom';
+
+	document.addEventListener('DOMContentLoaded', () => {
+		const minimapElement = document.getElementById('minimap');
+		if (!minimapElement) return;
+
+		const pinchZoom = new PinchZoom(minimapElement, {
+			minScale: 0.5,
+			maxScale: 5,
+			initialScale: 1,
+		});
+
+		// Zoom controls
+		const zoomInBtn = document.getElementById('minimap-zoom-in');
+		const zoomOutBtn = document.getElementById('minimap-zoom-out');
+		const resetBtn = document.getElementById('minimap-reset');
+
+		zoomInBtn?.addEventListener('click', () => {
+			const currentScale = pinchZoom.getScale();
+			pinchZoom.setScale(Math.min(5, currentScale * 1.2));
+		});
+
+		zoomOutBtn?.addEventListener('click', () => {
+			const currentScale = pinchZoom.getScale();
+			pinchZoom.setScale(Math.max(0.5, currentScale / 1.2));
+		});
+
+		resetBtn?.addEventListener('click', () => {
+			pinchZoom.reset();
+		});
+
+		// Cleanup on page unload
+		window.addEventListener('beforeunload', () => {
+			pinchZoom.destroy();
+		});
+	});
+</script>

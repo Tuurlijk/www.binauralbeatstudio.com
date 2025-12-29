@@ -94,6 +94,17 @@ const isRTL = locale === 'ar';
 				display: none;
 			}
 		</style>
+		
+		<!-- Google tag (gtag.js) -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=AW-1014717351">
+		</script>
+		<script>
+			window.dataLayer = window.dataLayer || [];
+			function gtag(){dataLayer.push(arguments);}
+			gtag('js', new Date());
+
+			gtag('config', 'AW-1014717351');
+		</script>
 	</head>
 	<body class={`antialiased bg-bhutan-primary text-bhutan-primary ${isRTL ? 'rtl' : 'ltr'}`}>
 		<nav class="fixed top-0 left-0 right-0 z-50 backdrop-blur-sm border-b border-bhutan-light" style="background-color: var(--bg-primary); opacity: 0.95;">

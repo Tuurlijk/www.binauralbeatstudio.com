@@ -1,0 +1,40 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Minimap from '../components/Minimap.astro';
+import Graph from '../components/Graph.astro';
+---
+
+<Layout title="Pinch-to-Zoom Demo" description="Interactive minimap and graph components with pinch-to-zoom functionality">
+	<section class="py-20 px-4 sm:px-6 lg:px-8">
+		<div class="max-w-7xl mx-auto">
+			<div class="text-center mb-12">
+				<h1 class="text-4xl md:text-5xl font-bold mb-4 text-bhutan-primary">
+					Interactive Components Demo
+				</h1>
+				<p class="text-xl max-w-3xl mx-auto text-bhutan-secondary">
+					Try pinch-to-zoom on touch devices or use mouse wheel and drag on desktop
+				</p>
+			</div>
+
+			<div class="space-y-12">
+				<!-- Minimap Demo -->
+				<div>
+					<h2 class="text-2xl font-bold mb-4 text-bhutan-primary">Minimap Component</h2>
+					<p class="text-bhutan-secondary mb-4">
+						Timeline overview with pinch-to-zoom. Use two fingers to zoom, drag to pan, or use the zoom controls.
+					</p>
+					<Minimap />
+				</div>
+
+				<!-- Graph Demo -->
+				<div>
+					<h2 class="text-2xl font-bold mb-4 text-bhutan-primary">Graph Component</h2>
+					<p class="text-bhutan-secondary mb-4">
+						Waveform and frequency graph with pinch-to-zoom. Use two fingers to zoom, drag to pan, or use the zoom controls.
+					</p>
+					<Graph />
+				</div>
+			</div>
+		</div>
+	</section>
+</Layout>
