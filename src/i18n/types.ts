@@ -44,7 +44,7 @@ export interface Translations {
     subtitle: string;
     sessionBrowser: string;
     sessionEditor: string;
-    trackEditor: string;
+    trackTypePicker: string;
     mainPlayer: string;
     pointEditor: string;
     qrSharing: string;

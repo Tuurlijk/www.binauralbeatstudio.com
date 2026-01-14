@@ -50,19 +50,19 @@ const base = import.meta.env.BASE_URL;
 				<p class="text-center mt-4 font-medium text-bhutan-primary">{t('screenshots.sessionEditor', locale, translations)}</p>
 			</div>
 
-			<!-- Screenshot 3: Track Editor -->
+			<!-- Screenshot 3: Track Type Picker -->
 			<div class="bg-bhutan-secondary rounded-2xl p-4 shadow-lg hover:shadow-xl transition-shadow">
 				<picture>
-					<source srcset={`${base}images/phone_track_editor_dark.png`} media="(prefers-color-scheme: dark)" />
-					<source srcset={`${base}images/phone_track_editor_light.png`} media="(prefers-color-scheme: light)" />
+					<source srcset={`${base}images/phone_add_track_dialog_dark.png`} media="(prefers-color-scheme: dark)" />
+					<source srcset={`${base}images/phone_add_track_dialog_light.png`} media="(prefers-color-scheme: light)" />
 					<img 
-						src={`${base}images/phone_track_editor_light.png`}
-						alt="Track Editor for configuring individual audio tracks"
+						src={`${base}images/phone_add_track_dialog_light.png`}
+						alt="Track Type Picker for selecting audio track types"
 						class="rounded-lg w-full aspect-[9/16] object-cover"
 						loading="lazy"
 					/>
 				</picture>
-				<p class="text-center mt-4 font-medium text-bhutan-primary">{t('screenshots.trackEditor', locale, translations)}</p>
+				<p class="text-center mt-4 font-medium text-bhutan-primary">{t('screenshots.trackTypePicker', locale, translations)}</p>
 			</div>
 
 			<!-- Screenshot 4: Main Player -->
