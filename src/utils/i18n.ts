@@ -16,6 +16,7 @@ const translationLoaders: Record<Locale, () => Promise<any>> = {
   es: () => import('../i18n/es.json'),
   hi: () => import('../i18n/hi.json'),
   id: () => import('../i18n/id.json'),
+  nl: () => import('../i18n/nl.json'),
   pt: () => import('../i18n/pt.json'),
   ru: () => import('../i18n/ru.json'),
   zh: () => import('../i18n/zh.json'),

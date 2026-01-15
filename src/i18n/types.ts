@@ -1,4 +1,4 @@
-export type Locale = 'en' | 'ar' | 'es' | 'hi' | 'id' | 'pt' | 'ru' | 'zh';
+export type Locale = 'en' | 'ar' | 'es' | 'hi' | 'id' | 'nl' | 'pt' | 'ru' | 'zh';
 
 export interface Translations {
   meta: {

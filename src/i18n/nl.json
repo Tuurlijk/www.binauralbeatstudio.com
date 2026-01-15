@@ -1,0 +1,223 @@
+{
+  "meta": {
+    "title": "MindState Binaural Beats Studio",
+    "description": "De enige binaural beats app waarmee je volledig gepersonaliseerde audiosessies vanaf nul kunt ontwerpen. Professionele tools voor het maken van sessies die perfect aansluiten bij jouw voorkeuren."
+  },
+  "nav": {
+    "features": "Functies",
+    "howItWorks": "Hoe het werkt",
+    "screenshots": "Schermafbeeldingen",
+    "about": "Over",
+    "benefits": "Voordelen",
+    "download": "Downloaden"
+  },
+  "hero": {
+    "title": "Maak Gepersonaliseerde",
+    "titleHighlight": "Binaural Beats",
+    "titleSuffix": "Sessies",
+    "subtitle": "De enige binaural beats app waarmee je volledig gepersonaliseerde audiosessies vanaf nul kunt ontwerpen. Elke beslissing over frequentie, volume en timing ligt in jouw handen.",
+    "ctaDownload": "Downloaden in Play Store",
+    "ctaLearnMore": "Meer informatie",
+    "tagline": "Native Android app • Professionele audiokwaliteit • Gratis te proberen"
+  },
+  "features": {
+    "title": "Volledige Controle Over Je Audio-ervaring",
+    "subtitle": "In tegenstelling tot apps met vaste presets geeft MindState je professionele tools om sessies te maken die perfect aansluiten bij jouw voorkeuren, gevoeligheid en doelen.",
+    "feature1": {
+      "title": "Volledige Personalisatie",
+      "description": "Ontwerp sessies vanaf nul, geen presets. Stel draaggolf frequenties (80-600 Hz) en beat frequenties (0.5-40 Hz) in om bij jouw persoonlijke gevoeligheid te passen."
+    },
+    "feature2": {
+      "title": "Meerdere Lagen Sessies",
+      "description": "Lagen meerdere tracktypes: binaural beats, monaural beats, isochrone tonen, ruisgeneratoren en je eigen audio bestanden. Elke track heeft onafhankelijke volumecontrole."
+    },
+    "feature3": {
+      "title": "Punt Editor",
+      "description": "Maak vloeiende volumeovergangen in de tijd met punt-niveau volume envelopes. Bouw sessies die zacht beginnen en intensiteit opbouwen, of behoud stabiele frequenties."
+    },
+    "feature4": {
+      "title": "Professionele Editor",
+      "description": "Gedetailleerde controle over elk aspect: frequenties, volumes, timing en overgangen. Preview voordat je opslaat om ervoor te zorgen dat je sessie perfect is."
+    },
+    "feature5": {
+      "title": "QR Code Delen",
+      "description": "Genereer QR codes om je aangepaste sessies direct te delen. Scan QR codes om sessies te ontdekken die door anderen zijn gemaakt, en pas ze aan naar jouw voorkeuren."
+    },
+    "feature6": {
+      "title": "Professionele Audiokwaliteit",
+      "description": "Native audio engine levert kristalheldere geluiden met automatische sample rate conversie, fase-continue synthese en lage latentie verwerking."
+    }
+  },
+  "howItWorks": {
+    "title": "Hoe het Werkt",
+    "subtitle": "Maak je perfecte binaural beats sessie in slechts een paar eenvoudige stappen",
+    "step1": {
+      "title": "Maak Aangepaste Sessie",
+      "description": "Begin met een leeg canvas of kies uit gebundelde voorbeelden. Geef je sessie een naam en stel de duur in."
+    },
+    "step2": {
+      "title": "Voeg Meerdere Tracktypes Toe",
+      "description": "Lagen binaural beats, monaural beats, isochrone tonen, ruisgeneratoren, of importeer je eigen audio bestanden. Kies uit rustgevende achtergrondgeluiden inclusief witte ruis, roze ruis, bruine ruis, verre regen, oude plaat en oceaangolven. Importeer je eigen audio bestanden in MP3, WAV of FLAC formaat voor getimede sample playback."
+    },
+    "step3": {
+      "title": "Pas Frequenties & Volumes Aan",
+      "description": "Stel draaggolf frequenties (80-600 Hz) en beat frequenties (0.5-40 Hz) in om bij jouw gevoeligheid te passen. Controleer track volumes en voeg volume envelopes toe."
+    },
+    "step4": {
+      "title": "Preview & Opslaan",
+      "description": "Test je sessie met preview playback voordat je opslaat. Maak aanpassingen tot het perfect voor jou is."
+    },
+    "step5": {
+      "title": "Delen via QR Code",
+      "description": "Genereer een QR code om je sessie direct te delen. Scan codes van anderen om nieuwe sessies te ontdekken, en pas ze aan naar jouw voorkeuren."
+    }
+  },
+  "screenshots": {
+    "title": "Zie het in Actie",
+    "subtitle": "Professionele interface met Material Design 3, donkere modus en volledige lokalisatie",
+    "sessionBrowser": "Sessie Browser",
+    "sessionEditor": "Sessie Editor",
+    "trackTypePicker": "Tracktype Kiezer",
+    "mainPlayer": "Hoofdspeler",
+    "pointEditor": "Punt Editor",
+    "qrSharing": "QR Code Delen"
+  },
+  "cta": {
+    "title": "Begin met het Maken van Je Perfecte Audio-ervaring",
+    "subtitle": "Stop met genoegen nemen van presets die niet helemaal passen. MindState geeft je de tools om binaural beats sessies te maken die uniek van jou zijn.",
+    "ctaDownload": "Downloaden in Play Store",
+    "ctaViewFeatures": "Bekijk Functies",
+    "benefit1": {
+      "title": "✓ Onbeperkte Sessies",
+      "description": "Maak onbeperkte aangepaste sessies afgestemd op jouw voorkeuren"
+    },
+    "benefit2": {
+      "title": "✓ Professionele Kwaliteit",
+      "description": "Kristalheldere audio met fase-continue synthese"
+    },
+    "benefit3": {
+      "title": "✓ Gratis te Proberen",
+      "description": "Gebundelde sessies beschikbaar voor alle gebruikers"
+    }
+  },
+  "aboutBinauralBeats": {
+    "heroTitle": "Ontgrendel het Potentieel van Je Brein",
+    "heroSubtitle": "Transformeer je mentale staat, verbeter focus, bereik diepere ontspanning, ontgrendel creativiteit en flow states, en bereik piekprestaties door de kracht van hersengolf entrainment.",
+    "benefits": {
+      "title": "Krachtige Voordelen die Je Kunt Ervaren",
+      "subtitle": "Binaural beats en hersengolf entrainment kunnen je helpen opmerkelijke mentale staten en resultaten te bereiken",
+      "benefit1": {
+        "title": "Diepe Ontspanning & Stressverlichting",
+        "description": "Bereik diepe ontspanning en smelt stress weg. Lagere frequenties helpen je brein om diep ontspannen staten binnen te gaan, waardoor angst wordt verminderd en kalmte wordt bevorderd."
+      },
+      "benefit2": {
+        "title": "Verbeterde Focus & Concentratie",
+        "description": "Verhoog je cognitieve prestaties en behoud laser-scherpe focus. Hogere frequenties helpen je brein om optimale staten voor werk, studie en creatieve taken binnen te gaan."
+      },
+      "benefit3": {
+        "title": "Betere Slaapkwaliteit",
+        "description": "Verbeter je slaap natuurlijk. Delta en theta frequenties helpen je brein om over te gaan naar diepe, herstellende slaapstaten voor betere rust en herstel."
+      },
+      "benefit4": {
+        "title": "Meditatie Verbetering",
+        "description": "Ontgrendel diepere meditatiestaten en verbeter je praktijk. Binaural beats kunnen je helpen om theta en alpha staten gemakkelijker te bereiken, waardoor je mindfulness verdiept."
+      },
+      "benefit5": {
+        "title": "Creativiteit & Flow States",
+        "description": "Krijg toegang tot je creatieve potentieel en ga flow states binnen. Alpha frequenties worden geassocieerd met verbeterde creativiteit, probleemoplossing en piekprestaties."
+      },
+      "benefit6": {
+        "title": "Stemming Verbetering",
+        "description": "Verhoog je stemming en emotioneel welzijn. Onderzoek suggereert dat binaural beats kunnen helpen om de stemming te verbeteren, negatieve emoties te verminderen en positieve mentale staten te bevorderen."
+      }
+    },
+    "howItWorks": {
+      "title": "Hoe Hersengolf Entrainment Werkt",
+      "subtitle": "De wetenschap achter de transformatie",
+      "explanation": "Wanneer je naar twee licht verschillende frequenties luistert (één in elk oor), neemt je brein van nature een derde frequentie waar—het verschil tussen hen. Dit wordt een binaural beat genoemd. Je brein synchroniseert vervolgens zijn eigen elektrische activiteit om overeen te komen met deze waargenomen frequentie, een fenomeen dat hersengolf entrainment wordt genoemd.",
+      "noHeadphones": "MindState ondersteunt ook monaural beats en isochrone tonen, die werken zonder hoofdtelefoon. Monaural beats worden gemaakt door twee frequenties te mengen voordat ze je oren bereiken, terwijl isochrone tonen gelijkmatig verdeelde pulsen van een enkele toon gebruiken. Beide kunnen effectief je hersengolven entrainen wanneer ze via luidsprekers worden afgespeeld, waardoor het gemakkelijk is om de voordelen te genieten tijdens meditatie, werk of slaap—geen hoofdtelefoon vereist.",
+      "personalization": "Verschillende frequenties ontgrendelen verschillende mentale staten: Delta (0.5-4 Hz) voor diepe slaap, Theta (4-8 Hz) voor meditatie en creativiteit, Alpha (8-13 Hz) voor ontspannen focus, Beta (13-30 Hz) voor actieve concentratie, en Gamma (30-100 Hz) voor piekprestaties. Door draaggolf frequenties en beat frequenties te personaliseren om bij jouw unieke gevoeligheid te passen, kun je de voordelen maximaliseren en je gewenste mentale staat effectiever bereiken."
+    },
+    "safety": {
+      "title": "Veilig & Goed Onderzocht",
+      "subtitle": "Binaural beats zijn over het algemeen veilig voor de meeste mensen bij verantwoord gebruik",
+      "general": "Binaural beats worden al decennia onderzocht en worden als veilig beschouwd voor de meerderheid van de gebruikers. Ze werken door natuurlijke hersengolf entrainment en vereisen geen invasieve procedures of stoffen.",
+      "precautions": "Als je epilepsie of een geschiedenis van aanvallen hebt, raadpleeg dan een zorgverlener voordat je het gebruikt. Houd het volume op comfortabele niveaus—overmatig volume kan gehoorbeschadiging veroorzaken. Als je enig ongemak ervaart, stop dan met gebruik. Binaural beats zijn geen vervanging voor medische behandeling of professionele geestelijke gezondheidszorg."
+    },
+    "research": {
+      "title": "Ondersteund door Onderzoek",
+      "subtitle": "Wetenschappelijke studies ondersteunen de voordelen van binaural beats en hersengolf entrainment",
+      "findings": "Onderzoek heeft aangetoond dat binaural beats kunnen helpen om angst te verminderen, focus te verbeteren, meditatiepraktijk te verbeteren en betere slaap te ondersteunen. Studies hebben positieve effecten gevonden op ontspanning, stressvermindering en cognitieve prestaties. Hoewel individuele resultaten kunnen variëren, blijft het wetenschappelijke bewijs groeien, wat het gebruik van binaural beats als hulpmiddel voor mentale verbetering en welzijn ondersteunt.",
+      "studies": {
+        "metaAnalysis": {
+          "title": "Meta-Analyse: Cognitie, Angst & Pijn",
+          "description": "Een uitgebreide analyse van 22 studies vond middelgrote, significante effecten op geheugen, aandacht, angst en pijnperceptie (effectgrootte g = 0.45).",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/30073406/"
+        },
+        "anxiety": {
+          "title": "Angst & Levenskwaliteit Studie",
+          "description": "Dagelijkse blootstelling aan delta-frequentie binaural beats gedurende 60 dagen toonde significante afnames in trait angst en verhogingen in levenskwaliteit.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/17309374/"
+        },
+        "memory": {
+          "title": "Geheugen Verbetering Onderzoek",
+          "description": "Onderzoek vond dat alpha, beta en gamma binaural beats corticale netwerken kunnen moduleren en kortetermijn geheugenprestaties kunnen verbeteren.",
+          "url": "https://link.springer.com/article/10.1007/s00221-021-06132-6"
+        },
+        "tinnitus": {
+          "title": "Tinnitus Beheer Studie",
+          "description": "Een gerandomiseerde gecontroleerde trial vond dat alpha-frequentie binaural beats gecombineerd met muziektherapie leidde tot significante verbeteringen in chronische tinnitus.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/38723376/"
+        }
+      }
+    }
+  },
+  "footer": {
+    "description": "Maak gepersonaliseerde binaural beats sessies afgestemd op jouw voorkeuren.",
+    "links": "Links",
+    "download": "Downloaden",
+    "downloadDescription": "Beschikbaar in de Google Play Store",
+    "copyright": "© 2026 MindState / Michiel Roos. Alle rechten voorbehouden."
+  },
+  "languageSwitcher": {
+    "label": "Taal",
+    "current": "Huidige taal",
+    "switchTo": "Schakel over naar {language}"
+  },
+  "quotes": {
+    "title": "Wat Onderzoek Zegt",
+    "subtitle": "Wetenschappelijke studies ondersteunen de voordelen van hersengolf entrainment",
+    "quote1": {
+      "text": "De groep die naar binaural beats luisterde, ervoer een toename in parasympathische activiteit en rapporteerde hogere niveaus van ontspanning.",
+      "source": "McConnell et al. (2014)"
+    },
+    "quote2": {
+      "text": "Tegen het einde van de studie rapporteerden deelnemers een algehele afname in verstoring, spanning, angst, verwarring en vermoeidheid. Bovendien was er een toename in zelfgerapporteerde levenskwaliteit.",
+      "source": "Meerdere studies (Medical News Today, 2019)"
+    },
+    "quote3": {
+      "text": "Binaural beats kunnen de hersensignalen die nodig zijn voor slaap induceren, wat mogelijk de slaapkwaliteit verhoogt.",
+      "source": "Lee et al. (2019)"
+    },
+    "quote4": {
+      "text": "Potentiële binaural beats voordelen omvatten: verminderde angst en stress, verbeterde stemming, verhoogde focus en concentratie, verhoogde creativiteit, verbeterde slaapgewoonten, beter pijnbeheer.",
+      "source": "Healthline/WebMD reviews (2024-2025)"
+    },
+    "quote5": {
+      "text": "Ernaar luisteren kan helpen bij cognitief functioneren, omdat het de hersengolven zijn die het meest betrokken zijn bij je executieve functies.",
+      "source": "Algemene artikelen (PopSci, 2021)"
+    },
+    "quote6": {
+      "text": "Binaural beats kunnen nuttig zijn bij het verbeteren van training en leren.",
+      "source": "Huang & Charyton (2008)"
+    },
+    "quote7": {
+      "text": "Elektro-encefalografie (EEG) studies hebben aangetoond dat blootstelling aan binaural beats hersengolfpatronen kan synchroniseren, wat leidt tot staten van verbeterde ontspanning en veranderde bewustzijnsstaten.",
+      "source": "Systematische review (2023, PMC10198548)"
+    },
+    "quote8": {
+      "text": "Isochrone tonen kunnen je brein helpen synchroniseren met een specifiek auditief patroon dat dingen zoals angst kan verlichten.",
+      "source": "Healthline (2024)"
+    }
+  }
+}

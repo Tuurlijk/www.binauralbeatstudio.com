@@ -10,6 +10,7 @@ const locales = {
   es: 'es-ES',
   hi: 'hi-IN',
   id: 'id-ID',
+  nl: 'nl-NL',
   pt: 'pt-BR',
   ru: 'ru-RU',
   zh: 'zh-CN',

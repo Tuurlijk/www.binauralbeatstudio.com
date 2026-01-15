@@ -9,6 +9,7 @@ const base = import.meta.env.BASE_URL;
 // Languages ordered by total speakers (native + second language) - largest audience first
 const languages = [
 	{ code: 'en' as Locale, name: 'English', nativeName: 'English' },           // ~1.5 billion
+	{ code: 'nl' as Locale, name: 'Dutch', nativeName: 'Nederlands' },          // ~24 million native
 	{ code: 'zh' as Locale, name: 'Chinese', nativeName: '中文' },              // ~1.1 billion native
 	{ code: 'hi' as Locale, name: 'Hindi', nativeName: 'हिन्दी' },              // ~600 million native
 	{ code: 'es' as Locale, name: 'Spanish', nativeName: 'Español' },           // ~500 million native
@@ -21,7 +22,7 @@ const languages = [
 function getCurrentPath(): string {
 	// Extract path without locale prefix
 	const path = Astro.url.pathname;
-	const localeMatch = path.match(/^\/(en|ar|es|hi|id|pt|ru|zh)\//);
+	const localeMatch = path.match(/^\/(en|ar|es|hi|id|nl|pt|ru|zh)\//);
 	if (localeMatch) {
 		return path.replace(`/${localeMatch[1]}/`, '/');
 	}
@@ -156,4 +157,36 @@ const currentLang = languages.find((l) => l.code === locale) || languages[0];
 		border-radius: 2px 0 0 2px;
 	}
 </style>
+
+<script>
+	// Click outside to close language menu
+	document.addEventListener('DOMContentLoaded', () => {
+		const languageSwitcher = document.querySelector('.language-switcher');
+		const menuToggle = document.getElementById('language-menu-toggle') as HTMLInputElement | null;
+		const menu = document.getElementById('language-menu');
+
+		if (languageSwitcher && menuToggle && menu) {
+			// Close menu when clicking outside
+			document.addEventListener('click', (e) => {
+				if (menuToggle.checked && e.target instanceof Node && !languageSwitcher.contains(e.target)) {
+					menuToggle.checked = false;
+				}
+			});
+
+			// Close menu when pressing Escape
+			document.addEventListener('keydown', (e) => {
+				if (e.key === 'Escape' && menuToggle.checked) {
+					menuToggle.checked = false;
+				}
+			});
+
+			// Close menu when clicking on a language link
+			menu.addEventListener('click', (e) => {
+				if (e.target instanceof Element && e.target.closest('a')) {
+					menuToggle.checked = false;
+				}
+			});
+		}
+	});
+</script>
 
