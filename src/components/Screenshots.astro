@@ -3,9 +3,22 @@ import { getLocale } from 'astro-i18n-aut';
 import { loadTranslations, t } from '../utils/i18n';
 import type { Locale } from '../i18n/types';
 
+// Import phone screenshots
+import phoneSessionBrowserLight from '../assets/images/phone_session_browser_light.png';
+import phoneSessionBrowserDark from '../assets/images/phone_session_browser_dark.png';
+import phoneSessionEditorLight from '../assets/images/phone_session_editor_light.png';
+import phoneSessionEditorDark from '../assets/images/phone_session_editor_dark.png';
+import phoneAddTrackDialogLight from '../assets/images/phone_add_track_dialog_light.png';
+import phoneAddTrackDialogDark from '../assets/images/phone_add_track_dialog_dark.png';
+import phoneMainLight from '../assets/images/phone_main_light.png';
+import phoneMainDark from '../assets/images/phone_main_dark.png';
+import phonePointEditorLight from '../assets/images/phone_point_editor_light.png';
+import phonePointEditorDark from '../assets/images/phone_point_editor_dark.png';
+import phoneQrDisplayLight from '../assets/images/phone_qr_display_light.png';
+import phoneQrDisplayDark from '../assets/images/phone_qr_display_dark.png';
+
 const locale = getLocale(Astro.url) as Locale;
 const translations = await loadTranslations(locale);
-const base = import.meta.env.BASE_URL;
 ---
 
 <section id="screenshots" class="py-20 px-4 sm:px-6 lg:px-8" style="background: linear-gradient(to bottom right, rgba(255, 107, 53, 0.1), var(--bg-primary), rgba(34, 197, 94, 0.1));">
@@ -23,12 +36,12 @@ const base = import.meta.env.BASE_URL;
 			<!-- Screenshot 1: Session Browser -->
 			<div class="bg-bhutan-secondary rounded-2xl p-4 shadow-lg hover:shadow-xl transition-shadow">
 				<picture>
-					<source srcset={`${base}images/phone_session_browser_dark.png`} media="(prefers-color-scheme: dark)" />
-					<source srcset={`${base}images/phone_session_browser_light.png`} media="(prefers-color-scheme: light)" />
+					<source srcset={phoneSessionBrowserDark.src} media="(prefers-color-scheme: dark)" />
+					<source srcset={phoneSessionBrowserLight.src} media="(prefers-color-scheme: light)" />
 					<img 
-						src={`${base}images/phone_session_browser_light.png`}
+						src={phoneSessionBrowserLight.src}
 						alt="Session Browser showing list of binaural beats sessions"
-						class="rounded-lg w-full aspect-[9/16] object-cover"
+						class="rounded-lg w-full aspect-[1080/2340] object-cover"
 						loading="lazy"
 					/>
 				</picture>
@@ -38,12 +51,12 @@ const base = import.meta.env.BASE_URL;
 			<!-- Screenshot 2: Session Editor -->
 			<div class="bg-bhutan-secondary rounded-2xl p-4 shadow-lg hover:shadow-xl transition-shadow">
 				<picture>
-					<source srcset={`${base}images/phone_session_editor_dark.png`} media="(prefers-color-scheme: dark)" />
-					<source srcset={`${base}images/phone_session_editor_light.png`} media="(prefers-color-scheme: light)" />
+					<source srcset={phoneSessionEditorDark.src} media="(prefers-color-scheme: dark)" />
+					<source srcset={phoneSessionEditorLight.src} media="(prefers-color-scheme: light)" />
 					<img 
-						src={`${base}images/phone_session_editor_light.png`}
+						src={phoneSessionEditorLight.src}
 						alt="Session Editor for creating and editing binaural beats sessions"
-						class="rounded-lg w-full aspect-[9/16] object-cover"
+						class="rounded-lg w-full aspect-[1080/2340] object-cover"
 						loading="lazy"
 					/>
 				</picture>
@@ -53,12 +66,12 @@ const base = import.meta.env.BASE_URL;
 			<!-- Screenshot 3: Track Type Picker -->
 			<div class="bg-bhutan-secondary rounded-2xl p-4 shadow-lg hover:shadow-xl transition-shadow">
 				<picture>
-					<source srcset={`${base}images/phone_add_track_dialog_dark.png`} media="(prefers-color-scheme: dark)" />
-					<source srcset={`${base}images/phone_add_track_dialog_light.png`} media="(prefers-color-scheme: light)" />
+					<source srcset={phoneAddTrackDialogDark.src} media="(prefers-color-scheme: dark)" />
+					<source srcset={phoneAddTrackDialogLight.src} media="(prefers-color-scheme: light)" />
 					<img 
-						src={`${base}images/phone_add_track_dialog_light.png`}
+						src={phoneAddTrackDialogLight.src}
 						alt="Track Type Picker for selecting audio track types"
-						class="rounded-lg w-full aspect-[9/16] object-cover"
+						class="rounded-lg w-full aspect-[1080/2340] object-cover"
 						loading="lazy"
 					/>
 				</picture>
@@ -68,12 +81,12 @@ const base = import.meta.env.BASE_URL;
 			<!-- Screenshot 4: Main Player -->
 			<div class="bg-bhutan-secondary rounded-2xl p-4 shadow-lg hover:shadow-xl transition-shadow">
 				<picture>
-					<source srcset={`${base}images/phone_main_dark.png`} media="(prefers-color-scheme: dark)" />
-					<source srcset={`${base}images/phone_main_light.png`} media="(prefers-color-scheme: light)" />
+					<source srcset={phoneMainDark.src} media="(prefers-color-scheme: dark)" />
+					<source srcset={phoneMainLight.src} media="(prefers-color-scheme: light)" />
 					<img 
-						src={`${base}images/phone_main_light.png`}
+						src={phoneMainLight.src}
 						alt="Main player screen for playing binaural beats sessions"
-						class="rounded-lg w-full aspect-[9/16] object-cover"
+						class="rounded-lg w-full aspect-[1080/2340] object-cover"
 						loading="lazy"
 					/>
 				</picture>
@@ -83,12 +96,12 @@ const base = import.meta.env.BASE_URL;
 			<!-- Screenshot 5: Point Editor -->
 			<div class="bg-bhutan-secondary rounded-2xl p-4 shadow-lg hover:shadow-xl transition-shadow">
 				<picture>
-					<source srcset={`${base}images/phone_point_editor_dark.png`} media="(prefers-color-scheme: dark)" />
-					<source srcset={`${base}images/phone_point_editor_light.png`} media="(prefers-color-scheme: light)" />
+					<source srcset={phonePointEditorDark.src} media="(prefers-color-scheme: dark)" />
+					<source srcset={phonePointEditorLight.src} media="(prefers-color-scheme: light)" />
 					<img 
-						src={`${base}images/phone_point_editor_light.png`}
+						src={phonePointEditorLight.src}
 						alt="Point Editor for adjusting volume and timing"
-						class="rounded-lg w-full aspect-[9/16] object-cover"
+						class="rounded-lg w-full aspect-[1080/2340] object-cover"
 						loading="lazy"
 					/>
 				</picture>
@@ -98,12 +111,12 @@ const base = import.meta.env.BASE_URL;
 			<!-- Screenshot 6: QR Code Display -->
 			<div class="bg-bhutan-secondary rounded-2xl p-4 shadow-lg hover:shadow-xl transition-shadow">
 				<picture>
-					<source srcset={`${base}images/phone_qr_display_dark.png`} media="(prefers-color-scheme: dark)" />
-					<source srcset={`${base}images/phone_qr_display_light.png`} media="(prefers-color-scheme: light)" />
+					<source srcset={phoneQrDisplayDark.src} media="(prefers-color-scheme: dark)" />
+					<source srcset={phoneQrDisplayLight.src} media="(prefers-color-scheme: light)" />
 					<img 
-						src={`${base}images/phone_qr_display_light.png`}
+						src={phoneQrDisplayLight.src}
 						alt="QR Code display for sharing binaural beats sessions"
-						class="rounded-lg w-full aspect-[9/16] object-cover"
+						class="rounded-lg w-full aspect-[1080/2340] object-cover"
 						loading="lazy"
 					/>
 				</picture>
