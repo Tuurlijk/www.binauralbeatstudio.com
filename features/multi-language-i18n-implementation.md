@@ -229,7 +229,7 @@ Organize translations by component/section for maintainability:
     "links": "Links",
     "download": "Download",
     "downloadDescription": "Available on the Google Play Store",
-    "copyright": "© 2024 MindState. All rights reserved."
+    "copyright": "© 2026 MindState. All rights reserved."
   },
   "languageSwitcher": {
     "label": "Language",
