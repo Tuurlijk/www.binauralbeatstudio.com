@@ -1,61 +1,50 @@
-MindState es la única aplicación de ritmos binaurales que te permite diseñar sesiones de audio completamente personalizadas desde cero. Transforma tu estado mental, mejora el enfoque, logra relajación más profunda, desbloquea creatividad y estados de flujo, y alcanza máximo rendimiento a través del entrenamiento de ondas cerebrales.
+MindState te permite diseñar sesiones de terapia de audio completamente personalizadas desde cero. Ya sea que busques alivio de los síntomas de TDAH, quieras relajarte, profundizar meditación, mejorar el sueño, potenciar creatividad o mejorar el enfoque—MindState te da herramientas para crear sesiones adaptadas a tus necesidades únicas.
+
+Beneficios Dirigidos a Tus Objetivos
+
+• Alivio del TDAH
+• Relajación Profunda y Alivio del Estrés
+• Meditación Mejorada
+• Mejor Calidad del Sueño
+• Potenciar la Creatividad
+• Enfoque y Concentración Mejorados
+
+Cómo Funciona la Terapia de Audio
+
+Los ritmos binaurales usan dos frecuencias ligeramente diferentes reproducidas en cada oído para crear una tercera frecuencia percibida que puede ayudar a guiar tu cerebro hacia estados específicos. Las investigaciones muestran que pueden mejorar la atención, reducir la ansiedad y apoyar la función cognitiva—haciéndolos particularmente útiles para el apoyo al TDAH. Las frecuencias Solfeggio (tonos curativos específicos como 528 Hz para transformación y 432 Hz para armonía natural) pueden combinarse con ritmos binaurales para efectos mejorados. Varios tipos de ruido—ruido blanco para enmascarar distracciones, ruido rosa para mejor sueño, y ruido marrón para relajación profunda—también pueden combinarse para crear sesiones de terapia personalizadas adaptadas a tus necesidades.
 
 Por Qué Importa la Personalización
 
-Cada persona responde de manera diferente a los ritmos binaurales. MindState te pone en control total, permitiéndote ajustar las frecuencias a tus patrones de respuesta personal.
-
-Beneficios Poderosos Respaldados por la Ciencia
-
-Los estudios científicos respaldan beneficios notables:
-• Relajación Profunda y Alivio del Estrés: Frecuencias más bajas ayudan a tu cerebro a entrar en estados profundamente relajados
-• Enfoque y Concentración Mejorados: Frecuencias más altas ayudan a tu cerebro a entrar en estados óptimos para trabajo y estudio
-• Mejor Calidad del Sueño: Frecuencias delta y theta ayudan a tu cerebro a hacer la transición a estados de sueño profundo
-• Mejora de la Meditación: Desbloquea estados de meditación más profundos y alcanza estados theta y alfa más fácilmente
-• Creatividad y Estados de Flujo: Accede a tu potencial creativo y entra en estados de flujo con frecuencias alfa
-• Mejora del Estado de Ánimo: Eleva tu estado de ánimo y bienestar emocional con ansiedad reducida
+Todos tienen necesidades y sensibilidades únicas. MindState te da control completo para personalizar cada aspecto de tus sesiones de terapia de audio—desde frecuencias y volúmenes hasta tiempos y transiciones. Crea sesiones que funcionen específicamente para ti, no presets genéricos que pueden no coincidir con tus patrones de respuesta personal.
 
 Control Total Sobre Tu Experiencia de Audio
 
-A diferencia de las aplicaciones con presets fijos, MindState te ofrece herramientas de nivel profesional:
-
-Control de Frecuencia Precisa
-Establece frecuencias portadoras de 80-600 Hz y frecuencias de ritmo de 0.5-40 Hz. Apunta a estados: Delta (0.5-4 Hz) para dormir, Theta (4-8 Hz) para meditación, Alpha (8-13 Hz) para enfoque relajado, Beta (13-30 Hz) para concentración, Gamma (30-100 Hz) para máximo rendimiento.
-
 Constructor de Sesiones Multicapa
-Superpone múltiples tipos de pistas: ritmos binaurales (requiere auriculares), ritmos monaurales (funciona en altavoces), tonos isocrónicos (sin auriculares), generadores de ruido (ruido blanco, rosa, marrón, lluvia, disco antiguo, olas), y tus propios archivos de audio.
-
-Editor de Puntos Profesional
-Crea transiciones de volumen suaves con envolventes a nivel de punto. Construye sesiones que comienzan suaves y aumentan la intensidad.
-
-Control Granular de Sesión
-Vista previa antes de guardar. Ajusta frecuencias, volúmenes, tiempos y transiciones. Crea sesiones para meditación, enfoque, sueño, alivio del estrés o experimentación.
+Superpone múltiples tipos de pistas: ritmos binaurales (requiere auriculares), ritmos monaurales (funciona en altavoces), tonos isocrónicos (sin auriculares), generadores de ruido (ruido blanco, rosa, marrón, lluvia, olas), y tus propios archivos de audio.
 
 Comparte y Descubre Sesiones Personalizadas
 
-Genera códigos QR para compartir tus sesiones. Escanea códigos QR para descubrir sesiones creadas por otros, luego modifícalas. Seis ejemplos incluidos.
+Genera códigos QR para compartir tus sesiones personalizadas. Escanea códigos QR para descubrir sesiones creadas por otros, luego modifícalas.
 
 Calidad de Audio Profesional
 
-Motor de audio nativo ofrece sonido cristalino con conversión automática, síntesis de fase continua y baja latencia. Interfaz Material Design 3 con modo oscuro y 8 idiomas.
+Motor de audio nativo ofrece sonido cristalino con conversión automática de frecuencia de muestreo, síntesis de fase continua y procesamiento de baja latencia. 9 idiomas.
 
 Seguro y Bien Estudiado
 
-Los ritmos binaurales han sido estudiados durante décadas y se consideran seguros para la mayoría de los usuarios. Un meta-análisis de 22 estudios encontró efectos significativos en memoria y atención.
+Los ritmos binaurales han sido estudiados durante décadas y se consideran seguros para la mayoría de los usuarios. Las investigaciones muestran efectos significativos en la memoria, atención, ansiedad y función cognitiva. Meta-análisis de 22 estudios encontró efectos significativos en memoria, atención, ansiedad.
 
 Características Clave
-✓ Crea sesiones personalizadas ilimitadas
-✓ Control de frecuencia (portadora: 80-600 Hz, ritmo: 0.5-40 Hz)
-✓ Pistas multicapa: binaurales, monaurales, isocrónicos, generadores de ruido y audio
-✓ Editor de puntos para transiciones suaves
+✓ Sesiones personalizadas ilimitadas para TDAH, sueño, meditación, enfoque, relajación, creatividad
+✓ Pistas multicapa: ritmos binaurales, ritmos monaurales, tonos isocrónicos, generadores de ruido y archivos de audio
+✓ Editor de puntos para transiciones de volumen suaves
 ✓ Importa tus propios archivos de audio
 ✓ Compartir con código QR
 ✓ Vista previa antes de guardar
 ✓ Síntesis de audio profesional
 ✓ Funciona con o sin auriculares
-✓ Interfaz Material Design 3 con modo oscuro
-✓ 8 idiomas
+✓ 9 idiomas
 
-Crea Tu Experiencia de Audio Perfecta
+Comienza a Crear Tu Experiencia de Audio Perfecta
 
-Deja de conformarte con presets que no encajan bien. MindState te da herramientas para crear sesiones de ritmos binaurales únicamente tuyas. Ya sea que necesites frecuencias suaves para oídos sensibles, ritmos poderosos para meditación profunda, o sesiones evolutivas que se adapten a los ritmos de tu cuerpo, MindState te da control.
-
+Ya sea que necesites apoyo para síntomas de TDAH, quieras relajarte, profundizar meditación, dormir mejor, potenciar creatividad o mejorar el enfoque—MindState te da herramientas para crear sesiones de ritmos binaurales que son tuyas.

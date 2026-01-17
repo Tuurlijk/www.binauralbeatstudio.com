@@ -1,61 +1,50 @@
-MindState é o único aplicativo de batidas binaurais que permite criar sessões de áudio completamente personalizadas do zero. Transforme seu estado mental, melhore o foco, alcance relaxamento mais profundo, desbloqueie criatividade e estados de fluxo, e atinja desempenho máximo através do treinamento de ondas cerebrais.
+MindState permite criar sessões de terapia de áudio completamente personalizadas do zero. Se você está procurando alívio dos sintomas de TDAH, quer relaxar, aprofundar meditação, melhorar o sono, aumentar criatividade ou melhorar o foco—MindState oferece ferramentas para criar sessões adaptadas às suas necessidades.
+
+Benefícios Direcionados para Seus Objetivos
+
+• Alívio do TDAH
+• Relaxamento Profundo e Alívio do Estresse
+• Meditação Aprimorada
+• Melhor Qualidade do Sono
+• Aumentar a Criatividade
+• Foco e Concentração Aprimorados
+
+Como a Terapia de Áudio Funciona
+
+Batidas binaurais usam duas frequências ligeiramente diferentes reproduzidas em cada ouvido para criar uma terceira frequência percebida que pode ajudar a guiar seu cérebro para estados específicos. Pesquisas mostram que podem melhorar a atenção, reduzir a ansiedade e apoiar a função cognitiva—tornando-as particularmente úteis para suporte ao TDAH. Frequências Solfeggio (tons curativos específicos como 528 Hz para transformação e 432 Hz para harmonia natural) podem ser combinadas com batidas binaurais para efeitos aprimorados. Vários tipos de ruído—ruído branco para mascarar distrações, ruído rosa para melhor sono, e ruído marrom para relaxamento profundo—também podem ser combinados para criar sessões de terapia personalizadas adaptadas às suas necessidades.
 
 Por Que a Personalização Importa
 
-Cada pessoa responde de forma diferente às batidas binaurais. MindState coloca você no controle total, permitindo que você ajuste as frequências aos seus padrões de resposta pessoal.
-
-Benefícios Poderosos Respaldados pela Ciência
-
-Estudos científicos respaldam benefícios notáveis:
-• Relaxamento Profundo e Alívio do Estresse: Frequências mais baixas ajudam seu cérebro a entrar em estados profundamente relaxados
-• Foco e Concentração Aprimorados: Frequências mais altas ajudam seu cérebro a entrar em estados ótimos para trabalho e estudo
-• Melhor Qualidade do Sono: Frequências delta e theta ajudam seu cérebro a fazer a transição para estados de sono profundo
-• Melhoria da Meditação: Desbloqueie estados de meditação mais profundos e alcance estados theta e alpha mais facilmente
-• Criatividade e Estados de Fluxo: Acesse seu potencial criativo e entre em estados de fluxo com frequências alpha
-• Melhoria do Humor: Eleve seu humor e bem-estar emocional com ansiedade reduzida
+Todos têm necessidades e sensibilidades únicas. MindState oferece controle total para personalizar cada aspecto de suas sessões de terapia de áudio—desde frequências e volumes até tempos e transições. Crie sessões que funcionem especificamente para você, não predefinições genéricas que podem não corresponder aos seus padrões de resposta pessoal.
 
 Controle Total Sobre Sua Experiência de Áudio
 
-Diferente de aplicativos com predefinições fixas, MindState oferece ferramentas profissionais:
-
-Controle de Frequência Preciso
-Defina frequências portadoras de 80-600 Hz e frequências de batida de 0.5-40 Hz. Almeje estados: Delta (0.5-4 Hz) para sono, Theta (4-8 Hz) para meditação, Alpha (8-13 Hz) para foco relaxado, Beta (13-30 Hz) para concentração, Gama (30-100 Hz) para desempenho máximo.
-
 Construtor de Sessões Multicamadas
-Sobreponha múltiplos tipos de faixas: batidas binaurais (requer fones de ouvido), batidas monaurais (funciona em alto-falantes), tons isocrônicos (sem fones de ouvido), geradores de ruído (ruído branco, rosa, marrom, chuva, disco antigo, ondas), e seus próprios arquivos de áudio.
-
-Editor de Pontos Profissional
-Crie transições de volume suaves com envelopes em nível de ponto. Construa sessões que começam suaves e aumentam a intensidade.
-
-Controle Granular de Sessão
-Visualize antes de salvar. Ajuste frequências, volumes, tempos e transições. Crie sessões para meditação, foco, sono, alívio do estresse ou experimentação.
+Sobreponha múltiplos tipos de faixas: batidas binaurais (requer fones de ouvido), batidas monaurais (funciona em alto-falantes), tons isocrônicos (sem fones de ouvido), geradores de ruído (ruído branco, rosa, marrom, chuva, ondas), e seus próprios arquivos de áudio.
 
 Compartilhe e Descubra Sessões Personalizadas
 
-Gere códigos QR para compartilhar suas sessões. Escaneie códigos QR para descobrir sessões criadas por outros, depois modifique-as. Seis exemplos incluídos.
+Gere códigos QR para compartilhar suas sessões personalizadas. Escaneie códigos QR para descobrir sessões criadas por outros, depois personalize-as.
 
 Qualidade de Áudio Profissional
 
-Motor de áudio nativo oferece som cristalino com conversão automática, síntese de fase contínua e baixa latência. Interface Material Design 3 com modo escuro e 8 idiomas.
+Motor de áudio nativo oferece som cristalino com conversão automática de taxa de amostragem, síntese de fase contínua e processamento de baixa latência. 9 idiomas.
 
 Seguro e Bem Estudado
 
-Batidas binaurais têm sido estudadas há décadas e são consideradas seguras para a maioria dos usuários. Uma meta-análise de 22 estudos encontrou efeitos significativos em memória e atenção.
+Batidas binaurais têm sido estudadas há décadas e são consideradas seguras para a maioria dos usuários. Pesquisas mostram efeitos significativos na memória, atenção, ansiedade e função cognitiva. Meta-análise de 22 estudos encontrou efeitos significativos em memória, atenção, ansiedade.
 
 Recursos Principais
-✓ Crie sessões personalizadas ilimitadas
-✓ Controle de frequência preciso (portadora: 80-600 Hz, batida: 0.5-40 Hz)
-✓ Faixas multicamadas: binaurais, monaurais, isocrônicos, geradores de ruído e áudio
-✓ Editor de pontos para transições suaves
+✓ Sessões personalizadas ilimitadas para TDAH, sono, meditação, foco, relaxamento, criatividade
+✓ Faixas multicamadas: batidas binaurais, batidas monaurais, tons isocrônicos, geradores de ruído e arquivos de áudio
+✓ Editor de pontos para transições de volume suaves
 ✓ Importe seus próprios arquivos de áudio
-✓ Compartilhamento de código QR
+✓ Compartilhamento por código QR
 ✓ Visualização antes de salvar
 ✓ Síntese de áudio profissional
 ✓ Funciona com ou sem fones de ouvido
-✓ Interface Material Design 3 com modo escuro
-✓ 8 idiomas
+✓ 9 idiomas
 
 Comece a Criar Sua Experiência de Áudio Perfeita
 
-Pare de se contentar com predefinições que não se encaixam bem. MindState oferece as ferramentas para criar sessões de batidas binaurais que são exclusivamente suas. Seja você precise de frequências suaves para ouvidos sensíveis, batidas poderosas para meditação profunda, ou sessões evolutivas que se adaptam aos ritmos do seu corpo, MindState coloca você no controle.
-
+Se você precisa de suporte para sintomas de TDAH, quer relaxar, aprofundar meditação, dormir melhor, aumentar criatividade ou melhorar o foco—MindState oferece ferramentas para criar sessões de batidas binaurais que são suas.
