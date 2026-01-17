@@ -1,6 +1,6 @@
 {
   "meta": {
-    "title": "MindState Binaural Beats Studio",
+    "title": "MindState: Geluidstherapie",
     "description": "De enige binaural beats app waarmee je volledig gepersonaliseerde audiosessies vanaf nul kunt ontwerpen. Professionele tools voor het maken van sessies die perfect aansluiten bij jouw voorkeuren."
   },
   "nav": {
@@ -13,9 +13,9 @@
   },
   "hero": {
     "title": "Maak Gepersonaliseerde",
-    "titleHighlight": "Binaural Beats",
+    "titleHighlight": "Meerdere Lagen",
     "titleSuffix": "Sessies",
-    "subtitle": "De enige binaural beats app waarmee je volledig gepersonaliseerde audiosessies vanaf nul kunt ontwerpen. Elke beslissing over frequentie, volume en timing ligt in jouw handen.",
+    "subtitle": "MindState stelt je in staat om volledig gepersonaliseerde audiotherapiesessies vanaf nul te ontwerpen. Of je nu zoekt naar verlichting van AD/HD-symptomen, wilt ontspannen, je meditatiepraktijk wilt verdiepen, de slaapkwaliteit wilt verbeteren, creativiteit wilt stimuleren, of focus en concentratie wilt verbeteren—MindState geeft je de tools om sessies te maken die zijn afgestemd op jouw unieke behoeften.",
     "ctaDownload": "Downloaden in Play Store",
     "ctaLearnMore": "Meer informatie",
     "tagline": "Native Android app • Professionele audiokwaliteit • Gratis te proberen"
@@ -25,11 +25,11 @@
     "subtitle": "In tegenstelling tot apps met vaste presets geeft MindState je professionele tools om sessies te maken die perfect aansluiten bij jouw voorkeuren, gevoeligheid en doelen.",
     "feature1": {
       "title": "Volledige Personalisatie",
-      "description": "Ontwerp sessies vanaf nul, geen presets. Stel draaggolf frequenties (80-600 Hz) en beat frequenties (0.5-40 Hz) in om bij jouw persoonlijke gevoeligheid te passen."
+      "description": "Ontwerp sessies vanaf nul, of kopieer meegeleverde sessies. Bouw je eigen gepersonaliseerde sessie om bij jouw persoonlijke gevoeligheid te passen."
     },
     "feature2": {
       "title": "Meerdere Lagen Sessies",
-      "description": "Lagen meerdere tracktypes: binaural beats, monaural beats, isochrone tonen, ruisgeneratoren en je eigen audio bestanden. Elke track heeft onafhankelijke volumecontrole."
+      "description": "Lagen meerdere tracktypes: binaural beats, monaural beats, isochrone tonen, Solfeggio-tonen, ruisgeneratoren en je eigen audio bestanden. Elke track heeft onafhankelijke volumecontrole."
     },
     "feature3": {
       "title": "Punt Editor",
@@ -37,7 +37,7 @@
     },
     "feature4": {
       "title": "Professionele Editor",
-      "description": "Gedetailleerde controle over elk aspect: frequenties, volumes, timing en overgangen. Preview voordat je opslaat om ervoor te zorgen dat je sessie perfect is."
+      "description": "Gedetailleerde controle over elk aspect: frequenties, volumes, timing, ruisparameters en overgangen. Preview voordat je opslaat om ervoor te zorgen dat je sessie perfect is. Wijzig ruisparameters in de loop van de tijd."
     },
     "feature5": {
       "title": "QR Code Delen",
@@ -45,7 +45,7 @@
     },
     "feature6": {
       "title": "Professionele Audiokwaliteit",
-      "description": "Native audio engine levert kristalheldere geluiden met automatische sample rate conversie, fase-continue synthese en lage latentie verwerking."
+      "description": "Native audio engine levert realtime gesynthetiseerde kristalheldere geluiden."
     }
   },
   "howItWorks": {
@@ -61,7 +61,7 @@
     },
     "step3": {
       "title": "Pas Frequenties & Volumes Aan",
-      "description": "Stel draaggolf frequenties (80-600 Hz) en beat frequenties (0.5-40 Hz) in om bij jouw gevoeligheid te passen. Controleer track volumes en voeg volume envelopes toe."
+      "description": "Stel draaggolf frequenties en beat frequenties in om bij jouw gevoeligheid te passen. Of gebruik Solfeggio draaggolf frequenties. Controleer track volumes en voeg volume envelopes toe."
     },
     "step4": {
       "title": "Preview & Opslaan",
@@ -84,7 +84,7 @@
   },
   "cta": {
     "title": "Begin met het Maken van Je Perfecte Audio-ervaring",
-    "subtitle": "Stop met genoegen nemen van presets die niet helemaal passen. MindState geeft je de tools om binaural beats sessies te maken die uniek van jou zijn.",
+    "subtitle": "Stop met genoegen nemen van presets die niet helemaal passen. MindState geeft je de tools om geluidstherapie sessies te maken die uniek van jou zijn.",
     "ctaDownload": "Downloaden in Play Store",
     "ctaViewFeatures": "Bekijk Functies",
     "benefit1": {
@@ -102,41 +102,51 @@
   },
   "aboutBinauralBeats": {
     "heroTitle": "Ontgrendel het Potentieel van Je Brein",
-    "heroSubtitle": "Transformeer je mentale staat, verbeter focus, bereik diepere ontspanning, ontgrendel creativiteit en flow states, en bereik piekprestaties door de kracht van hersengolf entrainment.",
+    "heroSubtitle": "Aangepaste Beats & Geluiden om te Ontspannen, Focussen, Mediteren, Creatief te Zijn & Beter te Slapen",
     "benefits": {
       "title": "Krachtige Voordelen die Je Kunt Ervaren",
-      "subtitle": "Binaural beats en hersengolf entrainment kunnen je helpen opmerkelijke mentale staten en resultaten te bereiken",
+      "subtitle": "Binaural beats, isochrone beats, Solfeggio-tonen en white noise sessies kunnen je helpen opmerkelijke mentale staten en resultaten te bereiken",
       "benefit1": {
         "title": "Diepe Ontspanning & Stressverlichting",
-        "description": "Bereik diepe ontspanning en smelt stress weg. Lagere frequenties helpen je brein om diep ontspannen staten binnen te gaan, waardoor angst wordt verminderd en kalmte wordt bevorderd."
+        "description": "Bereik diepe ontspanning en smelt stress weg. Kalmerende ruis en binaural beats, gecombineerd met isochrone tonen of Solfeggio-frequenties, helpen je brein diep ontspannen staten binnen te gaan, angst te verminderen en kalmte te bevorderen."
       },
       "benefit2": {
         "title": "Verbeterde Focus & Concentratie",
-        "description": "Verhoog je cognitieve prestaties en behoud laser-scherpe focus. Hogere frequenties helpen je brein om optimale staten voor werk, studie en creatieve taken binnen te gaan."
+        "description": "Verhoog je cognitieve prestaties en behoud laser-scherpe focus. Isochrone tonen en Solfeggio-frequenties, gelaagd met binaural beats of achtergrondruis, ondersteunen optimale staten voor werk, studie en creatieve taken."
       },
       "benefit3": {
         "title": "Betere Slaapkwaliteit",
-        "description": "Verbeter je slaap natuurlijk. Delta en theta frequenties helpen je brein om over te gaan naar diepe, herstellende slaapstaten voor betere rust en herstel."
+        "description": "Verbeter je slaap natuurlijk. Solfeggio-frequenties en rustgevende ruis, gecombineerd met binaural beats of isochrone tonen, ondersteunen de overgang van je brein naar diepe, herstellende slaap voor betere rust en herstel."
       },
       "benefit4": {
         "title": "Meditatie Verbetering",
-        "description": "Ontgrendel diepere meditatiestaten en verbeter je praktijk. Binaural beats kunnen je helpen om theta en alpha staten gemakkelijker te bereiken, waardoor je mindfulness verdiept."
+        "description": "Ontgrendel diepere meditatiestaten en verbeter je praktijk. Binaural beats en isochrone tonen, optioneel met Solfeggio of zachte ruis, kunnen je helpen diepere mindfulness gemakkelijker te bereiken."
       },
       "benefit5": {
         "title": "Creativiteit & Flow States",
-        "description": "Krijg toegang tot je creatieve potentieel en ga flow states binnen. Alpha frequenties worden geassocieerd met verbeterde creativiteit, probleemoplossing en piekprestaties."
+        "description": "Krijg toegang tot je creatieve potentieel en ga flow states binnen. Bouw sessies uit Solfeggio-frequenties, binaural beats, gelaagde ruis of isochrone tonen om verbeterde creativiteit, probleemoplossing en piekprestaties te ondersteunen."
       },
       "benefit6": {
         "title": "Stemming Verbetering",
-        "description": "Verhoog je stemming en emotioneel welzijn. Onderzoek suggereert dat binaural beats kunnen helpen om de stemming te verbeteren, negatieve emoties te verminderen en positieve mentale staten te bevorderen."
+        "description": "Verhoog je stemming en emotioneel welzijn. Diverse ruistypes, isochrone tonen, binaural beats en Solfeggio-frequenties kunnen in geluidstherapie-sessies worden gecombineerd om de stemming te verbeteren, negatieve emoties te verminderen en positieve mentale staten te bevorderen."
       }
     },
     "howItWorks": {
       "title": "Hoe Hersengolf Entrainment Werkt",
       "subtitle": "De wetenschap achter de transformatie",
-      "explanation": "Wanneer je naar twee licht verschillende frequenties luistert (één in elk oor), neemt je brein van nature een derde frequentie waar—het verschil tussen hen. Dit wordt een binaural beat genoemd. Je brein synchroniseert vervolgens zijn eigen elektrische activiteit om overeen te komen met deze waargenomen frequentie, een fenomeen dat hersengolf entrainment wordt genoemd.",
-      "noHeadphones": "MindState ondersteunt ook monaural beats en isochrone tonen, die werken zonder hoofdtelefoon. Monaural beats worden gemaakt door twee frequenties te mengen voordat ze je oren bereiken, terwijl isochrone tonen gelijkmatig verdeelde pulsen van een enkele toon gebruiken. Beide kunnen effectief je hersengolven entrainen wanneer ze via luidsprekers worden afgespeeld, waardoor het gemakkelijk is om de voordelen te genieten tijdens meditatie, werk of slaap—geen hoofdtelefoon vereist.",
-      "personalization": "Verschillende frequenties ontgrendelen verschillende mentale staten: Delta (0.5-4 Hz) voor diepe slaap, Theta (4-8 Hz) voor meditatie en creativiteit, Alpha (8-13 Hz) voor ontspannen focus, Beta (13-30 Hz) voor actieve concentratie, en Gamma (30-100 Hz) voor piekprestaties. Door draaggolf frequenties en beat frequenties te personaliseren om bij jouw unieke gevoeligheid te passen, kun je de voordelen maximaliseren en je gewenste mentale staat effectiever bereiken."
+      "explanation": "Hersengolf entrainment is hoe ritmisch geluid de elektrische activiteit van je brein kan beïnvloeden. Een methode is binaural beats: wanneer je naar twee licht verschillende frequenties luistert—één in elk oor—neemt je brein een derde frequentie waar, het verschil ertussen, en kan zich ermee synchroniseren. Isochrone tonen (gelijkmatig verdeelde pulsen van één toon) en monaural beats (twee frequenties gemengd vóór ze je oren bereiken) werken vergelijkbaar en kunnen hersengolven entrainen via luidsprekers—geen hoofdtelefoon nodig. Naast beats en tonen kunnen ruistypes zoals witte, roze en bruine ruis focus en ontspanning ondersteunen door afleiding te maskeren en arousal te optimaliseren, wat ze een waardevol onderdeel van audiotherapie maakt.",
+      "noHeadphones": "Monaural beats en isochrone tonen entrainen effectief hersengolven wanneer ze via luidsprekers worden afgespeeld, zodat je de voordelen kunt genieten tijdens meditatie, werk of slaap zonder hoofdtelefoon.",
+      "personalization": "Verschillende beatfrequenties zijn gekoppeld aan verschillende mentale staten: Delta (0.5-4 Hz) voor diepe slaap, Theta (4-8 Hz) voor meditatie en creativiteit, Alpha (8-13 Hz) voor ontspannen focus, Beta (13-30 Hz) voor actieve concentratie, en Gamma (30-100 Hz) voor piekprestaties. Door beats, tonen en ruis te combineren en af te stemmen op je gevoeligheid en doelen, kun je sessies afstemmen voor maximaal voordeel."
+    },
+    "adhdNoise": {
+      "title": "Witte & Roze Ruis voor AD/HD Focus",
+      "subtitle": "Onderzoek toont aan dat ruis kan helpen de aandacht te verbeteren en impulsiviteit te verminderen bij mensen met AD/HD",
+      "description": "Een meta-analyse van 13 studies met 335 deelnemers vond dat witte en roze ruis leidde tot kleine maar statistisch significante verbeteringen in taakprestatie voor kinderen en jonge volwassenen met AD/HD. Voordelen omvatten minder impulsiviteit, betere aandacht en minder fouten. Interessant genoeg hielpen deze ruistypen mensen met AD/HD maar niet degenen zonder, wat suggereert dat ze werken door de niveaus van hersenopwinding specifiek voor AD/HD-hersenen te optimaliseren."
+    },
+    "adhdBinaural": {
+      "title": "Binaural Beats voor AD/HD Symptomen",
+      "subtitle": "Pilotstudies tonen belofte voor aandacht- en huiswerkgerelateerde verbeteringen",
+      "description": "Een gerandomiseerde, dubbelblinde, placebogecontroleerde pilotstudie met 20 kinderen en adolescenten met AD/HD vond dat het luisteren naar binaural beats (20 minuten, 3 keer per week gedurende 3 weken) leidde tot significante verbeteringen gerapporteerd door ouders. Hoewel objectieve aandachtstests geen significante veranderingen toonden, rapporteerden ouders minder huiswerkproblemen gerelateerd aan onoplettendheid, wat wijst op echte voordelen voor dagelijks functioneren."
     },
     "safety": {
       "title": "Veilig & Goed Onderzocht",
@@ -149,6 +159,16 @@
       "subtitle": "Wetenschappelijke studies ondersteunen de voordelen van binaural beats en hersengolf entrainment",
       "findings": "Onderzoek heeft aangetoond dat binaural beats kunnen helpen om angst te verminderen, focus te verbeteren, meditatiepraktijk te verbeteren en betere slaap te ondersteunen. Studies hebben positieve effecten gevonden op ontspanning, stressvermindering en cognitieve prestaties. Hoewel individuele resultaten kunnen variëren, blijft het wetenschappelijke bewijs groeien, wat het gebruik van binaural beats als hulpmiddel voor mentale verbetering en welzijn ondersteunt.",
       "studies": {
+        "adhdNoise": {
+          "title": "AD/HD & Witte/Roze Ruis Meta-Analyse",
+          "description": "Een meta-analyse van 13 studies (335 deelnemers) vond dat witte en roze ruis leidde tot kleine maar statistisch significante verbeteringen in aandacht, verminderde impulsiviteit en minder fouten bij kinderen en jonge volwassenen met AD/HD.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/38428577/"
+        },
+        "adhdBinaural": {
+          "title": "AD/HD Binaural Beats Pilotstudie",
+          "description": "Een gerandomiseerde gecontroleerde trial met 20 AD/HD-kinderen/adolescenten vond dat binaural beats (20 min, 3×/week gedurende 3 weken) ertoe leidde dat ouders significant minder huiswerkproblemen gerelateerd aan onoplettendheid rapporteerden.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/20117669/"
+        },
         "metaAnalysis": {
           "title": "Meta-Analyse: Cognitie, Angst & Pijn",
           "description": "Een uitgebreide analyse van 22 studies vond middelgrote, significante effecten op geheugen, aandacht, angst en pijnperceptie (effectgrootte g = 0.45).",
@@ -218,6 +238,14 @@
     "quote8": {
       "text": "Isochrone tonen kunnen je brein helpen synchroniseren met een specifiek auditief patroon dat dingen zoals angst kan verlichten.",
       "source": "Healthline (2024)"
+    },
+    "quote9": {
+      "text": "Ouders rapporteerden minder huiswerkproblemen gerelateerd aan onoplettendheid nadat hun kinderen met AD/HD regelmatig naar binaural beats luisterden.",
+      "source": "Gerandomiseerde gecontroleerde trial (2010, PubMed 20117669)"
+    },
+    "quote10": {
+      "text": "Witte en roze ruis leidde tot kleine maar statistisch significante verbeteringen in aandacht, verminderde impulsiviteit en minder fouten bij kinderen en jonge volwassenen met AD/HD.",
+      "source": "Meta-analyse van 13 studies (2024, PubMed 38428577)"
     }
   }
 }

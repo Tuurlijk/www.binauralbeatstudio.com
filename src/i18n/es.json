@@ -1,6 +1,6 @@
 {
   "meta": {
-    "title": "MindState Binaural Beats Studio",
+    "title": "MindState: Terapia de Sonido",
     "description": "La única aplicación de ritmos binaurales que te permite diseñar sesiones de audio completamente personalizadas desde cero. Herramientas de nivel profesional para crear sesiones que se adapten a tus preferencias exactas."
   },
   "nav": {
@@ -13,9 +13,9 @@
   },
   "hero": {
     "title": "Crea Sesiones",
-    "titleHighlight": "Binaurales",
+    "titleHighlight": "Multicapa",
     "titleSuffix": "Personalizadas",
-    "subtitle": "La única aplicación de ritmos binaurales que te permite diseñar sesiones de audio completamente personalizadas desde cero. Cada decisión sobre frecuencia, volumen y tiempo está bajo tu control.",
+    "subtitle": "MindState te permite diseñar sesiones de terapia de audio completamente personalizadas desde cero. Ya sea que busques alivio de los síntomas de TDAH, quieras relajarte, profundizar meditación, mejorar el sueño, potenciar creatividad o mejorar el enfoque—MindState te da herramientas para crear sesiones adaptadas a tus necesidades únicas.",
     "ctaDownload": "Descargar en Play Store",
     "ctaLearnMore": "Saber Más",
     "tagline": "Aplicación Android nativa • Calidad de audio profesional • Gratis para probar"
@@ -25,11 +25,11 @@
     "subtitle": "A diferencia de las aplicaciones con presets fijos, MindState te ofrece herramientas de nivel profesional para crear sesiones que se adapten a tus preferencias, sensibilidad y objetivos exactos.",
     "feature1": {
       "title": "Personalización Completa",
-      "description": "Diseña sesiones desde cero, no presets. Establece frecuencias portadoras (80-600 Hz) y frecuencias de ritmo (0.5-40 Hz) para que coincidan con tu sensibilidad personal."
+      "description": "Diseña sesiones desde cero o copia sesiones incluidas. Crea tu propia sesión personalizada para que coincida con tu sensibilidad personal."
     },
     "feature2": {
       "title": "Sesiones Multicapa",
-      "description": "Superpone múltiples tipos de pistas: ritmos binaurales, ritmos monoaurales, tonos isocrónicos, generadores de ruido y tus propios archivos de audio. Cada pista tiene control de volumen independiente."
+      "description": "Superpone múltiples tipos de pistas: ritmos binaurales, ritmos monoaurales, tonos isocrónicos, tonos Solfeggio, generadores de ruido y tus propios archivos de audio. Cada pista tiene control de volumen independiente."
     },
     "feature3": {
       "title": "Editor de Puntos",
@@ -37,7 +37,7 @@
     },
     "feature4": {
       "title": "Editor Profesional",
-      "description": "Control granular sobre cada aspecto: frecuencias, volúmenes, tiempos y transiciones. Previsualiza antes de guardar para asegurar que tu sesión sea perfecta."
+      "description": "Control granular sobre cada aspecto: frecuencias, volúmenes, tiempos, parámetros de ruido y transiciones. Previsualiza antes de guardar para asegurar que tu sesión sea perfecta. Cambia los parámetros de ruido con el tiempo."
     },
     "feature5": {
       "title": "Compartir con Código QR",
@@ -45,7 +45,7 @@
     },
     "feature6": {
       "title": "Calidad de Audio Profesional",
-      "description": "Motor de audio nativo que ofrece sonido cristalino con conversión automática de frecuencia de muestreo, síntesis de fase continua y procesamiento de baja latencia."
+      "description": "Motor de audio nativo ofrece sonido cristalino sintetizado en tiempo real."
     }
   },
   "howItWorks": {
@@ -61,7 +61,7 @@
     },
     "step3": {
       "title": "Ajustar Frecuencias y Volúmenes",
-      "description": "Establece frecuencias portadoras (80-600 Hz) y frecuencias de ritmo (0.5-40 Hz) para que coincidan con tu sensibilidad. Controla los volúmenes de las pistas y agrega envolventes de volumen."
+      "description": "Establece frecuencias portadoras y frecuencias de ritmo para que coincidan con tu sensibilidad. O usa frecuencias portadoras Solfeggio. Controla los volúmenes de las pistas y agrega envolventes de volumen."
     },
     "step4": {
       "title": "Previsualizar y Guardar",
@@ -84,7 +84,7 @@
   },
   "cta": {
     "title": "Comienza a Crear Tu Experiencia de Audio Perfecta",
-    "subtitle": "Deja de conformarte con presets que no encajan del todo. MindState te ofrece las herramientas para crear sesiones de ritmos binaurales que sean únicamente tuyas.",
+    "subtitle": "Deja de conformarte con presets que no encajan del todo. MindState te ofrece las herramientas para crear sesiones de terapia de sonido que sean únicamente tuyas.",
     "ctaDownload": "Descargar en Play Store",
     "ctaViewFeatures": "Ver Características",
     "benefit1": {
@@ -102,41 +102,51 @@
   },
   "aboutBinauralBeats": {
     "heroTitle": "Desbloquea el Potencial de Tu Cerebro",
-    "heroSubtitle": "Transforma tu estado mental, mejora el enfoque, logra una relajación más profunda, desbloquea la creatividad y estados de flujo, y alcanza el máximo rendimiento a través del poder del arrastre de ondas cerebrales.",
+    "heroSubtitle": "Ritmos y Sonidos Personalizados para Relajarse, Enfocarse, Meditar, Ser Creativo y Dormir Mejor",
     "benefits": {
       "title": "Beneficios Poderosos Que Puedes Experimentar",
-      "subtitle": "Los ritmos binaurales y el arrastre de ondas cerebrales pueden ayudarte a lograr estados mentales y resultados notables",
+      "subtitle": "Los ritmos binaurales, ritmos isocrónicos, tonos Solfeggio y sesiones de ruido blanco pueden ayudarte a lograr estados mentales y resultados notables",
       "benefit1": {
         "title": "Relajación Profunda y Alivio del Estrés",
-        "description": "Logra una relajación profunda y elimina el estrés. Las frecuencias más bajas ayudan a tu cerebro a entrar en estados profundamente relajados, reduciendo la ansiedad y promoviendo la calma."
+        "description": "Logra una relajación profunda y elimina el estrés. Ruido relajante y ritmos binaurales, junto con tonos isocrónicos o frecuencias Solfeggio, ayudan a tu cerebro a entrar en estados profundamente relajados, reduciendo la ansiedad y promoviendo la calma."
       },
       "benefit2": {
         "title": "Enfoque y Concentración Mejorados",
-        "description": "Aumenta tu rendimiento cognitivo y mantén un enfoque agudo. Las frecuencias más altas ayudan a tu cerebro a entrar en estados óptimos para el trabajo, el estudio y las tareas creativas."
+        "description": "Aumenta tu rendimiento cognitivo y mantén un enfoque agudo. Tonos isocrónicos y frecuencias Solfeggio, en capas con ritmos binaurales o ruido de fondo, apoyan estados óptimos para el trabajo, el estudio y las tareas creativas."
       },
       "benefit3": {
         "title": "Mejor Calidad del Sueño",
-        "description": "Mejora tu sueño de forma natural. Las frecuencias delta y theta ayudan a tu cerebro a hacer la transición a estados de sueño profundo y reparador para un mejor descanso y recuperación."
+        "description": "Mejora tu sueño de forma natural. Frecuencias Solfeggio y ruido relajante, combinados con ritmos binaurales o tonos isocrónicos, apoyan la transición de tu cerebro a un sueño profundo y reparador para un mejor descanso y recuperación."
       },
       "benefit4": {
         "title": "Mejora de la Meditación",
-        "description": "Desbloquea estados de meditación más profundos y mejora tu práctica. Los ritmos binaurales pueden ayudarte a alcanzar estados theta y alpha con mayor facilidad, profundizando tu atención plena."
+        "description": "Desbloquea estados de meditación más profundos y mejora tu práctica. Ritmos binaurales y tonos isocrónicos, opcionalmente con Solfeggio o ruido suave, pueden ayudarte a alcanzar una atención plena más profunda con mayor facilidad."
       },
       "benefit5": {
         "title": "Creatividad y Estados de Flujo",
-        "description": "Accede a tu potencial creativo y entra en estados de flujo. Las frecuencias alpha se asocian con una creatividad mejorada, resolución de problemas y máximo rendimiento."
+        "description": "Accede a tu potencial creativo y entra en estados de flujo. Crea sesiones a partir de frecuencias Solfeggio, ritmos binaurales, ruido en capas o tonos isocrónicos para apoyar una creatividad mejorada, resolución de problemas y máximo rendimiento."
       },
       "benefit6": {
         "title": "Mejora del Estado de Ánimo",
-        "description": "Eleva tu estado de ánimo y bienestar emocional. La investigación sugiere que los ritmos binaurales pueden ayudar a mejorar el estado de ánimo, reducir las emociones negativas y promover estados mentales positivos."
+        "description": "Eleva tu estado de ánimo y bienestar emocional. Diversos tipos de ruido, tonos isocrónicos, ritmos binaurales y frecuencias Solfeggio pueden combinarse en sesiones de terapia de sonido para mejorar el estado de ánimo, reducir las emociones negativas y promover estados mentales positivos."
       }
     },
     "howItWorks": {
       "title": "Cómo Funciona el Arrastre de Ondas Cerebrales",
       "subtitle": "La ciencia detrás de la transformación",
-      "explanation": "Cuando escuchas dos frecuencias ligeramente diferentes (una en cada oído), tu cerebro percibe naturalmente una tercera frecuencia: la diferencia entre ellas. Esto se llama ritmo binaural. Tu cerebro luego sincroniza su propia actividad eléctrica para coincidir con esta frecuencia percibida, un fenómeno conocido como arrastre de ondas cerebrales.",
-      "noHeadphones": "MindState también admite ritmos monoaurales y tonos isocrónicos, que funcionan sin auriculares. Los ritmos monoaurales se crean mezclando dos frecuencias antes de que lleguen a tus oídos, mientras que los tonos isocrónicos usan pulsos uniformemente espaciados de un solo tono. Ambos pueden arrastrar efectivamente tus ondas cerebrales cuando se reproducen a través de altavoces, facilitando disfrutar de los beneficios durante la meditación, el trabajo o el sueño, sin necesidad de auriculares.",
-      "personalization": "Diferentes frecuencias desbloquean diferentes estados mentales: Delta (0.5-4 Hz) para sueño profundo, Theta (4-8 Hz) para meditación y creatividad, Alpha (8-13 Hz) para enfoque relajado, Beta (13-30 Hz) para concentración activa, y Gamma (30-100 Hz) para máximo rendimiento. Al personalizar las frecuencias portadoras y las frecuencias de ritmo para que coincidan con tu sensibilidad única, puedes maximizar los beneficios y lograr tu estado mental deseado de manera más efectiva."
+      "explanation": "El arrastre de ondas cerebrales es cómo el sonido rítmico puede influir en la actividad eléctrica de tu cerebro. Un método son los ritmos binaurales: cuando escuchas dos frecuencias ligeramente diferentes—una en cada oído—tu cerebro percibe una tercera frecuencia, la diferencia entre ellas, y puede sincronizarse con ella. Los tonos isocrónicos (pulsos uniformemente espaciados de un solo tono) y los ritmos monoaurales (dos frecuencias mezcladas antes de llegar a tus oídos) funcionan de forma similar y pueden arrastrar las ondas cerebrales a través de altavoces—sin necesidad de auriculares. Más allá de los ritmos y tonos, tipos de ruido como el blanco, rosa y marrón pueden apoyar el enfoque y la relajación al enmascarar distracciones y ayudar a optimizar los niveles de activación, haciéndolos una parte valiosa de la terapia de audio.",
+      "noHeadphones": "Los ritmos monoaurales y los tonos isocrónicos arrastran efectivamente las ondas cerebrales cuando se reproducen por altavoces, así que puedes disfrutar de los beneficios durante la meditación, el trabajo o el sueño sin auriculares.",
+      "personalization": "Diferentes frecuencias de ritmo se asocian a distintos estados mentales: Delta (0.5-4 Hz) para sueño profundo, Theta (4-8 Hz) para meditación y creatividad, Alpha (8-13 Hz) para enfoque relajado, Beta (13-30 Hz) para concentración activa, y Gamma (30-100 Hz) para máximo rendimiento. Al combinar ritmos, tonos y ruido y adaptarlos a tu sensibilidad y objetivos, puedes personalizar las sesiones para obtener el máximo beneficio."
+    },
+    "adhdNoise": {
+      "title": "Ruido Blanco y Rosa para el Enfoque en AD/HD",
+      "subtitle": "La investigación muestra que el ruido puede ayudar a mejorar la atención y reducir la impulsividad en personas con AD/HD",
+      "description": "Un metanálisis de 13 estudios con 335 participantes encontró que el ruido blanco y rosa condujo a mejoras pequeñas pero estadísticamente significativas en el rendimiento de tareas para niños y adultos jóvenes con AD/HD. Los beneficios incluyeron menos impulsividad, mejor atención y menos errores. Curiosamente, estos tipos de ruido ayudaron a personas con AD/HD pero no a aquellas sin AD/HD, lo que sugiere que funcionan optimizando los niveles de activación cerebral específicamente para cerebros con AD/HD."
+    },
+    "adhdBinaural": {
+      "title": "Ritmos Binaurales para Síntomas de AD/HD",
+      "subtitle": "Estudios piloto muestran promesa para mejoras en atención y tareas relacionadas con deberes",
+      "description": "Un estudio piloto aleatorizado, doble ciego y controlado con placebo con 20 niños y adolescentes con AD/HD encontró que escuchar ritmos binaurales (20 minutos, 3 veces por semana durante 3 semanas) condujo a mejoras significativas reportadas por los padres. Aunque las pruebas objetivas de atención no mostraron cambios significativos, los padres reportaron menos problemas con las tareas relacionadas con la falta de atención, lo que sugiere beneficios reales para el funcionamiento diario."
     },
     "safety": {
       "title": "Seguro y Bien Estudiado",
@@ -151,6 +161,16 @@
       "studiesTitle": "Estudios de Investigación Revisados por Pares",
       "studiesSubtitle": "Explora la evidencia científica que respalda la eficacia de los ritmos binaurales",
       "studies": {
+        "adhdNoise": {
+          "title": "Metaanálisis de AD/HD y Ruido Blanco/Rosa",
+          "description": "Un metanálisis de 13 estudios (335 participantes) encontró que el ruido blanco y rosa condujo a mejoras pequeñas pero estadísticamente significativas en la atención, reducción de la impulsividad y menos errores en niños y adultos jóvenes con AD/HD.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/38428577/"
+        },
+        "adhdBinaural": {
+          "title": "Estudio Piloto de Ritmos Binaurales para AD/HD",
+          "description": "Un ensayo controlado aleatorio con 20 niños/adolescentes con AD/HD encontró que los ritmos binaurales (20 min, 3×/semana durante 3 semanas) condujeron a que los padres reportaran significativamente menos problemas con las tareas relacionadas con la falta de atención.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/20117669/"
+        },
         "metaAnalysis": {
           "title": "Metaanálisis: Cognición, Ansiedad y Dolor",
           "description": "Un análisis exhaustivo de 22 estudios encontró efectos medianos y significativos en la memoria, atención, ansiedad y percepción del dolor (tamaño del efecto g = 0.45).",
@@ -220,6 +240,14 @@
     "quote8": {
       "text": "Los tonos isocrónicos pueden ayudar a tu cerebro a sincronizarse con un patrón auditivo específico que podría aliviar cosas como la ansiedad.",
       "source": "Healthline (2024)"
+    },
+    "quote9": {
+      "text": "Los padres reportaron menos problemas con las tareas relacionadas con la falta de atención después de que sus hijos con AD/HD escucharan ritmos binaurales regularmente.",
+      "source": "Ensayo controlado aleatorio (2010, PubMed 20117669)"
+    },
+    "quote10": {
+      "text": "El ruido blanco y rosa condujo a mejoras pequeñas pero estadísticamente significativas en la atención, reducción de la impulsividad y menos errores en niños y adultos jóvenes con AD/HD.",
+      "source": "Metaanálisis de 13 estudios (2024, PubMed 38428577)"
     }
   }
 }

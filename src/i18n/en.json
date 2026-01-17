@@ -1,6 +1,6 @@
 {
   "meta": {
-    "title": "MindState Binaural Beats Studio",
+    "title": "MindState: Sound Therapy",
     "description": "The only binaural beats app that lets you design completely personalized audio sessions from scratch. Professional-grade tools for creating sessions that match your exact preferences."
   },
   "nav": {
@@ -13,9 +13,9 @@
   },
   "hero": {
     "title": "Create Personalized",
-    "titleHighlight": "Binaural Beats",
+    "titleHighlight": "Multilayered",
     "titleSuffix": "Sessions",
-    "subtitle": "The only binaural beats app that lets you design completely personalized audio sessions from scratch. Every frequency, volume, and timing decision is yours to control.",
+    "subtitle": "MindState lets you design completely personalized audio therapy sessions from scratch. Whether you're seeking relief from AD/HD symptoms, looking to relax, deepening meditation, improving sleep, boosting creativity, or enhancing focus—MindState gives you tools to create sessions tailored to your unique needs.",
     "ctaDownload": "Download on Play Store",
     "ctaLearnMore": "Learn More",
     "tagline": "Native Android app • Professional audio quality • Free to try"
@@ -25,11 +25,11 @@
     "subtitle": "Unlike apps with fixed presets, MindState gives you professional-grade tools to create sessions that match your exact preferences, sensitivity, and goals.",
     "feature1": {
       "title": "Complete Personalization",
-      "description": "Design sessions from scratch, not presets. Set carrier frequencies (80-600 Hz) and beat frequencies (0.5-40 Hz) to match your personal sensitivity."
+      "description": "Design sessions from scratch, or copy bundled sessions. Build your own personalized session to match your personal sensitivity."
     },
     "feature2": {
       "title": "Multi-Layered Sessions",
-      "description": "Layer multiple track types: binaural beats, monaural beats, isochronic tones, noise generators, and your own audio files. Each track has independent volume control."
+      "description": "Layer multiple track types: binaural beats, monaural beats, isochronic tones, Solfeggio tones, noise generators, and your own audio files. Each track has independent volume control."
     },
     "feature3": {
       "title": "Point Editor",
@@ -37,7 +37,7 @@
     },
     "feature4": {
       "title": "Professional Editor",
-      "description": "Granular control over every aspect: frequencies, volumes, timing, and transitions. Preview before saving to ensure your session is perfect."
+      "description": "Granular control over every aspect: frequencies, volumes, timing, noise parameters and transitions. Preview before saving to ensure your session is perfect. Change noise parameters over time."
     },
     "feature5": {
       "title": "QR Code Sharing",
@@ -45,7 +45,7 @@
     },
     "feature6": {
       "title": "Professional Audio Quality",
-      "description": "Native audio engine delivers crystal-clear sound with automatic sample rate conversion, phase-continuous synthesis, and low-latency processing."
+      "description": "Native audio engine delivers realtime synthesized crystal-clear sound."
     }
   },
   "howItWorks": {
@@ -61,7 +61,7 @@
     },
     "step3": {
       "title": "Adjust Frequencies & Volumes",
-      "description": "Set carrier frequencies (80-600 Hz) and beat frequencies (0.5-40 Hz) to match your sensitivity. Control track volumes and add volume envelopes."
+      "description": "Set carrier frequencies and beat frequencies to match your sensitivity. Or use Solfeggio carrier frequencies. Control track volumes and add volume envelopes."
     },
     "step4": {
       "title": "Preview & Save",
@@ -84,7 +84,7 @@
   },
   "cta": {
     "title": "Start Creating Your Perfect Audio Experience",
-    "subtitle": "Stop settling for presets that don't quite fit. MindState gives you the tools to create binaural beats sessions that are uniquely yours.",
+    "subtitle": "Stop settling for presets that don't quite fit. MindState gives you the tools to create sound therapy sessions that are uniquely yours.",
     "ctaDownload": "Download on Play Store",
     "ctaViewFeatures": "View Features",
     "benefit1": {
@@ -102,41 +102,51 @@
   },
   "aboutBinauralBeats": {
     "heroTitle": "Unlock Your Brain's Potential",
-    "heroSubtitle": "Transform your mental state, enhance focus, achieve deeper relaxation, unlock creativity and flow states, and reach peak performance through the power of brainwave entrainment.",
+    "heroSubtitle": "Custom Beats & Noises to Relax, Focus, Meditate, Be Creative & Sleep Better",
     "benefits": {
       "title": "Powerful Benefits You Can Experience",
-      "subtitle": "Binaural beats and brainwave entrainment can help you achieve remarkable mental states and outcomes",
+      "subtitle": "Binaural beats, Isochronic beats, Solfeggio tones and Blanket Noise session, can help you achieve remarkable mental states and outcomes",
       "benefit1": {
         "title": "Deep Relaxation & Stress Relief",
-        "description": "Achieve profound relaxation and melt away stress. Lower frequencies help your brain enter deeply relaxed states, reducing anxiety and promoting calm."
+        "description": "Achieve profound relaxation and melt away stress. Calming noise and binaural beats, paired with isochronic tones or solfeggio frequencies, help your brain enter deeply relaxed states, reducing anxiety and promoting calm."
       },
       "benefit2": {
         "title": "Enhanced Focus & Concentration",
-        "description": "Boost your cognitive performance and maintain laser-sharp focus. Higher frequencies help your brain enter optimal states for work, study, and creative tasks."
+        "description": "Boost your cognitive performance and maintain laser-sharp focus. Isochronic tones and solfeggio frequencies, layered with binaural beats or background noise, support optimal states for work, study, and creative tasks."
       },
       "benefit3": {
         "title": "Better Sleep Quality",
-        "description": "Improve your sleep naturally. Delta and theta frequencies help your brain transition into deep, restorative sleep states for better rest and recovery."
+        "description": "Improve your sleep naturally. Solfeggio frequencies and soothing noise, combined with binaural beats or isochronic tones, support your brain's transition into deep, restorative sleep for better rest and recovery."
       },
       "benefit4": {
         "title": "Meditation Enhancement",
-        "description": "Unlock deeper meditation states and enhance your practice. Binaural beats can help you reach theta and alpha states more easily, deepening your mindfulness."
+        "description": "Unlock deeper meditation states and enhance your practice. Binaural beats and isochronic tones, optionally with solfeggio or gentle noise, can help you reach deeper mindfulness more easily."
       },
       "benefit5": {
         "title": "Creativity & Flow States",
-        "description": "Access your creative potential and enter flow states. Alpha frequencies are associated with enhanced creativity, problem-solving, and peak performance."
+        "description": "Access your creative potential and enter flow states. Build sessions from solfeggio frequencies, binaural beats, layered noise, or isochronic tones to support enhanced creativity, problem-solving, and peak performance."
       },
       "benefit6": {
         "title": "Mood Improvement",
-        "description": "Elevate your mood and emotional well-being. Research suggests binaural beats can help improve mood, reduce negative emotions, and promote positive mental states."
+        "description": "Elevate your mood and emotional well-being. Various noise types, isochronic tones, binaural beats, and solfeggio frequencies can be combined in audio therapy sessions to help improve mood, reduce negative emotions, and promote positive mental states."
       }
     },
     "howItWorks": {
       "title": "How Brainwave Entrainment Works",
       "subtitle": "The science behind the transformation",
-      "explanation": "When you listen to two slightly different frequencies (one in each ear), your brain naturally perceives a third frequency—the difference between them. This is called a binaural beat. Your brain then synchronizes its own electrical activity to match this perceived frequency, a phenomenon known as brainwave entrainment.",
-      "noHeadphones": "MindState also supports monaural beats and isochronic tones, which work without headphones. Monaural beats are created by mixing two frequencies before they reach your ears, while isochronic tones use evenly spaced pulses of a single tone. Both can effectively entrain your brainwaves when played through speakers, making it easy to enjoy the benefits during meditation, work, or sleep—no headphones required.",
-      "personalization": "Different frequencies unlock different mental states: Delta (0.5-4 Hz) for deep sleep, Theta (4-8 Hz) for meditation and creativity, Alpha (8-13 Hz) for relaxed focus, Beta (13-30 Hz) for active concentration, and Gamma (30-100 Hz) for peak performance. By personalizing carrier frequencies and beat frequencies to match your unique sensitivity, you can maximize the benefits and achieve your desired mental state more effectively."
+      "explanation": "Brainwave entrainment is how rhythmic sound can influence your brain's electrical activity. One method is binaural beats: when you listen to two slightly different frequencies—one in each ear—your brain perceives a third frequency, the difference between them, and may synchronize to it. Isochronic tones (evenly spaced pulses of a single tone) and monaural beats (two frequencies mixed before they reach your ears) work similarly and can entrain brainwaves through speakers—no headphones required. Beyond beats and tones, noise types such as white, pink, and brown noise can support focus and relaxation by masking distractions and helping to optimize arousal levels, making them a valuable part of audio therapy.",
+      "noHeadphones": "Monaural beats and isochronic tones effectively entrain brainwaves when played through speakers, so you can enjoy the benefits during meditation, work, or sleep without headphones.",
+      "personalization": "Different beat frequencies are linked to different mental states: Delta (0.5-4 Hz) for deep sleep, Theta (4-8 Hz) for meditation and creativity, Alpha (8-13 Hz) for relaxed focus, Beta (13-30 Hz) for active concentration, and Gamma (30-100 Hz) for peak performance. By combining beats, tones, and noise and matching them to your sensitivity and goals, you can tailor sessions for maximum benefit."
+    },
+    "adhdNoise": {
+      "title": "White & Pink Noise for AD/HD Focus",
+      "subtitle": "Research shows noise can help improve attention and reduce impulsivity in people with AD/HD",
+      "description": "A meta-analysis of 13 studies with 335 participants found that white and pink noise led to small but statistically significant improvements in task performance for children and young adults with AD/HD. Benefits included less impulsivity, better attention, and fewer errors. Interestingly, these noise types helped people with AD/HD but not those without, suggesting they work by optimizing brain arousal levels specifically for AD/HD brains."
+    },
+    "adhdBinaural": {
+      "title": "Binaural Beats for AD/HD Symptoms",
+      "subtitle": "Pilot studies show promise for attention and homework-related improvements",
+      "description": "A randomized, double-blind, placebo-controlled pilot study with 20 children and adolescents with AD/HD found that listening to binaural beats (20 minutes, 3 times per week for 3 weeks) led to significant improvements reported by parents. While objective attention tests didn't show significant changes, parents reported fewer homework problems related to inattention, suggesting real-world benefits for daily functioning."
     },
     "safety": {
       "title": "Safe & Well-Studied",
@@ -149,6 +159,16 @@
       "subtitle": "Scientific studies support the benefits of binaural beats and brainwave entrainment",
       "findings": "Research has shown that binaural beats can help reduce anxiety, improve focus, enhance meditation practice, and support better sleep. Studies have found positive effects on relaxation, stress reduction, and cognitive performance. While individual results may vary, the scientific evidence continues to grow, supporting the use of binaural beats as a tool for mental enhancement and well-being.",
       "studies": {
+        "adhdNoise": {
+          "title": "AD/HD & White/Pink Noise Meta-Analysis",
+          "description": "A meta-analysis of 13 studies (335 participants) found white and pink noise led to small but statistically significant improvements in attention, reduced impulsivity, and fewer errors in children and young adults with AD/HD.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/38428577/"
+        },
+        "adhdBinaural": {
+          "title": "AD/HD Binaural Beats Pilot Study",
+          "description": "A randomized controlled trial with 20 AD/HD children/adolescents found that binaural beats (20 min, 3×/week for 3 weeks) led to parents reporting significantly fewer homework problems related to inattention.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/20117669/"
+        },
         "metaAnalysis": {
           "title": "Meta-Analysis: Cognition, Anxiety & Pain",
           "description": "A comprehensive analysis of 22 studies found medium, significant effects on memory, attention, anxiety, and pain perception (effect size g = 0.45).",
@@ -218,6 +238,14 @@
     "quote8": {
       "text": "Isochronic tones may help your brain sync with a specific auditory pattern that could ease things like anxiety.",
       "source": "Healthline (2024)"
+    },
+    "quote9": {
+      "text": "Parents reported fewer homework problems related to inattention after their children with AD/HD listened to binaural beats regularly.",
+      "source": "Randomized controlled trial (2010, PubMed 20117669)"
+    },
+    "quote10": {
+      "text": "White and pink noise led to small but statistically significant improvements in attention, reduced impulsivity, and fewer errors in children and young adults with AD/HD.",
+      "source": "Meta-analysis of 13 studies (2024, PubMed 38428577)"
     }
   }
 }

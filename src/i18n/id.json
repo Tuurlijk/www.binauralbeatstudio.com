@@ -1,6 +1,6 @@
 {
   "meta": {
-    "title": "MindState Binaural Beats Studio",
+    "title": "MindState: Terapi Suara",
     "description": "Satu-satunya aplikasi binaural beats yang memungkinkan Anda merancang sesi audio yang sepenuhnya dipersonalisasi dari awal. Alat tingkat profesional untuk membuat sesi yang sesuai dengan preferensi Anda yang tepat."
   },
   "nav": {
@@ -13,9 +13,9 @@
   },
   "hero": {
     "title": "Buat Sesi",
-    "titleHighlight": "Binaural Beats",
+    "titleHighlight": "Multi-Lapis",
     "titleSuffix": "Dipersonalisasi",
-    "subtitle": "Satu-satunya aplikasi binaural beats yang memungkinkan Anda merancang sesi audio yang sepenuhnya dipersonalisasi dari awal. Setiap keputusan tentang frekuensi, volume, dan waktu ada di bawah kendali Anda.",
+    "subtitle": "MindState memungkinkan Anda merancang sesi terapi audio yang sepenuhnya dipersonalisasi dari awal. Apakah Anda mencari bantuan dari gejala AD/HD, ingin bersantai, memperdalam meditasi, meningkatkan kualitas tidur, meningkatkan kreativitas, atau meningkatkan fokus—MindState memberi Anda alat untuk membuat sesi yang disesuaikan dengan kebutuhan unik Anda.",
     "ctaDownload": "Unduh di Play Store",
     "ctaLearnMore": "Pelajari Lebih Lanjut",
     "tagline": "Aplikasi Android asli • Kualitas audio profesional • Gratis untuk dicoba"
@@ -25,11 +25,11 @@
     "subtitle": "Tidak seperti aplikasi dengan preset tetap, MindState memberi Anda alat tingkat profesional untuk membuat sesi yang sesuai dengan preferensi, sensitivitas, dan tujuan Anda yang tepat.",
     "feature1": {
       "title": "Personalisasi Lengkap",
-      "description": "Rancang sesi dari awal, bukan preset. Atur frekuensi pembawa (80-600 Hz) dan frekuensi ketukan (0.5-40 Hz) agar sesuai dengan sensitivitas pribadi Anda."
+      "description": "Rancang sesi dari awal, atau salin sesi yang disertakan. Buat sesi yang dipersonalisasi sendiri agar sesuai dengan sensitivitas pribadi Anda."
     },
     "feature2": {
       "title": "Sesi Multi-Lapis",
-      "description": "Lapisi beberapa jenis trek: binaural beats, monaural beats, nada isokronik, generator noise, dan file audio Anda sendiri. Setiap trek memiliki kontrol volume independen."
+      "description": "Lapisi beberapa jenis trek: binaural beats, monaural beats, nada isokronik, nada Solfeggio, generator noise, dan file audio Anda sendiri. Setiap trek memiliki kontrol volume independen."
     },
     "feature3": {
       "title": "Editor Titik",
@@ -37,7 +37,7 @@
     },
     "feature4": {
       "title": "Editor Profesional",
-      "description": "Kontrol granular atas setiap aspek: frekuensi, volume, waktu, dan transisi. Pratinjau sebelum menyimpan untuk memastikan sesi Anda sempurna."
+      "description": "Kontrol granular atas setiap aspek: frekuensi, volume, waktu, parameter noise dan transisi. Pratinjau sebelum menyimpan untuk memastikan sesi Anda sempurna. Ubah parameter noise seiring waktu."
     },
     "feature5": {
       "title": "Berbagi Kode QR",
@@ -45,7 +45,7 @@
     },
     "feature6": {
       "title": "Kualitas Audio Profesional",
-      "description": "Mesin audio asli memberikan suara jernih dengan konversi laju sampel otomatis, sintesis fase kontinu, dan pemrosesan latensi rendah."
+      "description": "Mesin audio asli memberikan suara jernih yang disintesis secara realtime."
     }
   },
   "howItWorks": {
@@ -61,7 +61,7 @@
     },
     "step3": {
       "title": "Sesuaikan Frekuensi & Volume",
-      "description": "Atur frekuensi pembawa (80-600 Hz) dan frekuensi ketukan (0.5-40 Hz) agar sesuai dengan sensitivitas Anda. Kontrol volume trek dan tambahkan envelope volume."
+      "description": "Atur frekuensi pembawa dan frekuensi ketukan agar sesuai dengan sensitivitas Anda. Atau gunakan frekuensi pembawa Solfeggio. Kontrol volume trek dan tambahkan envelope volume."
     },
     "step4": {
       "title": "Pratinjau & Simpan",
@@ -84,7 +84,7 @@
   },
   "cta": {
     "title": "Mulai Membuat Pengalaman Audio Sempurna Anda",
-    "subtitle": "Berhenti puas dengan preset yang tidak cukup pas. MindState memberi Anda alat untuk membuat sesi binaural beats yang unik milik Anda.",
+    "subtitle": "Berhenti puas dengan preset yang tidak cukup pas. MindState memberi Anda alat untuk membuat sesi terapi suara yang unik milik Anda.",
     "ctaDownload": "Unduh di Play Store",
     "ctaViewFeatures": "Lihat Fitur",
     "benefit1": {
@@ -102,41 +102,51 @@
   },
   "aboutBinauralBeats": {
     "heroTitle": "Buka Potensi Otak Anda",
-    "heroSubtitle": "Ubah keadaan mental Anda, tingkatkan fokus, capai relaksasi yang lebih dalam, buka kreativitas dan keadaan alir, dan raih kinerja puncak melalui kekuatan entrainment gelombang otak.",
+    "heroSubtitle": "Beat & Suara Kustom untuk Relaksasi, Fokus, Meditasi, Kreatif & Tidur Lebih Baik",
     "benefits": {
       "title": "Manfaat Kuat yang Dapat Anda Alami",
-      "subtitle": "Binaural beats dan entrainment gelombang otak dapat membantu Anda mencapai keadaan mental dan hasil yang luar biasa",
+      "subtitle": "Binaural beats, isochronic beats, nada Solfeggio dan sesi white noise dapat membantu Anda mencapai keadaan mental dan hasil yang luar biasa",
       "benefit1": {
         "title": "Relaksasi Mendalam & Pelepasan Stres",
-        "description": "Capai relaksasi yang mendalam dan hilangkan stres. Frekuensi yang lebih rendah membantu otak Anda memasuki keadaan yang sangat rileks, mengurangi kecemasan dan mempromosikan ketenangan."
+        "description": "Capai relaksasi yang mendalam dan hilangkan stres. Noise menenangkan dan binaural beats, dipadukan dengan nada isokronik atau frekuensi Solfeggio, membantu otak Anda memasuki keadaan yang sangat rileks, mengurangi kecemasan dan mempromosikan ketenangan."
       },
       "benefit2": {
         "title": "Fokus & Konsentrasi yang Ditingkatkan",
-        "description": "Tingkatkan kinerja kognitif Anda dan pertahankan fokus yang tajam. Frekuensi yang lebih tinggi membantu otak Anda memasuki keadaan optimal untuk bekerja, belajar, dan tugas kreatif."
+        "description": "Tingkatkan kinerja kognitif Anda dan pertahankan fokus yang tajam. Nada isokronik dan frekuensi Solfeggio, dilapisi dengan binaural beats atau noise latar, mendukung keadaan optimal untuk bekerja, belajar, dan tugas kreatif."
       },
       "benefit3": {
         "title": "Kualitas Tidur yang Lebih Baik",
-        "description": "Tingkatkan tidur Anda secara alami. Frekuensi delta dan theta membantu otak Anda beralih ke keadaan tidur yang dalam dan restoratif untuk istirahat dan pemulihan yang lebih baik."
+        "description": "Tingkatkan tidur Anda secara alami. Frekuensi Solfeggio dan noise menenangkan, dikombinasikan dengan binaural beats atau nada isokronik, mendukung transisi otak Anda ke tidur yang dalam dan restoratif untuk istirahat dan pemulihan yang lebih baik."
       },
       "benefit4": {
         "title": "Peningkatan Meditasi",
-        "description": "Buka keadaan meditasi yang lebih dalam dan tingkatkan latihan Anda. Binaural beats dapat membantu Anda mencapai keadaan theta dan alpha dengan lebih mudah, memperdalam kesadaran Anda."
+        "description": "Buka keadaan meditasi yang lebih dalam dan tingkatkan latihan Anda. Binaural beats dan nada isokronik, opsional dengan Solfeggio atau noise lembut, dapat membantu Anda mencapai kesadaran yang lebih dalam dengan lebih mudah."
       },
       "benefit5": {
         "title": "Kreativitas & Keadaan Alir",
-        "description": "Akses potensi kreatif Anda dan masuki keadaan alir. Frekuensi alpha dikaitkan dengan peningkatan kreativitas, pemecahan masalah, dan kinerja puncak."
+        "description": "Akses potensi kreatif Anda dan masuki keadaan alir. Buat sesi dari frekuensi Solfeggio, binaural beats, noise berlapis, atau nada isokronik untuk mendukung peningkatan kreativitas, pemecahan masalah, dan kinerja puncak."
       },
       "benefit6": {
         "title": "Peningkatan Suasana Hati",
-        "description": "Tingkatkan suasana hati dan kesejahteraan emosional Anda. Penelitian menunjukkan bahwa binaural beats dapat membantu meningkatkan suasana hati, mengurangi emosi negatif, dan mempromosikan keadaan mental yang positif."
+        "description": "Tingkatkan suasana hati dan kesejahteraan emosional Anda. Berbagai jenis noise, nada isokronik, binaural beats, dan frekuensi Solfeggio dapat dikombinasikan dalam sesi terapi audio untuk meningkatkan suasana hati, mengurangi emosi negatif, dan mempromosikan keadaan mental yang positif."
       }
     },
     "howItWorks": {
       "title": "Bagaimana Entrainment Gelombang Otak Bekerja",
       "subtitle": "Ilmu di balik transformasi",
-      "explanation": "Ketika Anda mendengarkan dua frekuensi yang sedikit berbeda (satu di setiap telinga), otak Anda secara alami merasakan frekuensi ketiga—perbedaan di antara mereka. Ini disebut binaural beat. Otak Anda kemudian menyinkronkan aktivitas listriknya sendiri untuk mencocokkan frekuensi yang dirasakan ini, fenomena yang dikenal sebagai entrainment gelombang otak.",
-      "noHeadphones": "MindState juga mendukung monaural beats dan nada isokronik, yang bekerja tanpa headphone. Monaural beats dibuat dengan mencampur dua frekuensi sebelum mencapai telinga Anda, sementara nada isokronik menggunakan pulsa yang dijarakkan secara merata dari satu nada. Keduanya dapat secara efektif mengentrain gelombang otak Anda ketika diputar melalui speaker, memudahkan untuk menikmati manfaat selama meditasi, kerja, atau tidur—tidak perlu headphone.",
-      "personalization": "Frekuensi yang berbeda membuka keadaan mental yang berbeda: Delta (0.5-4 Hz) untuk tidur dalam, Theta (4-8 Hz) untuk meditasi dan kreativitas, Alpha (8-13 Hz) untuk fokus yang rileks, Beta (13-30 Hz) untuk konsentrasi aktif, dan Gamma (30-100 Hz) untuk kinerja puncak. Dengan mempersonalisasi frekuensi pembawa dan frekuensi ketukan untuk mencocokkan sensitivitas unik Anda, Anda dapat memaksimalkan manfaat dan mencapai keadaan mental yang diinginkan dengan lebih efektif."
+      "explanation": "Entrainment gelombang otak adalah cara suara ritmis dapat mempengaruhi aktivitas listrik otak Anda. Salah satu metodenya adalah binaural beats: ketika Anda mendengarkan dua frekuensi yang sedikit berbeda—satu di setiap telinga—otak Anda merasakan frekuensi ketiga, perbedaan di antara mereka, dan dapat menyinkronkan dengannya. Nada isokronik (pulsa yang dijarakkan merata dari satu nada) dan monaural beats (dua frekuensi dicampur sebelum mencapai telinga Anda) bekerja serupa dan dapat mengentrain gelombang otak melalui speaker—tanpa perlu headphone. Di luar beats dan nada, jenis noise seperti white, pink, dan brown noise dapat mendukung fokus dan relaksasi dengan menutupi gangguan dan membantu mengoptimalkan tingkat gairah, menjadikannya bagian berharga dari terapi audio.",
+      "noHeadphones": "Monaural beats dan nada isokronik secara efektif mengentrain gelombang otak saat diputar melalui speaker, sehingga Anda dapat menikmati manfaat selama meditasi, kerja, atau tidur tanpa headphone.",
+      "personalization": "Frekuensi beat yang berbeda terkait dengan keadaan mental yang berbeda: Delta (0.5-4 Hz) untuk tidur dalam, Theta (4-8 Hz) untuk meditasi dan kreativitas, Alpha (8-13 Hz) untuk fokus rileks, Beta (13-30 Hz) untuk konsentrasi aktif, dan Gamma (30-100 Hz) untuk kinerja puncak. Dengan menggabungkan beats, nada, dan noise serta menyesuaikannya dengan sensitivitas dan tujuan Anda, Anda dapat menyesuaikan sesi untuk manfaat maksimal."
+    },
+    "adhdNoise": {
+      "title": "White & Pink Noise untuk Fokus AD/HD",
+      "subtitle": "Penelitian menunjukkan noise dapat membantu meningkatkan perhatian dan mengurangi impulsivitas pada orang dengan AD/HD",
+      "description": "Sebuah meta-analisis dari 13 studi dengan 335 peserta menemukan bahwa white dan pink noise menghasilkan peningkatan kecil tetapi signifikan secara statistik dalam kinerja tugas untuk anak-anak dan dewasa muda dengan AD/HD. Manfaat termasuk impulsivitas yang lebih rendah, perhatian yang lebih baik, dan lebih sedikit kesalahan. Menariknya, jenis noise ini membantu orang dengan AD/HD tetapi tidak pada mereka yang tidak memiliki AD/HD, menunjukkan bahwa mereka bekerja dengan mengoptimalkan tingkat gairah otak khusus untuk otak AD/HD."
+    },
+    "adhdBinaural": {
+      "title": "Binaural Beats untuk Gejala AD/HD",
+      "subtitle": "Studi pilot menunjukkan janji untuk peningkatan perhatian dan pekerjaan rumah terkait",
+      "description": "Sebuah studi pilot acak, double-blind, terkontrol plasebo dengan 20 anak dan remaja dengan AD/HD menemukan bahwa mendengarkan binaural beats (20 menit, 3 kali per minggu selama 3 minggu) menghasilkan peningkatan signifikan yang dilaporkan oleh orang tua. Meskipun tes perhatian objektif tidak menunjukkan perubahan signifikan, orang tua melaporkan lebih sedikit masalah pekerjaan rumah terkait dengan kurangnya perhatian, menunjukkan manfaat nyata untuk fungsi sehari-hari."
     },
     "safety": {
       "title": "Aman & Telah Dipelajari dengan Baik",
@@ -151,6 +161,16 @@
       "studiesTitle": "Studi Penelitian yang Ditinjau oleh Rekan Sejawat",
       "studiesSubtitle": "Jelajahi bukti ilmiah yang mendukung kemanjuran binaural beats",
       "studies": {
+        "adhdNoise": {
+          "title": "Meta-Analisis AD/HD & White/Pink Noise",
+          "description": "Sebuah meta-analisis dari 13 studi (335 peserta) menemukan bahwa white dan pink noise menghasilkan peningkatan kecil tetapi signifikan secara statistik dalam perhatian, pengurangan impulsivitas, dan lebih sedikit kesalahan pada anak-anak dan dewasa muda dengan AD/HD.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/38428577/"
+        },
+        "adhdBinaural": {
+          "title": "Studi Pilot Binaural Beats untuk AD/HD",
+          "description": "Sebuah uji coba terkontrol acak dengan 20 anak/remaja dengan AD/HD menemukan bahwa binaural beats (20 menit, 3×/minggu selama 3 minggu) menyebabkan orang tua melaporkan lebih sedikit masalah pekerjaan rumah terkait dengan kurangnya perhatian secara signifikan.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/20117669/"
+        },
         "metaAnalysis": {
           "title": "Meta-Analisis: Kognisi, Kecemasan & Nyeri",
           "description": "Analisis komprehensif dari 22 studi menemukan efek sedang dan signifikan pada memori, perhatian, kecemasan, dan persepsi nyeri (ukuran efek g = 0.45).",
@@ -220,6 +240,14 @@
     "quote8": {
       "text": "Nada isokronik dapat membantu otak Anda menyinkronkan dengan pola pendengaran spesifik yang dapat meredakan hal-hal seperti kecemasan.",
       "source": "Healthline (2024)"
+    },
+    "quote9": {
+      "text": "Orang tua melaporkan lebih sedikit masalah pekerjaan rumah terkait dengan kurangnya perhatian setelah anak-anak mereka dengan AD/HD secara teratur mendengarkan binaural beats.",
+      "source": "Uji coba terkontrol acak (2010, PubMed 20117669)"
+    },
+    "quote10": {
+      "text": "White dan pink noise menghasilkan peningkatan kecil tetapi signifikan secara statistik dalam perhatian, pengurangan impulsivitas, dan lebih sedikit kesalahan pada anak-anak dan dewasa muda dengan AD/HD.",
+      "source": "Meta-analisis dari 13 studi (2024, PubMed 38428577)"
     }
   }
 }

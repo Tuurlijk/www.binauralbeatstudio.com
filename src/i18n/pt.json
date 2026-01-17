@@ -1,6 +1,6 @@
 {
   "meta": {
-    "title": "MindState Binaural Beats Studio",
+    "title": "MindState: Terapia Sonora",
     "description": "O único aplicativo de batidas binaurais que permite criar sessões de áudio completamente personalizadas do zero. Ferramentas profissionais para criar sessões que correspondam às suas preferências exatas."
   },
   "nav": {
@@ -13,9 +13,9 @@
   },
   "hero": {
     "title": "Crie Sessões",
-    "titleHighlight": "Binaurais",
+    "titleHighlight": "Multicamadas",
     "titleSuffix": "Personalizadas",
-    "subtitle": "O único aplicativo de batidas binaurais que permite criar sessões de áudio completamente personalizadas do zero. Cada decisão sobre frequência, volume e tempo está sob seu controle.",
+    "subtitle": "MindState permite criar sessões de terapia de áudio completamente personalizadas do zero. Se você está procurando alívio dos sintomas de TDAH, quer relaxar, aprofundar meditação, melhorar o sono, aumentar criatividade ou melhorar o foco—MindState oferece ferramentas para criar sessões adaptadas às suas necessidades.",
     "ctaDownload": "Baixar na Play Store",
     "ctaLearnMore": "Saiba Mais",
     "tagline": "Aplicativo Android nativo • Qualidade de áudio profissional • Grátis para experimentar"
@@ -25,11 +25,11 @@
     "subtitle": "Diferente de aplicativos com predefinições fixas, o MindState oferece ferramentas profissionais para criar sessões que correspondam às suas preferências, sensibilidade e objetivos exatos.",
     "feature1": {
       "title": "Personalização Completa",
-      "description": "Projete sessões do zero, não predefinições. Defina frequências portadoras (80-600 Hz) e frequências de batida (0.5-40 Hz) para corresponder à sua sensibilidade pessoal."
+      "description": "Projete sessões do zero ou copie sessões incluídas. Crie sua própria sessão personalizada para corresponder à sua sensibilidade pessoal."
     },
     "feature2": {
       "title": "Sessões Multicamadas",
-      "description": "Sobreponha múltiplos tipos de faixas: batidas binaurais, batidas monaurais, tons isocrônicos, geradores de ruído e seus próprios arquivos de áudio. Cada faixa tem controle de volume independente."
+      "description": "Sobreponha múltiplos tipos de faixas: batidas binaurais, batidas monaurais, tons isocrônicos, tons Solfeggio, geradores de ruído e seus próprios arquivos de áudio. Cada faixa tem controle de volume independente."
     },
     "feature3": {
       "title": "Editor de Pontos",
@@ -37,7 +37,7 @@
     },
     "feature4": {
       "title": "Editor Profissional",
-      "description": "Controle granular sobre cada aspecto: frequências, volumes, tempos e transições. Visualize antes de salvar para garantir que sua sessão esteja perfeita."
+      "description": "Controle granular sobre cada aspecto: frequências, volumes, tempos, parâmetros de ruído e transições. Visualize antes de salvar para garantir que sua sessão esteja perfeita. Altere os parâmetros de ruído ao longo do tempo."
     },
     "feature5": {
       "title": "Compartilhamento por Código QR",
@@ -45,7 +45,7 @@
     },
     "feature6": {
       "title": "Qualidade de Áudio Profissional",
-      "description": "Motor de áudio nativo que oferece som cristalino com conversão automática de taxa de amostragem, síntese de fase contínua e processamento de baixa latência."
+      "description": "Motor de áudio nativo oferece som cristalino sintetizado em tempo real."
     }
   },
   "howItWorks": {
@@ -61,7 +61,7 @@
     },
     "step3": {
       "title": "Ajustar Frequências e Volumes",
-      "description": "Defina frequências portadoras (80-600 Hz) e frequências de batida (0.5-40 Hz) para corresponder à sua sensibilidade. Controle os volumes das faixas e adicione envelopes de volume."
+      "description": "Defina frequências portadoras e frequências de batida para corresponder à sua sensibilidade. Ou use frequências portadoras Solfeggio. Controle os volumes das faixas e adicione envelopes de volume."
     },
     "step4": {
       "title": "Visualizar e Salvar",
@@ -84,7 +84,7 @@
   },
   "cta": {
     "title": "Comece a Criar Sua Experiência de Áudio Perfeita",
-    "subtitle": "Pare de se contentar com predefinições que não se encaixam perfeitamente. O MindState oferece as ferramentas para criar sessões de batidas binaurais que são exclusivamente suas.",
+    "subtitle": "Pare de se contentar com predefinições que não se encaixam perfeitamente. O MindState oferece as ferramentas para criar sessões de terapia sonora que são exclusivamente suas.",
     "ctaDownload": "Baixar na Play Store",
     "ctaViewFeatures": "Ver Recursos",
     "benefit1": {
@@ -102,41 +102,51 @@
   },
   "aboutBinauralBeats": {
     "heroTitle": "Desbloqueie o Potencial do Seu Cérebro",
-    "heroSubtitle": "Transforme seu estado mental, melhore o foco, alcance relaxamento mais profundo, desbloqueie criatividade e estados de fluxo, e alcance o desempenho máximo através do poder do arrasto de ondas cerebrais.",
+    "heroSubtitle": "Batidas e Sons Personalizados para Relaxar, Focar, Meditar, Ser Criativo e Dormir Melhor",
     "benefits": {
       "title": "Benefícios Poderosos Que Você Pode Experimentar",
-      "subtitle": "Batidas binaurais e arrasto de ondas cerebrais podem ajudá-lo a alcançar estados mentais e resultados notáveis",
+      "subtitle": "Batidas binaurais, batidas isocrônicas, tons Solfeggio e sessões de ruído branco podem ajudá-lo a alcançar estados mentais e resultados notáveis",
       "benefit1": {
         "title": "Relaxamento Profundo e Alívio do Estresse",
-        "description": "Alcance relaxamento profundo e derreta o estresse. Frequências mais baixas ajudam seu cérebro a entrar em estados profundamente relaxados, reduzindo a ansiedade e promovendo calma."
+        "description": "Alcance relaxamento profundo e derreta o estresse. Ruído calmante e batidas binaurais, junto com tons isocrônicos ou frequências Solfeggio, ajudam seu cérebro a entrar em estados profundamente relaxados, reduzindo a ansiedade e promovendo calma."
       },
       "benefit2": {
         "title": "Foco e Concentração Aprimorados",
-        "description": "Aumente seu desempenho cognitivo e mantenha foco aguçado. Frequências mais altas ajudam seu cérebro a entrar em estados ótimos para trabalho, estudo e tarefas criativas."
+        "description": "Aumente seu desempenho cognitivo e mantenha foco aguçado. Tons isocrônicos e frequências Solfeggio, em camadas com batidas binaurais ou ruído de fundo, apoiam estados ótimos para trabalho, estudo e tarefas criativas."
       },
       "benefit3": {
         "title": "Melhor Qualidade do Sono",
-        "description": "Melhore seu sono naturalmente. Frequências delta e theta ajudam seu cérebro a fazer a transição para estados de sono profundo e restaurador para melhor descanso e recuperação."
+        "description": "Melhore seu sono naturalmente. Frequências Solfeggio e ruído calmante, combinados com batidas binaurais ou tons isocrônicos, apoiam a transição do seu cérebro para um sono profundo e restaurador para melhor descanso e recuperação."
       },
       "benefit4": {
         "title": "Aprimoramento da Meditação",
-        "description": "Desbloqueie estados de meditação mais profundos e melhore sua prática. Batidas binaurais podem ajudá-lo a alcançar estados theta e alpha com mais facilidade, aprofundando sua atenção plena."
+        "description": "Desbloqueie estados de meditação mais profundos e melhore sua prática. Batidas binaurais e tons isocrônicos, opcionalmente com Solfeggio ou ruído suave, podem ajudá-lo a alcançar uma atenção plena mais profunda com mais facilidade."
       },
       "benefit5": {
         "title": "Criatividade e Estados de Fluxo",
-        "description": "Acesse seu potencial criativo e entre em estados de fluxo. Frequências alpha estão associadas a criatividade aprimorada, resolução de problemas e desempenho máximo."
+        "description": "Acesse seu potencial criativo e entre em estados de fluxo. Crie sessões a partir de frequências Solfeggio, batidas binaurais, ruído em camadas ou tons isocrônicos para apoiar criatividade aprimorada, resolução de problemas e desempenho máximo."
       },
       "benefit6": {
         "title": "Melhora do Humor",
-        "description": "Eleve seu humor e bem-estar emocional. A pesquisa sugere que batidas binaurais podem ajudar a melhorar o humor, reduzir emoções negativas e promover estados mentais positivos."
+        "description": "Eleve seu humor e bem-estar emocional. Vários tipos de ruído, tons isocrônicos, batidas binaurais e frequências Solfeggio podem ser combinados em sessões de terapia sonora para melhorar o humor, reduzir emoções negativas e promover estados mentais positivos."
       }
     },
     "howItWorks": {
       "title": "Como Funciona o Arrasto de Ondas Cerebrais",
       "subtitle": "A ciência por trás da transformação",
-      "explanation": "Quando você ouve duas frequências ligeiramente diferentes (uma em cada ouvido), seu cérebro percebe naturalmente uma terceira frequência—a diferença entre elas. Isso é chamado de batida binaural. Seu cérebro então sincroniza sua própria atividade elétrica para corresponder a essa frequência percebida, um fenômeno conhecido como arrasto de ondas cerebrais.",
-      "noHeadphones": "O MindState também suporta batidas monaurais e tons isocrônicos, que funcionam sem fones de ouvido. Batidas monaurais são criadas misturando duas frequências antes que cheguem aos seus ouvidos, enquanto tons isocrônicos usam pulsos uniformemente espaçados de um único tom. Ambos podem efetivamente arrastar suas ondas cerebrais quando reproduzidos através de alto-falantes, facilitando o aproveitamento dos benefícios durante meditação, trabalho ou sono—sem necessidade de fones de ouvido.",
-      "personalization": "Diferentes frequências desbloqueiam diferentes estados mentais: Delta (0.5-4 Hz) para sono profundo, Theta (4-8 Hz) para meditação e criatividade, Alpha (8-13 Hz) para foco relaxado, Beta (13-30 Hz) para concentração ativa, e Gamma (30-100 Hz) para desempenho máximo. Ao personalizar frequências portadoras e frequências de batida para corresponder à sua sensibilidade única, você pode maximizar os benefícios e alcançar seu estado mental desejado de forma mais eficaz."
+      "explanation": "O arrasto de ondas cerebrais é como o som rítmico pode influenciar a atividade elétrica do seu cérebro. Um método são as batidas binaurais: quando você ouve duas frequências ligeiramente diferentes—uma em cada ouvido—seu cérebro percebe uma terceira frequência, a diferença entre elas, e pode sincronizar-se com ela. Tons isocrônicos (pulsos uniformemente espaçados de um único tom) e batidas monaurais (duas frequências misturadas antes de chegarem aos seus ouvidos) funcionam de forma semelhante e podem arrastar ondas cerebrais através de alto-falantes—sem necessidade de fones de ouvido. Além de batidas e tons, tipos de ruído como branco, rosa e marrom podem apoiar foco e relaxamento ao mascarar distrações e ajudar a otimizar níveis de excitação, tornando-os uma parte valiosa da terapia de áudio.",
+      "noHeadphones": "Batidas monaurais e tons isocrônicos arrastam efetivamente ondas cerebrais quando reproduzidos através de alto-falantes, para que você possa aproveitar os benefícios durante meditação, trabalho ou sono sem fones de ouvido.",
+      "personalization": "Diferentes frequências de batida estão ligadas a diferentes estados mentais: Delta (0.5-4 Hz) para sono profundo, Theta (4-8 Hz) para meditação e criatividade, Alpha (8-13 Hz) para foco relaxado, Beta (13-30 Hz) para concentração ativa, e Gamma (30-100 Hz) para desempenho máximo. Ao combinar batidas, tons e ruído e adaptá-los à sua sensibilidade e objetivos, você pode personalizar as sessões para benefício máximo."
+    },
+    "adhdNoise": {
+      "title": "Ruído Branco e Rosa para Foco em AD/HD",
+      "subtitle": "A pesquisa mostra que o ruído pode ajudar a melhorar a atenção e reduzir a impulsividade em pessoas com AD/HD",
+      "description": "Uma meta-análise de 13 estudos com 335 participantes descobriu que ruído branco e rosa levaram a melhorias pequenas mas estatisticamente significativas no desempenho de tarefas para crianças e adultos jovens com AD/HD. Os benefícios incluíram menos impulsividade, melhor atenção e menos erros. Curiosamente, esses tipos de ruído ajudaram pessoas com AD/HD mas não aquelas sem AD/HD, sugerindo que funcionam otimizando os níveis de excitação cerebral especificamente para cérebros com AD/HD."
+    },
+    "adhdBinaural": {
+      "title": "Batidas Binaurais para Sintomas de AD/HD",
+      "subtitle": "Estudos piloto mostram promessa para melhorias relacionadas à atenção e lições de casa",
+      "description": "Um estudo piloto randomizado, duplo-cego e controlado por placebo com 20 crianças e adolescentes com AD/HD descobriu que ouvir batidas binaurais (20 minutos, 3 vezes por semana durante 3 semanas) levou a melhorias significativas relatadas pelos pais. Embora os testes objetivos de atenção não tenham mostrado mudanças significativas, os pais relataram menos problemas com lições de casa relacionados à desatenção, sugerindo benefícios reais para o funcionamento diário."
     },
     "safety": {
       "title": "Seguro e Bem Estudado",
@@ -151,6 +161,16 @@
       "studiesTitle": "Estudos de Pesquisa Revisados por Pares",
       "studiesSubtitle": "Explore a evidência científica que apoia a eficácia de batidas binaurais",
       "studies": {
+        "adhdNoise": {
+          "title": "Meta-Análise de AD/HD e Ruído Branco/Rosa",
+          "description": "Uma meta-análise de 13 estudos (335 participantes) descobriu que ruído branco e rosa levaram a melhorias pequenas mas estatisticamente significativas na atenção, redução da impulsividade e menos erros em crianças e adultos jovens com AD/HD.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/38428577/"
+        },
+        "adhdBinaural": {
+          "title": "Estudo Piloto de Batidas Binaurais para AD/HD",
+          "description": "Um ensaio controlado randomizado com 20 crianças/adolescentes com AD/HD descobriu que batidas binaurais (20 min, 3×/semana durante 3 semanas) levaram os pais a relatarem significativamente menos problemas com lições de casa relacionados à desatenção.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/20117669/"
+        },
         "metaAnalysis": {
           "title": "Meta-Análise: Cognição, Ansiedade e Dor",
           "description": "Uma análise abrangente de 22 estudos encontrou efeitos médios e significativos na memória, atenção, ansiedade e percepção de dor (tamanho do efeito g = 0.45).",
@@ -220,6 +240,14 @@
     "quote8": {
       "text": "Tons isocrônicos podem ajudar seu cérebro a sincronizar com um padrão auditivo específico que poderia aliviar coisas como ansiedade.",
       "source": "Healthline (2024)"
+    },
+    "quote9": {
+      "text": "Os pais relataram menos problemas com lições de casa relacionados à desatenção depois que seus filhos com AD/HD ouviram batidas binaurais regularmente.",
+      "source": "Ensaio controlado randomizado (2010, PubMed 20117669)"
+    },
+    "quote10": {
+      "text": "Ruído branco e rosa levaram a melhorias pequenas mas estatisticamente significativas na atenção, redução da impulsividade e menos erros em crianças e adultos jovens com AD/HD.",
+      "source": "Meta-análise de 13 estudos (2024, PubMed 38428577)"
     }
   }
 }
