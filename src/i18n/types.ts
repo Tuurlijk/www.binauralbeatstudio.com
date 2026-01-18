@@ -78,6 +78,16 @@ export interface Translations {
       noHeadphones: string;
       personalization: string;
     };
+    adhdNoise: {
+      title: string;
+      subtitle: string;
+      description: string;
+    };
+    adhdBinaural: {
+      title: string;
+      subtitle: string;
+      description: string;
+    };
     safety: {
       title: string;
       subtitle: string;
@@ -89,6 +99,8 @@ export interface Translations {
       subtitle: string;
       findings: string;
       studies: {
+        adhdNoise: { title: string; description: string; url: string };
+        adhdBinaural: { title: string; description: string; url: string };
         metaAnalysis: { title: string; description: string; url: string };
         anxiety: { title: string; description: string; url: string };
         memory: { title: string; description: string; url: string };
@@ -119,6 +131,8 @@ export interface Translations {
     quote6: { text: string; source: string };
     quote7: { text: string; source: string };
     quote8: { text: string; source: string };
+    quote9: { text: string; source: string };
+    quote10: { text: string; source: string };
   };
 }
 

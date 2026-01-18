@@ -34,6 +34,45 @@ const translations = await loadTranslations(locale);
 			</div>
 		</div>
 
+		<!-- AD/HD Research Sections -->
+		<div class="mb-12 grid grid-cols-1 md:grid-cols-2 gap-8">
+			<!-- AD/HD Noise -->
+			<div class="bg-bhutan-secondary p-8 rounded-2xl border" style="border-color: var(--border-light);">
+				<div class="w-12 h-12 rounded-lg flex items-center justify-center mb-4" style="background-color: var(--primary);">
+					<svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+						<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19V6l12-3v13M9 19c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zm12-3c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zM9 10l12-3" />
+					</svg>
+				</div>
+				<h3 class="text-2xl font-bold mb-3 text-bhutan-primary">
+					{t('aboutBinauralBeats.adhdNoise.title', locale, translations)}
+				</h3>
+				<p class="text-lg font-semibold mb-4 text-bhutan-secondary">
+					{t('aboutBinauralBeats.adhdNoise.subtitle', locale, translations)}
+				</p>
+				<p class="leading-relaxed text-bhutan-secondary">
+					{t('aboutBinauralBeats.adhdNoise.description', locale, translations)}
+				</p>
+			</div>
+
+			<!-- AD/HD Binaural -->
+			<div class="bg-bhutan-secondary p-8 rounded-2xl border" style="border-color: var(--border-light);">
+				<div class="w-12 h-12 rounded-lg flex items-center justify-center mb-4" style="background-color: var(--secondary);">
+					<svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+						<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19V6l12-3v13M9 19c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zm12-3c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zM9 10l12-3" />
+					</svg>
+				</div>
+				<h3 class="text-2xl font-bold mb-3 text-bhutan-primary">
+					{t('aboutBinauralBeats.adhdBinaural.title', locale, translations)}
+				</h3>
+				<p class="text-lg font-semibold mb-4 text-bhutan-secondary">
+					{t('aboutBinauralBeats.adhdBinaural.subtitle', locale, translations)}
+				</p>
+				<p class="leading-relaxed text-bhutan-secondary">
+					{t('aboutBinauralBeats.adhdBinaural.description', locale, translations)}
+				</p>
+			</div>
+		</div>
+
 		<!-- Safety & Research Section -->
 		<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
 			<!-- Safety -->
@@ -83,6 +122,46 @@ const translations = await loadTranslations(locale);
 					Peer-Reviewed Research Studies
 				</h3>
 				<div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+					<a 
+						href={t('aboutBinauralBeats.research.studies.adhdNoise.url', locale, translations)} 
+						target="_blank" 
+						rel="noopener noreferrer"
+						class="block p-4 rounded-lg border transition-all hover:shadow-lg hover:border-bhutan-accent"
+						style="background-color: var(--bg-primary); border-color: var(--border-light);"
+					>
+						<h4 class="font-semibold text-bhutan-primary mb-2">
+							{t('aboutBinauralBeats.research.studies.adhdNoise.title', locale, translations)}
+						</h4>
+						<p class="text-sm text-bhutan-secondary mb-2">
+							{t('aboutBinauralBeats.research.studies.adhdNoise.description', locale, translations)}
+						</p>
+						<span class="text-xs text-bhutan-accent flex items-center gap-1">
+							Read study
+							<svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+								<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+							</svg>
+						</span>
+					</a>
+					<a 
+						href={t('aboutBinauralBeats.research.studies.adhdBinaural.url', locale, translations)} 
+						target="_blank" 
+						rel="noopener noreferrer"
+						class="block p-4 rounded-lg border transition-all hover:shadow-lg hover:border-bhutan-accent"
+						style="background-color: var(--bg-primary); border-color: var(--border-light);"
+					>
+						<h4 class="font-semibold text-bhutan-primary mb-2">
+							{t('aboutBinauralBeats.research.studies.adhdBinaural.title', locale, translations)}
+						</h4>
+						<p class="text-sm text-bhutan-secondary mb-2">
+							{t('aboutBinauralBeats.research.studies.adhdBinaural.description', locale, translations)}
+						</p>
+						<span class="text-xs text-bhutan-accent flex items-center gap-1">
+							Read study
+							<svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+								<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+							</svg>
+						</span>
+					</a>
 					<a 
 						href={t('aboutBinauralBeats.research.studies.metaAnalysis.url', locale, translations)} 
 						target="_blank" 
