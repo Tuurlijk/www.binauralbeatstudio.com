@@ -138,16 +138,20 @@ const isRTL = locale === 'ar';
 					<input type="checkbox" id="mobile-menu-toggle" class="hidden" />
 				</div>
 			</div>
-			<div id="mobile-menu-wrapper">
-				<div class="md:hidden hidden bg-bhutan-primary border-t border-bhutan-light" id="mobile-menu">
-				<div class="px-4 pt-2 pb-4 space-y-2">
+			<div id="mobile-menu-wrapper" style="overflow: visible;">
+				<div class="md:hidden hidden bg-bhutan-primary border-t border-bhutan-light" id="mobile-menu" style="overflow: visible;">
+				<div class="px-4 pt-2 pb-4 space-y-2" style="overflow: visible;">
 					<a href={getLocalizedHashLink('#benefits', locale, base)} class="block py-2 transition-colors text-bhutan-secondary hover:text-bhutan-accent">{t('nav.benefits', locale, translations)}</a>
 					<a href={getLocalizedHashLink('#features', locale, base)} class="block py-2 transition-colors text-bhutan-secondary hover:text-bhutan-accent">{t('nav.features', locale, translations)}</a>
 					<a href={getLocalizedHashLink('#how-it-works', locale, base)} class="block py-2 transition-colors text-bhutan-secondary hover:text-bhutan-accent">{t('nav.howItWorks', locale, translations)}</a>
 					<a href={getLocalizedHashLink('#screenshots', locale, base)} class="block py-2 transition-colors text-bhutan-secondary hover:text-bhutan-accent">{t('nav.screenshots', locale, translations)}</a>
 					<a href={getLocalizedHashLink('#about-binaural-beats', locale, base)} class="block py-2 transition-colors text-bhutan-secondary hover:text-bhutan-accent">{t('nav.about', locale, translations)}</a>
 					<a href={getLocalizedHashLink('#download', locale, base)} class="block py-2 text-white px-4 rounded-lg text-center transition-colors bg-bhutan-accent hover:opacity-90">{t('nav.download', locale, translations)}</a>
+					<div class="pt-4 border-t border-bhutan-light">
+						<LanguageSwitcher />
+					</div>
 				</div>
+			</div>
 			</div>
 		</nav>
 
@@ -189,8 +193,36 @@ const isRTL = locale === 'ar';
 		</footer>
 
 		<script>
-			// Mobile menu toggle (enhancement - works without JS via checkbox)
-			// The checkbox already handles visibility via CSS, this is just for smooth transitions
+			// Mobile menu toggle
+			document.addEventListener('DOMContentLoaded', () => {
+				const menuToggle = document.getElementById('mobile-menu-toggle') as HTMLInputElement | null;
+				const mobileMenu = document.getElementById('mobile-menu');
+				
+				if (menuToggle && mobileMenu) {
+					menuToggle.addEventListener('change', (e) => {
+						const target = e.target as HTMLInputElement;
+						if (target && target.checked) {
+							mobileMenu.classList.remove('hidden');
+							mobileMenu.style.display = 'block';
+						} else {
+							mobileMenu.classList.add('hidden');
+							mobileMenu.style.display = 'none';
+						}
+					});
+					
+					// Close menu when clicking on a link
+					const menuLinks = mobileMenu.querySelectorAll('a');
+					menuLinks.forEach(link => {
+						link.addEventListener('click', () => {
+							if (menuToggle) {
+								menuToggle.checked = false;
+								mobileMenu.classList.add('hidden');
+								mobileMenu.style.display = 'none';
+							}
+						});
+					});
+				}
+			});
 		</script>
 	</body>
 </html>
