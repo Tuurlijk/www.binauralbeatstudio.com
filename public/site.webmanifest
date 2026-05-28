@@ -3,6 +3,11 @@
   "short_name": "MindState",
   "icons": [
     {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    },
+    {
       "src": "/favicon-16x16.png",
       "sizes": "16x16",
       "type": "image/png"
@@ -43,8 +48,8 @@
       "type": "image/png"
     }
   ],
-  "theme_color": "#ffffff",
-  "background_color": "#ffffff",
+  "theme_color": "#FF6B35",
+  "background_color": "#FF6B35",
   "display": "standalone"
 }
 

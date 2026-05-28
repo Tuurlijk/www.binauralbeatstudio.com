@@ -77,7 +77,10 @@
     "subtitle": "Interface profissional com Material Design 3, modo escuro e localização completa",
     "sessionBrowser": "Navegador de Sessões",
     "sessionEditor": "Editor de Sessões",
+    "simpleSessionEditor": "Editor de Sessões Simples",
+    "fullSessionEditor": "Editor de Sessões Completo",
     "trackTypePicker": "Seletor de Tipo de Faixa",
+    "toneEditor": "Editor de Tons",
     "mainPlayer": "Reprodutor Principal",
     "pointEditor": "Editor de Pontos",
     "qrSharing": "Compartilhamento por Código QR"

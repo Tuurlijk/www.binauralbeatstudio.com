@@ -77,7 +77,10 @@
     "subtitle": "Professionele interface met Material Design 3, donkere modus en volledige lokalisatie",
     "sessionBrowser": "Sessie Browser",
     "sessionEditor": "Sessie Editor",
+    "simpleSessionEditor": "Eenvoudige Sessie Editor",
+    "fullSessionEditor": "Volledige Sessie Editor",
     "trackTypePicker": "Tracktype Kiezer",
+    "toneEditor": "Toon Editor",
     "mainPlayer": "Hoofdspeler",
     "pointEditor": "Punt Editor",
     "qrSharing": "QR Code Delen"

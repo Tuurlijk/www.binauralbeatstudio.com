@@ -77,7 +77,10 @@
     "subtitle": "Antarmuka profesional dengan Material Design 3, mode gelap, dan pelokalan penuh",
     "sessionBrowser": "Penelusur Sesi",
     "sessionEditor": "Editor Sesi",
+    "simpleSessionEditor": "Editor Sesi Sederhana",
+    "fullSessionEditor": "Editor Sesi Lengkap",
     "trackTypePicker": "Pemilih Jenis Trek",
+    "toneEditor": "Editor Nada",
     "mainPlayer": "Pemutar Utama",
     "pointEditor": "Editor Titik",
     "qrSharing": "Berbagi Kode QR"

@@ -77,7 +77,10 @@
     "subtitle": "Professional interface with Material Design 3, dark mode, and full localization",
     "sessionBrowser": "Session Browser",
     "sessionEditor": "Session Editor",
+    "simpleSessionEditor": "Simple Session Editor",
+    "fullSessionEditor": "Full Session Editor",
     "trackTypePicker": "Track Type Picker",
+    "toneEditor": "Tone Editor",
     "mainPlayer": "Main Player",
     "pointEditor": "Point Editor",
     "qrSharing": "QR Code Sharing"
@@ -249,4 +252,3 @@
     }
   }
 }
-

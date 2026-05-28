@@ -77,7 +77,10 @@
     "subtitle": "واجهة احترافية مع Material Design 3، الوضع الداكن، والتوطين الكامل",
     "sessionBrowser": "متصفح الجلسات",
     "sessionEditor": "محرر الجلسات",
+    "simpleSessionEditor": "محرر الجلسات البسيط",
+    "fullSessionEditor": "محرر الجلسات الكامل",
     "trackTypePicker": "منتقي نوع المسار",
+    "toneEditor": "محرر النغمات",
     "mainPlayer": "المشغل الرئيسي",
     "pointEditor": "محرر النقاط",
     "qrSharing": "مشاركة رمز QR"

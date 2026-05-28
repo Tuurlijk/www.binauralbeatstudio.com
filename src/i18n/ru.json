@@ -77,7 +77,10 @@
     "subtitle": "Профессиональный интерфейс с Material Design 3, темным режимом и полной локализацией",
     "sessionBrowser": "Браузер сессий",
     "sessionEditor": "Редактор сессий",
+    "simpleSessionEditor": "Простой редактор сеансов",
+    "fullSessionEditor": "Полный редактор сеансов",
     "trackTypePicker": "Выбор типа трека",
+    "toneEditor": "Редактор тона",
     "mainPlayer": "Главный плеер",
     "pointEditor": "Точечный редактор",
     "qrSharing": "Обмен через QR-код"

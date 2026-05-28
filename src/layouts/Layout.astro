@@ -96,9 +96,9 @@ const isRTL = locale === 'ar';
 		</style>
 		
 		<!-- Google tag (gtag.js) -->
-		<script async src="https://www.googletagmanager.com/gtag/js?id=AW-1014717351">
+		<script is:inline async src="https://www.googletagmanager.com/gtag/js?id=AW-1014717351">
 		</script>
-		<script>
+		<script is:inline>
 			window.dataLayer = window.dataLayer || [];
 			function gtag(){dataLayer.push(arguments);}
 			gtag('js', new Date());
@@ -113,9 +113,9 @@ const isRTL = locale === 'ar';
 					<div class="flex items-center">
 						<a href={base} class="flex items-center transition-opacity hover:opacity-80">
 							<img 
-								src={`${base}images/LogoLarge.svg`}
-								alt="MindState - Create Personalized Binaural Beats Sessions"
-								class="h-10 w-auto"
+								src={`${base}images/app-icon.svg`}
+								alt="MindState app icon"
+								class="h-10 w-10"
 							/>
 						</a>
 					</div>
