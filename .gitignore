@@ -10,6 +10,7 @@ config.yaml
 
 # dependencies
 node_modules/
+bun.lock
 
 # logs
 npm-debug.log*

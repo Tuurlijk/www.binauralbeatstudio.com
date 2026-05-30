@@ -138,4 +138,23 @@ For example: `bd create --help` shows `--parent`, `--deps`, `--assignee`, etc.
 - ❌ Do NOT duplicate tracking systems
 - ❌ Do NOT clutter repo root with planning documents
 
+### Writing style for generated text
+
+When creating or editing user-facing copy (translations, UI strings, marketing text, docs shown to visitors):
+
+- ❌ Do **not** use the long dash (em dash `—`, en dash `–`, or double em dash `——`)
+- ✅ Use regular punctuation instead: commas, periods, semicolons, colons
+- ✅ Use parentheses `()` or braces where a phrase needs to be set off inline
+
+**Examples:**
+
+| Avoid | Prefer |
+|-------|--------|
+| `focus—MindState gives you tools` | `focus, MindState gives you tools` |
+| `two frequencies—one in each ear—your brain` | `two frequencies (one in each ear), your brain` |
+| `through speakers—no headphones required` | `through speakers (no headphones required)` |
+| `comfortable levels—excessive volume` | `comfortable levels. Excessive volume` |
+
+Apply this rule to all locales in `src/i18n/*.json` and any other site copy you add.
+
 For more details, see README.md and QUICKSTART.md.
