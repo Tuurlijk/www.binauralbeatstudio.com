@@ -51,6 +51,8 @@ export interface Translations {
     mainPlayer: string;
     pointEditor: string;
     qrSharing: string;
+    ritualsList: string;
+    ritualEdit: string;
   };
   cta: {
     title: string;

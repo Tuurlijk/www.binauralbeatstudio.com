@@ -83,7 +83,9 @@
     "toneEditor": "Editor de Tonos",
     "mainPlayer": "Reproductor Principal",
     "pointEditor": "Editor de Puntos",
-    "qrSharing": "Compartir con Código QR"
+    "qrSharing": "Compartir con Código QR",
+    "ritualsList": "Rituales",
+    "ritualEdit": "Editar ritual"
   },
   "cta": {
     "title": "Comienza a Crear Tu Experiencia de Audio Perfecta",

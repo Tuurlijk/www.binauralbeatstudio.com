@@ -83,7 +83,9 @@
     "toneEditor": "Tone Editor",
     "mainPlayer": "Main Player",
     "pointEditor": "Point Editor",
-    "qrSharing": "QR Code Sharing"
+    "qrSharing": "QR Code Sharing",
+    "ritualsList": "Rituals",
+    "ritualEdit": "Edit Ritual"
   },
   "cta": {
     "title": "Start Creating Your Perfect Audio Experience",

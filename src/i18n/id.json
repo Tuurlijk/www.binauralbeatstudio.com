@@ -83,7 +83,9 @@
     "toneEditor": "Editor Nada",
     "mainPlayer": "Pemutar Utama",
     "pointEditor": "Editor Titik",
-    "qrSharing": "Berbagi Kode QR"
+    "qrSharing": "Berbagi Kode QR",
+    "ritualsList": "Ritual",
+    "ritualEdit": "Edit Ritual"
   },
   "cta": {
     "title": "Mulai Membuat Pengalaman Audio Sempurna Anda",

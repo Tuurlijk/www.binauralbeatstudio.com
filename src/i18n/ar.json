@@ -83,7 +83,9 @@
     "toneEditor": "محرر النغمات",
     "mainPlayer": "المشغل الرئيسي",
     "pointEditor": "محرر النقاط",
-    "qrSharing": "مشاركة رمز QR"
+    "qrSharing": "مشاركة رمز QR",
+    "ritualsList": "الطقوس",
+    "ritualEdit": "تحرير الطقس"
   },
   "cta": {
     "title": "ابدأ في إنشاء تجربة الصوت المثالية الخاصة بك",

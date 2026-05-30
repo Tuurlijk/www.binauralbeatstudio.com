@@ -83,7 +83,9 @@
     "toneEditor": "टोन संपादक",
     "mainPlayer": "मुख्य प्लेयर",
     "pointEditor": "पॉइंट संपादक",
-    "qrSharing": "QR कोड साझाकरण"
+    "qrSharing": "QR कोड साझाकरण",
+    "ritualsList": "अनुष्ठान",
+    "ritualEdit": "अनुष्ठान संपादित करें"
   },
   "cta": {
     "title": "अपना सही ऑडियो अनुभव बनाना शुरू करें",

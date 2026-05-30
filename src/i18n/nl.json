@@ -83,7 +83,9 @@
     "toneEditor": "Toon Editor",
     "mainPlayer": "Hoofdspeler",
     "pointEditor": "Punt Editor",
-    "qrSharing": "QR Code Delen"
+    "qrSharing": "QR Code Delen",
+    "ritualsList": "Rituelen",
+    "ritualEdit": "Ritueel bewerken"
   },
   "cta": {
     "title": "Begin met het Maken van Je Perfecte Audio-ervaring",

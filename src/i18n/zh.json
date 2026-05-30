@@ -83,7 +83,9 @@
     "toneEditor": "音调编辑器",
     "mainPlayer": "主播放器",
     "pointEditor": "点编辑器",
-    "qrSharing": "二维码分享"
+    "qrSharing": "二维码分享",
+    "ritualsList": "仪式",
+    "ritualEdit": "编辑仪式"
   },
   "cta": {
     "title": "开始创建您完美的音频体验",
