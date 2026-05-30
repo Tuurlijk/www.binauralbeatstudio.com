@@ -1,13 +1,94 @@
-# Multi-Language i18n Implementation Plan
+# Multi-Language i18n
 
-## Overview
+## Current implementation (Astro 6)
 
-Implement comprehensive internationalization (i18n) for 8 languages using `astro-i18n-aut`, which provides URL-based routing (`/en/`, `/es/`, `/ar/`, etc.) and avoids template duplication. The implementation includes a language switcher component, RTL (right-to-left) support for Arabic, SEO optimization with hreflang tags, TypeScript type safety, error handling, and performance optimizations.
+This site uses **Astro 6 native i18n routing** (not `astro-i18n-aut`). English is the default locale and lives at the site root; every other language gets a URL prefix.
 
-## Supported Languages
+| Locale | Home | Demo page |
+|--------|------|-----------|
+| `en` (default) | `/` | `/demo/` |
+| `ar`, `es`, `hi`, `id`, `nl`, `pt`, `ru`, `zh` | `/{locale}/` | `/{locale}/demo/` |
 
-- `en` (English) - Default locale
-- `ar` (Arabic) - RTL support required
+**Requirements:** Node **22.12.0+** (see `.nvmrc`), Astro **6.x**, static output with `trailingSlash: 'always'` and `build.format: 'directory'`.
+
+### How routing works
+
+```
+src/pages/
+  _templates/          # Shared page bodies (not routed)
+    HomePage.astro
+    DemoPage.astro
+  index.astro          # English home  → /
+  demo.astro           # English demo  → /demo/
+  es/
+    index.astro        # Spanish home  → /es/
+    demo.astro         # Spanish demo  → /es/demo/
+  … (one folder per non-English locale)
+```
+
+Each locale wrapper is a thin re-export:
+
+```astro
+---
+import HomePage from '../_templates/HomePage.astro';
+---
+
+<HomePage />
+```
+
+Put real page content in `_templates/` once. Root-level `.astro` files serve English; locale folders serve prefixed URLs.
+
+### Locale detection and links
+
+- **Current locale:** `Astro.currentLocale` (cast to `Locale` from `src/i18n/types.ts`)
+- **Translations:** `loadTranslations(locale)` and `t(key, locale, translations)` in `src/utils/i18n.ts`
+- **Internal links:** `getLocalizedLink(path, locale)` and `getLocalizedHashLink('#section', locale)` — these wrap `getRelativeLocaleUrl` from `astro:i18n`
+- **hreflang / SEO:** `getAbsoluteLocaleUrl(loc, pagePath)` in `src/layouts/Layout.astro`
+
+Do not use `astro-i18n-aut` or `getLocale(Astro.url)`.
+
+---
+
+## Adding a new language
+
+Example: adding French (`fr`).
+
+1. **`astro.config.mjs`** — add `'fr'` to `localeCodes` and `fr: 'fr-FR'` to `sitemapLocales`
+2. **`src/i18n/types.ts`** — add `'fr'` to the `Locale` union type
+3. **`src/i18n/fr.json`** — create translations (copy structure from `en.json`)
+4. **`src/utils/i18n.ts`** — add a loader entry in `translationLoaders` and update the locale regex in `getPagePathFromUrl` (currently `(ar|es|hi|id|nl|pt|ru|zh)`)
+5. **`src/pages/fr/`** — create thin wrappers for every existing page:
+   - `index.astro` → imports `_templates/HomePage.astro`
+   - `demo.astro` → imports `_templates/DemoPage.astro`
+   - (repeat for each new page you add later)
+6. **`src/layouts/Layout.astro`** — add `'fr'` to the `locales` array used for hreflang tags
+7. **`src/components/LanguageSwitcher.astro`** — add an entry to the `languages` array (`code`, `name`, `nativeName`)
+8. **RTL** — if the language is RTL, extend the `isRTL` check in `Layout.astro` (today only `ar`)
+
+Then run `npm run build` and confirm `dist/fr/` contains the expected HTML files.
+
+---
+
+## Adding a new page
+
+Example: adding `/about/` (and `/es/about/`, etc.).
+
+1. **`src/pages/_templates/AboutPage.astro`** — implement the page (use `Layout`, components, `Astro.currentLocale`, etc.)
+2. **`src/pages/about.astro`** — thin wrapper importing `AboutPage`
+3. **For each non-English locale** — create `src/pages/{locale}/about.astro` importing the same template
+4. **Translations** — add any new keys to all `src/i18n/*.json` files
+5. **Navigation** — link with `getLocalizedLink('about', locale)` or `getLocalizedHashLink` as appropriate
+6. **Build check** — `npm run build` should list one route per locale (e.g. 9 locales × N pages)
+
+When you add a page, you must add a wrapper under **every** existing locale folder. Missing a wrapper means that language will 404 for that URL.
+
+---
+
+## Supported languages
+
+- `en` (English) — default locale, URLs at site root
+- `nl` (Dutch)
+- `ar` (Arabic) — RTL (`dir="rtl"` in layout)
 - `es` (Spanish)
 - `hi` (Hindi)
 - `id` (Indonesian)
@@ -15,39 +96,50 @@ Implement comprehensive internationalization (i18n) for 8 languages using `astro
 - `ru` (Russian)
 - `zh` (Simplified Chinese)
 
+Translation source of truth: `src/i18n/en.json`. Other locales fall back to English for missing keys.
+
+---
+
 ## Architecture
 
 ```mermaid
 flowchart TD
-    A[User visits site] --> B{Detect locale from URL}
-    B -->|/en/| C[English content]
-    B -->|/es/| D[Spanish content]
-    B -->|/ar/| E[Arabic content RTL]
-    B -->|/hi/| F[Hindi content]
-    B -->|/id/| G[Indonesian content]
-    B -->|/pt/| H[Portuguese content]
-    B -->|/ru/| I[Russian content]
-    B -->|/zh/| J[Chinese content]
-    
-    C --> K[Translation files JSON]
-    D --> K
-    E --> K
-    F --> K
-    G --> K
-    H --> K
-    I --> K
-    J --> K
-    
-    K --> L[Type-safe t function]
-    L --> M[Components render]
-    M --> N[SEO hreflang tags]
-    M --> O[Language switcher]
-    M --> P{RTL check}
-    P -->|ar| Q[Apply RTL styles]
-    P -->|other| R[LTR layout]
+    A[User visits URL] --> B{Locale from path}
+    B -->|"/"| C[en via Astro.currentLocale]
+    B -->|"/es/..."| D[es via Astro.currentLocale]
+    C --> E[JSON translations]
+    D --> E
+    E --> F["t() in components"]
+    F --> G[hreflang + LanguageSwitcher]
+    B -->|ar| H[RTL layout]
 ```
 
-## Implementation Steps
+---
+
+## Build verification
+
+After any i18n or routing change:
+
+```bash
+npm run build
+npm run preview
+```
+
+Check that:
+
+- English has **no** `/en/` URLs
+- Each locale folder in `dist/` matches `src/pages/{locale}/`
+- hreflang tags on a sample page list all locales
+- Language switcher preserves the current page path when switching language
+- `dist/sitemap-index.xml` is generated
+
+---
+
+## Historical note
+
+The sections below describe the original `astro-i18n-aut` implementation plan. They are kept for reference but **do not reflect the current setup** after the Astro 6 migration.
+
+## Implementation Steps (historical)
 
 ### 1. Install and Configure astro-i18n-aut
 

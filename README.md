@@ -1,44 +1,42 @@
-# Astro Starter Kit: Minimal
+# MindState website
 
-```sh
-npm create astro@latest -- --template minimal
-```
+Marketing site for [Binaural Beat Studio](https://binauralbeatstudio.com), built with **Astro 6** and **Tailwind CSS 4**.
 
+## Requirements
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+- Node **22.12.0+** (see `.nvmrc`)
+- npm
 
-## 🚀 Project Structure
+## Commands
 
-Inside of your Astro project, you'll see the following folders and files:
+| Command | Action |
+|---------|--------|
+| `npm install` | Install dependencies |
+| `npm run dev` | Dev server at `localhost:4321` |
+| `npm run build` | Production build to `dist/` |
+| `npm run preview` | Preview the production build |
+
+## Project layout
 
 ```text
-/
-├── public/
-├── src/
-│   └── pages/
-│       └── index.astro
-└── package.json
+src/
+  components/       # UI sections (Hero, Features, …)
+  i18n/             # Translation JSON per locale
+  layouts/          # Shared Layout.astro
+  pages/
+    _templates/     # Shared page bodies (not routed directly)
+    index.astro     # English home (/)
+    demo.astro      # English demo (/demo/)
+    es/, nl/, …      # Locale wrappers → /es/, /nl/, …
+  utils/i18n.ts     # t(), link helpers
 ```
 
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
+## Internationalization
 
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
+The site supports 9 languages. English uses the root URL (`/`); other locales are prefixed (`/es/`, `/nl/`, …).
 
-Any static assets, like images, can be placed in the `public/` directory.
+**Adding a language or page?** See [features/multi-language-i18n-implementation.md](features/multi-language-i18n-implementation.md) for the full checklist (config, translations, page wrappers, language switcher, build verification).
 
-## 🧞 Commands
+## Deployment
 
-All commands are run from the root of the project, from a terminal:
-
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
-
-## 👀 Want to learn more?
-
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+GitHub Actions builds on push to `main` and deploys to GitHub Pages (Node 22).
