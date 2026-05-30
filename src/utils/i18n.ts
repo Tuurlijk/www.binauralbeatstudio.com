@@ -1,3 +1,4 @@
+import { getRelativeLocaleUrl } from 'astro:i18n';
 import type { Locale } from '../i18n/types';
 import enTranslations from '../i18n/en.json';
 
@@ -86,33 +87,27 @@ export function t(
 }
 
 /**
+ * Page path without locale prefix (e.g. "/es/demo/" -> "demo", "/" -> "")
+ */
+export function getPagePathFromUrl(pathname: string): string {
+  const withoutLocale = pathname.replace(/^\/(ar|es|hi|id|nl|pt|ru|zh)(?=\/|$)/, '');
+  return withoutLocale.replace(/^\/|\/$/g, '');
+}
+
+/**
  * Get localized link with locale prefix
  */
-export function getLocalizedLink(path: string, locale: Locale, base: string = ''): string {
-  // Remove leading slash if present
-  const cleanPath = path.startsWith('/') ? path.slice(1) : path;
-  // Ensure base doesn't end with / and doesn't create double slashes
-  const cleanBase = base === '/' ? '' : base.replace(/\/$/, '');
-  // English (default locale) should use root path, not /en/
-  if (locale === 'en') {
-    return `${cleanBase}/${cleanPath}`;
-  }
-  // Ensure locale prefix
-  return `${cleanBase}/${locale}/${cleanPath}`;
+export function getLocalizedLink(path: string, locale: Locale): string {
+  const cleanPath = path.replace(/^\//, '').replace(/\/$/, '');
+  return getRelativeLocaleUrl(locale, cleanPath);
 }
 
 /**
  * Get localized hash link (for anchor links)
  */
-export function getLocalizedHashLink(hash: string, locale: Locale, base: string = ''): string {
-  // Remove leading # if present, we'll add it back
-  const cleanHash = hash.startsWith('#') ? hash.slice(1) : hash;
-  // Ensure base doesn't end with / and doesn't create double slashes
-  const cleanBase = base === '/' ? '' : base.replace(/\/$/, '');
-  // English (default locale) should use root path, not /en/
-  if (locale === 'en') {
-    return `${cleanBase}/#${cleanHash}`;
-  }
-  return `${cleanBase}/${locale}/#${cleanHash}`;
+export function getLocalizedHashLink(hash: string, locale: Locale): string {
+  const cleanHash = hash.replace(/^#/, '');
+  const baseUrl = getRelativeLocaleUrl(locale, '');
+  return `${baseUrl}#${cleanHash}`;
 }
 

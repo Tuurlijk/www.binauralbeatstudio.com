@@ -1,10 +1,11 @@
 // @ts-check
 import { defineConfig } from 'astro/config';
 import tailwindcss from '@tailwindcss/vite';
-import { i18n, filterSitemapByDefaultLocale } from 'astro-i18n-aut/integration';
 import sitemap from '@astrojs/sitemap';
 
-const locales = {
+const localeCodes = ['en', 'ar', 'es', 'hi', 'id', 'nl', 'pt', 'ru', 'zh'];
+
+const sitemapLocales = {
   en: 'en-US',
   ar: 'ar-SA',
   es: 'es-ES',
@@ -25,24 +26,26 @@ export default defineConfig({
   build: {
     format: 'directory',
   },
+  i18n: {
+    locales: localeCodes,
+    defaultLocale: 'en',
+    routing: {
+      prefixDefaultLocale: false,
+      redirectToDefaultLocale: false,
+    },
+  },
   devToolbar: {
-    enabled: false, // Disable dev toolbar to prevent perf.js from reloading images
+    enabled: false,
   },
   integrations: [
-    i18n({
-      locales,
-      defaultLocale: 'en',
-      redirectDefaultLocale: false, // Keep /en/ in URL for consistency
-    }),
     sitemap({
       i18n: {
-        locales,
+        locales: sitemapLocales,
         defaultLocale: 'en',
       },
-      filter: filterSitemapByDefaultLocale({ defaultLocale: 'en' }),
     }),
   ],
   vite: {
-    plugins: [tailwindcss()]
-  }
+    plugins: [tailwindcss()],
+  },
 });

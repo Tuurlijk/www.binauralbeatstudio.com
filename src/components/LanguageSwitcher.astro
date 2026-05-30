@@ -1,10 +1,9 @@
 ---
-import { getLocale } from 'astro-i18n-aut';
-import { getLocalizedLink } from '../utils/i18n';
+import { getLocalizedLink, getPagePathFromUrl } from '../utils/i18n';
 import type { Locale } from '../i18n/types';
 
-const locale = getLocale(Astro.url) as Locale;
-const base = import.meta.env.BASE_URL;
+const locale = Astro.currentLocale as Locale;
+const pagePath = getPagePathFromUrl(Astro.url.pathname);
 
 // Languages ordered by total speakers (native + second language) - largest audience first
 const languages = [
@@ -19,17 +18,6 @@ const languages = [
 	{ code: 'id' as Locale, name: 'Indonesian', nativeName: 'Bahasa Indonesia' }, // ~200 million native
 ];
 
-function getCurrentPath(): string {
-	// Extract path without locale prefix
-	const path = Astro.url.pathname;
-	const localeMatch = path.match(/^\/(en|ar|es|hi|id|nl|pt|ru|zh)\//);
-	if (localeMatch) {
-		return path.replace(`/${localeMatch[1]}/`, '/');
-	}
-	return path === '/' ? '/' : path;
-}
-
-const currentPath = getCurrentPath();
 const currentLang = languages.find((l) => l.code === locale) || languages[0];
 
 // Generate unique IDs for this component instance
@@ -44,9 +32,7 @@ const chevronId = `${uniqueId}-chevron`;
 	<div class="absolute right-0 mt-2 w-56 bg-bhutan-secondary border border-bhutan-light rounded-xl shadow-2xl overflow-hidden z-50 backdrop-blur-sm" id={menuId} style="background-color: var(--bg-secondary); opacity: 0.98; max-height: 80vh; overflow-y: auto;">
 		<div class="py-2">
 			{languages.map((lang) => {
-				const langUrl = lang.code === 'en' 
-					? `${base}${currentPath === '/' ? '' : currentPath.slice(1)}`
-					: getLocalizedLink(currentPath === '/' ? '' : currentPath.slice(1), lang.code, base);
+				const langUrl = getLocalizedLink(pagePath, lang.code);
 				const isActive = lang.code === locale;
 				return (
 					<a

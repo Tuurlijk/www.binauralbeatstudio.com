@@ -1,9 +1,8 @@
 ---
-import { getLocale } from 'astro-i18n-aut';
 import { loadTranslations, t, getLocalizedHashLink } from '../utils/i18n';
 import type { Locale } from '../i18n/types';
 
-const locale = getLocale(Astro.url) as Locale;
+const locale = Astro.currentLocale as Locale;
 const translations = await loadTranslations(locale);
 const base = import.meta.env.BASE_URL;
 ---
@@ -19,13 +18,13 @@ const base = import.meta.env.BASE_URL;
 			</p>
 			<div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
 				<a 
-					href={getLocalizedHashLink('#download', locale, base)}
+					href={getLocalizedHashLink('#download', locale)}
 					class="text-white px-8 py-4 rounded-lg text-lg font-semibold transition-all transform hover:scale-105 shadow-lg hover:shadow-xl bg-bhutan-accent hover:opacity-90"
 				>
 					{t('hero.ctaDownload', locale, translations)}
 				</a>
 				<a 
-					href={getLocalizedHashLink('#features', locale, base)}
+					href={getLocalizedHashLink('#features', locale)}
 					class="px-8 py-4 rounded-lg text-lg font-semibold border-2 transition-all bg-bhutan-primary hover:bg-bhutan-secondary text-bhutan-accent"
 					style="border-color: var(--primary);"
 				>

@@ -1,7 +1,7 @@
 ---
 import '../styles/global.css';
-import { getLocale } from 'astro-i18n-aut';
-import { loadTranslations, t, getLocalizedHashLink } from '../utils/i18n';
+import { getAbsoluteLocaleUrl } from 'astro:i18n';
+import { loadTranslations, t, getLocalizedHashLink, getPagePathFromUrl } from '../utils/i18n';
 import type { Locale } from '../i18n/types';
 import LanguageSwitcher from '../components/LanguageSwitcher.astro';
 
@@ -10,25 +10,15 @@ interface Props {
 	description?: string;
 }
 
-const locale = getLocale(Astro.url) as Locale;
+const locale = Astro.currentLocale as Locale;
 const translations = await loadTranslations(locale);
 const base = import.meta.env.BASE_URL;
 
 const title = Astro.props.title || t('meta.title', locale, translations);
 const description = Astro.props.description || t('meta.description', locale, translations);
 
-// Generate hreflang tags for all locales
-const locales: Locale[] = ['en', 'ar', 'es', 'hi', 'id', 'pt', 'ru', 'zh'];
-// Extract path without locale prefix
-let currentPath = Astro.url.pathname;
-const localeMatch = currentPath.match(/^\/(en|ar|es|hi|id|pt|ru|zh)\//);
-if (localeMatch) {
-  currentPath = currentPath.replace(`/${localeMatch[1]}/`, '/');
-}
-// Ensure currentPath starts with /
-if (!currentPath.startsWith('/')) {
-  currentPath = '/' + currentPath;
-}
+const locales: Locale[] = ['en', 'ar', 'es', 'hi', 'id', 'nl', 'pt', 'ru', 'zh'];
+const pagePath = getPagePathFromUrl(Astro.url.pathname);
 const isRTL = locale === 'ar';
 ---
 
@@ -59,18 +49,14 @@ const isRTL = locale === 'ar';
 		<meta name="description" content={description} />
 		
 		<!-- hreflang tags for SEO -->
-		{locales.map((loc) => {
-			const localePath = loc === 'en' ? '' : `${loc}/`;
-			const cleanPath = currentPath === '/' ? '' : currentPath.slice(1);
-			return (
-				<link
-					rel="alternate"
-					hreflang={loc}
-					href={`https://binauralbeatstudio.com/${localePath}${cleanPath}`}
-				/>
-			);
-		})}
-		<link rel="alternate" hreflang="x-default" href={`https://binauralbeatstudio.com${currentPath === '/' ? '' : currentPath}`} />
+		{locales.map((loc) => (
+			<link
+				rel="alternate"
+				hreflang={loc}
+				href={getAbsoluteLocaleUrl(loc, pagePath)}
+			/>
+		))}
+		<link rel="alternate" hreflang="x-default" href={getAbsoluteLocaleUrl('en', pagePath)} />
 		
 		<!-- Open Graph / Facebook -->
 		<meta property="og:type" content="website" />
@@ -120,12 +106,12 @@ const isRTL = locale === 'ar';
 						</a>
 					</div>
 					<div class="hidden md:flex items-center space-x-8">
-						<a href={getLocalizedHashLink('#benefits', locale, base)} class="transition-colors text-bhutan-secondary hover:text-bhutan-accent">{t('nav.benefits', locale, translations)}</a>
-						<a href={getLocalizedHashLink('#features', locale, base)} class="transition-colors text-bhutan-secondary hover:text-bhutan-accent">{t('nav.features', locale, translations)}</a>
-						<a href={getLocalizedHashLink('#how-it-works', locale, base)} class="transition-colors text-bhutan-secondary hover:text-bhutan-accent">{t('nav.howItWorks', locale, translations)}</a>
-						<a href={getLocalizedHashLink('#screenshots', locale, base)} class="transition-colors text-bhutan-secondary hover:text-bhutan-accent">{t('nav.screenshots', locale, translations)}</a>
-						<a href={getLocalizedHashLink('#about-binaural-beats', locale, base)} class="transition-colors text-bhutan-secondary hover:text-bhutan-accent">{t('nav.about', locale, translations)}</a>
-						<a href={getLocalizedHashLink('#download', locale, base)} class="px-4 py-2 rounded-lg transition-colors text-white bg-bhutan-accent hover:opacity-90">
+						<a href={getLocalizedHashLink('#benefits', locale)} class="transition-colors text-bhutan-secondary hover:text-bhutan-accent">{t('nav.benefits', locale, translations)}</a>
+						<a href={getLocalizedHashLink('#features', locale)} class="transition-colors text-bhutan-secondary hover:text-bhutan-accent">{t('nav.features', locale, translations)}</a>
+						<a href={getLocalizedHashLink('#how-it-works', locale)} class="transition-colors text-bhutan-secondary hover:text-bhutan-accent">{t('nav.howItWorks', locale, translations)}</a>
+						<a href={getLocalizedHashLink('#screenshots', locale)} class="transition-colors text-bhutan-secondary hover:text-bhutan-accent">{t('nav.screenshots', locale, translations)}</a>
+						<a href={getLocalizedHashLink('#about-binaural-beats', locale)} class="transition-colors text-bhutan-secondary hover:text-bhutan-accent">{t('nav.about', locale, translations)}</a>
+						<a href={getLocalizedHashLink('#download', locale)} class="px-4 py-2 rounded-lg transition-colors text-white bg-bhutan-accent hover:opacity-90">
 							{t('nav.download', locale, translations)}
 						</a>
 						<LanguageSwitcher />
@@ -141,12 +127,12 @@ const isRTL = locale === 'ar';
 			<div id="mobile-menu-wrapper" style="overflow: visible;">
 				<div class="md:hidden hidden bg-bhutan-primary border-t border-bhutan-light" id="mobile-menu" style="overflow: visible;">
 				<div class="px-4 pt-2 pb-4 space-y-2" style="overflow: visible;">
-					<a href={getLocalizedHashLink('#benefits', locale, base)} class="block py-2 transition-colors text-bhutan-secondary hover:text-bhutan-accent">{t('nav.benefits', locale, translations)}</a>
-					<a href={getLocalizedHashLink('#features', locale, base)} class="block py-2 transition-colors text-bhutan-secondary hover:text-bhutan-accent">{t('nav.features', locale, translations)}</a>
-					<a href={getLocalizedHashLink('#how-it-works', locale, base)} class="block py-2 transition-colors text-bhutan-secondary hover:text-bhutan-accent">{t('nav.howItWorks', locale, translations)}</a>
-					<a href={getLocalizedHashLink('#screenshots', locale, base)} class="block py-2 transition-colors text-bhutan-secondary hover:text-bhutan-accent">{t('nav.screenshots', locale, translations)}</a>
-					<a href={getLocalizedHashLink('#about-binaural-beats', locale, base)} class="block py-2 transition-colors text-bhutan-secondary hover:text-bhutan-accent">{t('nav.about', locale, translations)}</a>
-					<a href={getLocalizedHashLink('#download', locale, base)} class="block py-2 text-white px-4 rounded-lg text-center transition-colors bg-bhutan-accent hover:opacity-90">{t('nav.download', locale, translations)}</a>
+					<a href={getLocalizedHashLink('#benefits', locale)} class="block py-2 transition-colors text-bhutan-secondary hover:text-bhutan-accent">{t('nav.benefits', locale, translations)}</a>
+					<a href={getLocalizedHashLink('#features', locale)} class="block py-2 transition-colors text-bhutan-secondary hover:text-bhutan-accent">{t('nav.features', locale, translations)}</a>
+					<a href={getLocalizedHashLink('#how-it-works', locale)} class="block py-2 transition-colors text-bhutan-secondary hover:text-bhutan-accent">{t('nav.howItWorks', locale, translations)}</a>
+					<a href={getLocalizedHashLink('#screenshots', locale)} class="block py-2 transition-colors text-bhutan-secondary hover:text-bhutan-accent">{t('nav.screenshots', locale, translations)}</a>
+					<a href={getLocalizedHashLink('#about-binaural-beats', locale)} class="block py-2 transition-colors text-bhutan-secondary hover:text-bhutan-accent">{t('nav.about', locale, translations)}</a>
+					<a href={getLocalizedHashLink('#download', locale)} class="block py-2 text-white px-4 rounded-lg text-center transition-colors bg-bhutan-accent hover:opacity-90">{t('nav.download', locale, translations)}</a>
 					<div class="pt-4 border-t border-bhutan-light">
 						<LanguageSwitcher />
 					</div>
@@ -171,12 +157,12 @@ const isRTL = locale === 'ar';
 					<div>
 						<h4 class="font-semibold mb-4 text-bhutan-primary">{t('footer.links', locale, translations)}</h4>
 						<ul class="space-y-2 text-sm">
-							<li><a href={getLocalizedHashLink('#benefits', locale, base)} class="transition-colors text-bhutan-secondary hover:text-bhutan-accent">{t('nav.benefits', locale, translations)}</a></li>
-							<li><a href={getLocalizedHashLink('#features', locale, base)} class="transition-colors text-bhutan-secondary hover:text-bhutan-accent">{t('nav.features', locale, translations)}</a></li>
-							<li><a href={getLocalizedHashLink('#how-it-works', locale, base)} class="transition-colors text-bhutan-secondary hover:text-bhutan-accent">{t('nav.howItWorks', locale, translations)}</a></li>
-							<li><a href={getLocalizedHashLink('#screenshots', locale, base)} class="transition-colors text-bhutan-secondary hover:text-bhutan-accent">{t('nav.screenshots', locale, translations)}</a></li>
-							<li><a href={getLocalizedHashLink('#about-binaural-beats', locale, base)} class="transition-colors text-bhutan-secondary hover:text-bhutan-accent">{t('nav.about', locale, translations)}</a></li>
-							<li><a href={getLocalizedHashLink('#download', locale, base)} class="transition-colors text-bhutan-secondary hover:text-bhutan-accent">{t('nav.download', locale, translations)}</a></li>
+							<li><a href={getLocalizedHashLink('#benefits', locale)} class="transition-colors text-bhutan-secondary hover:text-bhutan-accent">{t('nav.benefits', locale, translations)}</a></li>
+							<li><a href={getLocalizedHashLink('#features', locale)} class="transition-colors text-bhutan-secondary hover:text-bhutan-accent">{t('nav.features', locale, translations)}</a></li>
+							<li><a href={getLocalizedHashLink('#how-it-works', locale)} class="transition-colors text-bhutan-secondary hover:text-bhutan-accent">{t('nav.howItWorks', locale, translations)}</a></li>
+							<li><a href={getLocalizedHashLink('#screenshots', locale)} class="transition-colors text-bhutan-secondary hover:text-bhutan-accent">{t('nav.screenshots', locale, translations)}</a></li>
+							<li><a href={getLocalizedHashLink('#about-binaural-beats', locale)} class="transition-colors text-bhutan-secondary hover:text-bhutan-accent">{t('nav.about', locale, translations)}</a></li>
+							<li><a href={getLocalizedHashLink('#download', locale)} class="transition-colors text-bhutan-secondary hover:text-bhutan-accent">{t('nav.download', locale, translations)}</a></li>
 						</ul>
 					</div>
 					<div>
