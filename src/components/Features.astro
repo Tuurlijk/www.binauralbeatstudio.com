@@ -6,12 +6,21 @@ const locale = Astro.currentLocale as Locale;
 const translations = await loadTranslations(locale);
 ---
 
-<section id="features" class="py-20 px-4 sm:px-6 lg:px-8" style="background: linear-gradient(to bottom right, rgba(255, 107, 53, 0.1), var(--bg-primary), rgba(34, 197, 94, 0.1));">
+<section id="features" class="section-gradient py-20 px-4 sm:px-6 lg:px-8">
 	<div class="max-w-7xl mx-auto">
 		<div class="text-center mb-16">
-			<h2 class="text-4xl md:text-5xl font-bold mb-4 text-bhutan-primary">
-				{t('features.title', locale, translations)}
+			<h2 class="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight text-bhutan-primary">
+				{t('features.titlePrefix', locale, translations)}
+				<span style="color: var(--primary);">{t('features.titleHighlight', locale, translations)}</span>
+				<br />
+				{t('features.titleSuffix', locale, translations)}
 			</h2>
+			<p class="text-xl md:text-2xl max-w-4xl mx-auto mb-10 leading-relaxed text-bhutan-secondary">
+				{t('features.pitch', locale, translations)}
+			</p>
+			<h3 class="text-3xl md:text-4xl font-bold mb-4 text-bhutan-primary">
+				{t('features.title', locale, translations)}
+			</h3>
 			<p class="text-xl max-w-3xl mx-auto text-bhutan-secondary">
 				{t('features.subtitle', locale, translations)}
 			</p>

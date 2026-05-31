@@ -1,7 +1,7 @@
 {
   "meta": {
-    "title": "MindState: Terapi Suara",
-    "description": "Satu-satunya aplikasi binaural beats yang memungkinkan Anda merancang sesi audio yang sepenuhnya dipersonalisasi dari awal. Alat tingkat profesional untuk membuat sesi yang sesuai dengan preferensi Anda yang tepat."
+    "title": "MindState: Beat & noise kustom",
+    "description": "Rancang mix suara berlapis dengan beat binaural, monaural, dan isokronik, noise, efek ambient, dan klip audio. 33 mix termasuk, editor Quick dan Full, berbagi QR, dan Daily Rituals."
   },
   "nav": {
     "features": "Fitur",
@@ -9,100 +9,102 @@
     "screenshots": "Tangkapan Layar",
     "about": "Tentang",
     "benefits": "Manfaat",
-    "download": "Unduh"
+    "download": "Unduh",
+    "pricing": "Harga",
+    "faq": "Pertanyaan umum"
   },
   "hero": {
-    "title": "Buat Sesi",
-    "titleHighlight": "Multi-Lapis",
-    "titleSuffix": "Dipersonalisasi",
-    "subtitle": "MindState memungkinkan Anda merancang sesi terapi audio yang sepenuhnya dipersonalisasi dari awal. Apakah Anda mencari bantuan dari gejala AD/HD, ingin bersantai, memperdalam meditasi, meningkatkan kualitas tidur, meningkatkan kreativitas, atau meningkatkan fokus, MindState memberi Anda alat untuk membuat sesi yang disesuaikan dengan kebutuhan unik Anda.",
+    "headline": "Buka Potensi Otak Anda",
+    "subtitle": "Beat dan noise kustom untuk rileks, fokus, meditasi, kreativitas, dan tidur lebih nyenyak. Baik Anda mencari ringan gejala AD/HD, meditasi lebih dalam, tidur lebih baik, kreativitas lebih tinggi, atau fokus lebih tajam, MindState memberi alat untuk merancang mix sesuai kebutuhan Anda.",
     "ctaDownload": "Unduh di Play Store",
     "ctaLearnMore": "Pelajari Lebih Lanjut",
-    "tagline": "Aplikasi Android asli • Kualitas audio profesional • Gratis untuk dicoba"
+    "tagline": "Tersedia di Android dengan kualitas audio profesional. Gratis untuk dicoba."
   },
   "features": {
-    "title": "Kontrol Penuh Atas Pengalaman Audio Anda",
-    "subtitle": "Tidak seperti aplikasi dengan preset tetap, MindState memberi Anda alat tingkat profesional untuk membuat sesi yang sesuai dengan preferensi, sensitivitas, dan tujuan Anda yang tepat.",
+    "title": "Fitur utama",
+    "subtitle": "Alat profesional untuk fokus, relaksasi, tidur, meditasi, dan kreativitas.",
     "feature1": {
-      "title": "Personalisasi Lengkap",
-      "description": "Rancang sesi dari awal, atau salin sesi yang disertakan. Buat sesi yang dipersonalisasi sendiri agar sesuai dengan sensitivitas pribadi Anda."
+      "title": "Editor Quick dan editor Full",
+      "description": "Editor Quick: hingga empat slot nada, noise, efek, atau file dengan pratinjau langsung dan pemilih beat. Editor Full: trek tak terbatas, envelope volume, otomasi noise, dan jenis tambah trek terkategori. Ganti editor tanpa kehilangan pekerjaan."
     },
     "feature2": {
-      "title": "Sesi Multi-Lapis",
-      "description": "Lapisi beberapa jenis trek: binaural beats, monaural beats, nada isokronik, nada Solfeggio, generator noise, dan file audio Anda sendiri. Setiap trek memiliki kontrol volume independen."
+      "title": "Mixing berlapis",
+      "description": "Gabungkan beat binaural, monaural, dan isokronik; noise putih, merah muda, cokelat, hijau, dan berwarna; efek ambient (hujan, laut, angin, kipas, air terjun, rekaman lama); dan klip MP3, WAV, atau FLAC berwaktu, masing-masing volume independen."
     },
     "feature3": {
-      "title": "Editor Titik",
-      "description": "Buat transisi volume yang halus seiring waktu dengan envelope volume tingkat titik. Buat sesi yang dimulai dengan lembut dan membangun intensitas, atau mempertahankan frekuensi yang stabil."
+      "title": "33 mix termasuk",
+      "description": "Mix kurasi di Tidur, Fokus, Meditasi, Relaksasi, Kreativitas, Suasana hati, Belajar, dan Relaxed kid. 17 gratis; 16 extended dengan langganan Starter. Duplikasi mix termasuk mana pun untuk menyesuaikan."
     },
     "feature4": {
-      "title": "Editor Profesional",
-      "description": "Kontrol granular atas setiap aspek: frekuensi, volume, waktu, parameter noise dan transisi. Pratinjau sebelum menyimpan untuk memastikan sesi Anda sempurna. Ubah parameter noise seiring waktu."
+      "title": "Kode QR dan berbagi tautan",
+      "description": "Enkode mix sebagai URL mindstate://. Pindai, pratinjau, edit, dan simpan. QR bermerek di latar putih. Tautan hanya membawa struktur mix (bukan seni kustom atau file audio impor)."
     },
     "feature5": {
-      "title": "Berbagi Kode QR",
-      "description": "Buat kode QR untuk berbagi sesi kustom Anda secara instan. Pindai kode QR dari orang lain untuk menemukan sesi baru, lalu modifikasi sesuai preferensi Anda."
+      "title": "Daily Rituals",
+      "description": "Jadwalkan mix menurut waktu dan hari ulang. Buat ritual dari toolbar pemutar atau layar Rituals. Membuka pemutar utama dengan transport layar kunci saat waktunya mendengarkan."
     },
     "feature6": {
-      "title": "Kualitas Audio Profesional",
-      "description": "Mesin audio asli memberikan suara jernih yang disintesis secara realtime."
-    }
+      "title": "Audio native profesional",
+      "description": "Sintesis Rust real-time dengan nada fase kontinyu, glide halus, dan fade anti-klik. Putar, jeda, dan seek di layar kunci, Smart Pause headset, dan artwork mix per kategori."
+    },
+    "titlePrefix": "Buat mix",
+    "titleHighlight": "berlapis",
+    "titleSuffix": "personal",
+    "pitch": "Berbeda dari app wellness berbasis preset saja, MindState memberi kontrol profesional atas setiap lapisan, frekuensi, dan envelope volume, atau mulai dari 33 mix termasuk dalam sembilan kategori. Bagikan mix via QR, jadwalkan Daily Rituals, dan dengarkan dengan kontrol layar kunci dan audio native dengan mesin sintesis Rust."
   },
   "howItWorks": {
     "title": "Cara Kerja",
-    "subtitle": "Buat sesi binaural beats sempurna Anda hanya dalam beberapa langkah sederhana",
+    "subtitle": "Jelajahi, buat, sesuaikan, simpan, dan dengarkan dalam lima langkah",
     "step1": {
-      "title": "Buat Sesi Kustom",
-      "description": "Mulai dengan kanvas kosong atau pilih dari contoh yang disertakan. Beri nama sesi Anda dan atur durasinya."
+      "title": "Jelajahi atau buat",
+      "description": "Mulai dari mix termasuk atau editor Quick atau Full kosong."
     },
     "step2": {
-      "title": "Tambahkan Beberapa Jenis Trek",
-      "description": "Lapisi binaural beats, monaural beats, nada isokronik, generator noise, atau impor file audio Anda sendiri. Pilih dari suara latar yang menenangkan termasuk white noise, pink noise, brown noise, hujan jauh, rekaman lama, dan ombak laut. Impor file audio Anda sendiri dalam format MP3, WAV, atau FLAC untuk pemutaran sampel berjangka waktu."
+      "title": "Tambah lapisan",
+      "description": "Tambah nada, noise, efek ambient, atau file audio Anda. Pilih jenis dari chip bergambar di lembar tambah trek editor Full."
     },
     "step3": {
-      "title": "Sesuaikan Frekuensi & Volume",
-      "description": "Atur frekuensi pembawa dan frekuensi ketukan agar sesuai dengan sensitivitas Anda. Atau gunakan frekuensi pembawa Solfeggio. Kontrol volume trek dan tambahkan envelope volume."
+      "title": "Sesuaikan",
+      "description": "Atur frekuensi pembawa dan beat, pembawa Solfeggio, dan volume. Bentuk envelope dan otomasi noise di editor Full."
     },
     "step4": {
-      "title": "Pratinjau & Simpan",
-      "description": "Uji sesi Anda dengan pemutaran pratinjau sebelum menyimpan. Lakukan penyesuaian sampai sempurna untuk Anda."
+      "title": "Pratinjau dan simpan",
+      "description": "Pratinjau langsung saat mengedit. Simpan mix kustom ke Mix saya dengan langganan Starter."
     },
     "step5": {
-      "title": "Berbagi via Kode QR",
-      "description": "Buat kode QR untuk berbagi sesi Anda secara instan. Pindai kode dari orang lain untuk menemukan sesi baru, lalu sesuaikan dengan preferensi Anda."
+      "title": "Dengarkan, bagikan, jadwalkan",
+      "description": "Putar dengan kontrol layar kunci, bagikan via QR atau tautan, dan opsional jadwalkan Daily Ritual."
     }
   },
   "screenshots": {
     "title": "Lihat dalam Aksi",
-    "subtitle": "Antarmuka profesional dengan Material Design 3, mode gelap, dan pelokalan penuh",
-    "sessionBrowser": "Penelusur Sesi",
-    "sessionEditor": "Editor Sesi",
-    "simpleSessionEditor": "Editor Sesi Sederhana",
-    "fullSessionEditor": "Editor Sesi Lengkap",
-    "trackTypePicker": "Pemilih Jenis Trek",
-    "toneEditor": "Editor Nada",
-    "mainPlayer": "Pemutar Utama",
-    "pointEditor": "Editor Titik",
-    "qrSharing": "Berbagi Kode QR",
-    "ritualsList": "Ritual",
-    "ritualEdit": "Edit Ritual"
+    "subtitle": "Antarmuka Material 3 mode terang dan gelap. App dalam 7 bahasa.",
+    "ritualsList": "Jadwalkan Daily Rituals",
+    "ritualEdit": "Waktu, hari ulang, dan mix",
+    "player": "Dengarkan dengan kontrol layar kunci",
+    "mixes": "Jelajahi mix termasuk dan kustom",
+    "beatPicker": "Pilih pita gelombang otak dan nada Solfeggio",
+    "quickEditor": "Buat mix dalam empat slot",
+    "shareQr": "Bagikan mix via QR atau tautan",
+    "addTrack": "Tambah nada, noise, efek, dan file",
+    "fullEditor": "Kontrol penuh setiap trek"
   },
   "cta": {
     "title": "Mulai Membuat Pengalaman Audio Sempurna Anda",
-    "subtitle": "Berhenti puas dengan preset yang tidak cukup pas. MindState memberi Anda alat untuk membuat sesi terapi suara yang unik milik Anda.",
+    "subtitle": "Mulai dengan 17 mix termasuk gratis, atau buka Starter untuk menyimpan mix kustom tak terbatas dan memutar konten extended.",
     "ctaDownload": "Unduh di Play Store",
     "ctaViewFeatures": "Lihat Fitur",
     "benefit1": {
-      "title": "✓ Sesi Tanpa Batas",
-      "description": "Buat sesi kustom tanpa batas yang disesuaikan dengan preferensi Anda"
+      "title": "✓ 17 mix gratis",
+      "description": "Putar mix termasuk, impor via QR, dan duplikasi untuk menyesuaikan"
     },
     "benefit2": {
-      "title": "✓ Kualitas Profesional",
-      "description": "Audio jernih dengan sintesis fase kontinu"
+      "title": "✓ Langganan Starter",
+      "description": "Simpan mix kustom tak terbatas dan putar 16 mix termasuk extended"
     },
     "benefit3": {
-      "title": "✓ Gratis untuk Dicoba",
-      "description": "Sesi yang disertakan tersedia untuk semua pengguna"
+      "title": "✓ Audio profesional",
+      "description": "Mesin sintesis Rust dengan kontrol layar kunci"
     }
   },
   "aboutBinauralBeats": {
@@ -110,7 +112,7 @@
     "heroSubtitle": "Beat & Suara Kustom untuk Relaksasi, Fokus, Meditasi, Kreatif & Tidur Lebih Baik",
     "benefits": {
       "title": "Manfaat Kuat yang Dapat Anda Alami",
-      "subtitle": "Binaural beats, isochronic beats, nada Solfeggio dan sesi white noise dapat membantu Anda mencapai keadaan mental dan hasil yang luar biasa",
+      "subtitle": "Beat binaural, nada isokronik, pembawa Solfeggio, dan lapisan noise dapat mendukung fokus, relaksasi, tidur, meditasi, kreativitas, dan suasana hati.",
       "benefit1": {
         "title": "Relaksasi Mendalam & Pelepasan Stres",
         "description": "Capai relaksasi yang mendalam dan hilangkan stres. Noise menenangkan dan binaural beats, dipadukan dengan nada isokronik atau frekuensi Solfeggio, membantu otak Anda memasuki keadaan yang sangat rileks, mengurangi kecemasan dan mempromosikan ketenangan."
@@ -163,8 +165,6 @@
       "title": "Didukung oleh Penelitian",
       "subtitle": "Studi ilmiah mendukung manfaat binaural beats dan entrainment gelombang otak",
       "findings": "Penelitian telah menunjukkan bahwa binaural beats dapat membantu mengurangi kecemasan, meningkatkan fokus, meningkatkan praktik meditasi, dan mendukung tidur yang lebih baik. Studi telah menemukan efek positif pada relaksasi, pengurangan stres, dan kinerja kognitif. Meskipun hasil individu dapat bervariasi, bukti ilmiah terus berkembang, mendukung penggunaan binaural beats sebagai alat untuk peningkatan mental dan kesejahteraan.",
-      "studiesTitle": "Studi Penelitian yang Ditinjau oleh Rekan Sejawat",
-      "studiesSubtitle": "Jelajahi bukti ilmiah yang mendukung kemanjuran binaural beats",
       "studies": {
         "adhdNoise": {
           "title": "Meta-Analisis AD/HD & White/Pink Noise",
@@ -196,14 +196,16 @@
           "description": "Uji coba terkontrol acak menemukan bahwa binaural beats frekuensi alpha yang dikombinasikan dengan terapi musik menyebabkan peningkatan signifikan dalam tinnitus kronis.",
           "url": "https://pubmed.ncbi.nlm.nih.gov/38723376/"
         }
-      }
+      },
+      "studiesTitle": "Studi Penelitian yang Ditinjau oleh Rekan Sejawat",
+      "studiesSubtitle": "Jelajahi bukti ilmiah yang mendukung kemanjuran binaural beats"
     }
   },
   "footer": {
-    "description": "Buat sesi binaural beats yang dipersonalisasi yang disesuaikan dengan preferensi Anda.",
+    "description": "Beat dan noise kustom untuk fokus, relaksasi, tidur, meditasi, dan kreativitas.",
     "links": "Tautan",
     "download": "Unduh",
-    "downloadDescription": "Tersedia di Google Play Store",
+    "downloadDescription": "Tersedia di Google Play. iOS segera.",
     "copyright": "© 2026 MindState / Michiel Roos. Hak cipta dilindungi."
   },
   "languageSwitcher": {
@@ -254,5 +256,71 @@
       "text": "White dan pink noise menghasilkan peningkatan kecil tetapi signifikan secara statistik dalam perhatian, pengurangan impulsivitas, dan lebih sedikit kesalahan pada anak-anak dan dewasa muda dengan AD/HD.",
       "source": "Meta-analisis dari 13 studi (2024, PubMed 38428577)"
     }
+  },
+  "store": {
+    "playStore": "Dapatkan di Google Play"
+  },
+  "pricing": {
+    "title": "Harga",
+    "subtitle": "Mulai gratis; upgrade saat ingin menyimpan mix kustom dan memutar konten termasuk extended.",
+    "free": {
+      "name": "Gratis",
+      "price": "Rp 0",
+      "description": "Jelajahi MindState tanpa biaya di muka.",
+      "feature1": "Putar 17 mix termasuk",
+      "feature2": "Jelajahi dan impor mix via QR",
+      "feature3": "Duplikasi mix termasuk dan edit dengan pratinjau",
+      "feature4": "Onboarding dan konten tentang app"
+    },
+    "starter": {
+      "name": "Starter",
+      "price": "Bulanan atau tahunan",
+      "description": "Akses penuh dengan uji coba gratis dari toko.",
+      "feature1": "Simpan mix kustom tak terbatas",
+      "feature2": "Putar 16 mix termasuk extended",
+      "feature3": "Buat Daily Rituals dari pemutar",
+      "feature4": "Paket bulanan dan tahunan via Google Play"
+    },
+    "samplePacks": {
+      "name": "Paket sampel",
+      "price": "Pembelian sekali",
+      "description": "Paket audio opsional untuk suara trek file tambahan.",
+      "feature1": "Contoh: Chakra Bar Chimes (7 nada)",
+      "feature2": "Menambah trek MP3 ke editor Full"
+    }
+  },
+  "includedMixes": {
+    "title": "33 mix termasuk",
+    "subtitle": "Titik awal kurasi di sembilan kategori. Duplikasi mix mana pun agar menjadi milik Anda.",
+    "category1": "Tidur",
+    "category2": "Fokus",
+    "category3": "Meditasi",
+    "category4": "Relaksasi",
+    "category5": "Kreativitas",
+    "category6": "Suasana hati",
+    "category7": "Belajar",
+    "category8": "Relaxed kid",
+    "note": "17 mix gratis diputar. 16 extended memerlukan langganan Starter."
+  },
+  "rituals": {
+    "title": "Daily Rituals",
+    "subtitle": "Jadwalkan mix menurut waktu dan hari ulang agar cocok dengan rutinitas Anda.",
+    "bullet1": "Buat ritual dari layar Rituals atau toolbar pemutar saat berlangganan.",
+    "bullet2": "Pilih waktu, hari ulang, dan mix yang diputar.",
+    "bullet3": "Android memakai penjadwalan alarm andal dengan panduan opsional Jangan Ganggu.",
+    "bullet4": "iOS memakai notifikasi lokal. Ritual dijadwalkan ulang saat Anda pindah zona waktu."
+  },
+  "faq": {
+    "title": "Pertanyaan yang sering diajukan",
+    "q1": "File audio apa yang bisa saya impor?",
+    "a1": "MP3, WAV, dan FLAC dari penyimpanan perangkat atau aset bundel dan paket sampel.",
+    "q2": "Apakah kode QR menyertakan audio kustom saya?",
+    "a2": "Tidak. QR dan tautan hanya menyertakan struktur mix (nada, noise, efek). Lampirkan kembali trek file setelah impor.",
+    "q3": "Bagaimana Daily Rituals bekerja di Android?",
+    "a3": "Alarm dan notifikasi. Berikan izin alarm tepat, baterai, dan notifikasi saat diminta. Akses opsional ke DND memungkinkan pemutaran saat DND.",
+    "q4": "Bagaimana Daily Rituals bekerja di iOS?",
+    "a4": "Notifikasi lokal. Ketuk alert untuk membuka MindState dan memutar mix terjadwal.",
+    "q5": "Bisakah saya membuat ritual dari mix yang sedang diputar?",
+    "a5": "Ya. Gunakan Create ritual di toolbar pemutar saat berlangganan."
   }
 }

@@ -157,4 +157,22 @@ When creating or editing user-facing copy (translations, UI strings, marketing t
 
 Apply this rule to all locales in `src/i18n/*.json` and any other site copy you add.
 
+### Website copy (MindState product terminology)
+
+When editing `src/i18n/*.json` or homepage components, align with the app brief:
+
+- Use **mix / mixes**, not session or preset in user-facing copy
+- **Quick editor** and **Full editor** (not Simple/Advanced session editor)
+- **Mixes** for the library screen title concept
+- **Included mixes** (not bundled sessions)
+- Play Store only until iOS App Store ID is available
+
+Refresh store screenshots from the Flutter repo with:
+
+```bash
+./scripts/sync-screenshots.sh
+```
+
+Source: `~/Projects/Flutter/mindstate/screenshots/mindstate-phone-apple/` (store listing order in `docs/screenshots.md`).
+
 For more details, see README.md and QUICKSTART.md.

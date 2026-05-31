@@ -17,6 +17,7 @@ const translationLoaders: Record<Locale, () => Promise<any>> = {
   es: () => import('../i18n/es.json'),
   hi: () => import('../i18n/hi.json'),
   id: () => import('../i18n/id.json'),
+  ja: () => import('../i18n/ja.json'),
   nl: () => import('../i18n/nl.json'),
   pt: () => import('../i18n/pt.json'),
   ru: () => import('../i18n/ru.json'),
@@ -90,7 +91,7 @@ export function t(
  * Page path without locale prefix (e.g. "/es/demo/" -> "demo", "/" -> "")
  */
 export function getPagePathFromUrl(pathname: string): string {
-  const withoutLocale = pathname.replace(/^\/(ar|es|hi|id|nl|pt|ru|zh)(?=\/|$)/, '');
+  const withoutLocale = pathname.replace(/^\/(ar|es|hi|id|ja|nl|pt|ru|zh)(?=\/|$)/, '');
   return withoutLocale.replace(/^\/|\/$/g, '');
 }
 

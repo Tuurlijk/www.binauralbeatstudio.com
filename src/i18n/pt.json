@@ -1,7 +1,7 @@
 {
   "meta": {
-    "title": "MindState: Terapia Sonora",
-    "description": "O único aplicativo de batidas binaurais que permite criar sessões de áudio completamente personalizadas do zero. Ferramentas profissionais para criar sessões que correspondam às suas preferências exatas."
+    "title": "MindState: Beats e ruído personalizados",
+    "description": "Crie mixes de som multicamadas com beats binaurais, monaurais e isocrônicos, ruído, efeitos ambientes e clipes de áudio. 33 mixes incluídos, editores Quick e Full, compartilhamento QR e Daily Rituals."
   },
   "nav": {
     "features": "Recursos",
@@ -9,100 +9,102 @@
     "screenshots": "Capturas",
     "about": "Sobre",
     "benefits": "Benefícios",
-    "download": "Baixar"
+    "download": "Baixar",
+    "pricing": "Preços",
+    "faq": "Perguntas frequentes"
   },
   "hero": {
-    "title": "Crie Sessões",
-    "titleHighlight": "Multicamadas",
-    "titleSuffix": "Personalizadas",
-    "subtitle": "MindState permite criar sessões de terapia de áudio completamente personalizadas do zero. Se você está procurando alívio dos sintomas de TDAH, quer relaxar, aprofundar meditação, melhorar o sono, aumentar criatividade ou melhorar o foco, MindState oferece ferramentas para criar sessões adaptadas às suas necessidades.",
+    "headline": "Desbloqueie o Potencial do Seu Cérebro",
+    "subtitle": "Beats e ruído personalizados para relaxar, focar, meditar, ser criativo e dormir melhor. Se você busca alívio de sintomas de TDAH, meditação mais profunda, sono melhor, mais criatividade ou foco mais nítido, o MindState oferece ferramentas para criar mixes sob medida.",
     "ctaDownload": "Baixar na Play Store",
     "ctaLearnMore": "Saiba Mais",
-    "tagline": "Aplicativo Android nativo • Qualidade de áudio profissional • Grátis para experimentar"
+    "tagline": "Disponível no Android com qualidade de áudio profissional. Grátis para experimentar."
   },
   "features": {
-    "title": "Controle Total Sobre Sua Experiência de Áudio",
-    "subtitle": "Diferente de aplicativos com predefinições fixas, o MindState oferece ferramentas profissionais para criar sessões que correspondam às suas preferências, sensibilidade e objetivos exatos.",
+    "title": "Principais recursos",
+    "subtitle": "Ferramentas profissionais para foco, relaxamento, sono, meditação e criatividade.",
     "feature1": {
-      "title": "Personalização Completa",
-      "description": "Projete sessões do zero ou copie sessões incluídas. Crie sua própria sessão personalizada para corresponder à sua sensibilidade pessoal."
+      "title": "Editor Quick e editor Full",
+      "description": "Editor Quick: até quatro slots de tom, ruído, efeito ou arquivo com prévia ao vivo e seletor de beats. Editor Full: faixas ilimitadas, envelopes de volume, automação de ruído e tipos de faixa categorizados. Troque de editor sem perder o trabalho."
     },
     "feature2": {
-      "title": "Sessões Multicamadas",
-      "description": "Sobreponha múltiplos tipos de faixas: batidas binaurais, batidas monaurais, tons isocrônicos, tons Solfeggio, geradores de ruído e seus próprios arquivos de áudio. Cada faixa tem controle de volume independente."
+      "title": "Mixagem multicamada",
+      "description": "Combine beats binaurais, monaurais e isocrônicos; ruído branco, rosa, marrom, verde e colorido; efeitos ambientes (chuva, oceano, vento, ventilador, cachoeira, disco antigo); e clipes MP3, WAV ou FLAC temporizados, cada um com volume independente."
     },
     "feature3": {
-      "title": "Editor de Pontos",
-      "description": "Crie transições de volume suaves ao longo do tempo com envelopes de volume em nível de ponto. Construa sessões que começam suaves e aumentam a intensidade, ou mantenham frequências estáveis."
+      "title": "33 mixes incluídos",
+      "description": "Mixes curados em Sono, Foco, Meditação, Relaxamento, Criatividade, Humor, Estudo e Relaxed kid. 17 grátis; 16 estendidos com assinatura Starter. Duplique qualquer mix incluído para personalizar."
     },
     "feature4": {
-      "title": "Editor Profissional",
-      "description": "Controle granular sobre cada aspecto: frequências, volumes, tempos, parâmetros de ruído e transições. Visualize antes de salvar para garantir que sua sessão esteja perfeita. Altere os parâmetros de ruído ao longo do tempo."
+      "title": "QR Code e link para compartilhar",
+      "description": "Codifique mixes como URLs mindstate://. Escaneie, pré-visualize, edite e salve. QR com logo em fundo branco. Links levam só a estrutura do mix (sem arte personalizada nem arquivos importados)."
     },
     "feature5": {
-      "title": "Compartilhamento por Código QR",
-      "description": "Gere códigos QR para compartilhar suas sessões personalizadas instantaneamente. Escaneie códigos QR de outros para descobrir novas sessões, depois personalize-as de acordo com suas preferências."
+      "title": "Daily Rituals",
+      "description": "Agende um mix por horário e dias de repetição. Crie um ritual na barra do player ou na tela Rituals. Abre o player principal com transporte na tela de bloqueio na hora de ouvir."
     },
     "feature6": {
-      "title": "Qualidade de Áudio Profissional",
-      "description": "Motor de áudio nativo oferece som cristalino sintetizado em tempo real."
-    }
+      "title": "Áudio nativo profissional",
+      "description": "Síntese Rust em tempo real com tons de fase contínua, transições suaves e fade anti-clique. Play, pause e seek na tela de bloqueio, Smart Pause com fones e arte por categoria."
+    },
+    "titlePrefix": "Crie mixes",
+    "titleHighlight": "multicamadas",
+    "titleSuffix": "personalizados",
+    "pitch": "Diferente de apps de bem-estar só com presets, o MindState dá controle profissional sobre cada camada, frequência e envelope de volume, ou comece com 33 mixes incluídos em nove categorias. Compartilhe mixes por QR, agende Daily Rituals e ouça com controles na tela de bloqueio e áudio nativo com motor de síntese Rust."
   },
   "howItWorks": {
     "title": "Como Funciona",
-    "subtitle": "Crie sua sessão perfeita de batidas binaurais em apenas alguns passos simples",
+    "subtitle": "Navegue, crie, ajuste, salve e ouça em cinco passos",
     "step1": {
-      "title": "Criar Sessão Personalizada",
-      "description": "Comece com uma tela em branco ou escolha entre exemplos incluídos. Nomeie sua sessão e defina a duração."
+      "title": "Navegar ou criar",
+      "description": "Comece com mixes incluídos ou um editor Quick ou Full em branco."
     },
     "step2": {
-      "title": "Adicionar Múltiplos Tipos de Faixas",
-      "description": "Sobreponha batidas binaurais, batidas monaurais, tons isocrônicos, geradores de ruído ou importe seus próprios arquivos de áudio. Escolha entre sons de fundo calmantes, incluindo ruído branco, ruído rosa, ruído marrom, chuva distante, disco antigo e ondas do oceano. Importe seus próprios arquivos de áudio em formato MP3, WAV ou FLAC para reprodução de amostras temporizadas."
+      "title": "Adicionar camadas",
+      "description": "Adicione tons, ruído, efeitos ambientes ou seus arquivos. Escolha tipos nos chips ilustrados na folha de adicionar faixa do editor Full."
     },
     "step3": {
-      "title": "Ajustar Frequências e Volumes",
-      "description": "Defina frequências portadoras e frequências de batida para corresponder à sua sensibilidade. Ou use frequências portadoras Solfeggio. Controle os volumes das faixas e adicione envelopes de volume."
+      "title": "Ajustar",
+      "description": "Defina frequências de portadora e beat, portadoras Solfeggio e volumes. Modele envelopes e automação de ruído no editor Full."
     },
     "step4": {
-      "title": "Visualizar e Salvar",
-      "description": "Teste sua sessão com reprodução de visualização antes de salvar. Faça ajustes até que esteja perfeita para você."
+      "title": "Pré-visualizar e salvar",
+      "description": "Prévia ao vivo enquanto edita. Salve mixes personalizados em Meus mixes com assinatura Starter."
     },
     "step5": {
-      "title": "Compartilhar via Código QR",
-      "description": "Gere um código QR para compartilhar sua sessão instantaneamente. Escaneie códigos de outros para descobrir novas sessões, depois personalize-as de acordo com suas preferências."
+      "title": "Ouvir, compartilhar, agendar",
+      "description": "Toque com controles na tela de bloqueio, compartilhe por QR ou link e agende opcionalmente um Daily Ritual."
     }
   },
   "screenshots": {
     "title": "Veja em Ação",
-    "subtitle": "Interface profissional com Material Design 3, modo escuro e localização completa",
-    "sessionBrowser": "Navegador de Sessões",
-    "sessionEditor": "Editor de Sessões",
-    "simpleSessionEditor": "Editor de Sessões Simples",
-    "fullSessionEditor": "Editor de Sessões Completo",
-    "trackTypePicker": "Seletor de Tipo de Faixa",
-    "toneEditor": "Editor de Tons",
-    "mainPlayer": "Reprodutor Principal",
-    "pointEditor": "Editor de Pontos",
-    "qrSharing": "Compartilhamento por Código QR",
-    "ritualsList": "Rituais",
-    "ritualEdit": "Editar ritual"
+    "subtitle": "Interface Material 3 com modo claro e escuro. App em 7 idiomas.",
+    "ritualsList": "Agende Daily Rituals",
+    "ritualEdit": "Horário, dias de repetição e mix",
+    "player": "Ouça com controles na tela de bloqueio",
+    "mixes": "Navegue mixes incluídos e personalizados",
+    "beatPicker": "Escolha bandas de ondas cerebrais e tons Solfeggio",
+    "quickEditor": "Monte um mix em quatro slots",
+    "shareQr": "Compartilhe mixes por QR ou link",
+    "addTrack": "Adicione tons, ruído, efeitos e arquivos",
+    "fullEditor": "Controle total de cada faixa"
   },
   "cta": {
     "title": "Comece a Criar Sua Experiência de Áudio Perfeita",
-    "subtitle": "Pare de se contentar com predefinições que não se encaixam perfeitamente. O MindState oferece as ferramentas para criar sessões de terapia sonora que são exclusivamente suas.",
+    "subtitle": "Comece com 17 mixes incluídos grátis, ou desbloqueie Starter para salvar mixes ilimitados e tocar conteúdo estendido.",
     "ctaDownload": "Baixar na Play Store",
     "ctaViewFeatures": "Ver Recursos",
     "benefit1": {
-      "title": "✓ Sessões Ilimitadas",
-      "description": "Crie sessões personalizadas ilimitadas adaptadas às suas preferências"
+      "title": "✓ 17 mixes grátis",
+      "description": "Toque mixes incluídos, importe por QR e duplique para personalizar"
     },
     "benefit2": {
-      "title": "✓ Qualidade Profissional",
-      "description": "Áudio cristalino com síntese de fase contínua"
+      "title": "✓ Assinatura Starter",
+      "description": "Salve mixes personalizados ilimitados e toque 16 mixes incluídos estendidos"
     },
     "benefit3": {
-      "title": "✓ Grátis para Experimentar",
-      "description": "Sessões incluídas disponíveis para todos os usuários"
+      "title": "✓ Áudio profissional",
+      "description": "Motor de síntese Rust com controles na tela de bloqueio"
     }
   },
   "aboutBinauralBeats": {
@@ -110,7 +112,7 @@
     "heroSubtitle": "Batidas e Sons Personalizados para Relaxar, Focar, Meditar, Ser Criativo e Dormir Melhor",
     "benefits": {
       "title": "Benefícios Poderosos Que Você Pode Experimentar",
-      "subtitle": "Batidas binaurais, batidas isocrônicas, tons Solfeggio e sessões de ruído branco podem ajudá-lo a alcançar estados mentais e resultados notáveis",
+      "subtitle": "Beats binaurais, tons isocrônicos, portadoras Solfeggio e camadas de ruído podem apoiar foco, relaxamento, sono, meditação, criatividade e humor.",
       "benefit1": {
         "title": "Relaxamento Profundo e Alívio do Estresse",
         "description": "Alcance relaxamento profundo e derreta o estresse. Ruído calmante e batidas binaurais, junto com tons isocrônicos ou frequências Solfeggio, ajudam seu cérebro a entrar em estados profundamente relaxados, reduzindo a ansiedade e promovendo calma."
@@ -163,8 +165,6 @@
       "title": "Apoiado por Pesquisa",
       "subtitle": "Estudos científicos apoiam os benefícios de batidas binaurais e arrasto de ondas cerebrais",
       "findings": "A pesquisa mostrou que batidas binaurais podem ajudar a reduzir ansiedade, melhorar o foco, aprimorar a prática de meditação e apoiar melhor sono. Estudos encontraram efeitos positivos no relaxamento, redução de estresse e desempenho cognitivo. Embora resultados individuais possam variar, a evidência científica continua crescendo, apoiando o uso de batidas binaurais como uma ferramenta para aprimoramento mental e bem-estar.",
-      "studiesTitle": "Estudos de Pesquisa Revisados por Pares",
-      "studiesSubtitle": "Explore a evidência científica que apoia a eficácia de batidas binaurais",
       "studies": {
         "adhdNoise": {
           "title": "Meta-Análise de AD/HD e Ruído Branco/Rosa",
@@ -196,14 +196,16 @@
           "description": "Um ensaio controlado randomizado descobriu que batidas binaurais de frequência alpha combinadas com musicoterapia levaram a melhorias significativas no zumbido crônico.",
           "url": "https://pubmed.ncbi.nlm.nih.gov/38723376/"
         }
-      }
+      },
+      "studiesTitle": "Estudos de Pesquisa Revisados por Pares",
+      "studiesSubtitle": "Explore a evidência científica que apoia a eficácia de batidas binaurais"
     }
   },
   "footer": {
-    "description": "Crie sessões de batidas binaurais personalizadas adaptadas às suas preferências.",
+    "description": "Beats e ruído personalizados para foco, relaxamento, sono, meditação e criatividade.",
     "links": "Links",
     "download": "Baixar",
-    "downloadDescription": "Disponível na Google Play Store",
+    "downloadDescription": "Disponível no Google Play. iOS em breve.",
     "copyright": "© 2026 MindState / Michiel Roos. Todos os direitos reservados."
   },
   "languageSwitcher": {
@@ -254,5 +256,71 @@
       "text": "Ruído branco e rosa levaram a melhorias pequenas mas estatisticamente significativas na atenção, redução da impulsividade e menos erros em crianças e adultos jovens com AD/HD.",
       "source": "Meta-análise de 13 estudos (2024, PubMed 38428577)"
     }
+  },
+  "store": {
+    "playStore": "Disponível no Google Play"
+  },
+  "pricing": {
+    "title": "Preços",
+    "subtitle": "Comece grátis; faça upgrade quando quiser salvar mixes personalizados e tocar conteúdo incluído estendido.",
+    "free": {
+      "name": "Grátis",
+      "price": "R$ 0",
+      "description": "Explore o MindState sem custo inicial.",
+      "feature1": "Toque 17 mixes incluídos",
+      "feature2": "Navegue e importe mixes por QR",
+      "feature3": "Duplique mixes incluídos e edite com prévia",
+      "feature4": "Onboarding e conteúdo sobre o app"
+    },
+    "starter": {
+      "name": "Starter",
+      "price": "Mensal ou anual",
+      "description": "Acesso completo com teste grátis gerenciado pela loja.",
+      "feature1": "Salve mixes personalizados ilimitados",
+      "feature2": "Toque 16 mixes incluídos estendidos",
+      "feature3": "Crie Daily Rituals no player",
+      "feature4": "Planos mensais e anuais via Google Play"
+    },
+    "samplePacks": {
+      "name": "Pacotes de amostras",
+      "price": "Compra única",
+      "description": "Pacotes de áudio opcionais para sons extras em faixas de arquivo.",
+      "feature1": "Exemplo: Chakra Bar Chimes (7 tons)",
+      "feature2": "Adiciona faixas MP3 ao editor Full"
+    }
+  },
+  "includedMixes": {
+    "title": "33 mixes incluídos",
+    "subtitle": "Pontos de partida curados em nove categorias. Duplique qualquer mix para torná-lo seu.",
+    "category1": "Sono",
+    "category2": "Foco",
+    "category3": "Meditação",
+    "category4": "Relaxamento",
+    "category5": "Criatividade",
+    "category6": "Humor",
+    "category7": "Estudo",
+    "category8": "Relaxed kid",
+    "note": "17 mixes são grátis para tocar. 16 estendidos exigem assinatura Starter."
+  },
+  "rituals": {
+    "title": "Daily Rituals",
+    "subtitle": "Agende um mix por horário e dias de repetição para encaixar na sua rotina.",
+    "bullet1": "Crie um ritual na tela Rituals ou na barra do player com assinatura.",
+    "bullet2": "Escolha horário, dias de repetição e qual mix tocar.",
+    "bullet3": "Android usa agendamento confiável de alarmes com orientação opcional de Não perturbe.",
+    "bullet4": "iOS usa notificações locais. Rituais são reagendados ao mudar de fuso horário."
+  },
+  "faq": {
+    "title": "Perguntas frequentes",
+    "q1": "Quais arquivos de áudio posso importar?",
+    "a1": "MP3, WAV e FLAC do armazenamento do dispositivo ou ativos incluídos e de pacotes de amostras.",
+    "q2": "Os QR codes incluem meu áudio personalizado?",
+    "a2": "Não. QR e links incluem só a estrutura do mix (tons, ruído, efeitos). Reanexe faixas de arquivo após importar.",
+    "q3": "Como funcionam Daily Rituals no Android?",
+    "a3": "Alarmes e notificações. Conceda permissões de alarme exato, bateria e notificações quando solicitado. Acesso opcional a Não perturbe permite tocar durante DND.",
+    "q4": "Como funcionam Daily Rituals no iOS?",
+    "a4": "Notificações locais. Toque no alerta para abrir o MindState e tocar o mix agendado.",
+    "q5": "Posso criar um ritual de um mix que estou tocando?",
+    "a5": "Sim. Use Criar ritual na barra do player com assinatura."
   }
 }

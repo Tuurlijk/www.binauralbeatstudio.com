@@ -33,7 +33,17 @@ src/
 
 ## Internationalization
 
-The site supports 9 languages. English uses the root URL (`/`); other locales are prefixed (`/es/`, `/nl/`, …).
+The site supports 10 languages (including Japanese at `/ja/`). English uses the root URL (`/`); other locales are prefixed (`/es/`, `/nl/`, …).
+
+## Store screenshots
+
+Phone screenshots follow the App Store listing order from the MindState Flutter repo. Refresh them with:
+
+```bash
+./scripts/sync-screenshots.sh
+```
+
+Source files: `~/Projects/Flutter/mindstate/screenshots/mindstate-phone-apple/` (see `docs/screenshots.md` in that repo).
 
 **Adding a language or page?** See [features/multi-language-i18n-implementation.md](features/multi-language-i18n-implementation.md) for the full checklist (config, translations, page wrappers, language switcher, build verification).
 

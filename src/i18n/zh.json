@@ -1,7 +1,7 @@
 {
   "meta": {
-    "title": "MindState: 声音疗法",
-    "description": "唯一一款允许您从头开始设计完全个性化音频会话的双耳节拍应用。专业级工具，用于创建符合您精确偏好的会话。"
+    "title": "MindState：自定义节拍与噪声",
+    "description": "设计多层声音混音，含双耳、单耳与等时节拍、噪声、环境效果与音频片段。33 个内置混音、Quick 与 Full 编辑器、二维码分享和 Daily Rituals。"
   },
   "nav": {
     "features": "功能",
@@ -9,100 +9,102 @@
     "screenshots": "截图",
     "about": "关于",
     "benefits": "好处",
-    "download": "下载"
+    "download": "下载",
+    "pricing": "定价",
+    "faq": "常见问题"
   },
   "hero": {
-    "title": "创建个性化",
-    "titleHighlight": "多层",
-    "titleSuffix": "会话",
-    "subtitle": "MindState 允许您从头开始设计完全个性化的音频治疗会话。无论您是在寻求缓解注意力缺陷多动障碍（AD/HD）症状、想要放松、加深冥想练习、改善睡眠质量、提升创造力，还是增强专注力和注意力，MindState 为您提供工具，创建适合您独特需求的会话。",
+    "headline": "释放您大脑的潜力",
+    "subtitle": "自定义节拍与噪声，用于放松、专注、冥想、创意与更好睡眠。无论您是想缓解 AD/HD 症状、更深冥想、更好睡眠、提升创意还是更敏锐专注，MindState 都提供工具，帮您设计量身定制的混音。",
     "ctaDownload": "在 Play 商店下载",
     "ctaLearnMore": "了解更多",
-    "tagline": "原生 Android 应用 • 专业音频质量 • 免费试用"
+    "tagline": "Android 可用，专业音质。免费试用。"
   },
   "features": {
-    "title": "完全控制您的音频体验",
-    "subtitle": "与具有固定预设的应用不同，MindState 为您提供专业级工具，用于创建符合您精确偏好、敏感度和目标的会话。",
+    "title": "主要功能",
+    "subtitle": "用于专注、放松、睡眠、冥想与创意的专业工具。",
     "feature1": {
-      "title": "完全个性化",
-      "description": "从头开始设计会话，或复制捆绑的会话。构建您自己的个性化会话以匹配您的个人敏感度。"
+      "title": "Quick editor 与 Full editor",
+      "description": "Quick editor：最多四个音调、噪声、效果或文件槽位，带实时预览与节拍选择器。Full editor：无限轨道、音量包络、噪声自动化和分类添加轨道类型。切换编辑器不丢失工作。"
     },
     "feature2": {
-      "title": "多层会话",
-      "description": "叠加多种音轨类型：双耳节拍、单耳节拍、等时音调、索尔费焦音调、噪声发生器以及您自己的音频文件。每个音轨都有独立的音量控制。"
+      "title": "多层混音",
+      "description": "组合双耳、单耳与等时节拍；白、粉、棕、绿与彩色噪声；环境效果（雨、海洋、风、风扇、瀑布、老唱片）；以及定时 MP3、WAV 或 FLAC 片段，各自独立音量。"
     },
     "feature3": {
-      "title": "点编辑器",
-      "description": "使用点级音量包络随时间创建平滑的音量过渡。构建从温和开始并增强强度的会话，或保持稳定的频率。"
+      "title": "33 个内置混音",
+      "description": "涵盖睡眠、专注、冥想、放松、创意、情绪、学习与 Relaxed kid 的精选混音。17 个免费播放；16 个扩展混音需 Starter 订阅。复制任意内置混音即可自定义。"
     },
     "feature4": {
-      "title": "专业编辑器",
-      "description": "对每个方面的精细控制：频率、音量、时间、噪声参数和过渡。在保存前预览以确保您的会话完美。随时间更改噪声参数。"
+      "title": "二维码与链接分享",
+      "description": "将混音编码为 mindstate:// URL。扫描、预览、编辑并保存。白底品牌二维码。分享链接仅含混音结构（不含自定义封面与导入音频文件）。"
     },
     "feature5": {
-      "title": "二维码分享",
-      "description": "生成二维码以即时分享您的自定义会话。扫描其他人的二维码以发现新会话，然后根据您的偏好进行修改。"
+      "title": "Daily Rituals",
+      "description": "按时间与重复日安排混音。从播放器工具栏或 Rituals 屏幕创建仪式。到点收听时打开主播放器并支持锁屏控制。"
     },
     "feature6": {
-      "title": "专业音频质量",
-      "description": "原生音频引擎提供实时合成的水晶般清晰的声音。"
-    }
+      "title": "专业原生音频",
+      "description": "Rust 实时合成，相位连续、平滑滑音与防咔嗒淡入淡出。锁屏播放、暂停与快进，耳机 Smart Pause，以及按类别的混音封面。"
+    },
+    "titlePrefix": "创建个性化",
+    "titleHighlight": "多层",
+    "titleSuffix": "混音",
+    "pitch": "不同于只有预设的健康应用，MindState 让您专业控制每一层、频率和音量包络，或从九个类别的 33 个内置混音开始。通过二维码分享混音、安排 Daily Rituals，并用锁屏控制和 Rust 合成引擎的原生音质收听。"
   },
   "howItWorks": {
     "title": "工作原理",
-    "subtitle": "只需几个简单步骤即可创建完美的双耳节拍会话",
+    "subtitle": "五步完成浏览、创建、调节、保存与收听",
     "step1": {
-      "title": "创建自定义会话",
-      "description": "从空白画布开始或从捆绑的示例中选择。命名您的会话并设置持续时间。"
+      "title": "浏览或创建",
+      "description": "从内置混音或空白 Quick 或 Full 编辑器开始。"
     },
     "step2": {
-      "title": "添加多种音轨类型",
-      "description": "叠加双耳节拍、单耳节拍、等时音调、噪声发生器或导入您自己的音频文件。从舒缓的背景声音中选择，包括白噪声、粉红噪声、棕噪声、远处雨声、旧唱片和海洋海浪。以 MP3、WAV 或 FLAC 格式导入您自己的音频文件以进行定时样本播放。"
+      "title": "添加层",
+      "description": "添加音调、噪声、环境效果或您的音频文件。在 Full 编辑器添加轨道页通过插图芯片选择类型。"
     },
     "step3": {
-      "title": "调整频率和音量",
-      "description": "设置载波频率和节拍频率以匹配您的敏感度。或使用索尔费焦载波频率。控制音轨音量并添加音量包络。"
+      "title": "调节",
+      "description": "设置载波与节拍频率、Solfeggio 载波与音量。在 Full 编辑器中塑造包络与噪声自动化。"
     },
     "step4": {
-      "title": "预览和保存",
-      "description": "在保存前使用预览播放测试您的会话。进行调整直到它适合您。"
+      "title": "预览并保存",
+      "description": "编辑时实时预览。通过 Starter 订阅将自定义混音保存到「我的混音」。"
     },
     "step5": {
-      "title": "通过二维码分享",
-      "description": "生成二维码以即时分享您的会话。扫描其他人的代码以发现新会话，然后根据您的偏好进行自定义。"
+      "title": "收听、分享、安排",
+      "description": "锁屏控制播放，通过二维码或链接分享，并可选择安排 Daily Ritual。"
     }
   },
   "screenshots": {
     "title": "查看实际效果",
-    "subtitle": "具有 Material Design 3、深色模式和完整本地化的专业界面",
-    "sessionBrowser": "会话浏览器",
-    "sessionEditor": "会话编辑器",
-    "simpleSessionEditor": "简易会话编辑器",
-    "fullSessionEditor": "完整会话编辑器",
-    "trackTypePicker": "音轨类型选择器",
-    "toneEditor": "音调编辑器",
-    "mainPlayer": "主播放器",
-    "pointEditor": "点编辑器",
-    "qrSharing": "二维码分享",
-    "ritualsList": "仪式",
-    "ritualEdit": "编辑仪式"
+    "subtitle": "Material 3 界面，浅色与深色模式。应用支持 7 种语言。",
+    "ritualsList": "安排 Daily Rituals",
+    "ritualEdit": "时间、重复日与混音",
+    "player": "锁屏控制收听",
+    "mixes": "浏览内置与自定义混音",
+    "beatPicker": "选择脑波频段与 Solfeggio 音调",
+    "quickEditor": "四个槽位构建混音",
+    "shareQr": "通过二维码或链接分享混音",
+    "addTrack": "添加音调、噪声、效果与文件",
+    "fullEditor": "完全控制每条轨道"
   },
   "cta": {
     "title": "开始创建您完美的音频体验",
-    "subtitle": "停止满足于不太合适的预设。MindState 为您提供工具，用于创建独特的属于您的声音治疗会话。",
+    "subtitle": "从 17 个免费内置混音开始，或解锁 Starter 以保存无限自定义混音并播放扩展内容。",
     "ctaDownload": "在 Play 商店下载",
     "ctaViewFeatures": "查看功能",
     "benefit1": {
-      "title": "✓ 无限会话",
-      "description": "创建根据您的偏好定制的无限自定义会话"
+      "title": "✓ 17 个免费混音",
+      "description": "播放内置混音、二维码导入并复制自定义"
     },
     "benefit2": {
-      "title": "✓ 专业质量",
-      "description": "具有相位连续合成的清晰音频"
+      "title": "✓ Starter 订阅",
+      "description": "保存无限自定义混音并播放 16 个扩展内置混音"
     },
     "benefit3": {
-      "title": "✓ 免费试用",
-      "description": "捆绑的会话可供所有用户使用"
+      "title": "✓ 专业音频",
+      "description": "Rust 合成引擎与锁屏播放控制"
     }
   },
   "aboutBinauralBeats": {
@@ -110,7 +112,7 @@
     "heroSubtitle": "定制节拍和声音，用于放松、专注、冥想、创造力和改善睡眠",
     "benefits": {
       "title": "您可以体验的强大益处",
-      "subtitle": "双耳节拍、等时节拍、Solfeggio 音调和白噪声会话可以帮助您实现卓越的心理状态和结果",
+      "subtitle": "双耳节拍、等时音调、Solfeggio 载波与噪声底层可支持专注、放松、睡眠、冥想、创意与情绪。",
       "benefit1": {
         "title": "深度放松和压力缓解",
         "description": "实现深度放松并消除压力。舒缓噪声和双耳节拍，搭配等时音调或索尔费焦频率，帮助您的大脑进入深度放松状态，减少焦虑并促进平静。"
@@ -163,8 +165,6 @@
       "title": "有研究支持",
       "subtitle": "科学研究支持双耳节拍和脑波夹带的益处",
       "findings": "研究表明，双耳节拍可以帮助减少焦虑、改善专注力、增强冥想练习并支持更好的睡眠。研究发现对放松、压力减少和认知表现有积极影响。虽然个体结果可能有所不同，但科学证据持续增长，支持将双耳节拍用作心理增强和幸福感的工具。",
-      "studiesTitle": "同行评审的研究",
-      "studiesSubtitle": "探索支持双耳节拍功效的科学证据",
       "studies": {
         "adhdNoise": {
           "title": "AD/HD 和白/粉红噪声荟萃分析",
@@ -196,14 +196,16 @@
           "description": "一项随机对照试验发现，Alpha 频率双耳节拍结合音乐疗法导致慢性耳鸣的显著改善。",
           "url": "https://pubmed.ncbi.nlm.nih.gov/38723376/"
         }
-      }
+      },
+      "studiesTitle": "同行评审的研究",
+      "studiesSubtitle": "探索支持双耳节拍功效的科学证据"
     }
   },
   "footer": {
-    "description": "创建根据您的偏好定制的个性化双耳节拍会话。",
+    "description": "用于专注、放松、睡眠、冥想与创意的自定义节拍与噪声。",
     "links": "链接",
     "download": "下载",
-    "downloadDescription": "可在 Google Play 商店获取",
+    "downloadDescription": "Google Play 可用。iOS 即将推出。",
     "copyright": "© 2026 MindState / Michiel Roos。保留所有权利。"
   },
   "languageSwitcher": {
@@ -254,5 +256,71 @@
       "text": "白噪声和粉红噪声对患有 AD/HD 的儿童和年轻成人的注意力、冲动性减少和错误减少产生了小而统计学上显著的改善。",
       "source": "13 项研究的荟萃分析 (2024, PubMed 38428577)"
     }
+  },
+  "store": {
+    "playStore": "在 Google Play 获取"
+  },
+  "pricing": {
+    "title": "定价",
+    "subtitle": "免费开始；需要保存自定义混音并播放扩展内置内容时再升级。",
+    "free": {
+      "name": "免费",
+      "price": "¥0",
+      "description": "无需预付费用即可体验 MindState。",
+      "feature1": "播放 17 个内置混音",
+      "feature2": "浏览并通过二维码导入混音",
+      "feature3": "复制内置混音并预览编辑",
+      "feature4": "引导与关于内容"
+    },
+    "starter": {
+      "name": "Starter",
+      "price": "月付或年付",
+      "description": "商店管理的免费试用解锁完整访问。",
+      "feature1": "保存无限自定义混音",
+      "feature2": "播放 16 个扩展内置混音",
+      "feature3": "从播放器创建 Daily Rituals",
+      "feature4": "通过 Google Play 的月付与年付计划"
+    },
+    "samplePacks": {
+      "name": "采样包",
+      "price": "一次性购买",
+      "description": "可选音频包，用于额外文件轨道声音。",
+      "feature1": "示例：Chakra Bar Chimes（7 个音调）",
+      "feature2": "向 Full 编辑器添加 MP3 文件轨道"
+    }
+  },
+  "includedMixes": {
+    "title": "33 个内置混音",
+    "subtitle": "九个类别的精选起点。复制任意混音即可拥有。",
+    "category1": "睡眠",
+    "category2": "专注",
+    "category3": "冥想",
+    "category4": "放松",
+    "category5": "创意",
+    "category6": "情绪",
+    "category7": "学习",
+    "category8": "Relaxed kid",
+    "note": "17 个混音免费播放。16 个扩展混音需 Starter 订阅。"
+  },
+  "rituals": {
+    "title": "Daily Rituals",
+    "subtitle": "按时间与重复日安排混音，让收听融入日常。",
+    "bullet1": "订阅后从 Rituals 屏幕或播放器工具栏创建仪式。",
+    "bullet2": "选择时间、重复日与要播放的混音。",
+    "bullet3": "Android 使用可靠闹钟调度，可选勿扰模式指引。",
+    "bullet4": "iOS 使用本地通知。跨时区旅行时会重新安排仪式。"
+  },
+  "faq": {
+    "title": "常见问题",
+    "q1": "可以导入哪些音频文件？",
+    "a1": "来自设备存储或捆绑与采样包资源的 MP3、WAV 和 FLAC。",
+    "q2": "二维码是否包含我的自定义音频？",
+    "a2": "不包含。二维码与分享链接仅含混音结构（音调、噪声、效果）。导入后请重新附加文件轨道。",
+    "q3": "Android 上 Daily Rituals 如何工作？",
+    "a3": "闹钟与通知。请在提示时授予精确闹钟、电池与通知权限。可选勿扰访问可在 DND 期间继续播放。",
+    "q4": "iOS 上 Daily Rituals 如何工作？",
+    "a4": "本地通知。点按提醒打开 MindState 并播放预定混音。",
+    "q5": "能否从正在播放的混音创建仪式？",
+    "a5": "可以。订阅后使用播放器工具栏上的 Create ritual。"
   }
 }

@@ -3,7 +3,7 @@ import { defineConfig } from 'astro/config';
 import tailwindcss from '@tailwindcss/vite';
 import sitemap from '@astrojs/sitemap';
 
-const localeCodes = ['en', 'ar', 'es', 'hi', 'id', 'nl', 'pt', 'ru', 'zh'];
+const localeCodes = ['en', 'ar', 'es', 'hi', 'id', 'ja', 'nl', 'pt', 'ru', 'zh'];
 
 const sitemapLocales = {
   en: 'en-US',
@@ -11,6 +11,7 @@ const sitemapLocales = {
   es: 'es-ES',
   hi: 'hi-IN',
   id: 'id-ID',
+  ja: 'ja-JP',
   nl: 'nl-NL',
   pt: 'pt-BR',
   ru: 'ru-RU',

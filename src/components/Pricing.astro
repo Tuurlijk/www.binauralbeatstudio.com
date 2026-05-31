@@ -1,0 +1,54 @@
+---
+import { loadTranslations, t } from '../utils/i18n';
+import type { Locale } from '../i18n/types';
+
+const locale = Astro.currentLocale as Locale;
+const translations = await loadTranslations(locale);
+
+const tiers = ['free', 'starter', 'samplePacks'] as const;
+
+function tierFeatures(translations: Record<string, unknown>, tier: (typeof tiers)[number]): string[] {
+	const block = (translations.pricing as Record<string, Record<string, string>> | undefined)?.[tier];
+	if (!block) return [];
+	return (['feature1', 'feature2', 'feature3', 'feature4'] as const)
+		.map((key) => block[key])
+		.filter((value) => typeof value === 'string' && value.trim().length > 0);
+}
+---
+
+<section id="pricing" class="section-plain py-20 px-4 sm:px-6 lg:px-8">
+	<div class="max-w-7xl mx-auto">
+		<div class="text-center mb-12">
+			<h2 class="text-4xl md:text-5xl font-bold mb-4 text-bhutan-primary">
+				{t('pricing.title', locale, translations)}
+			</h2>
+			<p class="text-xl max-w-3xl mx-auto text-bhutan-secondary">
+				{t('pricing.subtitle', locale, translations)}
+			</p>
+		</div>
+
+		<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+			{tiers.map((tier) => (
+				<div class="p-8 rounded-2xl border bg-bhutan-secondary" style="border-color: var(--border-light);">
+					<h3 class="text-2xl font-bold mb-2 text-bhutan-primary">
+						{t(`pricing.${tier}.name`, locale, translations)}
+					</h3>
+					<p class="text-sm font-medium mb-4 text-bhutan-accent">
+						{t(`pricing.${tier}.price`, locale, translations)}
+					</p>
+					<p class="mb-6 leading-relaxed text-bhutan-secondary">
+						{t(`pricing.${tier}.description`, locale, translations)}
+					</p>
+					<ul class="space-y-3">
+						{tierFeatures(translations, tier).map((feature) => (
+							<li class="flex gap-2 text-sm text-bhutan-secondary">
+								<span class="text-bhutan-accent" aria-hidden="true">✓</span>
+								<span>{feature}</span>
+							</li>
+						))}
+					</ul>
+				</div>
+			))}
+		</div>
+	</div>
+</section>

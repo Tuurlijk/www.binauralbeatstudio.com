@@ -1,4 +1,14 @@
-export type Locale = 'en' | 'ar' | 'es' | 'hi' | 'id' | 'nl' | 'pt' | 'ru' | 'zh';
+export type Locale = 'en' | 'ar' | 'es' | 'hi' | 'id' | 'ja' | 'nl' | 'pt' | 'ru' | 'zh';
+
+interface PricingTier {
+  name: string;
+  price: string;
+  description: string;
+  feature1: string;
+  feature2: string;
+  feature3?: string;
+  feature4?: string;
+}
 
 export interface Translations {
   meta: {
@@ -9,18 +19,27 @@ export interface Translations {
     features: string;
     howItWorks: string;
     screenshots: string;
+    about: string;
+    benefits: string;
     download: string;
+    pricing: string;
+    faq: string;
   };
   hero: {
-    title: string;
-    titleHighlight: string;
-    titleSuffix: string;
+    headline: string;
     subtitle: string;
+    tagline: string;
     ctaDownload: string;
     ctaLearnMore: string;
-    tagline: string;
+  };
+  store: {
+    playStore: string;
   };
   features: {
+    titlePrefix: string;
+    titleHighlight: string;
+    titleSuffix: string;
+    pitch: string;
     title: string;
     subtitle: string;
     feature1: { title: string; description: string };
@@ -42,17 +61,56 @@ export interface Translations {
   screenshots: {
     title: string;
     subtitle: string;
-    sessionBrowser: string;
-    sessionEditor: string;
-    simpleSessionEditor: string;
-    fullSessionEditor: string;
-    trackTypePicker: string;
-    toneEditor: string;
-    mainPlayer: string;
-    pointEditor: string;
-    qrSharing: string;
+    player: string;
+    mixes: string;
+    beatPicker: string;
+    quickEditor: string;
+    shareQr: string;
+    addTrack: string;
+    fullEditor: string;
     ritualsList: string;
     ritualEdit: string;
+  };
+  includedMixes: {
+    title: string;
+    subtitle: string;
+    category1: string;
+    category2: string;
+    category3: string;
+    category4: string;
+    category5: string;
+    category6: string;
+    category7: string;
+    category8: string;
+    note: string;
+  };
+  rituals: {
+    title: string;
+    subtitle: string;
+    bullet1: string;
+    bullet2: string;
+    bullet3: string;
+    bullet4: string;
+  };
+  pricing: {
+    title: string;
+    subtitle: string;
+    free: PricingTier;
+    starter: PricingTier;
+    samplePacks: PricingTier;
+  };
+  faq: {
+    title: string;
+    q1: string;
+    a1: string;
+    q2: string;
+    a2: string;
+    q3: string;
+    a3: string;
+    q4: string;
+    a4: string;
+    q5: string;
+    a5: string;
   };
   cta: {
     title: string;

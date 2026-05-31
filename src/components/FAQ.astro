@@ -1,0 +1,39 @@
+---
+import { loadTranslations, t } from '../utils/i18n';
+import type { Locale } from '../i18n/types';
+
+const locale = Astro.currentLocale as Locale;
+const translations = await loadTranslations(locale);
+
+const items = [1, 2, 3, 4, 5] as const;
+---
+
+<section id="faq" class="section-gradient py-20 px-4 sm:px-6 lg:px-8">
+	<div class="max-w-3xl mx-auto">
+		<div class="text-center mb-12">
+			<h2 class="text-4xl md:text-5xl font-bold mb-4 text-bhutan-primary">
+				{t('faq.title', locale, translations)}
+			</h2>
+		</div>
+
+		<div class="space-y-4">
+			{items.map((n) => (
+				<details class="group rounded-xl border bg-bhutan-secondary" style="border-color: var(--border-light);">
+					<summary class="cursor-pointer list-none px-6 py-4 font-semibold text-bhutan-primary flex justify-between items-center gap-4">
+						<span>{t(`faq.q${n}`, locale, translations)}</span>
+						<span class="text-bhutan-accent transition-transform group-open:rotate-45" aria-hidden="true">+</span>
+					</summary>
+					<p class="px-6 pb-4 leading-relaxed text-bhutan-secondary">
+						{t(`faq.a${n}`, locale, translations)}
+					</p>
+				</details>
+			))}
+		</div>
+	</div>
+</section>
+
+<style>
+	details > summary::-webkit-details-marker {
+		display: none;
+	}
+</style>

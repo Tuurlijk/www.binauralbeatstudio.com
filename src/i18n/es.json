@@ -1,7 +1,7 @@
 {
   "meta": {
-    "title": "MindState: Terapia de Sonido",
-    "description": "La única aplicación de ritmos binaurales que te permite diseñar sesiones de audio completamente personalizadas desde cero. Herramientas de nivel profesional para crear sesiones que se adapten a tus preferencias exactas."
+    "title": "MindState: Beats y ruido personalizados",
+    "description": "Diseña mezclas de sonido multicapa con beats binaurales, monaurales e isocrónicos, ruido, efectos ambientales y clips de audio. 33 mezclas incluidas, editores Quick y Full, compartir QR y Daily Rituals."
   },
   "nav": {
     "features": "Características",
@@ -9,100 +9,102 @@
     "screenshots": "Capturas",
     "about": "Acerca de",
     "benefits": "Beneficios",
-    "download": "Descargar"
+    "download": "Descargar",
+    "pricing": "Precios",
+    "faq": "Preguntas frecuentes"
   },
   "hero": {
-    "title": "Crea Sesiones",
-    "titleHighlight": "Multicapa",
-    "titleSuffix": "Personalizadas",
-    "subtitle": "MindState te permite diseñar sesiones de terapia de audio completamente personalizadas desde cero. Ya sea que busques alivio de los síntomas de TDAH, quieras relajarte, profundizar meditación, mejorar el sueño, potenciar creatividad o mejorar el enfoque, MindState te da herramientas para crear sesiones adaptadas a tus necesidades únicas.",
+    "headline": "Desbloquea el Potencial de Tu Cerebro",
+    "subtitle": "Beats y ruido personalizados para relajarte, concentrarte, meditar, ser creativo y dormir mejor. Si buscas alivio de síntomas de TDAH, meditación más profunda, mejor sueño, más creatividad o mayor enfoque, MindState te da herramientas para diseñar mezclas a tu medida.",
     "ctaDownload": "Descargar en Play Store",
     "ctaLearnMore": "Saber Más",
-    "tagline": "Aplicación Android nativa • Calidad de audio profesional • Gratis para probar"
+    "tagline": "Disponible en Android con calidad de audio profesional. Gratis para probar."
   },
   "features": {
-    "title": "Control Total Sobre Tu Experiencia de Audio",
-    "subtitle": "A diferencia de las aplicaciones con presets fijos, MindState te ofrece herramientas de nivel profesional para crear sesiones que se adapten a tus preferencias, sensibilidad y objetivos exactos.",
+    "title": "Funciones principales",
+    "subtitle": "Herramientas profesionales para enfoque, relajación, sueño, meditación y creatividad.",
     "feature1": {
-      "title": "Personalización Completa",
-      "description": "Diseña sesiones desde cero o copia sesiones incluidas. Crea tu propia sesión personalizada para que coincida con tu sensibilidad personal."
+      "title": "Editor Quick y editor Full",
+      "description": "Editor Quick: hasta cuatro ranuras de tono, ruido, efecto o archivo con vista previa en vivo y selector de beats. Editor Full: pistas ilimitadas, envolventes de volumen, automatización de ruido y tipos de pista categorizados. Cambia de editor sin perder tu trabajo."
     },
     "feature2": {
-      "title": "Sesiones Multicapa",
-      "description": "Superpone múltiples tipos de pistas: ritmos binaurales, ritmos monoaurales, tonos isocrónicos, tonos Solfeggio, generadores de ruido y tus propios archivos de audio. Cada pista tiene control de volumen independiente."
+      "title": "Mezcla multicapa",
+      "description": "Combina beats binaurales, monaurales e isocrónicos; ruido blanco, rosa, marrón, verde y coloreado; efectos ambientales (lluvia, océano, viento, ventilador, cascada, disco antiguo); y clips MP3, WAV o FLAC temporizados, cada uno con volumen independiente."
     },
     "feature3": {
-      "title": "Editor de Puntos",
-      "description": "Crea transiciones de volumen suaves en el tiempo con envolventes de volumen a nivel de punto. Construye sesiones que comienzan suaves y aumentan la intensidad, o mantienen frecuencias estables."
+      "title": "33 mezclas incluidas",
+      "description": "Mezclas curadas en Sueño, Enfoque, Meditación, Relajación, Creatividad, Estado de ánimo, Estudio y Relaxed kid. 17 gratis; 16 extendidas con suscripción Starter. Duplica cualquier mezcla incluida para personalizarla."
     },
     "feature4": {
-      "title": "Editor Profesional",
-      "description": "Control granular sobre cada aspecto: frecuencias, volúmenes, tiempos, parámetros de ruido y transiciones. Previsualiza antes de guardar para asegurar que tu sesión sea perfecta. Cambia los parámetros de ruido con el tiempo."
+      "title": "Código QR y enlace para compartir",
+      "description": "Codifica mezclas como URLs mindstate://. Escanea, previsualiza, edita y guarda. QR con logo sobre fondo blanco. Los enlaces solo incluyen la estructura de la mezcla (no arte personalizado ni archivos de audio importados)."
     },
     "feature5": {
-      "title": "Compartir con Código QR",
-      "description": "Genera códigos QR para compartir tus sesiones personalizadas al instante. Escanea códigos QR para descubrir sesiones creadas por otros, luego modifícalas para que coincidan con tus preferencias."
+      "title": "Daily Rituals",
+      "description": "Programa una mezcla por hora y días de repetición. Crea un ritual desde la barra del reproductor o la pantalla Rituals. Abre el reproductor con transporte en pantalla de bloqueo cuando toque escuchar."
     },
     "feature6": {
-      "title": "Calidad de Audio Profesional",
-      "description": "Motor de audio nativo ofrece sonido cristalino sintetizado en tiempo real."
-    }
+      "title": "Audio nativo profesional",
+      "description": "Síntesis Rust en tiempo real con tonos de fase continua, transiciones suaves y fundido anti-clic. Reproducción, pausa y búsqueda en pantalla de bloqueo, Smart Pause con auriculares y arte por categoría."
+    },
+    "titlePrefix": "Crea mezclas",
+    "titleHighlight": "multicapa",
+    "titleSuffix": "personalizadas",
+    "pitch": "A diferencia de apps de bienestar solo con presets, MindState te da control profesional sobre cada capa, frecuencia y envolvente de volumen, o empieza con 33 mezclas incluidas en nueve categorías. Comparte mezclas por QR, programa Daily Rituals y escucha con controles en pantalla de bloqueo y audio nativo con motor de síntesis Rust."
   },
   "howItWorks": {
     "title": "Cómo Funciona",
-    "subtitle": "Crea tu sesión perfecta de ritmos binaurales en solo unos pocos pasos simples",
+    "subtitle": "Explora, crea, ajusta, guarda y escucha en cinco pasos",
     "step1": {
-      "title": "Crear Sesión Personalizada",
-      "description": "Comienza con un lienzo en blanco o elige entre ejemplos incluidos. Nombra tu sesión y establece la duración."
+      "title": "Explorar o crear",
+      "description": "Empieza con mezclas incluidas o un editor Quick o Full en blanco."
     },
     "step2": {
-      "title": "Agregar Múltiples Tipos de Pistas",
-      "description": "Superpone ritmos binaurales, ritmos monoaurales, tonos isocrónicos, generadores de ruido o importa tus propios archivos de audio. Elige entre sonidos de fondo relajantes que incluyen ruido blanco, ruido rosa, ruido marrón, lluvia distante, disco antiguo y olas del océano. Importa tus propios archivos de audio en formato MP3, WAV o FLAC para reproducción de muestras temporizadas."
+      "title": "Añadir capas",
+      "description": "Añade tonos, ruido, efectos ambientales o tus archivos de audio. Elige tipos con chips ilustrados en la hoja de añadir pista del editor Full."
     },
     "step3": {
-      "title": "Ajustar Frecuencias y Volúmenes",
-      "description": "Establece frecuencias portadoras y frecuencias de ritmo para que coincidan con tu sensibilidad. O usa frecuencias portadoras Solfeggio. Controla los volúmenes de las pistas y agrega envolventes de volumen."
+      "title": "Ajustar",
+      "description": "Configura frecuencias portadora y de beat, portadores Solfeggio y volúmenes. Modela envolventes y automatización de ruido en el editor Full."
     },
     "step4": {
-      "title": "Previsualizar y Guardar",
-      "description": "Prueba tu sesión con reproducción de vista previa antes de guardar. Realiza ajustes hasta que sea perfecta para ti."
+      "title": "Previsualizar y guardar",
+      "description": "Vista previa en vivo mientras editas. Guarda mezclas personalizadas en Mis mezclas con suscripción Starter."
     },
     "step5": {
-      "title": "Compartir con Código QR",
-      "description": "Genera un código QR para compartir tu sesión al instante. Escanea códigos de otros para descubrir nuevas sesiones, luego personalízalas según tus preferencias."
+      "title": "Escuchar, compartir, programar",
+      "description": "Reproduce con controles en pantalla de bloqueo, comparte por QR o enlace y programa opcionalmente un Daily Ritual."
     }
   },
   "screenshots": {
     "title": "Véalo en Acción",
-    "subtitle": "Interfaz profesional con Material Design 3, modo oscuro y localización completa",
-    "sessionBrowser": "Navegador de Sesiones",
-    "sessionEditor": "Editor de Sesiones",
-    "simpleSessionEditor": "Editor de Sesiones Simple",
-    "fullSessionEditor": "Editor de Sesiones Completo",
-    "trackTypePicker": "Selector de Tipo de Pista",
-    "toneEditor": "Editor de Tonos",
-    "mainPlayer": "Reproductor Principal",
-    "pointEditor": "Editor de Puntos",
-    "qrSharing": "Compartir con Código QR",
-    "ritualsList": "Rituales",
-    "ritualEdit": "Editar ritual"
+    "subtitle": "Interfaz Material 3 con modo claro y oscuro. App disponible en 7 idiomas.",
+    "ritualsList": "Programa Daily Rituals",
+    "ritualEdit": "Hora, días de repetición y mezcla",
+    "player": "Escucha con controles en pantalla de bloqueo",
+    "mixes": "Explora mezclas incluidas y personalizadas",
+    "beatPicker": "Elige bandas de ondas cerebrales y tonos Solfeggio",
+    "quickEditor": "Crea una mezcla en cuatro ranuras",
+    "shareQr": "Comparte mezclas por QR o enlace",
+    "addTrack": "Añade tonos, ruido, efectos y archivos",
+    "fullEditor": "Control total de cada pista"
   },
   "cta": {
     "title": "Comienza a Crear Tu Experiencia de Audio Perfecta",
-    "subtitle": "Deja de conformarte con presets que no encajan del todo. MindState te ofrece las herramientas para crear sesiones de terapia de sonido que sean únicamente tuyas.",
+    "subtitle": "Empieza con 17 mezclas incluidas gratis, o desbloquea Starter para guardar mezclas ilimitadas y reproducir contenido extendido.",
     "ctaDownload": "Descargar en Play Store",
     "ctaViewFeatures": "Ver Características",
     "benefit1": {
-      "title": "✓ Sesiones Ilimitadas",
-      "description": "Crea sesiones personalizadas ilimitadas adaptadas a tus preferencias"
+      "title": "✓ 17 mezclas gratis",
+      "description": "Reproduce mezclas incluidas, importa por QR y duplica para personalizar"
     },
     "benefit2": {
-      "title": "✓ Calidad Profesional",
-      "description": "Audio cristalino con síntesis de fase continua"
+      "title": "✓ Suscripción Starter",
+      "description": "Guarda mezclas personalizadas ilimitadas y reproduce 16 mezclas extendidas"
     },
     "benefit3": {
-      "title": "✓ Gratis para Probar",
-      "description": "Sesiones incluidas disponibles para todos los usuarios"
+      "title": "✓ Audio profesional",
+      "description": "Motor de síntesis Rust con controles en pantalla de bloqueo"
     }
   },
   "aboutBinauralBeats": {
@@ -110,7 +112,7 @@
     "heroSubtitle": "Ritmos y Sonidos Personalizados para Relajarse, Enfocarse, Meditar, Ser Creativo y Dormir Mejor",
     "benefits": {
       "title": "Beneficios Poderosos Que Puedes Experimentar",
-      "subtitle": "Los ritmos binaurales, ritmos isocrónicos, tonos Solfeggio y sesiones de ruido blanco pueden ayudarte a lograr estados mentales y resultados notables",
+      "subtitle": "Los beats binaurales, tonos isocrónicos, portadores Solfeggio y capas de ruido pueden apoyar el enfoque, la relajación, el sueño, la meditación, la creatividad y el estado de ánimo.",
       "benefit1": {
         "title": "Relajación Profunda y Alivio del Estrés",
         "description": "Logra una relajación profunda y elimina el estrés. Ruido relajante y ritmos binaurales, junto con tonos isocrónicos o frecuencias Solfeggio, ayudan a tu cerebro a entrar en estados profundamente relajados, reduciendo la ansiedad y promoviendo la calma."
@@ -163,8 +165,6 @@
       "title": "Respaldado por Investigación",
       "subtitle": "Los estudios científicos respaldan los beneficios de los ritmos binaurales y el arrastre de ondas cerebrales",
       "findings": "La investigación ha demostrado que los ritmos binaurales pueden ayudar a reducir la ansiedad, mejorar el enfoque, mejorar la práctica de meditación y apoyar un mejor sueño. Los estudios han encontrado efectos positivos en la relajación, la reducción del estrés y el rendimiento cognitivo. Si bien los resultados individuales pueden variar, la evidencia científica continúa creciendo, respaldando el uso de ritmos binaurales como una herramienta para el mejoramiento mental y el bienestar.",
-      "studiesTitle": "Estudios de Investigación Revisados por Pares",
-      "studiesSubtitle": "Explora la evidencia científica que respalda la eficacia de los ritmos binaurales",
       "studies": {
         "adhdNoise": {
           "title": "Metaanálisis de AD/HD y Ruido Blanco/Rosa",
@@ -196,14 +196,16 @@
           "description": "Un ensayo controlado aleatorio encontró que los ritmos binaurales de frecuencia alpha combinados con musicoterapia llevaron a mejoras significativas en el tinnitus crónico.",
           "url": "https://pubmed.ncbi.nlm.nih.gov/38723376/"
         }
-      }
+      },
+      "studiesTitle": "Estudios de Investigación Revisados por Pares",
+      "studiesSubtitle": "Explora la evidencia científica que respalda la eficacia de los ritmos binaurales"
     }
   },
   "footer": {
-    "description": "Crea sesiones de ritmos binaurales personalizadas adaptadas a tus preferencias.",
+    "description": "Beats y ruido personalizados para enfoque, relajación, sueño, meditación y creatividad.",
     "links": "Enlaces",
     "download": "Descargar",
-    "downloadDescription": "Disponible en Google Play Store",
+    "downloadDescription": "Disponible en Google Play. iOS próximamente.",
     "copyright": "© 2026 MindState / Michiel Roos. Todos los derechos reservados."
   },
   "languageSwitcher": {
@@ -254,5 +256,71 @@
       "text": "El ruido blanco y rosa condujo a mejoras pequeñas pero estadísticamente significativas en la atención, reducción de la impulsividad y menos errores en niños y adultos jóvenes con AD/HD.",
       "source": "Metaanálisis de 13 estudios (2024, PubMed 38428577)"
     }
+  },
+  "store": {
+    "playStore": "Disponible en Google Play"
+  },
+  "pricing": {
+    "title": "Precios",
+    "subtitle": "Empieza gratis; mejora cuando quieras guardar mezclas personalizadas y reproducir contenido extendido.",
+    "free": {
+      "name": "Gratis",
+      "price": "$0",
+      "description": "Explora MindState sin coste inicial.",
+      "feature1": "Reproduce 17 mezclas incluidas",
+      "feature2": "Explora e importa mezclas por QR",
+      "feature3": "Duplica mezclas incluidas y edita con vista previa",
+      "feature4": "Onboarding y contenido informativo"
+    },
+    "starter": {
+      "name": "Starter",
+      "price": "Mensual o anual",
+      "description": "Acceso completo con prueba gratuita gestionada por la tienda.",
+      "feature1": "Guarda mezclas personalizadas ilimitadas",
+      "feature2": "Reproduce 16 mezclas incluidas extendidas",
+      "feature3": "Crea Daily Rituals desde el reproductor",
+      "feature4": "Planes mensuales y anuales en Google Play"
+    },
+    "samplePacks": {
+      "name": "Paquetes de muestras",
+      "price": "Compra única",
+      "description": "Paquetes de audio opcionales para pistas de archivo extra.",
+      "feature1": "Ejemplo: Chakra Bar Chimes (7 tonos)",
+      "feature2": "Añade pistas MP3 al editor Full"
+    }
+  },
+  "includedMixes": {
+    "title": "33 mezclas incluidas",
+    "subtitle": "Puntos de partida curados en nueve categorías. Duplica cualquier mezcla para hacerla tuya.",
+    "category1": "Sueño",
+    "category2": "Enfoque",
+    "category3": "Meditación",
+    "category4": "Relajación",
+    "category5": "Creatividad",
+    "category6": "Estado de ánimo",
+    "category7": "Estudio",
+    "category8": "Relaxed kid",
+    "note": "17 mezclas son gratis. 16 extendidas requieren suscripción Starter."
+  },
+  "rituals": {
+    "title": "Daily Rituals",
+    "subtitle": "Programa una mezcla por hora y días de repetición para que encaje en tu rutina.",
+    "bullet1": "Crea un ritual desde la pantalla Rituals o la barra del reproductor con suscripción.",
+    "bullet2": "Elige hora, días de repetición y qué mezcla reproducir.",
+    "bullet3": "Android usa programación fiable de alarmas con guía opcional de No molestar.",
+    "bullet4": "iOS usa notificaciones locales. Los rituales se reprograman al cambiar de zona horaria."
+  },
+  "faq": {
+    "title": "Preguntas frecuentes",
+    "q1": "¿Qué archivos de audio puedo importar?",
+    "a1": "MP3, WAV y FLAC desde el almacenamiento del dispositivo o recursos incluidos y de paquetes de muestras.",
+    "q2": "¿Los códigos QR incluyen mi audio personalizado?",
+    "a2": "No. QR y enlaces solo incluyen la estructura de la mezcla (tonos, ruido, efectos). Vuelve a adjuntar pistas de archivo tras importar.",
+    "q3": "¿Cómo funcionan Daily Rituals en Android?",
+    "a3": "Alarmas y notificaciones. Concede permisos de alarma exacta, batería y notificaciones cuando se soliciten. El acceso opcional a No molestar permite reproducir durante DND.",
+    "q4": "¿Cómo funcionan Daily Rituals en iOS?",
+    "a4": "Notificaciones locales. Toca la alerta para abrir MindState y reproducir la mezcla programada.",
+    "q5": "¿Puedo crear un ritual desde una mezcla que estoy reproduciendo?",
+    "a5": "Sí. Usa Crear ritual en la barra del reproductor con suscripción."
   }
 }
