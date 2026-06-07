@@ -53,7 +53,7 @@
 	font-family: "Roboto";
 	font-style: normal;
 	font-weight: 300;
-	src: url("/fonts/MindStateBody-Light.ttf") format("truetype");
+	src: url("/fonts/Roboto-Light.ttf") format("truetype");
 }
 
 @font-face {
@@ -61,7 +61,7 @@
 	font-family: "Roboto";
 	font-style: normal;
 	font-weight: 700;
-	src: url("/fonts/MindStateBody-Bold.ttf") format("truetype");
+	src: url("/fonts/Roboto-Bold.ttf") format("truetype");
 }
 
 /* MindState refresh palette */
