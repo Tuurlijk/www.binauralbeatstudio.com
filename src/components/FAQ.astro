@@ -5,7 +5,8 @@ import type { Locale } from '../i18n/types';
 const locale = Astro.currentLocale as Locale;
 const translations = await loadTranslations(locale);
 
-const items = [1, 2, 3, 4, 5] as const;
+const showIosBuild = false;
+const items = showIosBuild ? ([1, 2, 3, 4, 5] as const) : ([1, 2, 3, 5] as const);
 ---
 
 <section id="faq" class="section-gradient py-20 px-4 sm:px-6 lg:px-8">

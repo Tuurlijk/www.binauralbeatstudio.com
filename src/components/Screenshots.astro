@@ -82,10 +82,10 @@ const screenshots = [
 ];
 ---
 
-<section id="screenshots" class="section-plain py-20 px-4 sm:px-6 lg:px-8">
+<section id="screenshots" class="section-plain py-24 px-4 sm:px-6 lg:px-8">
 	<div class="max-w-7xl mx-auto">
 		<div class="text-center mb-16">
-			<h2 class="text-4xl md:text-5xl font-bold mb-4 text-bhutan-primary">
+			<h2 class="text-5xl md:text-6xl font-bold mb-4 text-bhutan-primary">
 				{t('screenshots.title', locale, translations)}
 			</h2>
 			<p class="text-xl max-w-3xl mx-auto text-bhutan-secondary">
@@ -95,13 +95,13 @@ const screenshots = [
 
 		<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
 			{screenshots.map((screenshot) => (
-				<div class="bg-bhutan-secondary rounded-2xl p-4 shadow-lg hover:shadow-xl transition-shadow">
+				<div class="screenshot-card bg-bhutan-secondary rounded-3xl p-5 shadow-lg transition-all">
 					<picture>
 						<source srcset={screenshot.dark.src} media="(prefers-color-scheme: dark)" />
 						<img
 							src={screenshot.light.src}
 							alt={screenshot.alt}
-							class="rounded-lg w-full aspect-[1284/2778] object-cover"
+							class="rounded-2xl w-full aspect-[1284/2778] object-cover"
 							loading="lazy"
 						/>
 					</picture>
@@ -111,3 +111,15 @@ const screenshots = [
 		</div>
 	</div>
 </section>
+
+<style>
+	.screenshot-card {
+		border: 1px solid var(--border-light);
+		box-shadow: var(--shadow-card);
+	}
+
+	.screenshot-card:hover {
+		box-shadow: 0 24px 60px rgba(104, 31, 54, 0.2);
+		transform: translateY(-6px);
+	}
+</style>
