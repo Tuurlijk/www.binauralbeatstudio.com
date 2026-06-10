@@ -97,9 +97,10 @@
 	--font-weight-display: 900;
 	--type-menu: 1rem;
 	--type-menu-mobile: 1.05rem;
-	--type-body: clamp(1.05rem, 0.98rem + 0.25vw, 1.2rem);
-	--type-body-large: clamp(1.15rem, 1.04rem + 0.45vw, 1.45rem);
-	--type-card-body: clamp(0.98rem, 0.94rem + 0.15vw, 1.08rem);
+	/* Matches Tailwind text-xl; md breakpoint uses text-2xl below */
+	--type-body: 1.25rem;
+	--type-body-large: var(--type-body);
+	--type-card-body: var(--type-body);
 	--type-card-title: clamp(1.85rem, 1.62rem + 0.75vw, 2.35rem);
 	--type-section-title: clamp(3.8rem, 3.25rem + 1.25vw, 4.5rem);
 	--type-hero-title: clamp(4.4rem, 3.65rem + 2vw, 5.25rem);
@@ -236,22 +237,18 @@ li.font-bold {
 	font-weight: 700;
 }
 
-section p.text-xl,
-section p.text-2xl,
-section .text-lg,
-section .text-xl,
-section .text-2xl {
+main :is(p, li, dd, dt):is(.text-base, .text-lg, .text-xl, .text-2xl) {
 	font-family: var(--font-copy);
-	font-size: var(--type-body-large);
+	font-size: var(--type-body);
 	line-height: 1.25;
 }
 
-.feature-card-1 p,
-.feature-card-2 p,
-.feature-card-3 p,
-.feature-card-4 p,
-.feature-card-5 p,
-.feature-card-6 p,
+@media (min-width: 768px) {
+	:root {
+		--type-body: 1.5rem;
+	}
+}
+
 .benefit-card p,
 .screenshot-card p {
 	font-family: var(--font-copy);
@@ -372,8 +369,6 @@ h3.text-6xl,
 
 @media (max-width: 640px) {
 	:root {
-		--type-body: 1.02rem;
-		--type-body-large: 1.12rem;
 		--type-card-title: 1.65rem;
 		--type-section-title: clamp(3.4rem, 17vw, 4.8rem);
 		--type-hero-title: clamp(4rem, 19vw, 5.8rem);
@@ -461,54 +456,11 @@ h3.text-6xl,
 	z-index: 1;
 }
 
-.bg-bhutan-secondary,
-.feature-card-1,
-.feature-card-2,
-.feature-card-3,
-.feature-card-4,
-.feature-card-5,
-.feature-card-6 {
+.bg-bhutan-secondary {
 	background: var(--bg-elevated);
 	border-color: var(--border-light);
 	box-shadow: var(--shadow-card);
 	backdrop-filter: blur(18px);
-}
-
-.feature-card-1,
-.feature-card-2,
-.feature-card-3,
-.feature-card-4,
-.feature-card-5,
-.feature-card-6 {
-	overflow: hidden;
-	position: relative;
-}
-
-.feature-card-1::before,
-.feature-card-2::before,
-.feature-card-3::before,
-.feature-card-4::before,
-.feature-card-5::before,
-.feature-card-6::before {
-	content: "";
-	height: 0.45rem;
-	inset: 0 0 auto;
-	position: absolute;
-}
-
-.feature-card-1::before,
-.feature-card-5::before {
-	background: linear-gradient(90deg, var(--primary), var(--primary-light));
-}
-
-.feature-card-2::before,
-.feature-card-6::before {
-	background: linear-gradient(90deg, var(--secondary), var(--secondary-light));
-}
-
-.feature-card-3::before,
-.feature-card-4::before {
-	background: linear-gradient(90deg, var(--tertiary), var(--accent));
 }
 
 @media (prefers-color-scheme: dark) {

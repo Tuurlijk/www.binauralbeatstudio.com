@@ -1,0 +1,191 @@
+---
+import { loadTranslations, t, getLocalizedHashLink } from '../utils/i18n';
+import type { Locale } from '../i18n/types';
+
+interface Props {
+	variant?: 'default' | 'hero';
+}
+
+const locale = Astro.currentLocale as Locale;
+const translations = await loadTranslations(locale);
+const variant = Astro.props.variant ?? 'default';
+
+const uniqueId = `nav-more-${Math.random().toString(36).substring(2, 9)}`;
+const toggleId = `${uniqueId}-toggle`;
+const menuId = uniqueId;
+const chevronId = `${uniqueId}-chevron`;
+
+const overflowLinks = [
+	{ key: 'nav.research', href: '#quotes' },
+	{ key: 'nav.faq', href: '#faq' },
+	{ key: 'nav.about', href: '#about-binaural-beats' },
+] as const;
+---
+
+<div class={`nav-more nav-more--${variant} relative`}>
+	<input type="checkbox" id={toggleId} class="nav-more__toggle" />
+	<div
+		class="nav-more__menu absolute right-0 mt-2 min-w-44 rounded-xl border border-bhutan-light bg-bhutan-secondary py-2 shadow-2xl backdrop-blur-sm z-50"
+		id={menuId}
+		style="background-color: var(--bg-secondary); opacity: 0.98;"
+	>
+		{overflowLinks.map((link) => (
+			<a
+				href={getLocalizedHashLink(link.href, locale)}
+				class="nav-more__link block px-4 py-2.5 text-bhutan-primary transition-colors hover:bg-bhutan-primary hover:pl-5"
+			>
+				{t(link.key, locale, translations)}
+			</a>
+		))}
+	</div>
+	<label
+		for={toggleId}
+		class="nav-more__button nav-link flex items-center gap-1 cursor-pointer"
+		aria-label={t('nav.more', locale, translations)}
+		aria-expanded="false"
+		aria-haspopup="true"
+	>
+		<span>{t('nav.more', locale, translations)}</span>
+		<svg class="nav-more__chevron w-4 h-4 transition-transform duration-200" id={chevronId} fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+			<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+		</svg>
+	</label>
+</div>
+
+<style>
+	/* Visually hidden but focusable, so the menu stays keyboard-operable */
+	.nav-more__toggle {
+		height: 1px;
+		margin: 0;
+		opacity: 0;
+		position: absolute;
+		width: 1px;
+	}
+
+	.nav-more__toggle:focus-visible ~ label {
+		border-radius: 0.25rem;
+		outline: 2px solid currentColor;
+		outline-offset: 4px;
+	}
+
+	.nav-more__menu {
+		display: none;
+	}
+
+	.nav-more input[type='checkbox']:checked ~ .nav-more__menu {
+		display: block;
+		animation: navMoreSlideDown 0.2s ease-out;
+	}
+
+	.nav-more input[type='checkbox']:checked ~ label .nav-more__chevron {
+		transform: rotate(180deg);
+	}
+
+	.nav-more__button {
+		background: transparent;
+		border: 0;
+		padding: 0;
+		text-decoration: none;
+	}
+
+	.nav-more__link {
+		font-family: var(--font-body);
+		font-size: 0.875rem;
+		font-weight: 600;
+		line-height: 1.05;
+		text-decoration: none;
+	}
+
+	.nav-more--hero .nav-more__button {
+		color: rgba(255, 255, 255, 0.82);
+		font-family: var(--font-body);
+		font-size: clamp(1.05rem, 0.9rem + 0.35vw, 1.28rem);
+		font-weight: var(--font-weight-ui);
+		line-height: 1.05;
+		text-shadow: 0 1px 10px rgba(0, 0, 0, 0.16);
+	}
+
+	.nav-more--hero .nav-more__button:hover {
+		color: #ffffff;
+	}
+
+	.nav-more--hero .nav-more__chevron {
+		color: rgba(255, 255, 255, 0.82);
+	}
+
+	.nav-more--hero .nav-more__link {
+		font-family: var(--font-body);
+		font-size: clamp(1.05rem, 0.9rem + 0.35vw, 1.28rem);
+		font-weight: var(--font-weight-ui);
+		line-height: 1.05;
+	}
+
+	@keyframes navMoreSlideDown {
+		from {
+			opacity: 0;
+			transform: translateY(-8px);
+		}
+
+		to {
+			opacity: 1;
+			transform: translateY(0);
+		}
+	}
+</style>
+
+<script>
+	document.addEventListener('DOMContentLoaded', () => {
+		document.querySelectorAll('.nav-more').forEach((navMore) => {
+			const menuToggle = navMore.querySelector('input[type="checkbox"]') as HTMLInputElement | null;
+			const menu = navMore.querySelector('.nav-more__menu') as HTMLElement | null;
+			const label = navMore.querySelector('label') as HTMLLabelElement | null;
+			const chevron = navMore.querySelector('.nav-more__chevron') as HTMLElement | null;
+
+			if (!menuToggle || !menu) {
+				return;
+			}
+
+			const updateMenu = () => {
+				const isOpen = menuToggle.checked;
+				menu.style.display = isOpen ? 'block' : 'none';
+				if (label) {
+					label.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+				}
+				if (chevron) {
+					chevron.style.transform = isOpen ? 'rotate(180deg)' : 'rotate(0deg)';
+				}
+			};
+
+			menuToggle.addEventListener('change', updateMenu);
+
+			if (label) {
+				label.addEventListener('click', () => {
+					setTimeout(updateMenu, 10);
+				});
+			}
+
+			document.addEventListener('click', (event) => {
+				if (menuToggle.checked && event.target instanceof Node && !navMore.contains(event.target)) {
+					menuToggle.checked = false;
+					updateMenu();
+				}
+			});
+
+			document.addEventListener('keydown', (event) => {
+				if (event.key === 'Escape' && menuToggle.checked) {
+					menuToggle.checked = false;
+					updateMenu();
+				}
+			});
+
+			menu.addEventListener('click', (event) => {
+				if (event.target instanceof Element && event.target.closest('a')) {
+					menuToggle.checked = false;
+					updateMenu();
+				}
+			});
+
+			updateMenu();
+		});
+	});
+</script>

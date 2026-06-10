@@ -75,29 +75,41 @@ const showSubtitle = subtitle.trim().length > 0;
 					style={`--benefit-panel: ${benefit.panel}; --benefit-title: ${benefit.title};`}
 				>
 					<div class="benefit-card__media">
-						<img
-							class="benefit-card__visual"
-							src={`${base}images/benefits/${benefit.visual}`}
-							alt=""
-							width="640"
-							height="640"
-							loading="lazy"
-						/>
+						<picture class="benefit-card__picture">
+							<source
+								srcset={`${base}images/benefits/${benefit.visual.replace('.png', '.webp')}`}
+								type="image/webp"
+							/>
+							<img
+								class="benefit-card__visual"
+								src={`${base}images/benefits/${benefit.visual}`}
+								alt=""
+								width="640"
+								height="640"
+								loading="lazy"
+							/>
+						</picture>
 						<h3 class="benefit-card__title">
 							{t(`aboutBinauralBeats.benefits.${benefit.id}.title`, locale, translations)}
 						</h3>
 					</div>
 
 					<div class="benefit-card__body">
-						<img
-							class="benefit-card__symbol"
-							src={`${base}images/benefits/${benefit.symbol}`}
-							alt=""
-							width="42"
-							height="42"
-							loading="lazy"
-							aria-hidden="true"
-						/>
+						<picture>
+							<source
+								srcset={`${base}images/benefits/${benefit.symbol.replace('.png', '.webp')}`}
+								type="image/webp"
+							/>
+							<img
+								class="benefit-card__symbol"
+								src={`${base}images/benefits/${benefit.symbol}`}
+								alt=""
+								width="42"
+								height="42"
+								loading="lazy"
+								aria-hidden="true"
+							/>
+						</picture>
 
 						<p class="benefit-card__copy">
 							{t(`aboutBinauralBeats.benefits.${benefit.id}.description`, locale, translations)}
@@ -147,6 +159,11 @@ const showSubtitle = subtitle.trim().length > 0;
 		flex: 0 0 56%;
 		overflow: hidden;
 		position: relative;
+	}
+
+	.benefit-card__picture {
+		display: block;
+		height: 100%;
 	}
 
 	.benefit-card__visual {
@@ -221,7 +238,7 @@ const showSubtitle = subtitle.trim().length > 0;
 
 	.benefit-card__copy {
 		font-family: var(--font-copy);
-		font-size: clamp(1.12rem, 0.95rem + 0.35vw, 1.35rem);
+		font-size: var(--type-body);
 		font-weight: 300;
 		hyphens: auto;
 		line-height: 1.18;

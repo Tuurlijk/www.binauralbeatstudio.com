@@ -218,8 +218,8 @@ Organize translations by component/section for maintainability:
 ```json
 {
   "meta": {
-    "title": "MindState - Create Personalized Binaural Beats Sessions",
-    "description": "The only binaural beats app that lets you design completely personalized audio sessions from scratch. Professional-grade tools for creating sessions that match your exact preferences."
+    "title": "MindState - Create Personalized Binaural Beats Mixes",
+    "description": "The only binaural beats app that lets you design completely personalized audio mixes from scratch. Professional-grade tools for creating mixes that match your exact preferences."
   },
   "nav": {
     "features": "Features",
@@ -230,34 +230,34 @@ Organize translations by component/section for maintainability:
   "hero": {
     "title": "Create Personalized",
     "titleHighlight": "Binaural Beats",
-    "titleSuffix": "Sessions",
-    "subtitle": "The only binaural beats app that lets you design completely personalized audio sessions from scratch. Every frequency, volume, and timing decision is yours to control.",
+    "titleSuffix": "Mixes",
+    "subtitle": "The only binaural beats app that lets you design completely personalized audio mixes from scratch. Every frequency, volume, and timing decision is yours to control.",
     "ctaDownload": "Download on Play Store",
     "ctaLearnMore": "Learn More",
     "tagline": "Native Android app • Professional audio quality • Free to try"
   },
   "features": {
     "title": "Complete Control Over Your Audio Experience",
-    "subtitle": "Unlike apps with fixed presets, MindState gives you professional-grade tools to create sessions that match your exact preferences, sensitivity, and goals.",
+    "subtitle": "Unlike apps with fixed mixes, MindState gives you professional-grade tools to create mixes that match your exact preferences, sensitivity, and goals.",
     "feature1": {
       "title": "Complete Personalization",
-      "description": "Design sessions from scratch, not presets. Set carrier frequencies (80-600 Hz) and beat frequencies (0.5-40 Hz) to match your personal sensitivity."
+      "description": "Design mixes from scratch, not presets. Set carrier frequencies (80-600 Hz) and beat frequencies (0.5-40 Hz) to match your personal sensitivity."
     },
     "feature2": {
-      "title": "Multi-Layered Sessions",
+      "title": "Multi-Layered Mixes",
       "description": "Layer multiple track types: binaural beats, monaural beats, isochronic tones, noise generators, and your own audio files. Each track has independent volume control."
     },
     "feature3": {
       "title": "Point Editor",
-      "description": "Create smooth volume transitions over time with point-level volume envelopes. Build sessions that start gentle and build intensity, or maintain steady frequencies."
+      "description": "Create smooth volume transitions over time with point-level volume envelopes. Build mixes that start gentle and build intensity, or maintain steady frequencies."
     },
     "feature4": {
       "title": "Professional Editor",
-      "description": "Granular control over every aspect: frequencies, volumes, timing, and transitions. Preview before saving to ensure your session is perfect."
+      "description": "Granular control over every aspect: frequencies, volumes, timing, and transitions. Preview before saving to ensure your mix is perfect."
     },
     "feature5": {
       "title": "QR Code Sharing",
-      "description": "Generate QR codes to share your custom sessions instantly. Scan QR codes to discover sessions created by others, then modify them to match your preferences."
+      "description": "Generate QR codes to share your custom mixes instantly. Scan QR codes to discover mixes created by others, then modify them to match your preferences."
     },
     "feature6": {
       "title": "Professional Audio Quality",
@@ -266,10 +266,10 @@ Organize translations by component/section for maintainability:
   },
   "howItWorks": {
     "title": "How It Works",
-    "subtitle": "Create your perfect binaural beats session in just a few simple steps",
+    "subtitle": "Create your perfect binaural beats mix in just a few simple steps",
     "step1": {
-      "title": "Create Custom Session",
-      "description": "Start with a blank canvas or choose from bundled examples. Name your session and set the duration."
+      "title": "Create Custom Mix",
+      "description": "Start with a blank canvas or choose from included mixes. Name your mix and set the duration."
     },
     "step2": {
       "title": "Add Multiple Track Types",
@@ -281,18 +281,18 @@ Organize translations by component/section for maintainability:
     },
     "step4": {
       "title": "Preview & Save",
-      "description": "Test your session with preview playback before saving. Make adjustments until it's perfect for you."
+      "description": "Test your mix with preview playback before saving. Make adjustments until it's perfect for you."
     },
     "step5": {
       "title": "Share via QR Code",
-      "description": "Generate a QR code to share your session instantly. Scan codes from others to discover new sessions, then customize them to your preferences."
+      "description": "Generate a QR code to share your mix instantly. Scan codes from others to discover new mixes, then customize them to your preferences."
     }
   },
   "screenshots": {
     "title": "See It In Action",
     "subtitle": "Professional interface with Material Design 3, dark mode, and full localization",
-    "sessionBrowser": "Session Browser",
-    "sessionEditor": "Session Editor",
+    "mixBrowser": "Mix Browser",
+    "mixEditor": "Mix Editor",
     "trackEditor": "Track Editor",
     "mainPlayer": "Main Player",
     "pointEditor": "Point Editor",
@@ -300,12 +300,12 @@ Organize translations by component/section for maintainability:
   },
   "cta": {
     "title": "Start Creating Your Perfect Audio Experience",
-    "subtitle": "Stop settling for presets that don't quite fit. MindState gives you the tools to create binaural beats sessions that are uniquely yours.",
+    "subtitle": "Stop settling for presets that don't quite fit. MindState gives you the tools to create binaural beats mixes that are uniquely yours.",
     "ctaDownload": "Download on Play Store",
     "ctaViewFeatures": "View Features",
     "benefit1": {
-      "title": "✓ Unlimited Sessions",
-      "description": "Create unlimited custom sessions tailored to your preferences"
+      "title": "✓ Unlimited Mixes",
+      "description": "Create unlimited custom mixes tailored to your preferences"
     },
     "benefit2": {
       "title": "✓ Professional Quality",
@@ -313,11 +313,11 @@ Organize translations by component/section for maintainability:
     },
     "benefit3": {
       "title": "✓ Free to Try",
-      "description": "Bundled sessions available to all users"
+      "description": "Bundled mixes available to all users"
     }
   },
   "footer": {
-    "description": "Create personalized binaural beats sessions tailored to your preferences.",
+    "description": "Create personalized binaural beats mixes tailored to your preferences.",
     "links": "Links",
     "download": "Download",
     "downloadDescription": "Available on the Google Play Store",

@@ -25,6 +25,7 @@ export interface Translations {
     downloadApp: string;
     appExamples: string;
     research: string;
+    more: string;
     pricing: string;
     faq: string;
   };

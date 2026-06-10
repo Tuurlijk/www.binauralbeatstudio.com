@@ -4,6 +4,7 @@ import { getAbsoluteLocaleUrl } from 'astro:i18n';
 import { loadTranslations, t, getLocalizedHashLink, getPagePathFromUrl } from '../utils/i18n';
 import type { Locale } from '../i18n/types';
 import LanguageSwitcher from '../components/LanguageSwitcher.astro';
+import NavMoreMenu from '../components/NavMoreMenu.astro';
 import { buildDefaultStructuredData } from '../lib/structured-data';
 import { getOgLocale } from '../lib/seo';
 
@@ -137,11 +138,21 @@ const isRTL = locale === 'ar';
 					<div class="flex items-center">
 						<a href={base} class="site-logo-link flex items-center gap-3 transition-opacity hover:opacity-80">
 							{isHomePage ? (
-								<img
-									src={`${base}images/hero/header-logo.png`}
-									alt="MindState Binaural Beat Studio App"
-									class="site-logo-image"
-								/>
+								<>
+									<picture>
+										<source srcset={`${base}images/hero/logo-mono.webp`} type="image/webp" />
+										<img
+											src={`${base}images/hero/logo-mono.png`}
+											alt=""
+											class="site-logo-mark"
+										/>
+									</picture>
+									<span class="site-logo-wordmark">
+										<span class="site-logo-name">MindState</span>
+										<span class="site-logo-divider" aria-hidden="true">|</span>
+										<span class="site-logo-product">Binaural Beat Studio App</span>
+									</span>
+								</>
 							) : (
 								<>
 									<img 
@@ -162,9 +173,7 @@ const isRTL = locale === 'ar';
 						<a href={getLocalizedHashLink('#features', locale)} class="nav-link transition-colors">{t('nav.features', locale, translations)}</a>
 						<a href={getLocalizedHashLink('#how-it-works', locale)} class="nav-link transition-colors">{t('nav.howItWorks', locale, translations)}</a>
 						<a href={getLocalizedHashLink('#screenshots', locale)} class="nav-link transition-colors">{t('nav.appExamples', locale, translations)}</a>
-						<a href={getLocalizedHashLink('#quotes', locale)} class="nav-link transition-colors">{t('nav.research', locale, translations)}</a>
-						<a href={getLocalizedHashLink('#faq', locale)} class="nav-link transition-colors">{t('nav.faq', locale, translations)}</a>
-						<a href={getLocalizedHashLink('#about-binaural-beats', locale)} class="nav-link transition-colors">{t('nav.about', locale, translations)}</a>
+						<NavMoreMenu variant={isHomePage ? 'hero' : 'default'} />
 						<a href={getLocalizedHashLink('#download', locale)} class="nav-download px-5 py-2.5 rounded-full transition-colors text-white bg-bhutan-accent hover:opacity-90">
 							{isHomePage ? t('nav.downloadApp', locale, translations) : t('nav.download', locale, translations)}
 						</a>
@@ -277,6 +286,16 @@ const isRTL = locale === 'ar';
 			document.addEventListener('DOMContentLoaded', () => {
 				const menuToggle = document.getElementById('mobile-menu-toggle') as HTMLInputElement | null;
 				const mobileMenu = document.getElementById('mobile-menu');
+				const siteNav = document.querySelector('.site-nav--hero');
+
+				if (siteNav) {
+					const updateNavState = () => {
+						siteNav.classList.toggle('site-nav--scrolled', window.scrollY > 24);
+					};
+
+					updateNavState();
+					window.addEventListener('scroll', updateNavState, { passive: true });
+				}
 				
 				if (menuToggle && mobileMenu) {
 					menuToggle.addEventListener('change', (e) => {
@@ -333,12 +352,51 @@ const isRTL = locale === 'ar';
 				width: clamp(14rem, 18vw, 21rem);
 			}
 
+			.site-logo-mark {
+				display: block;
+				height: clamp(1.8rem, 2vw, 2.25rem);
+				object-fit: contain;
+				width: clamp(1.8rem, 2vw, 2.25rem);
+			}
+
+			.site-logo-wordmark {
+				align-items: baseline;
+				color: rgba(255, 255, 255, 0.88);
+				display: inline-flex;
+				font-family: var(--font-body);
+				font-size: clamp(1.05rem, 0.9rem + 0.35vw, 1.28rem);
+				font-weight: var(--font-weight-ui);
+				gap: 0.28rem;
+				line-height: 1;
+				text-shadow: 0 1px 10px rgba(0, 0, 0, 0.16);
+				white-space: nowrap;
+			}
+
+			.site-logo-name {
+				font-weight: var(--font-weight-card-title);
+			}
+
+			.site-logo-divider,
+			.site-logo-product {
+				color: rgba(255, 255, 255, 0.78);
+				font-weight: var(--font-weight-ui);
+			}
+
 			.site-nav--hero .nav-shell {
 				background: transparent;
 				border-color: transparent;
 				box-shadow: none;
 				backdrop-filter: none;
 				padding-inline: 0;
+				transition: background-color 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease, padding-inline 0.2s ease;
+			}
+
+			.site-nav--hero.site-nav--scrolled .nav-shell {
+				background: rgba(34, 12, 18, 0.72);
+				border-color: rgba(255, 255, 255, 0.16);
+				box-shadow: 0 18px 50px rgba(0, 0, 0, 0.24);
+				backdrop-filter: blur(18px);
+				padding-inline: 1rem;
 			}
 
 			.site-nav--hero .nav-links {
@@ -573,6 +631,10 @@ const isRTL = locale === 'ar';
 
 				.site-nav--hero .nav-shell {
 					background: transparent;
+				}
+
+				.site-nav--hero.site-nav--scrolled .nav-shell {
+					background: rgba(34, 12, 18, 0.78);
 				}
 
 				.site-footer {

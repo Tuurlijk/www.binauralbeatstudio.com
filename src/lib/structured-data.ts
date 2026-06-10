@@ -72,13 +72,6 @@ const KNOWS_ABOUT = [
 	'Meditation',
 ];
 
-function slugify(value: string): string {
-	return value
-		.toLowerCase()
-		.replace(/[^a-z0-9]+/g, '-')
-		.replace(/(^-|-$)/g, '');
-}
-
 function websiteId(siteUrl: string): string {
 	return `${siteUrl}${WEBSITE_FRAGMENT}`;
 }
@@ -91,16 +84,17 @@ function appId(siteUrl: string): string {
 	return `${siteUrl}${APP_FRAGMENT}`;
 }
 
-function featureId(siteUrl: string, name: string): string {
-	return `${siteUrl}#feature-${slugify(name)}`;
+/* Position-based ids stay unique for non-Latin locales where name slugs would be empty */
+function featureId(siteUrl: string, position: number): string {
+	return `${siteUrl}#feature-${position}`;
 }
 
-function benefitId(siteUrl: string, name: string): string {
-	return `${siteUrl}#benefit-${slugify(name)}`;
+function benefitId(siteUrl: string, position: number): string {
+	return `${siteUrl}#benefit-${position}`;
 }
 
-function pricingTierId(siteUrl: string, name: string): string {
-	return `${siteUrl}#pricing-${slugify(name)}`;
+function pricingTierId(siteUrl: string, position: number): string {
+	return `${siteUrl}#pricing-${position}`;
 }
 
 function studyId(url: string): string {
@@ -112,23 +106,23 @@ export function buildHomeStructuredData(input: HomeStructuredDataInput) {
 	const organization = organizationId(input.siteUrl);
 	const app = appId(input.siteUrl);
 
-	const featureNodes = input.features.map((feature) => ({
-		'@type': 'SoftwareFeature',
-		'@id': featureId(input.siteUrl, feature.name),
+	const featureNodes = input.features.map((feature, index) => ({
+		'@type': 'Thing',
+		'@id': featureId(input.siteUrl, index + 1),
 		name: feature.name,
 		description: feature.description,
 	}));
 
-	const benefitNodes = input.benefits.map((benefit) => ({
+	const benefitNodes = input.benefits.map((benefit, index) => ({
 		'@type': 'Thing',
-		'@id': benefitId(input.siteUrl, benefit.name),
+		'@id': benefitId(input.siteUrl, index + 1),
 		name: benefit.name,
 		description: benefit.description,
 	}));
 
-	const pricingNodes = input.pricingTiers.map((tier) => ({
+	const pricingNodes = input.pricingTiers.map((tier, index) => ({
 		'@type': 'Offer',
-		'@id': pricingTierId(input.siteUrl, tier.name),
+		'@id': pricingTierId(input.siteUrl, index + 1),
 		name: tier.name,
 		description: tier.description,
 		price: tier.price,
@@ -208,20 +202,20 @@ export function buildHomeStructuredData(input: HomeStructuredDataInput) {
 				'@type': 'ItemList',
 				'@id': `${input.siteUrl}#features`,
 				name: 'MindState features',
-				itemListElement: input.features.map((feature, index) => ({
+				itemListElement: input.features.map((_feature, index) => ({
 					'@type': 'ListItem',
 					position: index + 1,
-					item: { '@id': featureId(input.siteUrl, feature.name) },
+					item: { '@id': featureId(input.siteUrl, index + 1) },
 				})),
 			},
 			{
 				'@type': 'ItemList',
 				'@id': `${input.siteUrl}#benefits`,
 				name: 'MindState benefits',
-				itemListElement: input.benefits.map((benefit, index) => ({
+				itemListElement: input.benefits.map((_benefit, index) => ({
 					'@type': 'ListItem',
 					position: index + 1,
-					item: { '@id': benefitId(input.siteUrl, benefit.name) },
+					item: { '@id': benefitId(input.siteUrl, index + 1) },
 				})),
 			},
 			{
@@ -262,10 +256,10 @@ export function buildHomeStructuredData(input: HomeStructuredDataInput) {
 				'@type': 'OfferCatalog',
 				'@id': `${input.siteUrl}#pricing`,
 				name: 'MindState pricing',
-				itemListElement: input.pricingTiers.map((tier, index) => ({
+				itemListElement: input.pricingTiers.map((_tier, index) => ({
 					'@type': 'ListItem',
 					position: index + 1,
-					item: { '@id': pricingTierId(input.siteUrl, tier.name) },
+					item: { '@id': pricingTierId(input.siteUrl, index + 1) },
 				})),
 			},
 			{

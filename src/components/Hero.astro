@@ -10,7 +10,7 @@ const base = import.meta.env.BASE_URL;
 <section
 	id="hero"
 	class="hero-section px-4 sm:px-6 lg:px-8"
-	style={`--hero-bg-url: url('${base}images/hero/header-background.png'); --hero-circle-url: url('${base}images/hero/header-symbol-circle.png');`}
+	style={`--hero-bg-image: image-set(url("${base}images/hero/header-background.webp") type("image/webp"), url("${base}images/hero/header-background.png") type("image/png")); --hero-circle-image: image-set(url("${base}images/hero/header-symbol-circle.webp") type("image/webp"), url("${base}images/hero/header-symbol-circle.png") type("image/png"));`}
 	aria-labelledby="hero-heading"
 >
 	<div class="max-w-7xl mx-auto relative z-10">
@@ -50,7 +50,7 @@ const base = import.meta.env.BASE_URL;
 		--hero-padding-bottom: clamp(4rem, 6vw, 6rem);
 		--hero-bg-split: calc(50% + clamp(9.25rem, 13.8vw, 12.5rem));
 
-		background-image: var(--hero-bg-url),
+		background-image: var(--hero-bg-image),
 			linear-gradient(
 				90deg,
 				#5a5420 0 var(--hero-bg-split),
@@ -101,7 +101,7 @@ const base = import.meta.env.BASE_URL;
 	.hero-copy {
 		color: rgba(255, 255, 255, 0.82);
 		font-family: var(--font-copy);
-		font-size: clamp(1.15rem, 0.92rem + 0.55vw, 1.65rem);
+		font-size: var(--type-body);
 		font-weight: var(--font-weight-body);
 		line-height: 1.2;
 		margin: 0;
@@ -135,7 +135,7 @@ const base = import.meta.env.BASE_URL;
 	}
 
 	.hero-symbol-circle {
-		background-image: var(--hero-circle-url);
+		background-image: var(--hero-circle-image);
 		background-position: center;
 		background-repeat: no-repeat;
 		background-size: contain;
@@ -174,7 +174,7 @@ const base = import.meta.env.BASE_URL;
 		align-items: center;
 		border: 1px solid rgba(255, 255, 255, 0.58);
 		border-radius: 999px;
-		bottom: 0;
+		bottom: calc(var(--hero-padding-bottom) * -0.56);
 		color: rgba(255, 255, 255, 0.8);
 		display: flex;
 		font-family: var(--font-body);
@@ -244,7 +244,6 @@ const base = import.meta.env.BASE_URL;
 		}
 
 		.hero-copy {
-			font-size: 1.12rem;
 			max-width: 20rem;
 		}
 	}

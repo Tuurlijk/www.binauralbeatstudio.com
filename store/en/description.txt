@@ -1,4 +1,4 @@
-MindState lets you design completely personalized audio therapy sessions from scratch. Whether you're seeking relief from AD/HD symptoms, looking to relax, deepening meditation, improving sleep, boosting creativity, or enhancing focus—MindState gives you tools to create sessions tailored to your unique needs.
+MindState lets you design completely personalized audio therapy mixes from scratch. Whether you're seeking relief from AD/HD symptoms, looking to relax, deepening meditation, improving sleep, boosting creativity, or enhancing focus, MindState gives you tools to create mixes tailored to your unique needs.
 
 Targeted Benefits for Your Goals
 
@@ -11,20 +11,20 @@ Targeted Benefits for Your Goals
 
 How Audio Therapy Works
 
-Binaural beats use two slightly different frequencies played in each ear to create a perceived third frequency that can help guide your brain into specific states. Research shows they can improve attention, reduce anxiety, and support cognitive function—making them particularly useful for AD/HD support. Solfeggio frequencies (specific healing tones like 528 Hz for transformation and 432 Hz for natural harmony) can be layered with binaural beats for enhanced effects. Various noise types—white noise for masking distractions, pink noise for better sleep, and brown noise for deep relaxation—can also be combined to create personalized therapy sessions tailored to your needs.
+Binaural beats use two slightly different frequencies played in each ear to create a perceived third frequency that can help guide your brain into specific states. Research shows they can improve attention, reduce anxiety, and support cognitive function, making them particularly useful for AD/HD support. Solfeggio frequencies (specific healing tones like 528 Hz for transformation and 432 Hz for natural harmony) can be layered with binaural beats for enhanced effects. Various noise types (white noise for masking distractions, pink noise for better sleep, and brown noise for deep relaxation) can also be combined to create personalized therapy mixes tailored to your needs.
 
 Why Personalization Matters
 
-Everyone has unique needs and sensitivities. MindState gives you complete control to customize every aspect of your audio therapy sessions—from frequencies and volumes to timing and transitions. Create sessions that work specifically for you, not generic presets that may not match your personal response patterns.
+Everyone has unique needs and sensitivities. MindState gives you complete control to customize every aspect of your audio therapy mixes, from frequencies and volumes to timing and transitions. Create mixes that work specifically for you, not generic presets that may not match your personal response patterns.
 
 Complete Control Over Your Audio Experience
 
-Multi-Layered Session Builder
+Multi-Layered Mix Builder
 Layer multiple track types: binaural beats (requires headphones), monaural beats (works on speakers), isochronic tones (no headphones needed), noise generators (white, pink, brown, rain, ocean surf), and your own audio files.
 
-Share & Discover Personalized Sessions
+Share & Discover Personalized Mixes
 
-Generate QR codes to share your custom sessions instantly. Scan QR codes to discover sessions created by others, then modify them to match your preferences.
+Generate QR codes to share your custom mixes instantly. Scan QR codes to discover mixes created by others, then modify them to match your preferences.
 
 Professional Audio Quality
 
@@ -35,7 +35,7 @@ Safe & Well-Studied
 Binaural beats have been studied for decades and are considered safe for most users. Research shows significant effects on memory, attention, anxiety, and cognitive function. A meta-analysis of 22 studies found medium, significant effects on memory, attention, and anxiety.
 
 Key Features
-✓ Unlimited custom sessions for AD/HD support, sleep, meditation, focus, relaxation, creativity
+✓ Unlimited custom mixes for AD/HD support, sleep, meditation, focus, relaxation, creativity
 ✓ Multi-layered tracks: binaural beats, monaural beats, isochronic tones, noise generators, and audio files
 ✓ Point editor for smooth volume transitions
 ✓ Import your own audio files
@@ -47,4 +47,4 @@ Key Features
 
 Start Creating Your Perfect Audio Experience
 
-Whether you need support for AD/HD symptoms, want to relax, deepen meditation, sleep better, boost creativity, or enhance focus—MindState gives you the tools to create binaural beats sessions that are uniquely yours.
+Whether you need support for AD/HD symptoms, want to relax, deepen meditation, sleep better, boost creativity, or enhance focus, MindState gives you the tools to create binaural beats mixes that are uniquely yours.

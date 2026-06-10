@@ -7,14 +7,16 @@ PREFIX="mindstate-phone-apple"
 
 # Store listing order (see mindstate/docs/screenshots.md)
 # dest_base -> maestro screen suffix
+# Website uses mix naming; the Flutter maestro flows still emit session names.
+# Update the source suffixes here once the Flutter repo renames its flows.
 screens="
-phone_session_player:1_session_player
-phone_session_browser:2_session_browser
+phone_mix_player:1_session_player
+phone_mix_browser:2_session_browser
 phone_tone_editor:3_tone_editor
-phone_simple_session_editor:4_simple_session_editor
+phone_quick_mix_editor:4_simple_session_editor
 phone_qr_display:5_qr_display
 phone_add_track_modal:6_add_track_modal
-phone_full_session_editor:7_full_session_editor
+phone_full_mix_editor:7_full_session_editor
 phone_rituals_list:8_rituals_list
 phone_ritual_edit:9_ritual_edit
 "

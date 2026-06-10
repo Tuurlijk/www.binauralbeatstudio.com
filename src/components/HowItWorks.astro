@@ -1,195 +1,221 @@
 ---
-import { loadTranslations, t } from '../utils/i18n';
+import { loadTranslations, t, getLocalizedHashLink } from '../utils/i18n';
 import type { Locale } from '../i18n/types';
 
 const locale = Astro.currentLocale as Locale;
 const translations = await loadTranslations(locale);
+
+const steps = [
+	{ id: 'step1', number: 1, side: 'left', accent: '#e66a00' },
+	{ id: 'step2', number: 2, side: 'right', accent: '#a6325a' },
+	{ id: 'step3', number: 3, side: 'left', accent: '#c61655' },
+	{ id: 'step4', number: 4, side: 'right', accent: '#6b5a3c' },
+	{ id: 'step5', number: 5, side: 'left', accent: '#cc3fb0' },
+] as const;
 ---
 
-<section id="how-it-works" class="section-gradient py-12 sm:py-20 px-4 sm:px-6 lg:px-8" aria-labelledby="how-it-works-heading">
-	<div class="max-w-7xl mx-auto">
-		<div class="text-center mb-12 sm:mb-16">
-			<h2 id="how-it-works-heading" class="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 text-bhutan-primary">
+<section id="how-it-works" class="section-gradient how-it-works-section px-4 sm:px-6 lg:px-8" aria-labelledby="how-it-works-heading">
+	<div class="how-it-works-inner max-w-7xl mx-auto">
+		<div class="how-it-works-header">
+			<h2 id="how-it-works-heading" class="how-it-works-title">
 				{t('howItWorks.title', locale, translations)}
 			</h2>
-			<p class="text-lg sm:text-xl max-w-3xl mx-auto text-bhutan-secondary px-4">
+			<p class="how-it-works-subtitle">
 				{t('howItWorks.subtitle', locale, translations)}
 			</p>
+			<a class="how-it-works-download" href={getLocalizedHashLink('#download', locale)}>
+				{t('nav.downloadApp', locale, translations)}
+			</a>
 		</div>
 
-		<div class="relative pb-8 md:pb-0">
-			<!-- Desktop Timeline line (centered) - starts and ends at step badges -->
-			<div class="hidden md:block absolute left-1/2 transform -translate-x-1/2 w-1" style="background-color: var(--border-light); top: 6rem; bottom: 6rem;"></div>
-			
-			<!-- Mobile Timeline line (left side) - starts and ends at step badges -->
-			<div class="md:hidden absolute left-6 w-0.5" style="background-color: var(--border-light); top: 6rem; bottom: 6rem;"></div>
-
-			<div class="space-y-8 sm:space-y-12 md:space-y-0">
-				<!-- Step 1 -->
-				<div class="relative flex flex-col md:flex-row items-start md:items-center md:min-h-[200px]">
-					<!-- Mobile: Number badge on left with timeline -->
-					<div class="md:hidden flex items-start mb-4">
-						<div class="flex-shrink-0 w-12 h-12 rounded-full flex items-center justify-center text-lg sm:text-xl font-bold text-white relative z-10 mr-4" style="background-color: var(--primary);">
-							1
-						</div>
-						<div class="flex-1 pt-1">
-							<h3 class="text-xl sm:text-2xl font-bold mb-2 sm:mb-3 text-bhutan-primary">{t('howItWorks.step1.title', locale, translations)}</h3>
-							<p class="text-sm sm:text-base leading-relaxed text-bhutan-secondary">
-								{t('howItWorks.step1.description', locale, translations)}
-							</p>
-						</div>
+		<div class="timeline" aria-label={t('howItWorks.title', locale, translations)}>
+			{steps.map((step) => (
+				<article class={`timeline-step timeline-step--${step.side}`} style={`--step-accent: ${step.accent};`}>
+					<div class="timeline-step__content">
+						<h3 class="timeline-step__title">{t(`howItWorks.${step.id}.title`, locale, translations)}</h3>
+						<p class="timeline-step__copy">{t(`howItWorks.${step.id}.description`, locale, translations)}</p>
 					</div>
-					
-					<!-- Desktop: Left side content -->
-					<div class="hidden md:block md:w-1/2 md:pr-12 text-center md:text-right">
-						<h3 class="text-2xl font-bold mb-3 text-bhutan-primary">{t('howItWorks.step1.title', locale, translations)}</h3>
-						<p class="leading-relaxed text-bhutan-secondary">
-							{t('howItWorks.step1.description', locale, translations)}
-						</p>
-					</div>
-					
-					<!-- Desktop: Number badge on timeline -->
-					<div class="hidden md:block absolute left-1/2 transform -translate-x-1/2 -translate-y-1/2 top-1/2 z-10">
-						<div class="text-white w-12 h-12 rounded-full flex items-center justify-center text-xl font-bold" style="background-color: var(--primary);">
-							1
-						</div>
-					</div>
-					
-					<div class="hidden md:block md:w-1/2 md:pl-12"></div>
-				</div>
-
-				<!-- Step 2 -->
-				<div class="relative flex flex-col md:flex-row items-start md:items-center md:min-h-[200px]">
-					<!-- Mobile: Number badge on left with timeline -->
-					<div class="md:hidden flex items-start mb-4">
-						<div class="flex-shrink-0 w-12 h-12 rounded-full flex items-center justify-center text-lg sm:text-xl font-bold text-white relative z-10 mr-4" style="background-color: var(--secondary);">
-							2
-						</div>
-						<div class="flex-1 pt-1">
-							<h3 class="text-xl sm:text-2xl font-bold mb-2 sm:mb-3 text-bhutan-primary">{t('howItWorks.step2.title', locale, translations)}</h3>
-							<p class="text-sm sm:text-base leading-relaxed text-bhutan-secondary">
-								{t('howItWorks.step2.description', locale, translations)}
-							</p>
-						</div>
-					</div>
-					
-					<div class="hidden md:block md:w-1/2 md:pr-12"></div>
-					
-					<!-- Desktop: Number badge on timeline -->
-					<div class="hidden md:block absolute left-1/2 transform -translate-x-1/2 -translate-y-1/2 top-1/2 z-10">
-						<div class="text-white w-12 h-12 rounded-full flex items-center justify-center text-xl font-bold" style="background-color: var(--secondary);">
-							2
-						</div>
-					</div>
-					
-					<!-- Desktop: Right side content -->
-					<div class="hidden md:block md:w-1/2 md:pl-12 text-center md:text-left">
-						<h3 class="text-2xl font-bold mb-3 text-bhutan-primary">{t('howItWorks.step2.title', locale, translations)}</h3>
-						<p class="leading-relaxed text-bhutan-secondary">
-							{t('howItWorks.step2.description', locale, translations)}
-						</p>
-					</div>
-				</div>
-
-				<!-- Step 3 -->
-				<div class="relative flex flex-col md:flex-row items-start md:items-center md:min-h-[200px]">
-					<!-- Mobile: Number badge on left with timeline -->
-					<div class="md:hidden flex items-start mb-4">
-						<div class="flex-shrink-0 w-12 h-12 rounded-full flex items-center justify-center text-lg sm:text-xl font-bold text-white relative z-10 mr-4" style="background-color: var(--tertiary);">
-							3
-						</div>
-						<div class="flex-1 pt-1">
-							<h3 class="text-xl sm:text-2xl font-bold mb-2 sm:mb-3 text-bhutan-primary">{t('howItWorks.step3.title', locale, translations)}</h3>
-							<p class="text-sm sm:text-base leading-relaxed text-bhutan-secondary">
-								{t('howItWorks.step3.description', locale, translations)}
-							</p>
-						</div>
-					</div>
-					
-					<!-- Desktop: Left side content -->
-					<div class="hidden md:block md:w-1/2 md:pr-12 text-center md:text-right">
-						<h3 class="text-2xl font-bold mb-3 text-bhutan-primary">{t('howItWorks.step3.title', locale, translations)}</h3>
-						<p class="leading-relaxed text-bhutan-secondary">
-							{t('howItWorks.step3.description', locale, translations)}
-						</p>
-					</div>
-					
-					<!-- Desktop: Number badge on timeline -->
-					<div class="hidden md:block absolute left-1/2 transform -translate-x-1/2 -translate-y-1/2 top-1/2 z-10">
-						<div class="text-white w-12 h-12 rounded-full flex items-center justify-center text-xl font-bold" style="background-color: var(--tertiary);">
-							3
-						</div>
-					</div>
-					
-					<div class="hidden md:block md:w-1/2 md:pl-12"></div>
-				</div>
-
-				<!-- Step 4 -->
-				<div class="relative flex flex-col md:flex-row items-start md:items-center md:min-h-[200px]">
-					<!-- Mobile: Number badge on left with timeline -->
-					<div class="md:hidden flex items-start mb-4">
-						<div class="flex-shrink-0 w-12 h-12 rounded-full flex items-center justify-center text-lg sm:text-xl font-bold text-white relative z-10 mr-4" style="background-color: var(--accent);">
-							4
-						</div>
-						<div class="flex-1 pt-1">
-							<h3 class="text-xl sm:text-2xl font-bold mb-2 sm:mb-3 text-bhutan-primary">{t('howItWorks.step4.title', locale, translations)}</h3>
-							<p class="text-sm sm:text-base leading-relaxed text-bhutan-secondary">
-								{t('howItWorks.step4.description', locale, translations)}
-							</p>
-						</div>
-					</div>
-					
-					<div class="hidden md:block md:w-1/2 md:pr-12"></div>
-					
-					<!-- Desktop: Number badge on timeline -->
-					<div class="hidden md:block absolute left-1/2 transform -translate-x-1/2 -translate-y-1/2 top-1/2 z-10">
-						<div class="text-white w-12 h-12 rounded-full flex items-center justify-center text-xl font-bold" style="background-color: var(--accent);">
-							4
-						</div>
-					</div>
-					
-					<!-- Desktop: Right side content -->
-					<div class="hidden md:block md:w-1/2 md:pl-12 text-center md:text-left">
-						<h3 class="text-2xl font-bold mb-3 text-bhutan-primary">{t('howItWorks.step4.title', locale, translations)}</h3>
-						<p class="leading-relaxed text-bhutan-secondary">
-							{t('howItWorks.step4.description', locale, translations)}
-						</p>
-					</div>
-				</div>
-
-				<!-- Step 5 - Last step, timeline ends here -->
-				<div class="relative flex flex-col md:flex-row items-start md:items-center md:min-h-[200px]">
-					<!-- Mobile: Number badge on left with timeline -->
-					<div class="md:hidden flex items-start mb-4">
-						<div class="flex-shrink-0 w-12 h-12 rounded-full flex items-center justify-center text-lg sm:text-xl font-bold text-white relative z-10 mr-4" style="background-color: var(--primary);">
-							5
-						</div>
-						<div class="flex-1 pt-1">
-							<h3 class="text-xl sm:text-2xl font-bold mb-2 sm:mb-3 text-bhutan-primary">{t('howItWorks.step5.title', locale, translations)}</h3>
-							<p class="text-sm sm:text-base leading-relaxed text-bhutan-secondary">
-								{t('howItWorks.step5.description', locale, translations)}
-							</p>
-						</div>
-					</div>
-					
-					<!-- Desktop: Left side content -->
-					<div class="hidden md:block md:w-1/2 md:pr-12 text-center md:text-right">
-						<h3 class="text-2xl font-bold mb-3 text-bhutan-primary">{t('howItWorks.step5.title', locale, translations)}</h3>
-						<p class="leading-relaxed text-bhutan-secondary">
-							{t('howItWorks.step5.description', locale, translations)}
-						</p>
-					</div>
-					
-					<!-- Desktop: Number badge on timeline - last one, timeline ends here -->
-					<div class="hidden md:block absolute left-1/2 transform -translate-x-1/2 -translate-y-1/2 top-1/2 z-10">
-						<div class="text-white w-12 h-12 rounded-full flex items-center justify-center text-xl font-bold" style="background-color: var(--primary);">
-							5
-						</div>
-					</div>
-					
-					<div class="hidden md:block md:w-1/2 md:pl-12"></div>
-				</div>
-			</div>
+					<div class="timeline-step__number" aria-hidden="true">{step.number}</div>
+				</article>
+			))}
 		</div>
 	</div>
 </section>
+
+<style>
+	.how-it-works-section {
+		padding-bottom: clamp(5rem, 8vw, 7rem);
+		padding-top: clamp(5rem, 8vw, 7rem);
+	}
+
+	.how-it-works-header {
+		margin: 0 auto clamp(2rem, 4vw, 3rem);
+		text-align: center;
+	}
+
+	.how-it-works-title {
+		color: #e66a00;
+		font-family: var(--font-display);
+		font-size: var(--type-section-title);
+		font-weight: var(--font-weight-display);
+		letter-spacing: 0.01em;
+		line-height: 0.86;
+		margin: 0 0 0.45rem;
+		text-transform: capitalize;
+	}
+
+	.how-it-works-subtitle {
+		color: rgba(209, 111, 34, 0.82);
+		font-family: var(--font-body);
+		font-size: clamp(1.65rem, 1.25rem + 1vw, 2.45rem);
+		font-weight: var(--font-weight-ui);
+		line-height: 1;
+		margin: 0 auto 1.35rem;
+		max-width: 58rem;
+	}
+
+	.how-it-works-download {
+		background: #e66a00;
+		border-radius: 999px;
+		color: #fff;
+		display: inline-flex;
+		font-family: var(--font-body);
+		font-size: clamp(1.05rem, 0.9rem + 0.35vw, 1.25rem);
+		font-weight: var(--font-weight-ui);
+		line-height: 1;
+		padding: 0.62rem 1.2rem;
+		text-decoration: none;
+	}
+
+	.timeline {
+		margin: 0 auto;
+		max-width: 68rem;
+		position: relative;
+	}
+
+	.timeline::before {
+		background: rgba(77, 46, 42, 0.28);
+		bottom: 0.4rem;
+		content: "";
+		left: 50%;
+		position: absolute;
+		top: 0.4rem;
+		transform: translateX(-50%);
+		width: 1px;
+	}
+
+	.timeline-step {
+		--step-gap: clamp(1.6rem, 4vw, 4rem);
+
+		align-items: start;
+		display: grid;
+		grid-template-columns: minmax(0, 1fr) 4.25rem minmax(0, 1fr);
+		min-height: clamp(8.75rem, 11vw, 11rem);
+		position: relative;
+	}
+
+	.timeline-step__content {
+		color: var(--step-accent);
+		grid-row: 1;
+		max-width: 24rem;
+		position: relative;
+		z-index: 2;
+	}
+
+	.timeline-step--left .timeline-step__content {
+		grid-column: 1;
+		justify-self: end;
+		padding-right: var(--step-gap);
+		text-align: right;
+	}
+
+	.timeline-step--right .timeline-step__content {
+		grid-column: 3;
+		justify-self: start;
+		padding-left: var(--step-gap);
+		text-align: left;
+	}
+
+	.timeline-step__number {
+		align-items: center;
+		background: var(--step-accent);
+		border-radius: 0.8rem;
+		color: #fff;
+		display: flex;
+		font-family: var(--font-display);
+		font-size: clamp(2.25rem, 3vw, 3rem);
+		font-weight: var(--font-weight-display);
+		grid-column: 2;
+		grid-row: 1;
+		height: clamp(4rem, 5.4vw, 4.8rem);
+		justify-content: center;
+		line-height: 0.8;
+		margin: 0 auto;
+		position: relative;
+		width: clamp(3.25rem, 4.4vw, 4rem);
+		z-index: 3;
+	}
+
+	.timeline-step__title {
+		color: var(--step-accent);
+		font-family: var(--font-body);
+		font-size: clamp(1.35rem, 1rem + 0.7vw, 1.9rem);
+		font-weight: var(--font-weight-card-title);
+		letter-spacing: 0;
+		line-height: 0.95;
+		margin: 0 0 0.35rem;
+	}
+
+	.timeline-step__copy {
+		color: color-mix(in srgb, var(--step-accent) 72%, #fff7f0);
+		font-family: var(--font-copy);
+		font-size: clamp(1.1rem, 0.96rem + 0.35vw, 1.35rem);
+		font-weight: var(--font-weight-body);
+		line-height: 1.2;
+		margin: 0;
+	}
+
+	@media (max-width: 767px) {
+		.how-it-works-header {
+			text-align: left;
+		}
+
+		.how-it-works-subtitle {
+			margin-left: 0;
+		}
+
+		.timeline {
+			margin-left: 0;
+		}
+
+		.timeline::before {
+			left: 1.65rem;
+		}
+
+		.timeline-step {
+			gap: 1rem;
+			grid-template-columns: 3.3rem minmax(0, 1fr);
+			min-height: auto;
+			padding: 1rem 0;
+		}
+
+		.timeline-step__number {
+			border-radius: 0.7rem;
+			font-size: 2rem;
+			grid-column: 1;
+			grid-row: 1;
+			height: 3.25rem;
+			width: 2.75rem;
+		}
+
+		.timeline-step--left .timeline-step__content,
+		.timeline-step--right .timeline-step__content {
+			grid-column: 2;
+			grid-row: 1;
+			justify-self: start;
+			max-width: none;
+			padding: 0;
+			text-align: left;
+		}
+	}
+</style>
