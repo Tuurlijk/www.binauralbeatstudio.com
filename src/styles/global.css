@@ -97,8 +97,8 @@
 	--font-weight-display: 900;
 	--type-menu: 1rem;
 	--type-menu-mobile: 1.05rem;
-	/* Matches Tailwind text-xl; md breakpoint uses text-2xl below */
-	--type-body: 1.25rem;
+	/* Matches Tailwind text-lg; md breakpoint uses text-xl below */
+	--type-body: 1.125rem;
 	--type-body-large: var(--type-body);
 	--type-card-body: var(--type-body);
 	--type-card-title: clamp(1.85rem, 1.62rem + 0.75vw, 2.35rem);
@@ -245,7 +245,7 @@ main :is(p, li, dd, dt):is(.text-base, .text-lg, .text-xl, .text-2xl) {
 
 @media (min-width: 768px) {
 	:root {
-		--type-body: 1.5rem;
+		--type-body: 1.25rem;
 	}
 }
 
