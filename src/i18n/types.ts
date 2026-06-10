@@ -22,6 +22,9 @@ export interface Translations {
     about: string;
     benefits: string;
     download: string;
+    downloadApp: string;
+    appExamples: string;
+    research: string;
     pricing: string;
     faq: string;
   };
@@ -127,6 +130,7 @@ export interface Translations {
     benefits: {
       title: string;
       subtitle: string;
+      explore: string;
       benefit1: { title: string; description: string };
       benefit2: { title: string; description: string };
       benefit3: { title: string; description: string };

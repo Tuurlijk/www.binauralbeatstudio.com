@@ -6,10 +6,10 @@ const locale = Astro.currentLocale as Locale;
 const translations = await loadTranslations(locale);
 ---
 
-<section id="how-it-works" class="section-gradient py-12 sm:py-20 px-4 sm:px-6 lg:px-8">
+<section id="how-it-works" class="section-gradient py-12 sm:py-20 px-4 sm:px-6 lg:px-8" aria-labelledby="how-it-works-heading">
 	<div class="max-w-7xl mx-auto">
 		<div class="text-center mb-12 sm:mb-16">
-			<h2 class="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 text-bhutan-primary">
+			<h2 id="how-it-works-heading" class="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 text-bhutan-primary">
 				{t('howItWorks.title', locale, translations)}
 			</h2>
 			<p class="text-lg sm:text-xl max-w-3xl mx-auto text-bhutan-secondary px-4">

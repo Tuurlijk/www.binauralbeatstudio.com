@@ -10,6 +10,9 @@
     "about": "Sobre",
     "benefits": "Benefícios",
     "download": "Baixar",
+    "downloadApp": "Baixar app",
+    "appExamples": "Exemplos do app",
+    "research": "Pesquisa",
     "pricing": "Preços",
     "faq": "Perguntas frequentes"
   },
@@ -113,6 +116,7 @@
     "benefits": {
       "title": "Benefícios Poderosos Que Você Pode Experimentar",
       "subtitle": "Beats binaurais, tons isocrônicos, portadoras Solfeggio e camadas de ruído podem apoiar foco, relaxamento, sono, meditação, criatividade e humor.",
+      "explore": "Explorar",
       "benefit1": {
         "title": "Relaxamento Profundo e Alívio do Estresse",
         "description": "Alcance relaxamento profundo e derreta o estresse. Ruído calmante e batidas binaurais, junto com tons isocrônicos ou frequências Solfeggio, ajudam seu cérebro a entrar em estados profundamente relaxados, reduzindo a ansiedade e promovendo calma."

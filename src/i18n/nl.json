@@ -10,6 +10,9 @@
     "about": "Over",
     "benefits": "Voordelen",
     "download": "Downloaden",
+    "downloadApp": "Download app",
+    "appExamples": "App voorbeelden",
+    "research": "Onderzoek",
     "pricing": "Prijzen",
     "faq": "Veelgestelde vragen"
   },
@@ -113,6 +116,7 @@
     "benefits": {
       "title": "Krachtige Voordelen die Je Kunt Ervaren",
       "subtitle": "Binaural beats, isochrone beats, Solfeggio-tonen en white noise sessies kunnen je helpen opmerkelijke mentale staten en resultaten te bereiken",
+      "explore": "Ontdek",
       "benefit1": {
         "title": "Diepe Ontspanning & Stressverlichting",
         "description": "Bereik diepe ontspanning en smelt stress weg. Kalmerende ruis en binaural beats, gecombineerd met isochrone tonen of Solfeggio-frequenties, helpen je brein diep ontspannen staten binnen te gaan, angst te verminderen en kalmte te bevorderen."

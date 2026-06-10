@@ -10,12 +10,15 @@
     "about": "About",
     "benefits": "Benefits",
     "download": "Download",
+    "downloadApp": "Download App",
+    "appExamples": "App examples",
+    "research": "Research",
     "pricing": "Pricing",
     "faq": "FAQ"
   },
   "hero": {
-    "headline": "Unlock Your Brain's Potential",
-    "subtitle": "Custom beats and noise to relax, focus, meditate, be creative, and sleep better. Whether you are seeking relief from AD/HD symptoms, deeper meditation, better sleep, boosted creativity, or sharper focus, MindState gives you tools to design mixes tailored to your needs.",
+    "headline": "Support your brain potential",
+    "subtitle": "Discover custom-made beats and sounds that can help you <strong>relax</strong>, <strong>focus</strong>, <strong>meditate</strong>, unleash your <strong>creativity</strong>, enjoy deeper <strong>sleep</strong>, reduce <strong>tinnitus</strong>, and cultivate <strong>happy vibes</strong>. <strong>This is your go-to app for mental wellness.</strong>",
     "tagline": "Available on Android with professional audio quality. Free to try.",
     "ctaDownload": "Download on Play Store",
     "ctaLearnMore": "Learn More"
@@ -111,8 +114,9 @@
     "heroTitle": "Unlock Your Brain's Potential",
     "heroSubtitle": "Custom Beats & Noises to Relax, Focus, Meditate, Be Creative & Sleep Better",
     "benefits": {
-      "title": "Powerful Benefits You Can Experience",
-      "subtitle": "Binaural beats, isochronic tones, Solfeggio carriers, and noise beds can support focus, relaxation, sleep, meditation, creativity, and mood.",
+      "title": "Backed by science. Designed for your mind.",
+      "subtitle": "",
+      "explore": "Explore",
       "benefit1": {
         "title": "Deep Relaxation & Stress Relief",
         "description": "Achieve profound relaxation and melt away stress. Calming noise and binaural beats, paired with isochronic tones or solfeggio frequencies, help your brain enter deeply relaxed states, reducing anxiety and promoting calm."

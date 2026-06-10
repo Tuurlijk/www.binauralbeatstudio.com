@@ -2,13 +2,32 @@
 import Layout from '../../layouts/Layout.astro';
 import Minimap from '../../components/Minimap.astro';
 import Graph from '../../components/Graph.astro';
+import { buildPageStructuredData } from '../../lib/structured-data';
+import { getSchemaLanguage } from '../../lib/seo';
+import type { Locale } from '../../i18n/types';
+
+const siteUrl = new URL('/', Astro.site).toString();
+const pageUrl = new URL(Astro.url.pathname, Astro.site).toString();
+const socialImageUrl = new URL('/images/social-card.png', Astro.site).toString();
+const pageTitle = 'Pinch-to-Zoom Demo';
+const pageDescription =
+	'Interactive minimap and graph components with pinch-to-zoom functionality for the MindState website.';
+
+const structuredData = buildPageStructuredData({
+	siteUrl,
+	pageUrl,
+	title: pageTitle,
+	description: pageDescription,
+	socialImageUrl,
+	inLanguage: getSchemaLanguage(Astro.currentLocale as Locale),
+});
 ---
 
-<Layout title="Pinch-to-Zoom Demo" description="Interactive minimap and graph components with pinch-to-zoom functionality">
-	<section class="py-20 px-4 sm:px-6 lg:px-8">
+<Layout title={pageTitle} description={pageDescription} structuredData={structuredData}>
+	<section class="py-20 px-4 sm:px-6 lg:px-8" aria-labelledby="demo-heading">
 		<div class="max-w-7xl mx-auto">
 			<div class="text-center mb-12">
-				<h1 class="text-4xl md:text-5xl font-bold mb-4 text-bhutan-primary">
+				<h1 id="demo-heading" class="text-4xl md:text-5xl font-bold mb-4 text-bhutan-primary">
 					Interactive Components Demo
 				</h1>
 				<p class="text-xl max-w-3xl mx-auto text-bhutan-secondary">
@@ -17,21 +36,21 @@ import Graph from '../../components/Graph.astro';
 			</div>
 
 			<div class="space-y-12">
-				<div>
-					<h2 class="text-2xl font-bold mb-4 text-bhutan-primary">Minimap Component</h2>
+				<article aria-labelledby="minimap-heading">
+					<h2 id="minimap-heading" class="text-2xl font-bold mb-4 text-bhutan-primary">Minimap Component</h2>
 					<p class="text-bhutan-secondary mb-4">
 						Timeline overview with pinch-to-zoom. Use two fingers to zoom, drag to pan, or use the zoom controls.
 					</p>
 					<Minimap />
-				</div>
+				</article>
 
-				<div>
-					<h2 class="text-2xl font-bold mb-4 text-bhutan-primary">Graph Component</h2>
+				<article aria-labelledby="graph-heading">
+					<h2 id="graph-heading" class="text-2xl font-bold mb-4 text-bhutan-primary">Graph Component</h2>
 					<p class="text-bhutan-secondary mb-4">
 						Waveform and frequency graph with pinch-to-zoom. Use two fingers to zoom, drag to pan, or use the zoom controls.
 					</p>
 					<Graph />
-				</div>
+				</article>
 			</div>
 		</div>
 	</section>

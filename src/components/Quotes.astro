@@ -4,12 +4,14 @@ import type { Locale } from '../i18n/types';
 
 const locale = Astro.currentLocale as Locale;
 const translations = await loadTranslations(locale);
+
+const quoteOrder = [9, 10, 1, 2, 3, 4, 5, 6, 7, 8] as const;
 ---
 
-<section id="quotes" class="section-gradient py-20 px-4 sm:px-6 lg:px-8">
+<section id="quotes" class="section-gradient py-20 px-4 sm:px-6 lg:px-8" aria-labelledby="quotes-heading">
 	<div class="max-w-7xl mx-auto">
 		<div class="text-center mb-16">
-			<h2 class="text-4xl md:text-5xl font-bold mb-4 text-bhutan-primary">
+			<h2 id="quotes-heading" class="text-4xl md:text-5xl font-bold mb-4 text-bhutan-primary">
 				{t('quotes.title', locale, translations)}
 			</h2>
 			<p class="text-xl max-w-3xl mx-auto text-bhutan-secondary">
@@ -18,155 +20,24 @@ const translations = await loadTranslations(locale);
 		</div>
 
 		<div class="grid grid-cols-1 md:grid-cols-2 gap-8 quotes-grid">
-			<!-- Quote 9 (AD/HD) -->
-			<div class="quote-card quote-9 p-8 rounded-2xl border" style="background-color: var(--bg-secondary); border-color: var(--border-light);">
-				<div class="mb-4">
-					<svg class="w-8 h-8 text-bhutan-accent opacity-50" fill="currentColor" viewBox="0 0 24 24">
-						<path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.996 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.984zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/>
-					</svg>
-				</div>
-				<p class="text-lg md:text-xl italic mb-4 leading-relaxed text-bhutan-primary">
-					"{t('quotes.quote9.text', locale, translations)}"
-				</p>
-				<p class="text-sm text-bhutan-secondary">
-					— {t('quotes.quote9.source', locale, translations)}
-				</p>
-			</div>
-
-			<!-- Quote 10 (AD/HD) -->
-			<div class="quote-card quote-10 p-8 rounded-2xl border" style="background-color: var(--bg-secondary); border-color: var(--border-light);">
-				<div class="mb-4">
-					<svg class="w-8 h-8 text-bhutan-accent opacity-50" fill="currentColor" viewBox="0 0 24 24">
-						<path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.996 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.984zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/>
-					</svg>
-				</div>
-				<p class="text-lg md:text-xl italic mb-4 leading-relaxed text-bhutan-primary">
-					"{t('quotes.quote10.text', locale, translations)}"
-				</p>
-				<p class="text-sm text-bhutan-secondary">
-					— {t('quotes.quote10.source', locale, translations)}
-				</p>
-			</div>
-
-			<!-- Quote 1 -->
-			<div class="quote-card quote-1 p-8 rounded-2xl border" style="background-color: var(--bg-secondary); border-color: var(--border-light);">
-				<div class="mb-4">
-					<svg class="w-8 h-8 text-bhutan-accent opacity-50" fill="currentColor" viewBox="0 0 24 24">
-						<path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.996 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.984zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/>
-					</svg>
-				</div>
-				<p class="text-lg md:text-xl italic mb-4 leading-relaxed text-bhutan-primary">
-					"{t('quotes.quote1.text', locale, translations)}"
-				</p>
-				<p class="text-sm text-bhutan-secondary">
-					— {t('quotes.quote1.source', locale, translations)}
-				</p>
-			</div>
-
-			<!-- Quote 2 -->
-			<div class="quote-card quote-2 p-8 rounded-2xl border" style="background-color: var(--bg-secondary); border-color: var(--border-light);">
-				<div class="mb-4">
-					<svg class="w-8 h-8 text-bhutan-accent opacity-50" fill="currentColor" viewBox="0 0 24 24">
-						<path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.996 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.984zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/>
-					</svg>
-				</div>
-				<p class="text-lg md:text-xl italic mb-4 leading-relaxed text-bhutan-primary">
-					"{t('quotes.quote2.text', locale, translations)}"
-				</p>
-				<p class="text-sm text-bhutan-secondary">
-					— {t('quotes.quote2.source', locale, translations)}
-				</p>
-			</div>
-
-			<!-- Quote 3 -->
-			<div class="quote-card quote-3 p-8 rounded-2xl border" style="background-color: var(--bg-secondary); border-color: var(--border-light);">
-				<div class="mb-4">
-					<svg class="w-8 h-8 text-bhutan-accent opacity-50" fill="currentColor" viewBox="0 0 24 24">
-						<path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.996 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.984zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/>
-					</svg>
-				</div>
-				<p class="text-lg md:text-xl italic mb-4 leading-relaxed text-bhutan-primary">
-					"{t('quotes.quote3.text', locale, translations)}"
-				</p>
-				<p class="text-sm text-bhutan-secondary">
-					— {t('quotes.quote3.source', locale, translations)}
-				</p>
-			</div>
-
-			<!-- Quote 4 -->
-			<div class="quote-card quote-4 p-8 rounded-2xl border" style="background-color: var(--bg-secondary); border-color: var(--border-light);">
-				<div class="mb-4">
-					<svg class="w-8 h-8 text-bhutan-accent opacity-50" fill="currentColor" viewBox="0 0 24 24">
-						<path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.996 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.984zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/>
-					</svg>
-				</div>
-				<p class="text-lg md:text-xl italic mb-4 leading-relaxed text-bhutan-primary">
-					"{t('quotes.quote4.text', locale, translations)}"
-				</p>
-				<p class="text-sm text-bhutan-secondary">
-					— {t('quotes.quote4.source', locale, translations)}
-				</p>
-			</div>
-
-			<!-- Quote 5 -->
-			<div class="quote-card quote-5 p-8 rounded-2xl border" style="background-color: var(--bg-secondary); border-color: var(--border-light);">
-				<div class="mb-4">
-					<svg class="w-8 h-8 text-bhutan-accent opacity-50" fill="currentColor" viewBox="0 0 24 24">
-						<path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.996 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.984zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/>
-					</svg>
-				</div>
-				<p class="text-lg md:text-xl italic mb-4 leading-relaxed text-bhutan-primary">
-					"{t('quotes.quote5.text', locale, translations)}"
-				</p>
-				<p class="text-sm text-bhutan-secondary">
-					— {t('quotes.quote5.source', locale, translations)}
-				</p>
-			</div>
-
-			<!-- Quote 6 -->
-			<div class="quote-card quote-6 p-8 rounded-2xl border" style="background-color: var(--bg-secondary); border-color: var(--border-light);">
-				<div class="mb-4">
-					<svg class="w-8 h-8 text-bhutan-accent opacity-50" fill="currentColor" viewBox="0 0 24 24">
-						<path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.996 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.984zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/>
-					</svg>
-				</div>
-				<p class="text-lg md:text-xl italic mb-4 leading-relaxed text-bhutan-primary">
-					"{t('quotes.quote6.text', locale, translations)}"
-				</p>
-				<p class="text-sm text-bhutan-secondary">
-					— {t('quotes.quote6.source', locale, translations)}
-				</p>
-			</div>
-
-			<!-- Quote 7 -->
-			<div class="quote-card quote-7 p-8 rounded-2xl border" style="background-color: var(--bg-secondary); border-color: var(--border-light);">
-				<div class="mb-4">
-					<svg class="w-8 h-8 text-bhutan-accent opacity-50" fill="currentColor" viewBox="0 0 24 24">
-						<path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.996 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.984zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/>
-					</svg>
-				</div>
-				<p class="text-lg md:text-xl italic mb-4 leading-relaxed text-bhutan-primary">
-					"{t('quotes.quote7.text', locale, translations)}"
-				</p>
-				<p class="text-sm text-bhutan-secondary">
-					— {t('quotes.quote7.source', locale, translations)}
-				</p>
-			</div>
-
-			<!-- Quote 8 -->
-			<div class="quote-card quote-8 p-8 rounded-2xl border" style="background-color: var(--bg-secondary); border-color: var(--border-light);">
-				<div class="mb-4">
-					<svg class="w-8 h-8 text-bhutan-accent opacity-50" fill="currentColor" viewBox="0 0 24 24">
-						<path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.996 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.984zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/>
-					</svg>
-				</div>
-				<p class="text-lg md:text-xl italic mb-4 leading-relaxed text-bhutan-primary">
-					"{t('quotes.quote8.text', locale, translations)}"
-				</p>
-				<p class="text-sm text-bhutan-secondary">
-					— {t('quotes.quote8.source', locale, translations)}
-				</p>
-			</div>
+			{quoteOrder.map((n) => (
+				<blockquote
+					class={`quote-card quote-${n} p-8 rounded-2xl border`}
+					style="background-color: var(--bg-secondary); border-color: var(--border-light);"
+				>
+					<div class="mb-4" aria-hidden="true">
+						<svg class="w-8 h-8 text-bhutan-accent opacity-50" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+							<path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.996 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.984zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/>
+						</svg>
+					</div>
+					<p class="text-lg md:text-xl italic mb-4 leading-relaxed text-bhutan-primary">
+						"{t(`quotes.quote${n}.text`, locale, translations)}"
+					</p>
+					<cite class="text-sm text-bhutan-secondary not-italic">
+						— {t(`quotes.quote${n}.source`, locale, translations)}
+					</cite>
+				</blockquote>
+			))}
 		</div>
 	</div>
 </section>
@@ -183,48 +54,17 @@ const translations = await loadTranslations(locale);
 		box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
 	}
 
-	/* Unique rotations for each quote */
-	.quote-1 {
-		transform: rotate(-2deg);
-	}
+	.quote-1 { transform: rotate(-2deg); }
+	.quote-2 { transform: rotate(1.5deg); }
+	.quote-3 { transform: rotate(-1deg); }
+	.quote-4 { transform: rotate(2deg); }
+	.quote-5 { transform: rotate(-1.5deg); }
+	.quote-6 { transform: rotate(0.5deg); }
+	.quote-7 { transform: rotate(-0.5deg); }
+	.quote-8 { transform: rotate(1deg); }
+	.quote-9 { transform: rotate(-1.2deg); }
+	.quote-10 { transform: rotate(0.8deg); }
 
-	.quote-2 {
-		transform: rotate(1.5deg);
-	}
-
-	.quote-3 {
-		transform: rotate(-1deg);
-	}
-
-	.quote-4 {
-		transform: rotate(2deg);
-	}
-
-	.quote-5 {
-		transform: rotate(-1.5deg);
-	}
-
-	.quote-6 {
-		transform: rotate(0.5deg);
-	}
-
-	.quote-7 {
-		transform: rotate(-0.5deg);
-	}
-
-	.quote-8 {
-		transform: rotate(1deg);
-	}
-
-	.quote-9 {
-		transform: rotate(-1.2deg);
-	}
-
-	.quote-10 {
-		transform: rotate(0.8deg);
-	}
-
-	/* Hover effects - straighten and lift */
 	.quote-card:hover {
 		transform: rotate(0deg) scale(1.03);
 		z-index: 10;
@@ -232,7 +72,6 @@ const translations = await loadTranslations(locale);
 		transition: transform 0.3s ease, box-shadow 0.3s ease, z-index 0s 0.3s;
 	}
 
-	/* Remove rotations on mobile for better readability */
 	@media (max-width: 767px) {
 		.quote-card {
 			transform: rotate(0deg) !important;
@@ -243,4 +82,3 @@ const translations = await loadTranslations(locale);
 		}
 	}
 </style>
-

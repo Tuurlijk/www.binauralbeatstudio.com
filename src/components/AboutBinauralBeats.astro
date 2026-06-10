@@ -6,15 +6,15 @@ const locale = Astro.currentLocale as Locale;
 const translations = await loadTranslations(locale);
 ---
 
-<section id="about-binaural-beats" class="section-plain py-20 px-4 sm:px-6 lg:px-8">
+<section id="about-binaural-beats" class="section-plain py-20 px-4 sm:px-6 lg:px-8" aria-labelledby="about-binaural-beats-heading">
 	<div class="max-w-7xl mx-auto">
 		<!-- How It Works Section -->
 		<div class="mb-20">
 			<div class="max-w-4xl mx-auto">
 				<div class="text-center mb-12">
-					<h3 class="text-3xl md:text-4xl font-bold mb-4 text-bhutan-primary">
+					<h2 id="about-binaural-beats-heading" class="text-3xl md:text-4xl font-bold mb-4 text-bhutan-primary">
 						{t('aboutBinauralBeats.howItWorks.title', locale, translations)}
-					</h3>
+					</h2>
 					<p class="text-lg md:text-xl text-bhutan-secondary mb-8">
 						{t('aboutBinauralBeats.howItWorks.subtitle', locale, translations)}
 					</p>

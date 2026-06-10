@@ -1,311 +1,251 @@
 ---
 import { loadTranslations, t, getLocalizedHashLink } from '../utils/i18n';
 import type { Locale } from '../i18n/types';
-import StoreBadges from './StoreBadges.astro';
 
 const locale = Astro.currentLocale as Locale;
 const translations = await loadTranslations(locale);
 const base = import.meta.env.BASE_URL;
-const showRefreshHeroArt = false;
-const heroLayoutClass = showRefreshHeroArt
-	? 'grid items-center gap-12 lg:grid-cols-[minmax(0,1.08fr)_minmax(340px,0.92fr)]'
-	: 'hero-content-wrap text-center';
-const heroTextClass = showRefreshHeroArt ? 'text-center lg:text-left' : 'text-center';
-const heroKickerClass = showRefreshHeroArt ? 'hero-kicker mx-auto mb-5 w-fit lg:mx-0' : 'hero-kicker mx-auto mb-5 w-fit';
-const heroCtaClass = showRefreshHeroArt
-	? 'flex flex-col sm:flex-row gap-4 justify-center items-center lg:justify-start'
-	: 'flex flex-col sm:flex-row gap-4 justify-center items-center';
 ---
 
 <section
-	class={`hero-section ${showRefreshHeroArt ? 'hero-section--refresh-bg' : 'hero-section--legacy-bg'} px-4 sm:px-6 lg:px-8`}
-	style={`--header-bg-url: url('${base}images/header.png')`}
+	id="hero"
+	class="hero-section px-4 sm:px-6 lg:px-8"
+	style={`--hero-bg-url: url('${base}images/hero/header-background.png'); --hero-circle-url: url('${base}images/hero/header-symbol-circle.png');`}
+	aria-labelledby="hero-heading"
 >
 	<div class="max-w-7xl mx-auto relative z-10">
-		<div class={heroLayoutClass}>
-			<div class={heroTextClass}>
-				<div class={heroKickerClass}>
-					{t('hero.tagline', locale, translations)}
-				</div>
-				<h1 class="text-6xl md:text-7xl lg:text-8xl font-bold mb-6 leading-[0.88]" style="color: var(--text-primary);">
-				{t('hero.headline', locale, translations)}
+		<div class="hero-content">
+			<div class="hero-copy-block">
+				<h1 id="hero-heading" class="hero-title">
+					{t('hero.headline', locale, translations)}
 				</h1>
-				<p class="hero-copy text-xl md:text-2xl mb-8 max-w-3xl mx-auto leading-relaxed lg:mx-0" style="color: var(--text-secondary);">
-					{t('hero.subtitle', locale, translations)}
-				</p>
-				<div class={heroCtaClass}>
-					<StoreBadges />
-					<a 
-						href={getLocalizedHashLink('#features', locale)}
-						class="hero-secondary-cta px-8 py-4 rounded-full text-lg font-semibold border-2 transition-all text-bhutan-accent"
-					>
-						{t('hero.ctaLearnMore', locale, translations)}
-					</a>
-				</div>
+				<p class="hero-copy" set:html={t('hero.subtitle', locale, translations)} />
 			</div>
 
-			{showRefreshHeroArt && (
-				<div class="hero-art" aria-hidden="true">
-					<div class="hero-art-card hero-art-card-1"></div>
-					<div class="hero-art-card hero-art-card-2"></div>
-					<div class="hero-phone">
-						<div class="hero-phone-speaker"></div>
-						<img src={`${base}images/app-icon.svg`} alt="" class="hero-phone-icon" />
-						<div class="hero-wave hero-wave-1"></div>
-						<div class="hero-wave hero-wave-2"></div>
-						<div class="hero-wave hero-wave-3"></div>
-					</div>
-					<div class="hero-badge">Free<br />to try</div>
-				</div>
-			)}
+			<a class="hero-scroll-cue" href={getLocalizedHashLink('#benefits', locale)} aria-label="Scroll to benefits">
+				<span aria-hidden="true">↓</span>
+			</a>
 		</div>
+	</div>
+	<div class="hero-art" aria-hidden="true">
+		<picture>
+			<source srcset={`${base}images/hero/header-people.webp`} type="image/webp" />
+			<img
+				class="hero-people"
+				src={`${base}images/hero/header-people.png`}
+				alt=""
+				width="1600"
+				height="1357"
+				loading="eager"
+				decoding="async"
+			/>
+		</picture>
+		<div class="hero-symbol-circle"></div>
+		<div class="hero-badge">Free<br />to try</div>
 	</div>
 </section>
 
 <style>
 	.hero-section {
-		min-height: 760px;
-		overflow: hidden;
-		padding-bottom: 6rem;
-		padding-top: 9rem;
-		position: relative;
-	}
+		--hero-padding-bottom: clamp(4rem, 6vw, 6rem);
+		--hero-bg-split: calc(50% + clamp(9.25rem, 13.8vw, 12.5rem));
 
-	.hero-section--legacy-bg {
-		background-image: var(--header-bg-url);
-		background-position: center;
+		background-image: var(--hero-bg-url),
+			linear-gradient(
+				90deg,
+				#5a5420 0 var(--hero-bg-split),
+				transparent var(--hero-bg-split) 100%
+			),
+			linear-gradient(
+				180deg,
+				#858414 0%,
+				#c5cc02 20%,
+				#cdd604 50%,
+				#c3cb03 78%,
+				#a6a90b 100%
+			);
+		background-position: top center, top center, top center;
 		background-repeat: no-repeat;
-		background-size: cover;
-	}
-
-	.hero-section--refresh-bg {
-		background:
-			radial-gradient(circle at 72% 18%, rgba(255, 255, 255, 0.32), transparent 12rem),
-			linear-gradient(120deg, #f45f11 0%, #ff7b22 45%, #c33c76 100%);
-	}
-
-	.hero-section--legacy-bg::before {
-		background: linear-gradient(
-			to bottom right,
-			rgba(244, 95, 17, 0.12),
-			rgba(255, 247, 240, 0.84),
-			rgba(168, 116, 93, 0.12)
-		);
-		content: "";
-		position: absolute;
-		inset: 0;
-		z-index: 0;
-	}
-
-	.hero-section--refresh-bg::before {
-		background:
-			linear-gradient(90deg, rgba(255, 247, 240, 0.96), rgba(255, 247, 240, 0.8) 48%, rgba(255, 247, 240, 0.08)),
-			radial-gradient(circle at 15% 30%, rgba(255, 255, 255, 0.88), transparent 25rem);
-		content: "";
-		position: absolute;
-		inset: 0;
-		z-index: 0;
-	}
-
-	.hero-section--refresh-bg::after {
-		background:
-			linear-gradient(90deg, rgba(255, 255, 255, 0.24) 1px, transparent 1px),
-			linear-gradient(0deg, rgba(255, 255, 255, 0.18) 1px, transparent 1px);
-		background-size: 4rem 4rem;
-		content: "";
-		inset: 0;
-		opacity: 0.25;
-		position: absolute;
-		z-index: 0;
-	}
-
-	.hero-content-wrap {
-		margin-inline: auto;
-		max-width: 58rem;
-	}
-
-	.hero-copy {
-		font-family: var(--font-copy);
-		font-weight: var(--font-weight-body);
-	}
-
-	.hero-kicker {
-		background: rgba(255, 255, 255, 0.72);
-		border: 1px solid var(--border-light);
-		border-radius: 999px;
-		box-shadow: var(--shadow-soft);
-		color: var(--accent);
-		font-family: var(--font-body);
-		font-weight: var(--font-weight-ui);
-		padding: 0.55rem 1rem;
-		text-transform: uppercase;
-	}
-
-	.hero-secondary-cta {
-		background: rgba(255, 255, 255, 0.5);
-		border-color: rgba(104, 31, 54, 0.24);
-		box-shadow: var(--shadow-soft);
-	}
-
-	.hero-secondary-cta:hover {
-		background: rgba(255, 255, 255, 0.84);
-		border-color: var(--primary);
-		transform: translateY(-2px);
-	}
-
-	.hero-art {
-		display: grid;
-		min-height: 520px;
-		place-items: center;
+		background-size: auto 100%, 100% 100%, 100% 100%;
+		color: #fff;
+		min-height: clamp(36rem, 53vw, 48rem);
+		overflow: hidden;
+		padding-bottom: var(--hero-padding-bottom);
+		padding-top: clamp(8rem, 11vw, 10rem);
 		position: relative;
 	}
 
-	.hero-art-card {
-		border-radius: 2rem;
-		box-shadow: 0 28px 80px rgba(45, 18, 16, 0.24);
-		position: absolute;
-	}
-
-	.hero-art-card-1 {
-		background: linear-gradient(145deg, rgba(255, 247, 240, 0.78), rgba(255, 138, 61, 0.5));
-		height: 78%;
-		right: 9%;
-		top: 6%;
-		transform: rotate(8deg);
-		width: 58%;
-	}
-
-	.hero-art-card-2 {
-		background: linear-gradient(145deg, rgba(104, 31, 54, 0.82), rgba(195, 60, 118, 0.58));
-		bottom: 8%;
-		height: 62%;
-		left: 4%;
-		transform: rotate(-10deg);
-		width: 54%;
-	}
-
-	.hero-phone {
-		aspect-ratio: 9 / 18.5;
-		background: linear-gradient(180deg, #2d1210, #681f36);
-		border: 10px solid #18070b;
-		border-radius: 2.4rem;
-		box-shadow: 0 30px 80px rgba(45, 18, 16, 0.42);
-		display: flex;
-		flex-direction: column;
-		gap: 1rem;
-		justify-content: center;
-		max-width: 245px;
-		padding: 2.8rem 1.3rem;
+	.hero-content {
+		min-height: clamp(25rem, 37vw, 34rem);
 		position: relative;
-		width: min(58vw, 245px);
+	}
+
+	.hero-copy-block {
+		max-width: min(46vw, 42rem);
+		padding-top: clamp(4rem, 10vw, 9.5rem);
+		position: relative;
 		z-index: 2;
 	}
 
-	.hero-phone-speaker {
-		background: rgba(255, 247, 240, 0.18);
-		border-radius: 999px;
-		height: 0.35rem;
+	.hero-title {
+		color: #d2d900;
+		font-family: var(--font-display);
+		font-size: var(--type-section-title);
+		font-weight: var(--font-weight-display);
+		letter-spacing: 0.01em;
+		line-height: 0.82;
+		margin: 0 0 1.35rem;
+		text-wrap: balance;
+	}
+
+	.hero-copy {
+		color: rgba(255, 255, 255, 0.82);
+		font-family: var(--font-copy);
+		font-size: clamp(1.15rem, 0.92rem + 0.55vw, 1.65rem);
+		font-weight: var(--font-weight-body);
+		line-height: 1.2;
+		margin: 0;
+		max-width: 36rem;
+	}
+
+	.hero-copy :global(strong) {
+		color: #fff;
+		font-weight: 700;
+	}
+
+	.hero-art {
+		bottom: 0;
 		left: 50%;
+		max-width: 80rem;
+		pointer-events: none;
 		position: absolute;
-		top: 1rem;
+		top: 0;
 		transform: translateX(-50%);
-		width: 4rem;
+		width: calc(100% - 4rem);
+		z-index: 1;
 	}
 
-	.hero-phone-icon {
-		align-self: center;
-		filter: drop-shadow(0 16px 24px rgba(0, 0, 0, 0.28));
-		width: 5.5rem;
+	.hero-people {
+		bottom: 0;
+		height: auto;
+		position: absolute;
+		right: 0;
+		width: min(50vw, 43rem);
+		z-index: 1;
 	}
 
-	.hero-wave {
-		background: linear-gradient(90deg, #f45f11, #fff7f0, #c33c76);
-		border-radius: 999px;
-		height: 0.7rem;
-		opacity: 0.92;
-	}
-
-	.hero-wave-1 {
-		width: 72%;
-	}
-
-	.hero-wave-2 {
-		margin-left: auto;
-		width: 92%;
-	}
-
-	.hero-wave-3 {
-		width: 58%;
+	.hero-symbol-circle {
+		background-image: var(--hero-circle-url);
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: contain;
+		height: clamp(9rem, 12vw, 13rem);
+		opacity: 0.78;
+		position: absolute;
+		right: clamp(3.25rem, 5vw, 5rem);
+		top: clamp(6.75rem, 19%, 9.5rem);
+		width: clamp(9rem, 12vw, 13rem);
+		z-index: 2;
 	}
 
 	.hero-badge {
 		align-items: center;
-		background: var(--bg-secondary);
+		background: #0796a7;
 		border-radius: 999px;
-		box-shadow: var(--shadow-card);
-		color: var(--primary);
+		box-shadow: 0 18px 40px rgba(0, 0, 0, 0.18);
+		color: #fff;
 		display: flex;
 		font-family: var(--font-display);
-		font-size: clamp(1.5rem, 4vw, 2.8rem);
-		font-weight: 900;
-		height: 8rem;
+		font-size: clamp(1.3rem, 2.4vw, 2.4rem);
+		font-weight: var(--font-weight-display);
+		height: clamp(5.5rem, 8vw, 7.5rem);
 		justify-content: center;
 		line-height: 0.82;
 		position: absolute;
-		right: 2%;
+		right: clamp(0.75rem, 2vw, 2rem);
 		text-align: center;
 		text-transform: uppercase;
-		top: 13%;
-		transform: rotate(9deg);
-		width: 8rem;
+		top: clamp(13.5rem, 34%, 17rem);
+		width: clamp(5.5rem, 8vw, 7.5rem);
 		z-index: 3;
 	}
 
-	@media (prefers-color-scheme: dark) {
-		.hero-section--legacy-bg::before {
-			background: linear-gradient(
-				to bottom right,
-				rgba(244, 95, 17, 0.12),
-				rgba(34, 12, 18, 0.84),
-				rgba(168, 116, 93, 0.12)
-			);
-		}
+	.hero-scroll-cue {
+		align-items: center;
+		border: 1px solid rgba(255, 255, 255, 0.58);
+		border-radius: 999px;
+		bottom: 0;
+		color: rgba(255, 255, 255, 0.8);
+		display: flex;
+		font-family: var(--font-body);
+		font-size: 1.35rem;
+		height: 3.2rem;
+		justify-content: center;
+		left: 50%;
+		position: absolute;
+		text-decoration: none;
+		transform: translateX(-50%);
+		transition: background-color 0.2s ease, color 0.2s ease;
+		width: 2.25rem;
+		z-index: 5;
+	}
 
-		.hero-section--refresh-bg::before {
-			background:
-				linear-gradient(90deg, rgba(34, 12, 18, 0.92), rgba(50, 16, 25, 0.78) 48%, rgba(34, 12, 18, 0.08)),
-				radial-gradient(circle at 15% 30%, rgba(104, 31, 54, 0.58), transparent 25rem);
-		}
-
-		.hero-kicker,
-		.hero-secondary-cta {
-			background: rgba(69, 21, 33, 0.64);
-		}
+	.hero-scroll-cue:hover {
+		background: rgba(255, 255, 255, 0.12);
+		color: #fff;
 	}
 
 	@media (max-width: 1023px) {
 		.hero-section {
+			background-position: top center, top center;
+			min-height: 46rem;
 			padding-top: 7.5rem;
 		}
 
-		.hero-section--refresh-bg::before {
-			background: linear-gradient(180deg, rgba(255, 247, 240, 0.94), rgba(255, 247, 240, 0.62) 62%, rgba(255, 247, 240, 0.12));
+		.hero-people {
+			opacity: 0.9;
+			right: -7rem;
+			width: min(82vw, 38rem);
 		}
 
-		.hero-art {
-			min-height: 430px;
+		.hero-copy-block {
+			max-width: 37rem;
+			padding-top: 3rem;
+		}
+
+		.hero-symbol-circle,
+		.hero-badge {
+			display: none;
 		}
 	}
 
 	@media (max-width: 640px) {
 		.hero-section {
-			min-height: auto;
-			padding-bottom: 4rem;
+			--hero-padding-bottom: 3.5rem;
+
+			min-height: 43rem;
+			padding-bottom: var(--hero-padding-bottom);
+			padding-top: 6.5rem;
 		}
 
-		.hero-badge {
-			height: 6rem;
-			width: 6rem;
+		.hero-people {
+			opacity: 0.58;
+			right: -12rem;
+			width: 33rem;
+		}
+
+		.hero-copy-block {
+			max-width: 100%;
+			padding-top: 2.5rem;
+		}
+
+		.hero-title {
+			max-width: 20rem;
+		}
+
+		.hero-copy {
+			font-size: 1.12rem;
+			max-width: 20rem;
 		}
 	}
 </style>

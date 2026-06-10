@@ -2,8 +2,13 @@
 import { getLocalizedLink, getPagePathFromUrl } from '../utils/i18n';
 import type { Locale } from '../i18n/types';
 
+interface Props {
+	variant?: 'default' | 'hero';
+}
+
 const locale = Astro.currentLocale as Locale;
 const pagePath = getPagePathFromUrl(Astro.url.pathname);
+const variant = Astro.props.variant ?? 'default';
 
 // Languages ordered by total speakers (native + second language) - largest audience first
 const languages = [
@@ -28,7 +33,7 @@ const menuId = uniqueId;
 const chevronId = `${uniqueId}-chevron`;
 ---
 
-<div class="language-switcher relative">
+<div class={`language-switcher language-switcher--${variant} relative`}>
 	<input type="checkbox" id={toggleId} class="hidden" />
 	<div class="absolute right-0 mt-2 w-56 bg-bhutan-secondary border border-bhutan-light rounded-xl shadow-2xl overflow-hidden z-50 backdrop-blur-sm" id={menuId} style="background-color: var(--bg-secondary); opacity: 0.98; max-height: 80vh; overflow-y: auto;">
 		<div class="py-2">
@@ -61,13 +66,13 @@ const chevronId = `${uniqueId}-chevron`;
 	</div>
 	<label 
 		for={toggleId}
-		class="flex items-center gap-2 bg-bhutan-secondary border border-bhutan-light rounded-lg px-4 py-2 cursor-pointer hover:bg-bhutan-primary transition-all duration-200 hover:border-bhutan-accent group" 
+		class="language-switcher__button flex items-center gap-2 bg-bhutan-secondary border border-bhutan-light rounded-lg px-4 py-2 cursor-pointer hover:bg-bhutan-primary transition-all duration-200 hover:border-bhutan-accent group" 
 		aria-label="Select language" 
 		aria-expanded="false" 
 		aria-haspopup="true"
 	>
-		<span class="text-bhutan-primary font-medium">{currentLang.nativeName}</span>
-		<svg class="w-4 h-4 text-bhutan-secondary transition-transform duration-200 group-hover:text-bhutan-accent" id={chevronId} fill="none" stroke="currentColor" viewBox="0 0 24 24">
+		<span class="language-switcher__current text-bhutan-primary font-medium">{currentLang.nativeName}</span>
+		<svg class="language-switcher__chevron w-4 h-4 text-bhutan-secondary transition-transform duration-200 group-hover:text-bhutan-accent" id={chevronId} fill="none" stroke="currentColor" viewBox="0 0 24 24">
 			<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
 		</svg>
 	</label>
@@ -115,6 +120,26 @@ const chevronId = `${uniqueId}-chevron`;
 	
 	.language-switcher div[id^="language-menu-"] a {
 		transition: all 0.2s ease-out;
+	}
+
+	.language-switcher--hero .language-switcher__button {
+		background: rgba(255, 255, 255, 0.04);
+		border-color: rgba(255, 255, 255, 0.46);
+		border-radius: 999px;
+		color: rgba(255, 255, 255, 0.9);
+		font-size: clamp(1rem, 0.9rem + 0.2vw, 1.12rem);
+		min-width: 6.7rem;
+		padding-block: 0.5rem;
+	}
+
+	.language-switcher--hero .language-switcher__button:hover {
+		background: rgba(255, 255, 255, 0.14);
+		border-color: rgba(255, 255, 255, 0.7);
+	}
+
+	.language-switcher--hero .language-switcher__current,
+	.language-switcher--hero .language-switcher__chevron {
+		color: rgba(255, 255, 255, 0.92);
 	}
 
 	/* Active state styling */

@@ -4,10 +4,16 @@ import { getAbsoluteLocaleUrl } from 'astro:i18n';
 import { loadTranslations, t, getLocalizedHashLink, getPagePathFromUrl } from '../utils/i18n';
 import type { Locale } from '../i18n/types';
 import LanguageSwitcher from '../components/LanguageSwitcher.astro';
+import { buildDefaultStructuredData } from '../lib/structured-data';
+import { getOgLocale } from '../lib/seo';
 
 interface Props {
 	title?: string;
 	description?: string;
+	ogType?: 'website' | 'article';
+	structuredData?: Record<string, unknown>;
+	socialImageUrl?: string;
+	socialImageAlt?: string;
 }
 
 const locale = Astro.currentLocale as Locale;
@@ -16,9 +22,27 @@ const base = import.meta.env.BASE_URL;
 
 const title = Astro.props.title || t('meta.title', locale, translations);
 const description = Astro.props.description || t('meta.description', locale, translations);
+const ogType = Astro.props.ogType ?? 'website';
+const canonicalUrl = new URL(Astro.url.pathname, Astro.site).toString();
+const siteUrl = new URL('/', Astro.site).toString();
+const socialImageUrl =
+	Astro.props.socialImageUrl ?? new URL('/images/social-card.png', Astro.site).toString();
+const socialImageAlt =
+	Astro.props.socialImageAlt ??
+	'MindState, an app for building and listening to binaural beat mixes on Google Play';
+const ogLocale = getOgLocale(locale);
+const structuredData =
+	Astro.props.structuredData ??
+	buildDefaultStructuredData({
+		siteUrl,
+		description,
+		socialImageUrl,
+		inLanguage: ogLocale.replace('_', '-'),
+	});
 
 const locales: Locale[] = ['en', 'ar', 'es', 'hi', 'id', 'ja', 'nl', 'pt', 'ru', 'zh'];
 const pagePath = getPagePathFromUrl(Astro.url.pathname);
+const isHomePage = pagePath === '';
 const isRTL = locale === 'ar';
 ---
 
@@ -42,11 +66,14 @@ const isRTL = locale === 'ar';
 		<link rel="apple-touch-icon" sizes="167x167" href={`${base}apple-touch-icon-167x167.png`} />
 		<link rel="manifest" href={`${base}site.webmanifest`} />
 		<meta name="generator" content={Astro.generator} />
+		<meta name="theme-color" content="#f45f11" />
+		<link rel="canonical" href={canonicalUrl} />
 		
 		<!-- Primary Meta Tags -->
 		<title>{title}</title>
 		<meta name="title" content={title} />
 		<meta name="description" content={description} />
+		<meta name="author" content="MindStateLab BV" />
 		
 		<!-- hreflang tags for SEO -->
 		{locales.map((loc) => (
@@ -59,18 +86,29 @@ const isRTL = locale === 'ar';
 		<link rel="alternate" hreflang="x-default" href={getAbsoluteLocaleUrl('en', pagePath)} />
 		
 		<!-- Open Graph / Facebook -->
-		<meta property="og:type" content="website" />
+		<meta property="og:type" content={ogType} />
+		<meta property="og:url" content={canonicalUrl} />
 		<meta property="og:title" content={title} />
 		<meta property="og:description" content={description} />
-		<meta property="og:locale" content={locale} />
-		{locales.map((loc) => (
-			<meta property="og:locale:alternate" content={loc} />
+		<meta property="og:image" content={socialImageUrl} />
+		<meta property="og:image:url" content={socialImageUrl} />
+		<meta property="og:image:type" content="image/png" />
+		<meta property="og:image:width" content="1200" />
+		<meta property="og:image:height" content="630" />
+		<meta property="og:image:alt" content={socialImageAlt} />
+		<meta property="og:locale" content={ogLocale} />
+		<meta property="og:site_name" content="MindState" />
+		{locales.filter((loc) => loc !== locale).map((loc) => (
+			<meta property="og:locale:alternate" content={getOgLocale(loc)} />
 		))}
 		
 		<!-- Twitter -->
-		<meta property="twitter:card" content="summary_large_image" />
-		<meta property="twitter:title" content={title} />
-		<meta property="twitter:description" content={description} />
+		<meta name="twitter:card" content="summary_large_image" />
+		<meta name="twitter:title" content={title} />
+		<meta name="twitter:description" content={description} />
+		<meta name="twitter:image" content={socialImageUrl} />
+		<meta name="twitter:image:alt" content={socialImageAlt} />
+		<script is:inline type="application/ld+json" set:html={JSON.stringify(structuredData)} />
 		<style>
 			/* CSS-only mobile menu toggle */
 			#mobile-menu-toggle:checked ~ #mobile-menu-wrapper #mobile-menu {
@@ -92,37 +130,47 @@ const isRTL = locale === 'ar';
 			gtag('config', 'AW-1014717351');
 		</script>
 	</head>
-	<body class={`antialiased bg-bhutan-primary text-bhutan-primary ${isRTL ? 'rtl' : 'ltr'}`}>
-		<nav class="fixed top-0 left-0 right-0 z-50">
+	<body class={`antialiased bg-bhutan-primary text-bhutan-primary ${isRTL ? 'rtl' : 'ltr'} ${isHomePage ? 'layout--home-hero' : ''}`}>
+		<nav class={`site-nav fixed top-0 left-0 right-0 z-50 ${isHomePage ? 'site-nav--hero' : ''}`} aria-label="Main navigation">
 			<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 				<div class="nav-shell mt-4 flex justify-between items-center min-h-16 px-4 sm:px-5">
 					<div class="flex items-center">
-						<a href={base} class="flex items-center gap-3 transition-opacity hover:opacity-80">
-							<img 
-								src={`${base}images/app-icon.svg`}
-								alt="MindState app icon"
-								class="h-10 w-10"
-							/>
-							<span class="hidden sm:block leading-none">
-								<span class="brand-title block text-xl text-bhutan-primary">MindState</span>
-								<span class="block text-xs uppercase tracking-[0.24em] text-bhutan-secondary">Binaural Beat Studio</span>
-							</span>
+						<a href={base} class="site-logo-link flex items-center gap-3 transition-opacity hover:opacity-80">
+							{isHomePage ? (
+								<img
+									src={`${base}images/hero/header-logo.png`}
+									alt="MindState Binaural Beat Studio App"
+									class="site-logo-image"
+								/>
+							) : (
+								<>
+									<img 
+										src={`${base}images/app-icon.svg`}
+										alt="MindState app icon"
+										class="h-10 w-10"
+									/>
+									<span class="hidden sm:block leading-none">
+										<span class="brand-title block text-xl text-bhutan-primary">MindState</span>
+										<span class="block text-xs uppercase tracking-[0.24em] text-bhutan-secondary">Binaural Beat Studio</span>
+									</span>
+								</>
+							)}
 						</a>
 					</div>
-					<div class="hidden lg:flex items-center gap-5 text-sm font-semibold">
-						<a href={getLocalizedHashLink('#benefits', locale)} class="transition-colors text-bhutan-secondary hover:text-bhutan-accent">{t('nav.benefits', locale, translations)}</a>
-						<a href={getLocalizedHashLink('#features', locale)} class="transition-colors text-bhutan-secondary hover:text-bhutan-accent">{t('nav.features', locale, translations)}</a>
-						<a href={getLocalizedHashLink('#screenshots', locale)} class="transition-colors text-bhutan-secondary hover:text-bhutan-accent">{t('nav.screenshots', locale, translations)}</a>
-						<a href={getLocalizedHashLink('#how-it-works', locale)} class="transition-colors text-bhutan-secondary hover:text-bhutan-accent">{t('nav.howItWorks', locale, translations)}</a>
-						<a href={getLocalizedHashLink('#about-binaural-beats', locale)} class="transition-colors text-bhutan-secondary hover:text-bhutan-accent">{t('nav.about', locale, translations)}</a>
-						<a href={getLocalizedHashLink('#pricing', locale)} class="transition-colors text-bhutan-secondary hover:text-bhutan-accent">{t('nav.pricing', locale, translations)}</a>
-						<a href={getLocalizedHashLink('#faq', locale)} class="transition-colors text-bhutan-secondary hover:text-bhutan-accent">{t('nav.faq', locale, translations)}</a>
-						<a href={getLocalizedHashLink('#download', locale)} class="px-5 py-2.5 rounded-full transition-colors text-white bg-bhutan-accent hover:opacity-90">
-							{t('nav.download', locale, translations)}
+					<div class="nav-links hidden lg:flex items-center gap-5">
+						<a href={getLocalizedHashLink('#benefits', locale)} class="nav-link transition-colors">{t('nav.benefits', locale, translations)}</a>
+						<a href={getLocalizedHashLink('#features', locale)} class="nav-link transition-colors">{t('nav.features', locale, translations)}</a>
+						<a href={getLocalizedHashLink('#how-it-works', locale)} class="nav-link transition-colors">{t('nav.howItWorks', locale, translations)}</a>
+						<a href={getLocalizedHashLink('#screenshots', locale)} class="nav-link transition-colors">{t('nav.appExamples', locale, translations)}</a>
+						<a href={getLocalizedHashLink('#quotes', locale)} class="nav-link transition-colors">{t('nav.research', locale, translations)}</a>
+						<a href={getLocalizedHashLink('#faq', locale)} class="nav-link transition-colors">{t('nav.faq', locale, translations)}</a>
+						<a href={getLocalizedHashLink('#about-binaural-beats', locale)} class="nav-link transition-colors">{t('nav.about', locale, translations)}</a>
+						<a href={getLocalizedHashLink('#download', locale)} class="nav-download px-5 py-2.5 rounded-full transition-colors text-white bg-bhutan-accent hover:opacity-90">
+							{isHomePage ? t('nav.downloadApp', locale, translations) : t('nav.download', locale, translations)}
 						</a>
-						<LanguageSwitcher />
+						<LanguageSwitcher variant={isHomePage ? 'hero' : 'default'} />
 					</div>
-					<label for="mobile-menu-toggle" class="lg:hidden p-2 text-bhutan-secondary cursor-pointer" aria-label="Toggle menu">
+					<label for="mobile-menu-toggle" class={`nav-menu-toggle lg:hidden p-2 cursor-pointer ${isHomePage ? 'nav-menu-toggle--hero' : 'text-bhutan-secondary'}`} aria-label="Toggle menu">
 						<svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
 							<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
 						</svg>
@@ -135,12 +183,12 @@ const isRTL = locale === 'ar';
 				<div class="px-4 pt-2 pb-4 space-y-2" style="overflow: visible;">
 					<a href={getLocalizedHashLink('#benefits', locale)} class="block py-2 transition-colors text-bhutan-secondary hover:text-bhutan-accent">{t('nav.benefits', locale, translations)}</a>
 					<a href={getLocalizedHashLink('#features', locale)} class="block py-2 transition-colors text-bhutan-secondary hover:text-bhutan-accent">{t('nav.features', locale, translations)}</a>
-					<a href={getLocalizedHashLink('#screenshots', locale)} class="block py-2 transition-colors text-bhutan-secondary hover:text-bhutan-accent">{t('nav.screenshots', locale, translations)}</a>
 					<a href={getLocalizedHashLink('#how-it-works', locale)} class="block py-2 transition-colors text-bhutan-secondary hover:text-bhutan-accent">{t('nav.howItWorks', locale, translations)}</a>
-					<a href={getLocalizedHashLink('#about-binaural-beats', locale)} class="block py-2 transition-colors text-bhutan-secondary hover:text-bhutan-accent">{t('nav.about', locale, translations)}</a>
-					<a href={getLocalizedHashLink('#pricing', locale)} class="block py-2 transition-colors text-bhutan-secondary hover:text-bhutan-accent">{t('nav.pricing', locale, translations)}</a>
+					<a href={getLocalizedHashLink('#screenshots', locale)} class="block py-2 transition-colors text-bhutan-secondary hover:text-bhutan-accent">{t('nav.appExamples', locale, translations)}</a>
+					<a href={getLocalizedHashLink('#quotes', locale)} class="block py-2 transition-colors text-bhutan-secondary hover:text-bhutan-accent">{t('nav.research', locale, translations)}</a>
 					<a href={getLocalizedHashLink('#faq', locale)} class="block py-2 transition-colors text-bhutan-secondary hover:text-bhutan-accent">{t('nav.faq', locale, translations)}</a>
-					<a href={getLocalizedHashLink('#download', locale)} class="block py-2 text-white px-4 rounded-full text-center transition-colors bg-bhutan-accent hover:opacity-90">{t('nav.download', locale, translations)}</a>
+					<a href={getLocalizedHashLink('#about-binaural-beats', locale)} class="block py-2 transition-colors text-bhutan-secondary hover:text-bhutan-accent">{t('nav.about', locale, translations)}</a>
+					<a href={getLocalizedHashLink('#download', locale)} class="block py-2 text-white px-4 rounded-full text-center transition-colors bg-bhutan-accent hover:opacity-90">{isHomePage ? t('nav.downloadApp', locale, translations) : t('nav.download', locale, translations)}</a>
 					<div class="pt-4 border-t border-bhutan-light">
 						<LanguageSwitcher />
 					</div>
@@ -263,6 +311,70 @@ const isRTL = locale === 'ar';
 				border-radius: 999px;
 				box-shadow: var(--shadow-soft);
 				backdrop-filter: blur(18px);
+			}
+
+			.nav-links .nav-link {
+				font-size: 0.875rem;
+				font-weight: 600;
+			}
+
+			.nav-link {
+				color: var(--text-secondary);
+			}
+
+			.nav-link:hover {
+				color: var(--accent);
+			}
+
+			.site-logo-image {
+				display: block;
+				height: clamp(2.2rem, 2.1vw, 2.75rem);
+				object-fit: contain;
+				width: clamp(14rem, 18vw, 21rem);
+			}
+
+			.site-nav--hero .nav-shell {
+				background: transparent;
+				border-color: transparent;
+				box-shadow: none;
+				backdrop-filter: none;
+				padding-inline: 0;
+			}
+
+			.site-nav--hero .nav-links {
+				gap: clamp(1rem, 0.75rem + 0.45vw, 1.45rem);
+			}
+
+			.site-nav--hero .nav-link {
+				color: rgba(255, 255, 255, 0.82);
+				font-family: var(--font-body);
+				font-size: clamp(1.05rem, 0.9rem + 0.35vw, 1.28rem);
+				font-weight: var(--font-weight-ui);
+				line-height: 1.05;
+				text-shadow: 0 1px 10px rgba(0, 0, 0, 0.16);
+			}
+
+			.site-nav--hero .nav-link:hover {
+				color: #ffffff;
+			}
+
+			.site-nav--hero .nav-download {
+				background: linear-gradient(90deg, #0796a7 0%, #31bed0 100%);
+				box-shadow: 0 10px 28px rgba(0, 0, 0, 0.2);
+				color: #ffffff;
+				font-family: var(--font-body);
+				font-size: clamp(1rem, 0.9rem + 0.2vw, 1.15rem);
+				font-weight: var(--font-weight-card-title);
+				padding: 0.62rem 1.2rem;
+			}
+
+			.site-nav--hero .nav-download:hover {
+				opacity: 1;
+				transform: translateY(-1px);
+			}
+
+			.nav-menu-toggle--hero {
+				color: rgba(255, 255, 255, 0.9);
 			}
 
 			.site-footer {
@@ -459,6 +571,10 @@ const isRTL = locale === 'ar';
 					background: rgba(50, 16, 25, 0.82);
 				}
 
+				.site-nav--hero .nav-shell {
+					background: transparent;
+				}
+
 				.site-footer {
 					--site-footer-heading: #fff7f0;
 					--site-footer-text: rgba(255, 232, 217, 0.76);
@@ -484,6 +600,14 @@ const isRTL = locale === 'ar';
 			}
 
 			@media (max-width: 900px) {
+				.site-nav--hero .nav-shell {
+					padding-inline: 1rem;
+				}
+
+				.site-logo-image {
+					width: min(58vw, 18rem);
+				}
+
 				.site-footer-inner {
 					padding-top: 8rem;
 				}

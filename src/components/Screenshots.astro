@@ -82,10 +82,10 @@ const screenshots = [
 ];
 ---
 
-<section id="screenshots" class="section-plain py-24 px-4 sm:px-6 lg:px-8">
+<section id="screenshots" class="section-plain py-24 px-4 sm:px-6 lg:px-8" aria-labelledby="screenshots-heading">
 	<div class="max-w-7xl mx-auto">
 		<div class="text-center mb-16">
-			<h2 class="text-5xl md:text-6xl font-bold mb-4 text-bhutan-primary">
+			<h2 id="screenshots-heading" class="text-5xl md:text-6xl font-bold mb-4 text-bhutan-primary">
 				{t('screenshots.title', locale, translations)}
 			</h2>
 			<p class="text-xl max-w-3xl mx-auto text-bhutan-secondary">
@@ -95,7 +95,7 @@ const screenshots = [
 
 		<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
 			{screenshots.map((screenshot) => (
-				<div class="screenshot-card bg-bhutan-secondary rounded-3xl p-5 shadow-lg transition-all">
+				<figure class="screenshot-card bg-bhutan-secondary rounded-3xl p-5 shadow-lg transition-all">
 					<picture>
 						<source srcset={screenshot.dark.src} media="(prefers-color-scheme: dark)" />
 						<img
@@ -105,8 +105,8 @@ const screenshots = [
 							loading="lazy"
 						/>
 					</picture>
-					<p class="text-center mt-4 font-medium text-bhutan-primary">{screenshot.caption}</p>
-				</div>
+					<figcaption class="text-center mt-4 font-medium text-bhutan-primary">{screenshot.caption}</figcaption>
+				</figure>
 			))}
 		</div>
 	</div>

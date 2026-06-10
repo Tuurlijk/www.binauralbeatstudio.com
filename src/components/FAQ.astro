@@ -9,10 +9,10 @@ const showIosBuild = false;
 const items = showIosBuild ? ([1, 2, 3, 4, 5] as const) : ([1, 2, 3, 5] as const);
 ---
 
-<section id="faq" class="section-gradient py-20 px-4 sm:px-6 lg:px-8">
+<section id="faq" class="section-gradient py-20 px-4 sm:px-6 lg:px-8" aria-labelledby="faq-heading">
 	<div class="max-w-3xl mx-auto">
 		<div class="text-center mb-12">
-			<h2 class="text-4xl md:text-5xl font-bold mb-4 text-bhutan-primary">
+			<h2 id="faq-heading" class="text-4xl md:text-5xl font-bold mb-4 text-bhutan-primary">
 				{t('faq.title', locale, translations)}
 			</h2>
 		</div>

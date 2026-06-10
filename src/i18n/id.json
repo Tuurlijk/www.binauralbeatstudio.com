@@ -10,6 +10,9 @@
     "about": "Tentang",
     "benefits": "Manfaat",
     "download": "Unduh",
+    "downloadApp": "Unduh aplikasi",
+    "appExamples": "Contoh aplikasi",
+    "research": "Riset",
     "pricing": "Harga",
     "faq": "Pertanyaan umum"
   },
@@ -113,6 +116,7 @@
     "benefits": {
       "title": "Manfaat Kuat yang Dapat Anda Alami",
       "subtitle": "Beat binaural, nada isokronik, pembawa Solfeggio, dan lapisan noise dapat mendukung fokus, relaksasi, tidur, meditasi, kreativitas, dan suasana hati.",
+      "explore": "Jelajahi",
       "benefit1": {
         "title": "Relaksasi Mendalam & Pelepasan Stres",
         "description": "Capai relaksasi yang mendalam dan hilangkan stres. Noise menenangkan dan binaural beats, dipadukan dengan nada isokronik atau frekuensi Solfeggio, membantu otak Anda memasuki keadaan yang sangat rileks, mengurangi kecemasan dan mempromosikan ketenangan."

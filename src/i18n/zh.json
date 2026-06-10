@@ -10,6 +10,9 @@
     "about": "关于",
     "benefits": "好处",
     "download": "下载",
+    "downloadApp": "下载应用",
+    "appExamples": "应用示例",
+    "research": "研究",
     "pricing": "定价",
     "faq": "常见问题"
   },
@@ -113,6 +116,7 @@
     "benefits": {
       "title": "您可以体验的强大益处",
       "subtitle": "双耳节拍、等时音调、Solfeggio 载波与噪声底层可支持专注、放松、睡眠、冥想、创意与情绪。",
+      "explore": "探索",
       "benefit1": {
         "title": "深度放松和压力缓解",
         "description": "实现深度放松并消除压力。舒缓噪声和双耳节拍，搭配等时音调或索尔费焦频率，帮助您的大脑进入深度放松状态，减少焦虑并促进平静。"

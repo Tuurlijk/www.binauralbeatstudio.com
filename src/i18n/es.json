@@ -10,6 +10,9 @@
     "about": "Acerca de",
     "benefits": "Beneficios",
     "download": "Descargar",
+    "downloadApp": "Descargar app",
+    "appExamples": "Ejemplos de app",
+    "research": "Investigación",
     "pricing": "Precios",
     "faq": "Preguntas frecuentes"
   },
@@ -113,6 +116,7 @@
     "benefits": {
       "title": "Beneficios Poderosos Que Puedes Experimentar",
       "subtitle": "Los beats binaurales, tonos isocrónicos, portadores Solfeggio y capas de ruido pueden apoyar el enfoque, la relajación, el sueño, la meditación, la creatividad y el estado de ánimo.",
+      "explore": "Explorar",
       "benefit1": {
         "title": "Relajación Profunda y Alivio del Estrés",
         "description": "Logra una relajación profunda y elimina el estrés. Ruido relajante y ritmos binaurales, junto con tonos isocrónicos o frecuencias Solfeggio, ayudan a tu cerebro a entrar en estados profundamente relajados, reduciendo la ansiedad y promoviendo la calma."

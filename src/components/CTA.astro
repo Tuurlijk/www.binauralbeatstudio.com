@@ -7,9 +7,9 @@ const locale = Astro.currentLocale as Locale;
 const translations = await loadTranslations(locale);
 ---
 
-<section id="download" class="section-plain py-20 px-4 sm:px-6 lg:px-8">
+<section id="download" class="section-plain py-20 px-4 sm:px-6 lg:px-8" aria-labelledby="download-heading">
 	<div class="max-w-4xl mx-auto text-center">
-		<h2 class="text-4xl md:text-5xl font-bold mb-6 text-bhutan-primary">
+		<h2 id="download-heading" class="text-4xl md:text-5xl font-bold mb-6 text-bhutan-primary">
 			{t('cta.title', locale, translations)}
 		</h2>
 		<p class="text-xl mb-8 max-w-2xl mx-auto leading-relaxed text-bhutan-secondary">
@@ -26,18 +26,18 @@ const translations = await loadTranslations(locale);
 			</a>
 		</div>
 		<div class="grid grid-cols-1 md:grid-cols-3 gap-6 mt-12 text-left">
-			<div class="rounded-lg p-6 border bg-bhutan-primary" style="border-color: var(--border-light);">
+			<article class="rounded-lg p-6 border bg-bhutan-primary" style="border-color: var(--border-light);">
 				<h3 class="text-bhutan-primary font-semibold text-lg mb-2">{t('cta.benefit1.title', locale, translations)}</h3>
 				<p class="text-sm text-bhutan-secondary">{t('cta.benefit1.description', locale, translations)}</p>
-			</div>
-			<div class="rounded-lg p-6 border bg-bhutan-primary" style="border-color: var(--border-light);">
+			</article>
+			<article class="rounded-lg p-6 border bg-bhutan-primary" style="border-color: var(--border-light);">
 				<h3 class="text-bhutan-primary font-semibold text-lg mb-2">{t('cta.benefit2.title', locale, translations)}</h3>
 				<p class="text-sm text-bhutan-secondary">{t('cta.benefit2.description', locale, translations)}</p>
-			</div>
-			<div class="rounded-lg p-6 border bg-bhutan-primary" style="border-color: var(--border-light);">
+			</article>
+			<article class="rounded-lg p-6 border bg-bhutan-primary" style="border-color: var(--border-light);">
 				<h3 class="text-bhutan-primary font-semibold text-lg mb-2">{t('cta.benefit3.title', locale, translations)}</h3>
 				<p class="text-sm text-bhutan-secondary">{t('cta.benefit3.description', locale, translations)}</p>
-			</div>
+			</article>
 		</div>
 	</div>
 </section>

@@ -9,10 +9,10 @@ const showIosBuild = false;
 const bullets = showIosBuild ? ([1, 2, 3, 4] as const) : ([1, 2, 3] as const);
 ---
 
-<section id="rituals" class="section-gradient py-20 px-4 sm:px-6 lg:px-8">
+<section id="rituals" class="section-gradient py-20 px-4 sm:px-6 lg:px-8" aria-labelledby="rituals-heading">
 	<div class="max-w-4xl mx-auto">
 		<div class="text-center mb-10">
-			<h2 class="text-4xl md:text-5xl font-bold mb-4 text-bhutan-primary">
+			<h2 id="rituals-heading" class="text-4xl md:text-5xl font-bold mb-4 text-bhutan-primary">
 				{t('rituals.title', locale, translations)}
 			</h2>
 			<p class="text-xl leading-relaxed text-bhutan-secondary">

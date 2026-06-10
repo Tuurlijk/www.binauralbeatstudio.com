@@ -12,9 +12,38 @@ import Quotes from '../../components/Quotes.astro';
 import Pricing from '../../components/Pricing.astro';
 import FAQ from '../../components/FAQ.astro';
 import CTA from '../../components/CTA.astro';
+import { loadTranslations, t } from '../../utils/i18n';
+import type { Locale } from '../../i18n/types';
+import { buildHomeStructuredDataFromTranslations } from '../../lib/structured-data';
+import { getSchemaLanguage } from '../../lib/seo';
+
+const locale = Astro.currentLocale as Locale;
+const translations = await loadTranslations(locale);
+
+const siteUrl = new URL('/', Astro.site).toString();
+const pageUrl = new URL(Astro.url.pathname, Astro.site).toString();
+const socialImageUrl = new URL('/images/social-card.png', Astro.site).toString();
+const appIconUrl = new URL('/images/app-icon.svg', Astro.site).toString();
+const playStoreUrl = 'https://play.google.com/store/apps/details?id=com.michielroos.mindstate';
+
+const pageTitle = t('meta.title', locale, translations);
+const pageDescription = t('meta.description', locale, translations);
+
+const structuredData = buildHomeStructuredDataFromTranslations({
+	siteUrl,
+	pageUrl,
+	title: pageTitle,
+	description: pageDescription,
+	socialImageUrl,
+	appIconUrl,
+	playStoreUrl,
+	inLanguage: getSchemaLanguage(locale),
+	locale,
+	translations,
+});
 ---
 
-<Layout>
+<Layout title={pageTitle} description={pageDescription} structuredData={structuredData}>
 	<Hero />
 	<Benefits />
 	<Features />
