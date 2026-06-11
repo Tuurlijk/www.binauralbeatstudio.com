@@ -318,7 +318,7 @@ h3.text-6xl,
 .site-footer p,
 .site-footer li,
 .site-footer a {
-	font-size: clamp(1rem, 0.94rem + 0.18vw, 1.1rem);
+	font-size: var(--type-body);
 	line-height: 1.22;
 }
 
@@ -341,7 +341,7 @@ h3.text-6xl,
 
 .site-footer .border-t p,
 .site-footer-copyright p {
-	font-size: clamp(0.82rem, 0.78rem + 0.12vw, 0.9rem);
+	font-size: var(--type-body);
 	line-height: 1.2;
 }
 
