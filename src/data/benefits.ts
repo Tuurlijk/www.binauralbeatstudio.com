@@ -1,0 +1,51 @@
+export const benefitCards = [
+	{
+		id: 'benefit1',
+		slug: 'deep-relaxation-stress-relief',
+		symbol: 'symbol-relax.png',
+		visual: 'visual-relax.png',
+		panel: '#605d18',
+		title: 'rgba(230, 223, 128, 0.82)',
+	},
+	{
+		id: 'benefit2',
+		slug: 'enhanced-focus-concentration',
+		symbol: 'symbol-focus.png',
+		visual: 'visual-focus.png',
+		panel: '#0b9196',
+		title: 'rgba(255, 255, 255, 0.88)',
+	},
+	{
+		id: 'benefit3',
+		slug: 'better-sleep-quality',
+		symbol: 'symbol-sleep.png',
+		visual: 'visual-sleep.png',
+		panel: '#9a5671',
+		title: 'rgba(255, 255, 255, 0.88)',
+	},
+	{
+		id: 'benefit4',
+		slug: 'meditation-enhancement',
+		symbol: 'symbol-meditate.png',
+		visual: 'visual-meditate.png',
+		panel: '#84694d',
+		title: '#7b583d',
+	},
+	{
+		id: 'benefit5',
+		slug: 'creativity-flow-states',
+		symbol: 'symbol-creativity.png',
+		visual: 'visual-creativity.png',
+		panel: '#ee6b00',
+		title: 'rgba(255, 255, 255, 0.88)',
+	},
+	{
+		id: 'benefit6',
+		slug: 'mood-improvement',
+		symbol: 'symbol-happy.png',
+		visual: 'visual-mood.png',
+		panel: '#c61655',
+		title: '#c61655',
+	},
+] as const;
+

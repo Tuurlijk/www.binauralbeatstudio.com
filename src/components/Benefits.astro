@@ -1,58 +1,15 @@
 ---
-import { loadTranslations, t, getLocalizedHashLink } from '../utils/i18n';
+import { benefitCards } from '../data/benefits';
+import { loadTranslations, t, getLocalizedLink } from '../utils/i18n';
 import type { Locale } from '../i18n/types';
 
 const locale = Astro.currentLocale as Locale;
 const translations = await loadTranslations(locale);
 const base = import.meta.env.BASE_URL;
 
-const benefits = [
-	{
-		id: 'benefit1',
-		symbol: 'symbol-relax.png',
-		visual: 'visual-relax.png',
-		panel: '#605d18',
-		title: 'rgba(230, 223, 128, 0.82)',
-	},
-	{
-		id: 'benefit2',
-		symbol: 'symbol-focus.png',
-		visual: 'visual-focus.png',
-		panel: '#0b9196',
-		title: 'rgba(255, 255, 255, 0.88)',
-	},
-	{
-		id: 'benefit3',
-		symbol: 'symbol-sleep.png',
-		visual: 'visual-sleep.png',
-		panel: '#9a5671',
-		title: 'rgba(255, 255, 255, 0.88)',
-	},
-	{
-		id: 'benefit4',
-		symbol: 'symbol-meditate.png',
-		visual: 'visual-meditate.png',
-		panel: '#84694d',
-		title: '#7b583d',
-	},
-	{
-		id: 'benefit5',
-		symbol: 'symbol-creativity.png',
-		visual: 'visual-creativity.png',
-		panel: '#ee6b00',
-		title: 'rgba(255, 255, 255, 0.88)',
-	},
-	{
-		id: 'benefit6',
-		symbol: 'symbol-happy.png',
-		visual: 'visual-mood.png',
-		panel: '#c61655',
-		title: '#c61655',
-	},
-] as const;
-
 const subtitle = translations.aboutBinauralBeats?.benefits?.subtitle ?? '';
 const showSubtitle = subtitle.trim().length > 0;
+const benefitsPath = getLocalizedLink('/benefits/', locale);
 ---
 
 <section id="benefits" class="section-plain py-24 px-4 sm:px-6 lg:px-8" aria-labelledby="benefits-heading">
@@ -69,9 +26,10 @@ const showSubtitle = subtitle.trim().length > 0;
 		</div>
 
 		<div class="benefits-grid">
-			{benefits.map((benefit) => (
-				<article
+			{benefitCards.map((benefit) => (
+				<a
 					class="benefit-card"
+					href={`${benefitsPath}#${benefit.slug}`}
 					style={`--benefit-panel: ${benefit.panel}; --benefit-title: ${benefit.title};`}
 				>
 					<div class="benefit-card__media">
@@ -115,15 +73,14 @@ const showSubtitle = subtitle.trim().length > 0;
 							{t(`aboutBinauralBeats.benefits.${benefit.id}.description`, locale, translations)}
 						</p>
 
-						<a
+						<span
 							class="benefit-card__explore"
-							href={getLocalizedHashLink('#about-binaural-beats', locale)}
 						>
 							<span>{t('aboutBinauralBeats.benefits.explore', locale, translations)}</span>
 							<span class="benefit-card__arrow" aria-hidden="true">→</span>
-						</a>
+						</span>
 					</div>
-				</article>
+				</a>
 			))}
 		</div>
 	</div>
@@ -148,6 +105,7 @@ const showSubtitle = subtitle.trim().length > 0;
 		flex-direction: column;
 		min-height: clamp(38rem, 53vw, 46rem);
 		overflow: hidden;
+		text-decoration: none;
 		transition: transform 0.25s ease;
 	}
 

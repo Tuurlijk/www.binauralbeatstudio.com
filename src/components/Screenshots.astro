@@ -9,6 +9,7 @@ const translations = await loadTranslations(locale);
 const featuredScreenshots = featuredScreenshotIds
 	.map((id) => appScreenshots.find((screenshot) => screenshot.id === id))
 	.filter((screenshot) => screenshot !== undefined);
+const screenshotsLink = getLocalizedLink('/screenshots/', locale);
 ---
 
 <section id="screenshots" class="screenshots-showcase section-plain" aria-labelledby="screenshots-heading">
@@ -25,33 +26,35 @@ const featuredScreenshots = featuredScreenshotIds
 		<div class="screenshots-showcase__stage">
 			{featuredScreenshots.map((screenshot, index) => (
 				<figure class={`screenshots-showcase__phone screenshots-showcase__phone--${index + 1}`}>
-					{index === 0 ? (
-						<picture>
-							<source srcset={handPlayerScreenshot.darkWebp.src} media="(prefers-color-scheme: dark)" type="image/webp" />
-							<source srcset={handPlayerScreenshot.dark.src} media="(prefers-color-scheme: dark)" />
-							<source srcset={handPlayerScreenshot.lightWebp.src} type="image/webp" />
-							<img
-								src={handPlayerScreenshot.light.src}
-								alt={screenshot.alt}
-								width={handPlayerScreenshot.light.width}
-								height={handPlayerScreenshot.light.height}
-								loading="lazy"
-							/>
-						</picture>
-					) : (
-						<picture>
-							<source srcset={screenshot.darkWebp.src} media="(prefers-color-scheme: dark)" type="image/webp" />
-							<source srcset={screenshot.dark.src} media="(prefers-color-scheme: dark)" />
-							<source srcset={screenshot.lightWebp.src} type="image/webp" />
-							<img
-								src={screenshot.light.src}
-								alt={screenshot.alt}
-								width={screenshot.light.width}
-								height={screenshot.light.height}
-								loading="lazy"
-							/>
-						</picture>
-					)}
+					<a class="screenshots-showcase__phone-link" href={screenshotsLink}>
+						{index === 0 ? (
+							<picture>
+								<source srcset={handPlayerScreenshot.darkWebp.src} media="(prefers-color-scheme: dark)" type="image/webp" />
+								<source srcset={handPlayerScreenshot.dark.src} media="(prefers-color-scheme: dark)" />
+								<source srcset={handPlayerScreenshot.lightWebp.src} type="image/webp" />
+								<img
+									src={handPlayerScreenshot.light.src}
+									alt={screenshot.alt}
+									width={handPlayerScreenshot.light.width}
+									height={handPlayerScreenshot.light.height}
+									loading="lazy"
+								/>
+							</picture>
+						) : (
+							<picture>
+								<source srcset={screenshot.darkWebp.src} media="(prefers-color-scheme: dark)" type="image/webp" />
+								<source srcset={screenshot.dark.src} media="(prefers-color-scheme: dark)" />
+								<source srcset={screenshot.lightWebp.src} type="image/webp" />
+								<img
+									src={screenshot.light.src}
+									alt={screenshot.alt}
+									width={screenshot.light.width}
+									height={screenshot.light.height}
+									loading="lazy"
+								/>
+							</picture>
+						)}
+					</a>
 					<figcaption>{t(screenshot.captionKey, locale, translations)}</figcaption>
 				</figure>
 			))}
@@ -59,7 +62,7 @@ const featuredScreenshots = featuredScreenshotIds
 
 		<div class="screenshots-showcase__more">
 			<span class="screenshots-showcase__rule" aria-hidden="true"></span>
-			<a class="screenshots-showcase__link" href={getLocalizedLink('/screenshots/', locale)}>
+			<a class="screenshots-showcase__link" href={screenshotsLink}>
 				<span>{t('screenshots.seeMore', locale, translations)}</span>
 				<svg viewBox="0 0 48 16" aria-hidden="true">
 					<path d="M1 8h43m-6-6 6 6-6 6" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" />
@@ -72,7 +75,7 @@ const featuredScreenshots = featuredScreenshotIds
 <style>
 	.screenshots-showcase {
 		background: #fffaf7;
-		overflow: hidden;
+		overflow: visible;
 		padding: clamp(4.5rem, 7vw, 6.5rem) 1rem clamp(5rem, 8vw, 7rem);
 	}
 
@@ -112,6 +115,23 @@ const featuredScreenshots = featuredScreenshotIds
 	.screenshots-showcase__phone {
 		margin: 0;
 		position: relative;
+		z-index: 1;
+	}
+
+	.screenshots-showcase__phone:hover,
+	.screenshots-showcase__phone:focus-within {
+		z-index: 5;
+	}
+
+	.screenshots-showcase__phone-link {
+		border-radius: 1.5rem;
+		display: block;
+		outline: none;
+	}
+
+	.screenshots-showcase__phone-link:focus-visible {
+		outline: 3px solid rgba(244, 95, 17, 0.72);
+		outline-offset: 0.55rem;
 	}
 
 	.screenshots-showcase__phone img {
@@ -129,7 +149,7 @@ const featuredScreenshots = featuredScreenshotIds
 	.screenshots-showcase__phone:hover img,
 	.screenshots-showcase__phone:focus-within img {
 		filter: drop-shadow(0 32px 54px rgba(45, 18, 16, 0.24));
-		transform: translateY(-0.45rem) scale(1.045);
+		transform: translateY(-0.75rem) scale(1.5);
 	}
 
 	.screenshots-showcase__phone figcaption {

@@ -132,40 +132,24 @@ const isRTL = locale === 'ar';
 		</script>
 	</head>
 	<body class={`antialiased bg-bhutan-primary text-bhutan-primary ${isRTL ? 'rtl' : 'ltr'} ${isHomePage ? 'layout--home-hero' : ''}`}>
-		<nav class={`site-nav fixed top-0 left-0 right-0 z-50 ${isHomePage ? 'site-nav--hero' : ''}`} aria-label="Main navigation">
+		<nav class={`site-nav fixed top-0 left-0 right-0 z-50 site-nav--hero ${!isHomePage ? 'site-nav--solid' : ''}`} aria-label="Main navigation">
 			<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 				<div class="nav-shell mt-4 flex justify-between items-center min-h-16 px-4 sm:px-5">
 					<div class="flex items-center">
 						<a href={base} class="site-logo-link flex items-center gap-3 transition-opacity hover:opacity-80">
-							{isHomePage ? (
-								<>
-									<picture>
-										<source srcset={`${base}images/hero/logo-mono.webp`} type="image/webp" />
-										<img
-											src={`${base}images/hero/logo-mono.png`}
-											alt=""
-											class="site-logo-mark"
-										/>
-									</picture>
-									<span class="site-logo-wordmark">
-										<span class="site-logo-name">MindState</span>
-										<span class="site-logo-divider" aria-hidden="true">|</span>
-										<span class="site-logo-product">Binaural Beat Studio App</span>
-									</span>
-								</>
-							) : (
-								<>
-									<img 
-										src={`${base}images/app-icon.svg`}
-										alt="MindState app icon"
-										class="h-10 w-10"
-									/>
-									<span class="hidden sm:block leading-none">
-										<span class="brand-title block text-xl text-bhutan-primary">MindState</span>
-										<span class="block text-xs uppercase tracking-[0.24em] text-bhutan-secondary">Binaural Beat Studio</span>
-									</span>
-								</>
-							)}
+							<picture>
+								<source srcset={`${base}images/hero/logo-mono.webp`} type="image/webp" />
+								<img
+									src={`${base}images/hero/logo-mono.png`}
+									alt=""
+									class="site-logo-mark"
+								/>
+							</picture>
+							<span class="site-logo-wordmark">
+								<span class="site-logo-name">MindState</span>
+								<span class="site-logo-divider" aria-hidden="true">|</span>
+								<span class="site-logo-product">Binaural Beat Studio App</span>
+							</span>
 						</a>
 					</div>
 					<div class="nav-links hidden lg:flex items-center gap-5">
@@ -173,13 +157,13 @@ const isRTL = locale === 'ar';
 						<a href={getLocalizedHashLink('#features', locale)} class="nav-link transition-colors">{t('nav.features', locale, translations)}</a>
 						<a href={getLocalizedHashLink('#how-it-works', locale)} class="nav-link transition-colors">{t('nav.howItWorks', locale, translations)}</a>
 						<a href={getLocalizedHashLink('#screenshots', locale)} class="nav-link transition-colors">{t('nav.appExamples', locale, translations)}</a>
-						<NavMoreMenu variant={isHomePage ? 'hero' : 'default'} />
+						<NavMoreMenu variant="hero" />
 						<a href={getLocalizedHashLink('#download', locale)} class="nav-download px-5 py-2.5 rounded-full transition-colors text-white bg-bhutan-accent hover:opacity-90">
-							{isHomePage ? t('nav.downloadApp', locale, translations) : t('nav.download', locale, translations)}
+							{t('nav.downloadApp', locale, translations)}
 						</a>
-						<LanguageSwitcher variant={isHomePage ? 'hero' : 'default'} />
+						<LanguageSwitcher variant="hero" />
 					</div>
-					<label for="mobile-menu-toggle" class={`nav-menu-toggle lg:hidden p-2 cursor-pointer ${isHomePage ? 'nav-menu-toggle--hero' : 'text-bhutan-secondary'}`} aria-label="Toggle menu">
+					<label for="mobile-menu-toggle" class="nav-menu-toggle nav-menu-toggle--hero lg:hidden p-2 cursor-pointer" aria-label="Toggle menu">
 						<svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
 							<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
 						</svg>
@@ -194,7 +178,7 @@ const isRTL = locale === 'ar';
 					<a href={getLocalizedHashLink('#features', locale)} class="block py-2 transition-colors text-bhutan-secondary hover:text-bhutan-accent">{t('nav.features', locale, translations)}</a>
 					<a href={getLocalizedHashLink('#how-it-works', locale)} class="block py-2 transition-colors text-bhutan-secondary hover:text-bhutan-accent">{t('nav.howItWorks', locale, translations)}</a>
 					<a href={getLocalizedHashLink('#screenshots', locale)} class="block py-2 transition-colors text-bhutan-secondary hover:text-bhutan-accent">{t('nav.appExamples', locale, translations)}</a>
-					<a href={getLocalizedHashLink('#quotes', locale)} class="block py-2 transition-colors text-bhutan-secondary hover:text-bhutan-accent">{t('nav.research', locale, translations)}</a>
+					<a href={getLocalizedHashLink('#research-studies', locale)} class="block py-2 transition-colors text-bhutan-secondary hover:text-bhutan-accent">{t('nav.research', locale, translations)}</a>
 					<a href={getLocalizedHashLink('#faq', locale)} class="block py-2 transition-colors text-bhutan-secondary hover:text-bhutan-accent">{t('nav.faq', locale, translations)}</a>
 					<a href={getLocalizedHashLink('#about-binaural-beats', locale)} class="block py-2 transition-colors text-bhutan-secondary hover:text-bhutan-accent">{t('nav.about', locale, translations)}</a>
 					<a href={getLocalizedHashLink('#download', locale)} class="block py-2 text-white px-4 rounded-full text-center transition-colors bg-bhutan-accent hover:opacity-90">{isHomePage ? t('nav.downloadApp', locale, translations) : t('nav.download', locale, translations)}</a>
@@ -217,14 +201,18 @@ const isRTL = locale === 'ar';
 				<div class="site-footer-grid">
 					<div class="site-footer-brand">
 						<a href={base} class="site-footer-logo" aria-label="MindState home">
-							<img 
-								src={`${base}images/app-icon.svg`}
-								alt=""
-								class="site-footer-logo-icon"
-							/>
-							<span>
+							<picture>
+								<source srcset={`${base}images/hero/logo-mono.webp`} type="image/webp" />
+								<img
+									src={`${base}images/hero/logo-mono.png`}
+									alt=""
+									class="site-footer-logo-icon"
+								/>
+							</picture>
+							<span class="site-footer-wordmark">
 								<span class="site-footer-logo-title">MindState</span>
-								<span class="site-footer-logo-subtitle">Binaural Beat Studio</span>
+								<span class="site-footer-logo-divider" aria-hidden="true">|</span>
+								<span class="site-footer-logo-subtitle">Binaural Beat Studio App</span>
 							</span>
 						</a>
 						<p>{t('footer.description', locale, translations)}</p>
@@ -393,7 +381,8 @@ const isRTL = locale === 'ar';
 				transition: background-color 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease, padding-inline 0.2s ease;
 			}
 
-			.site-nav--hero.site-nav--scrolled .nav-shell {
+			.site-nav--hero.site-nav--scrolled .nav-shell,
+			.site-nav--hero.site-nav--solid .nav-shell {
 				background: rgba(34, 12, 18, 0.72);
 				border-color: rgba(255, 255, 255, 0.16);
 				box-shadow: 0 18px 50px rgba(0, 0, 0, 0.24);
@@ -499,29 +488,36 @@ const isRTL = locale === 'ar';
 				align-items: center;
 				color: var(--site-footer-heading);
 				display: inline-flex;
-				gap: 0.7rem;
+				gap: 0.55rem;
 				margin-bottom: 2rem;
 			}
 
 			.site-footer-logo-icon {
-				height: clamp(3.2rem, 2.4rem + 1.6vw, 4rem);
-				width: clamp(3.2rem, 2.4rem + 1.6vw, 4rem);
+				display: block;
+				height: clamp(1.9rem, 1.5rem + 1vw, 2.5rem);
+				object-fit: contain;
+				width: clamp(1.9rem, 1.5rem + 1vw, 2.5rem);
+			}
+
+			.site-footer-wordmark {
+				align-items: baseline;
+				display: inline-flex;
+				flex-wrap: wrap;
+				font-family: var(--font-body);
+				gap: 0.28rem;
+				line-height: 1;
 			}
 
 			.site-footer-logo-title {
-				display: block;
-				font-family: var(--font-display);
-				font-size: clamp(1.55rem, 1.3rem + 0.7vw, 2rem);
-				font-weight: var(--font-weight-display);
-				line-height: 0.9;
+				font-size: clamp(1.05rem, 0.9rem + 0.35vw, 1.28rem);
+				font-weight: var(--font-weight-card-title);
 			}
 
+			.site-footer-logo-divider,
 			.site-footer-logo-subtitle {
-				display: block;
-				font-family: var(--font-body);
-				font-size: clamp(1.25rem, 1.02rem + 0.55vw, 1.6rem);
-				font-weight: var(--font-weight-body);
-				line-height: 1;
+				color: rgba(255, 255, 255, 0.78);
+				font-size: clamp(1.05rem, 0.9rem + 0.35vw, 1.28rem);
+				font-weight: var(--font-weight-ui);
 			}
 
 			.site-footer-brand p {
@@ -635,7 +631,8 @@ const isRTL = locale === 'ar';
 					background: transparent;
 				}
 
-				.site-nav--hero.site-nav--scrolled .nav-shell {
+				.site-nav--hero.site-nav--scrolled .nav-shell,
+				.site-nav--hero.site-nav--solid .nav-shell {
 					background: rgba(34, 12, 18, 0.78);
 				}
 
