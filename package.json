@@ -6,12 +6,15 @@
     "dev": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
+    "frame:screenshots": "node scripts/frame-screenshots.mjs",
+    "sync:screenshots": "scripts/sync-screenshots.sh",
     "astro": "astro"
   },
   "dependencies": {
     "@astrojs/sitemap": "^3.7.3",
     "@tailwindcss/vite": "^4.3.0",
     "astro": "^6.4.4",
+    "sharp": "^0.35.0",
     "tailwindcss": "^4.3.0"
   }
 }

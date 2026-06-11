@@ -1,8 +1,7 @@
 ---
-import { appScreenshots, featuredScreenshotIds } from '../data/appScreenshots';
+import { appScreenshots, featuredScreenshotIds, handPlayerScreenshot } from '../data/appScreenshots';
 import { loadTranslations, t, getLocalizedLink } from '../utils/i18n';
 import type { Locale } from '../i18n/types';
-import handMetTelefoon from '../assets/images/hand_met_telefoon.png';
 
 const locale = Astro.currentLocale as Locale;
 const translations = await loadTranslations(locale);
@@ -27,16 +26,23 @@ const featuredScreenshots = featuredScreenshotIds
 			{featuredScreenshots.map((screenshot, index) => (
 				<figure class={`screenshots-showcase__phone screenshots-showcase__phone--${index + 1}`}>
 					{index === 0 ? (
-						<img
-							src={handMetTelefoon.src}
-							alt={screenshot.alt}
-							width={handMetTelefoon.width}
-							height={handMetTelefoon.height}
-							loading="lazy"
-						/>
+						<picture>
+							<source srcset={handPlayerScreenshot.darkWebp.src} media="(prefers-color-scheme: dark)" type="image/webp" />
+							<source srcset={handPlayerScreenshot.dark.src} media="(prefers-color-scheme: dark)" />
+							<source srcset={handPlayerScreenshot.lightWebp.src} type="image/webp" />
+							<img
+								src={handPlayerScreenshot.light.src}
+								alt={screenshot.alt}
+								width={handPlayerScreenshot.light.width}
+								height={handPlayerScreenshot.light.height}
+								loading="lazy"
+							/>
+						</picture>
 					) : (
 						<picture>
+							<source srcset={screenshot.darkWebp.src} media="(prefers-color-scheme: dark)" type="image/webp" />
 							<source srcset={screenshot.dark.src} media="(prefers-color-scheme: dark)" />
+							<source srcset={screenshot.lightWebp.src} type="image/webp" />
 							<img
 								src={screenshot.light.src}
 								alt={screenshot.alt}
@@ -109,10 +115,8 @@ const featuredScreenshots = featuredScreenshotIds
 	}
 
 	.screenshots-showcase__phone img {
-		border: clamp(0.18rem, 0.36vw, 0.28rem) solid #263339;
-		border-radius: clamp(1.7rem, 2.3vw, 2.4rem);
-		box-shadow: 0 24px 62px rgba(45, 18, 16, 0.13);
 		display: block;
+		filter: drop-shadow(0 24px 42px rgba(45, 18, 16, 0.18));
 		height: auto;
 		width: 100%;
 	}
@@ -135,9 +139,7 @@ const featuredScreenshots = featuredScreenshotIds
 	}
 
 	.screenshots-showcase__phone--1 img {
-		border: 0;
-		border-radius: 0;
-		box-shadow: none;
+		filter: none;
 	}
 
 	.screenshots-showcase__phone--2,

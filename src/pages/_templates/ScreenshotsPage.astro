@@ -28,23 +28,29 @@ const pageDescription = t('screenshots.allPageDescription', locale, translations
 						<h2>{t(screenshot.captionKey, locale, translations)}</h2>
 						<div class="screenshots-page__pair">
 							<figure>
-								<img
-									src={screenshot.light.src}
-									alt={`${screenshot.alt}, ${t('screenshots.lightMode', locale, translations)}`}
-									width={screenshot.light.width}
-									height={screenshot.light.height}
-									loading="lazy"
-								/>
+								<picture>
+									<source srcset={screenshot.lightWebp.src} type="image/webp" />
+									<img
+										src={screenshot.light.src}
+										alt={`${screenshot.alt}, ${t('screenshots.lightMode', locale, translations)}`}
+										width={screenshot.light.width}
+										height={screenshot.light.height}
+										loading="lazy"
+									/>
+								</picture>
 								<figcaption>{t('screenshots.lightMode', locale, translations)}</figcaption>
 							</figure>
 							<figure>
-								<img
-									src={screenshot.dark.src}
-									alt={`${screenshot.alt}, ${t('screenshots.darkMode', locale, translations)}`}
-									width={screenshot.dark.width}
-									height={screenshot.dark.height}
-									loading="lazy"
-								/>
+								<picture>
+									<source srcset={screenshot.darkWebp.src} type="image/webp" />
+									<img
+										src={screenshot.dark.src}
+										alt={`${screenshot.alt}, ${t('screenshots.darkMode', locale, translations)}`}
+										width={screenshot.dark.width}
+										height={screenshot.dark.height}
+										loading="lazy"
+									/>
+								</picture>
 								<figcaption>{t('screenshots.darkMode', locale, translations)}</figcaption>
 							</figure>
 						</div>
@@ -101,7 +107,7 @@ const pageDescription = t('screenshots.allPageDescription', locale, translations
 	.screenshots-page__grid {
 		display: grid;
 		gap: clamp(1.8rem, 4vw, 3rem);
-		grid-template-columns: repeat(3, minmax(0, 1fr));
+		grid-template-columns: repeat(2, minmax(0, 1fr));
 	}
 
 	.screenshots-page__item {
@@ -126,7 +132,7 @@ const pageDescription = t('screenshots.allPageDescription', locale, translations
 
 	.screenshots-page__pair {
 		display: grid;
-		gap: 0.9rem;
+		gap: clamp(1rem, 2vw, 1.4rem);
 		grid-template-columns: repeat(2, minmax(0, 1fr));
 	}
 
@@ -134,12 +140,16 @@ const pageDescription = t('screenshots.allPageDescription', locale, translations
 		margin: 0;
 	}
 
-	.screenshots-page img {
-		border: 0.16rem solid #263339;
-		border-radius: 1.25rem;
-		box-shadow: 0 14px 34px rgba(45, 18, 16, 0.12);
+	.screenshots-page picture {
 		display: block;
+	}
+
+	.screenshots-page img {
+		display: block;
+		filter: drop-shadow(0 14px 24px rgba(45, 18, 16, 0.16));
 		height: auto;
+		margin: 0 auto;
+		max-width: 12rem;
 		width: 100%;
 	}
 
@@ -155,13 +165,22 @@ const pageDescription = t('screenshots.allPageDescription', locale, translations
 
 	@media (max-width: 1024px) {
 		.screenshots-page__grid {
-			grid-template-columns: repeat(2, minmax(0, 1fr));
+			grid-template-columns: 1fr;
+		}
+
+		.screenshots-page img {
+			max-width: 11rem;
 		}
 	}
 
 	@media (max-width: 640px) {
-		.screenshots-page__grid {
+		.screenshots-page__grid,
+		.screenshots-page__pair {
 			grid-template-columns: 1fr;
+		}
+
+		.screenshots-page img {
+			max-width: 13rem;
 		}
 	}
 </style>

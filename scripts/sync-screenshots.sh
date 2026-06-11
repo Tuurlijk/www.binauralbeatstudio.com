@@ -35,3 +35,5 @@ for theme in light dark; do
     echo "copied $out_file"
   done
 done
+
+node scripts/frame-screenshots.mjs

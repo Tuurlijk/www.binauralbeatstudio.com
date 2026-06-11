@@ -1,93 +1,116 @@
 import type { ImageMetadata } from 'astro';
 
-import phoneMixPlayerLight from '../assets/images/phone_mix_player_light.png';
-import phoneMixPlayerDark from '../assets/images/phone_mix_player_dark.png';
-import phoneMixBrowserLight from '../assets/images/phone_mix_browser_light.png';
-import phoneMixBrowserDark from '../assets/images/phone_mix_browser_dark.png';
-import phoneToneEditorLight from '../assets/images/phone_tone_editor_light.png';
-import phoneToneEditorDark from '../assets/images/phone_tone_editor_dark.png';
-import phoneQuickMixEditorLight from '../assets/images/phone_quick_mix_editor_light.png';
-import phoneQuickMixEditorDark from '../assets/images/phone_quick_mix_editor_dark.png';
-import phoneQrDisplayLight from '../assets/images/phone_qr_display_light.png';
-import phoneQrDisplayDark from '../assets/images/phone_qr_display_dark.png';
-import phoneAddTrackModalLight from '../assets/images/phone_add_track_modal_light.png';
-import phoneAddTrackModalDark from '../assets/images/phone_add_track_modal_dark.png';
-import phoneFullMixEditorLight from '../assets/images/phone_full_mix_editor_light.png';
-import phoneFullMixEditorDark from '../assets/images/phone_full_mix_editor_dark.png';
-import phoneRitualsListLight from '../assets/images/phone_rituals_list_light.png';
-import phoneRitualsListDark from '../assets/images/phone_rituals_list_dark.png';
-import phoneRitualEditLight from '../assets/images/phone_ritual_edit_light.png';
-import phoneRitualEditDark from '../assets/images/phone_ritual_edit_dark.png';
+const framedImages = import.meta.glob<{ default: ImageMetadata }>(
+	'../assets/images/framed/*_framed.{png,webp}',
+	{ eager: true },
+);
+
+function framedImage(name: string) {
+	const image = framedImages[`../assets/images/framed/${name}`]?.default;
+
+	if (!image) {
+		throw new Error(`Missing framed screenshot asset: ${name}`);
+	}
+
+	return image;
+}
 
 export interface AppScreenshot {
 	id: string;
 	light: ImageMetadata;
+	lightWebp: ImageMetadata;
 	dark: ImageMetadata;
+	darkWebp: ImageMetadata;
 	captionKey: string;
 	alt: string;
 }
 
+export const handPlayerScreenshot = {
+	light: framedImage('hand_phone_mix_player_light_framed.png'),
+	lightWebp: framedImage('hand_phone_mix_player_light_framed.webp'),
+	dark: framedImage('hand_phone_mix_player_dark_framed.png'),
+	darkWebp: framedImage('hand_phone_mix_player_dark_framed.webp'),
+};
+
 export const appScreenshots: AppScreenshot[] = [
 	{
 		id: 'player',
-		light: phoneMixPlayerLight,
-		dark: phoneMixPlayerDark,
+		light: framedImage('phone_mix_player_light_framed.png'),
+		lightWebp: framedImage('phone_mix_player_light_framed.webp'),
+		dark: framedImage('phone_mix_player_dark_framed.png'),
+		darkWebp: framedImage('phone_mix_player_dark_framed.webp'),
 		captionKey: 'screenshots.player',
 		alt: 'MindState player with lock-screen controls and mix artwork',
 	},
 	{
 		id: 'mixes',
-		light: phoneMixBrowserLight,
-		dark: phoneMixBrowserDark,
+		light: framedImage('phone_mix_browser_light_framed.png'),
+		lightWebp: framedImage('phone_mix_browser_light_framed.webp'),
+		dark: framedImage('phone_mix_browser_dark_framed.png'),
+		darkWebp: framedImage('phone_mix_browser_dark_framed.webp'),
 		captionKey: 'screenshots.mixes',
 		alt: 'Mixes library with included and custom mixes by category',
 	},
 	{
 		id: 'beatPicker',
-		light: phoneToneEditorLight,
-		dark: phoneToneEditorDark,
+		light: framedImage('phone_tone_editor_light_framed.png'),
+		lightWebp: framedImage('phone_tone_editor_light_framed.webp'),
+		dark: framedImage('phone_tone_editor_dark_framed.png'),
+		darkWebp: framedImage('phone_tone_editor_dark_framed.webp'),
 		captionKey: 'screenshots.beatPicker',
 		alt: 'Beat picker with brainwave bands and Solfeggio tones',
 	},
 	{
 		id: 'quickEditor',
-		light: phoneQuickMixEditorLight,
-		dark: phoneQuickMixEditorDark,
+		light: framedImage('phone_quick_mix_editor_light_framed.png'),
+		lightWebp: framedImage('phone_quick_mix_editor_light_framed.webp'),
+		dark: framedImage('phone_quick_mix_editor_dark_framed.png'),
+		darkWebp: framedImage('phone_quick_mix_editor_dark_framed.webp'),
 		captionKey: 'screenshots.quickEditor',
 		alt: 'Quick editor with four mix slots',
 	},
 	{
 		id: 'shareQr',
-		light: phoneQrDisplayLight,
-		dark: phoneQrDisplayDark,
+		light: framedImage('phone_qr_display_light_framed.png'),
+		lightWebp: framedImage('phone_qr_display_light_framed.webp'),
+		dark: framedImage('phone_qr_display_dark_framed.png'),
+		darkWebp: framedImage('phone_qr_display_dark_framed.webp'),
 		captionKey: 'screenshots.shareQr',
 		alt: 'Share screen with branded QR code for mix sharing',
 	},
 	{
 		id: 'addTrack',
-		light: phoneAddTrackModalLight,
-		dark: phoneAddTrackModalDark,
+		light: framedImage('phone_add_track_modal_light_framed.png'),
+		lightWebp: framedImage('phone_add_track_modal_light_framed.webp'),
+		dark: framedImage('phone_add_track_modal_dark_framed.png'),
+		darkWebp: framedImage('phone_add_track_modal_dark_framed.webp'),
 		captionKey: 'screenshots.addTrack',
 		alt: 'Full editor add-track sheet with tone, noise, effect, and file types',
 	},
 	{
 		id: 'fullEditor',
-		light: phoneFullMixEditorLight,
-		dark: phoneFullMixEditorDark,
+		light: framedImage('phone_full_mix_editor_light_framed.png'),
+		lightWebp: framedImage('phone_full_mix_editor_light_framed.webp'),
+		dark: framedImage('phone_full_mix_editor_dark_framed.png'),
+		darkWebp: framedImage('phone_full_mix_editor_dark_framed.webp'),
 		captionKey: 'screenshots.fullEditor',
 		alt: 'Full editor with volume envelopes and track controls',
 	},
 	{
 		id: 'ritualsList',
-		light: phoneRitualsListLight,
-		dark: phoneRitualsListDark,
+		light: framedImage('phone_rituals_list_light_framed.png'),
+		lightWebp: framedImage('phone_rituals_list_light_framed.webp'),
+		dark: framedImage('phone_rituals_list_dark_framed.png'),
+		darkWebp: framedImage('phone_rituals_list_dark_framed.webp'),
 		captionKey: 'screenshots.ritualsList',
 		alt: 'Daily Rituals list with scheduled mixes',
 	},
 	{
 		id: 'ritualEdit',
-		light: phoneRitualEditLight,
-		dark: phoneRitualEditDark,
+		light: framedImage('phone_ritual_edit_light_framed.png'),
+		lightWebp: framedImage('phone_ritual_edit_light_framed.webp'),
+		dark: framedImage('phone_ritual_edit_dark_framed.png'),
+		darkWebp: framedImage('phone_ritual_edit_dark_framed.webp'),
 		captionKey: 'screenshots.ritualEdit',
 		alt: 'Ritual editor with time, repeat days, and linked mix',
 	},
