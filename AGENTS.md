@@ -1,3 +1,12 @@
+## File and Code Search
+
+Use the `fff` MCP tools for all file and code search in this project.
+
+- Use `find_files` when looking for filenames or modules.
+- Use `grep` when searching code contents, definitions, or usage.
+- Use `multi_grep` for multiple identifiers or naming variants in one pass.
+- After a small number of search results, read the relevant files instead of repeatedly searching.
+
 ## Issue Tracking with bd (beads)
 
 **IMPORTANT**: This project uses **bd (beads)** for ALL issue tracking. Do NOT use markdown TODOs, task lists, or other tracking methods.
