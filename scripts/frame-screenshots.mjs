@@ -36,10 +36,11 @@ const frame = {
 	screenRadius: 108,
 };
 
-const phoneInHand = {
-	x: 748,
-	y: 58,
-	width: 1140,
+// Framed phone overlay placement on top of hand_met_telefoon.png.
+const handPhone = {
+	x: 773,
+	y: 242,
+	width: 940,
 };
 
 function svgFrameBase() {
@@ -144,13 +145,15 @@ async function frameScreenshot(baseName, theme) {
 async function frameHandPlayer(theme) {
 	const input = path.join(imageDir, `phone_mix_player_${theme}.png`);
 	const outputBase = path.join(outputDir, `hand_phone_mix_player_${theme}_framed`);
-	const framedPhone = await sharp(await buildFramedPhone(input))
-		.resize({ width: phoneInHand.width })
+
+	const framedPhone = await buildFramedPhone(input);
+	const placedPhone = await sharp(framedPhone)
+		.resize({ width: handPhone.width })
 		.png()
 		.toBuffer();
 
 	const pngBuffer = await sharp(handTemplate)
-		.composite([{ input: framedPhone, left: phoneInHand.x, top: phoneInHand.y }])
+		.composite([{ input: placedPhone, left: handPhone.x, top: handPhone.y }])
 		.png()
 		.toBuffer();
 
