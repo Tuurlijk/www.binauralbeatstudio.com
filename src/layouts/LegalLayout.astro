@@ -1,0 +1,95 @@
+---
+import Layout from './Layout.astro';
+
+interface Props {
+	frontmatter: {
+		title: string;
+		description: string;
+	};
+}
+
+const { frontmatter } = Astro.props;
+---
+
+<Layout title={frontmatter.title} description={frontmatter.description}>
+	<section class="legal-page py-20 px-4 sm:px-6 lg:px-8">
+		<article class="legal-prose max-w-3xl mx-auto">
+			<slot />
+		</article>
+	</section>
+</Layout>
+
+<style>
+	.legal-page {
+		padding-top: 8rem;
+	}
+
+	/* Legal documents need a calmer heading scale than the marketing pages */
+	.legal-prose :global(h1) {
+		font-family: var(--font-display);
+		font-size: clamp(2.6rem, 2.2rem + 1vw, 3.4rem);
+		font-weight: var(--font-weight-display);
+		letter-spacing: 0.01em;
+		line-height: 0.9;
+		margin: 0 0 1.5rem;
+	}
+
+	.legal-prose :global(h2) {
+		font-family: var(--font-body);
+		font-size: clamp(1.5rem, 1.35rem + 0.4vw, 1.85rem);
+		font-weight: var(--font-weight-card-title);
+		letter-spacing: 0.02em;
+		line-height: 1.05;
+		margin: 2.25rem 0 0.75rem;
+	}
+
+	.legal-prose :global(h3) {
+		font-family: var(--font-body);
+		font-size: clamp(1.3rem, 1.2rem + 0.3vw, 1.55rem);
+		font-weight: var(--font-weight-card-title);
+		letter-spacing: 0.02em;
+		line-height: 1.1;
+		margin: 2rem 0 0.65rem;
+	}
+
+	.legal-prose :global(p),
+	.legal-prose :global(li) {
+		color: var(--text-secondary);
+		line-height: 1.5;
+		margin: 0 0 0.9rem;
+	}
+
+	.legal-prose :global(ul) {
+		list-style: disc;
+		margin: 0 0 1rem;
+		padding-left: 1.5rem;
+	}
+
+	.legal-prose :global(li) {
+		margin-bottom: 0.35rem;
+	}
+
+	.legal-prose :global(a) {
+		color: var(--primary);
+		font-family: inherit;
+		font-size: inherit;
+		font-weight: inherit;
+		letter-spacing: inherit;
+		line-height: inherit;
+		text-decoration: underline;
+	}
+
+	.legal-prose :global(a:hover) {
+		color: var(--primary-light);
+	}
+
+	.legal-prose :global(strong) {
+		color: var(--text-primary);
+	}
+
+	.legal-prose :global(hr) {
+		border: 0;
+		border-top: 1px solid var(--border-light);
+		margin: 2rem 0;
+	}
+</style>

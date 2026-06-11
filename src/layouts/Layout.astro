@@ -182,6 +182,8 @@ const isRTL = locale === 'ar';
 							<li><a href={getLocalizedHashLink('#screenshots', locale)}>{t('nav.screenshots', locale, translations)}</a></li>
 							<li><a href={getLocalizedHashLink('#about-binaural-beats', locale)}>{t('nav.about', locale, translations)}</a></li>
 							<li><a href={getLocalizedHashLink('#download', locale)}>{t('nav.download', locale, translations)}</a></li>
+							<li><a href={`${base}privacy/`}>Privacy Policy</a></li>
+							<li><a href={`${base}terms/`}>Terms of Use</a></li>
 						</ul>
 					</div>
 
@@ -189,7 +191,7 @@ const isRTL = locale === 'ar';
 						<div class="site-footer-download">
 							<h4>{t('footer.download', locale, translations)}</h4>
 							<p>{t('footer.downloadDescription', locale, translations)}</p>
-							<p>General Terms and Conditions</p>
+							<p><a href={`${base}terms/`}>General Terms and Conditions</a></p>
 						</div>
 
 						<div>
