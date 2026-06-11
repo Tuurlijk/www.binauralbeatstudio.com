@@ -144,6 +144,12 @@ export interface Translations {
       subtitle: string;
       explanation: string;
       noHeadphones: string;
+      frequencyIntro: string;
+      frequencyDelta: string;
+      frequencyTheta: string;
+      frequencyAlpha: string;
+      frequencyBeta: string;
+      frequencyGamma: string;
       personalization: string;
     };
     adhdNoise: {

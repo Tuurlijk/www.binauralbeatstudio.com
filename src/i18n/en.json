@@ -144,11 +144,17 @@
       }
     },
     "howItWorks": {
-      "title": "How Brainwave Entrainment Works",
+      "title": "Brainwave Entrainment Explained",
       "subtitle": "The science behind the transformation",
-      "explanation": "Brainwave entrainment is how rhythmic sound can influence your brain's electrical activity. One method is binaural beats: when you listen to two slightly different frequencies (one in each ear), your brain perceives a third frequency, the difference between them, and may synchronize to it. Isochronic tones (evenly spaced pulses of a single tone) and monaural beats (two frequencies mixed before they reach your ears) work similarly and can entrain brainwaves through speakers (no headphones required). Beyond beats and tones, noise types such as white, pink, brown, green, and colored noise can support focus and relaxation by masking distractions and helping to optimize arousal levels, making them a valuable part of audio therapy.",
-      "noHeadphones": "Monaural beats and isochronic tones effectively entrain brainwaves when played through speakers, so you can enjoy the benefits during meditation, work, or sleep without headphones.",
-      "personalization": "Different beat frequencies are linked to different mental states: Delta (0.5-4 Hz) for deep sleep, Theta (4-8 Hz) for meditation and creativity, Alpha (8-13 Hz) for relaxed focus, Beta (13-30 Hz) for active concentration, and Gamma (30-100 Hz) for peak performance. By combining beats, tones, and noise and matching them to your sensitivity and goals, you can tailor mixes for maximum benefit."
+      "explanation": "Brainwave entrainment uses a steady rhythm, such as binaural beats or isochronic tones, to encourage your brain activity to follow a similar rhythm. This is often called a frequency-following response. With binaural beats, each ear hears a slightly different tone and your brain hears the difference as a gentle beat.",
+      "noHeadphones": "Binaural beats need stereo headphones, because each ear must receive a different tone. Monaural beats and isochronic tones can also be used through speakers. Results vary by person, sound type, listening time, and how consistently you use it.",
+      "frequencyIntro": "Brainwave ranges:",
+      "frequencyDelta": "Delta (0.5-4 Hz): deep sleep, profound relaxation, recovery, and pain or insomnia support.",
+      "frequencyTheta": "Theta (4-8 Hz): drowsiness, deep meditation, hypnosis-like states, creativity, vivid imagery, and emotional processing.",
+      "frequencyAlpha": "Alpha (8-12/14 Hz): relaxed wakefulness, calm alertness, stress reduction, light meditation, relaxed focus, and pre-sleep routines.",
+      "frequencyBeta": "Beta (12-30 Hz): active thinking, concentration, problem-solving, alertness, work focus, and cognitive tasks.",
+      "frequencyGamma": "Gamma (30-100+ Hz): high-level cognition, insight, heightened perception, learning, memory, and peak-awareness practices.",
+      "personalization": "MindState lets you adjust mixes to what feels useful and comfortable."
     },
     "adhdNoise": {
       "title": "White & Pink Noise for AD/HD Focus",

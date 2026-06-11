@@ -1,0 +1,150 @@
+---
+import { loadTranslations, t } from '../utils/i18n';
+import type { Locale } from '../i18n/types';
+
+const locale = Astro.currentLocale as Locale;
+const translations = await loadTranslations(locale);
+
+const studies = [
+	'adhdNoise',
+	'metaAnalysis',
+	'memory',
+	'adhdBinaural',
+	'anxiety',
+	'tinnitus',
+] as const;
+---
+
+<section id="research-studies" class="research-section section-gradient px-4 sm:px-6 lg:px-8" aria-labelledby="research-studies-heading">
+	<div class="research-inner max-w-7xl mx-auto">
+		<h2 id="research-studies-heading" class="research-title">
+			Peer-Reviewed Research Studies
+		</h2>
+
+		<div class="research-list">
+			{studies.map((study) => (
+				<article class="research-item">
+					<div class="research-copy">
+						<h3 class="research-item__title">
+							{t(`aboutBinauralBeats.research.studies.${study}.title`, locale, translations)}
+						</h3>
+						<p class="research-item__description">
+							{t(`aboutBinauralBeats.research.studies.${study}.description`, locale, translations)}
+						</p>
+					</div>
+					<a
+						class="research-item__link"
+						href={t(`aboutBinauralBeats.research.studies.${study}.url`, locale, translations)}
+						target="_blank"
+						rel="noopener noreferrer"
+					>
+						<span>Read study</span>
+						<span aria-hidden="true">→</span>
+					</a>
+				</article>
+			))}
+		</div>
+	</div>
+</section>
+
+<style>
+	.research-section {
+		padding-bottom: clamp(4rem, 7vw, 6rem);
+		padding-top: clamp(4rem, 7vw, 6rem);
+	}
+
+	.research-inner {
+		max-width: 74rem;
+	}
+
+	.research-title {
+		color: #e66a00;
+		font-family: var(--font-display);
+		font-size: var(--type-section-title);
+		font-weight: var(--font-weight-display);
+		letter-spacing: 0.01em;
+		line-height: 0.86;
+		margin: 0 0 clamp(2rem, 4vw, 3rem);
+		text-align: center;
+	}
+
+	.research-list {
+		display: grid;
+	}
+
+	.research-item {
+		align-items: end;
+		border-bottom: 1px solid rgba(104, 31, 54, 0.28);
+		display: grid;
+		gap: clamp(1rem, 2vw, 2rem);
+		grid-template-columns: minmax(0, 1fr) auto;
+		padding: 0 0 0.95rem;
+	}
+
+	.research-item + .research-item {
+		padding-top: 0.95rem;
+	}
+
+	.research-copy {
+		max-width: 58rem;
+	}
+
+	.research-item__title {
+		color: #5e4f46;
+		font-family: var(--font-body);
+		font-size: clamp(1.1rem, 0.95rem + 0.35vw, 1.35rem);
+		font-weight: var(--font-weight-card-title);
+		letter-spacing: 0;
+		line-height: 0.98;
+		margin: 0 0 0.25rem;
+	}
+
+	.research-item__description {
+		color: rgba(94, 79, 70, 0.78);
+		font-family: var(--font-copy);
+		font-size: var(--type-body);
+		font-weight: var(--font-weight-body);
+		line-height: 1.22;
+		margin: 0;
+	}
+
+	.research-item__link {
+		align-items: center;
+		border: 1px solid rgba(94, 79, 70, 0.38);
+		border-radius: 999px;
+		color: rgba(94, 79, 70, 0.78);
+		display: inline-flex;
+		font-family: var(--font-body);
+		font-size: clamp(1rem, 0.9rem + 0.2vw, 1.15rem);
+		font-weight: var(--font-weight-ui);
+		gap: 1.4rem;
+		justify-content: space-between;
+		line-height: 1;
+		min-width: 8.6rem;
+		padding: 0.42rem 0.55rem 0.42rem 0.85rem;
+		text-decoration: none;
+		transition: background-color 0.2s ease, border-color 0.2s ease, color 0.2s ease;
+		white-space: nowrap;
+	}
+
+	.research-item__link:hover {
+		background: rgba(230, 106, 0, 0.08);
+		border-color: rgba(230, 106, 0, 0.48);
+		color: #e66a00;
+	}
+
+	@media (max-width: 767px) {
+		.research-title {
+			text-align: left;
+		}
+
+		.research-item {
+			align-items: start;
+			grid-template-columns: 1fr;
+		}
+
+		.research-item__link {
+			justify-self: start;
+		}
+	}
+</style>

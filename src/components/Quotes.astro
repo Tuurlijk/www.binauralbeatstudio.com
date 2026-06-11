@@ -5,80 +5,126 @@ import type { Locale } from '../i18n/types';
 const locale = Astro.currentLocale as Locale;
 const translations = await loadTranslations(locale);
 
-const quoteOrder = [9, 10, 1, 2, 3, 4, 5, 6, 7, 8] as const;
+const quoteColumns = [
+	[1, 10],
+	[4, 3],
+	[6, 7],
+] as const;
 ---
 
-<section id="quotes" class="section-gradient py-20 px-4 sm:px-6 lg:px-8" aria-labelledby="quotes-heading">
-	<div class="max-w-7xl mx-auto">
-		<div class="text-center mb-16">
-			<h2 id="quotes-heading" class="text-4xl md:text-5xl font-bold mb-4 text-bhutan-primary">
+<section id="quotes" class="quotes-section section-plain px-4 sm:px-6 lg:px-8" aria-labelledby="quotes-heading">
+	<div class="quotes-inner max-w-7xl mx-auto">
+		<div class="quotes-header">
+			<h2 id="quotes-heading" class="quotes-title">
 				{t('quotes.title', locale, translations)}
 			</h2>
-			<p class="text-xl max-w-3xl mx-auto text-bhutan-secondary">
+			<p class="quotes-subtitle">
 				{t('quotes.subtitle', locale, translations)}
 			</p>
 		</div>
 
-		<div class="grid grid-cols-1 md:grid-cols-2 gap-8 quotes-grid">
-			{quoteOrder.map((n) => (
-				<blockquote
-					class={`quote-card quote-${n} p-8 rounded-2xl border`}
-					style="background-color: var(--bg-secondary); border-color: var(--border-light);"
-				>
-					<div class="mb-4" aria-hidden="true">
-						<svg class="w-8 h-8 text-bhutan-accent opacity-50" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-							<path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.996 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.984zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/>
-						</svg>
-					</div>
-					<p class="text-lg md:text-xl italic mb-4 leading-relaxed text-bhutan-primary">
-						"{t(`quotes.quote${n}.text`, locale, translations)}"
-					</p>
-					<cite class="text-sm text-bhutan-secondary not-italic">
-						— {t(`quotes.quote${n}.source`, locale, translations)}
-					</cite>
-				</blockquote>
+		<div class="quotes-columns">
+			{quoteColumns.map((column) => (
+				<div class="quotes-column">
+					{column.map((n) => (
+						<blockquote class="quote-item">
+							<p class="quote-item__text">
+								"{t(`quotes.quote${n}.text`, locale, translations)}"
+							</p>
+							<cite class="quote-item__source">
+								{t(`quotes.quote${n}.source`, locale, translations)}
+							</cite>
+						</blockquote>
+					))}
+				</div>
 			))}
 		</div>
 	</div>
 </section>
 
 <style>
-	.quotes-grid {
-		position: relative;
+	.quotes-section {
+		padding-bottom: clamp(4rem, 7vw, 6rem);
+		padding-top: clamp(4rem, 7vw, 6rem);
 	}
 
-	.quote-card {
-		transform-origin: center;
-		transition: transform 0.3s ease, box-shadow 0.3s ease, z-index 0s;
-		position: relative;
-		box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+	.quotes-inner {
+		max-width: 72rem;
 	}
 
-	.quote-1 { transform: rotate(-2deg); }
-	.quote-2 { transform: rotate(1.5deg); }
-	.quote-3 { transform: rotate(-1deg); }
-	.quote-4 { transform: rotate(2deg); }
-	.quote-5 { transform: rotate(-1.5deg); }
-	.quote-6 { transform: rotate(0.5deg); }
-	.quote-7 { transform: rotate(-0.5deg); }
-	.quote-8 { transform: rotate(1deg); }
-	.quote-9 { transform: rotate(-1.2deg); }
-	.quote-10 { transform: rotate(0.8deg); }
+	.quotes-header {
+		margin: 0 auto clamp(1.75rem, 3vw, 2.5rem);
+		text-align: center;
+	}
 
-	.quote-card:hover {
-		transform: rotate(0deg) scale(1.03);
-		z-index: 10;
-		box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
-		transition: transform 0.3s ease, box-shadow 0.3s ease, z-index 0s 0.3s;
+	.quotes-title {
+		color: #5e4f46;
+		font-family: var(--font-display);
+		font-size: var(--type-section-title);
+		font-weight: var(--font-weight-display);
+		letter-spacing: 0.01em;
+		line-height: 0.86;
+		margin: 0 0 0.65rem;
+	}
+
+	.quotes-subtitle {
+		color: rgba(94, 79, 70, 0.72);
+		font-family: var(--font-copy);
+		font-size: var(--type-body);
+		font-weight: var(--font-weight-body);
+		line-height: 1.2;
+		margin: 0;
+	}
+
+	.quotes-columns {
+		display: grid;
+		gap: clamp(1.75rem, 3.5vw, 3.25rem);
+		grid-template-columns: repeat(3, minmax(0, 1fr));
+	}
+
+	.quotes-column {
+		display: grid;
+		gap: clamp(1.5rem, 3vw, 2.35rem);
+		align-content: start;
+	}
+
+	.quote-item {
+		margin: 0;
+	}
+
+	.quote-item__text {
+		color: #5e4f46;
+		font-family: var(--font-body);
+		font-size: clamp(1.2rem, 1rem + 0.45vw, 1.55rem);
+		font-weight: var(--font-weight-card-title);
+		letter-spacing: 0;
+		line-height: 1.02;
+		margin: 0 0 0.45rem;
+	}
+
+	.quote-item__source {
+		color: rgba(94, 79, 70, 0.68);
+		display: block;
+		font-family: var(--font-copy);
+		font-size: var(--type-body);
+		font-style: normal;
+		font-weight: var(--font-weight-body);
+		line-height: 1.15;
+	}
+
+	@media (max-width: 1023px) {
+		.quotes-columns {
+			grid-template-columns: repeat(2, minmax(0, 1fr));
+		}
 	}
 
 	@media (max-width: 767px) {
-		.quote-card {
-			transform: rotate(0deg) !important;
+		.quotes-header {
+			text-align: left;
 		}
 
-		.quote-card:hover {
-			transform: scale(1.02) !important;
+		.quotes-columns {
+			grid-template-columns: 1fr;
 		}
 	}
 </style>
