@@ -65,6 +65,12 @@ export interface Translations {
   screenshots: {
     title: string;
     subtitle: string;
+    seeMore: string;
+    allPageTitle: string;
+    allPageDescription: string;
+    lightMode: string;
+    darkMode: string;
+    backHome: string;
     player: string;
     mixes: string;
     beatPicker: string;

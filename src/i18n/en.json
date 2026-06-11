@@ -81,8 +81,14 @@
     }
   },
   "screenshots": {
-    "title": "See It In Action",
-    "subtitle": "Material 3 interface with light and dark mode. App available in 7 languages.",
+    "title": "App Examples",
+    "subtitle": "Professional interface with Material Design 3, dark mode, and full localization",
+    "seeMore": "See more",
+    "allPageTitle": "All App Examples",
+    "allPageDescription": "Browse the complete MindState screenshot set, including light and dark mode views for player, mixes, editors, sharing, and Daily Rituals.",
+    "lightMode": "Light mode",
+    "darkMode": "Dark mode",
+    "backHome": "Back to app examples",
     "ritualsList": "Schedule Daily Rituals",
     "ritualEdit": "Time, repeat days, and mix",
     "player": "Listen with lock-screen controls",

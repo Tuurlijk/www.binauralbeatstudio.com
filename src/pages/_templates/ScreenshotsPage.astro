@@ -1,0 +1,167 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import { appScreenshots } from '../../data/appScreenshots';
+import { loadTranslations, t, getLocalizedHashLink } from '../../utils/i18n';
+import type { Locale } from '../../i18n/types';
+
+const locale = Astro.currentLocale as Locale;
+const translations = await loadTranslations(locale);
+
+const pageTitle = t('screenshots.allPageTitle', locale, translations);
+const pageDescription = t('screenshots.allPageDescription', locale, translations);
+---
+
+<Layout title={pageTitle} description={pageDescription}>
+	<section class="screenshots-page" aria-labelledby="screenshots-page-heading">
+		<div class="screenshots-page__inner">
+			<header class="screenshots-page__header">
+				<a class="screenshots-page__back" href={getLocalizedHashLink('#screenshots', locale)}>
+					{t('screenshots.backHome', locale, translations)}
+				</a>
+				<h1 id="screenshots-page-heading">{pageTitle}</h1>
+				<p>{pageDescription}</p>
+			</header>
+
+			<div class="screenshots-page__grid">
+				{appScreenshots.map((screenshot) => (
+					<article class="screenshots-page__item">
+						<h2>{t(screenshot.captionKey, locale, translations)}</h2>
+						<div class="screenshots-page__pair">
+							<figure>
+								<img
+									src={screenshot.light.src}
+									alt={`${screenshot.alt}, ${t('screenshots.lightMode', locale, translations)}`}
+									width={screenshot.light.width}
+									height={screenshot.light.height}
+									loading="lazy"
+								/>
+								<figcaption>{t('screenshots.lightMode', locale, translations)}</figcaption>
+							</figure>
+							<figure>
+								<img
+									src={screenshot.dark.src}
+									alt={`${screenshot.alt}, ${t('screenshots.darkMode', locale, translations)}`}
+									width={screenshot.dark.width}
+									height={screenshot.dark.height}
+									loading="lazy"
+								/>
+								<figcaption>{t('screenshots.darkMode', locale, translations)}</figcaption>
+							</figure>
+						</div>
+					</article>
+				))}
+			</div>
+		</div>
+	</section>
+</Layout>
+
+<style>
+	.screenshots-page {
+		padding: clamp(8rem, 12vw, 10rem) 1rem clamp(4.5rem, 8vw, 7rem);
+	}
+
+	.screenshots-page__inner {
+		margin: 0 auto;
+		max-width: 76rem;
+	}
+
+	.screenshots-page__header {
+		margin: 0 auto clamp(3rem, 6vw, 5rem);
+		max-width: 58rem;
+		text-align: center;
+	}
+
+	.screenshots-page__back {
+		color: var(--accent);
+		display: inline-flex;
+		font-family: var(--font-body);
+		font-size: clamp(1rem, 0.9rem + 0.25vw, 1.15rem);
+		font-weight: var(--font-weight-ui);
+		margin-bottom: 1.2rem;
+		text-decoration: none;
+	}
+
+	.screenshots-page__back:hover {
+		color: var(--primary);
+	}
+
+	.screenshots-page h1 {
+		color: var(--text-primary);
+		font-size: clamp(3.8rem, 3rem + 2vw, 5.5rem);
+		margin: 0 0 0.75rem;
+	}
+
+	.screenshots-page__header p {
+		color: var(--text-secondary);
+		font-size: clamp(1.18rem, 1rem + 0.45vw, 1.5rem);
+		line-height: 1.25;
+		margin: 0 auto;
+	}
+
+	.screenshots-page__grid {
+		display: grid;
+		gap: clamp(1.8rem, 4vw, 3rem);
+		grid-template-columns: repeat(3, minmax(0, 1fr));
+	}
+
+	.screenshots-page__item {
+		background: var(--bg-elevated);
+		border: 1px solid var(--border-light);
+		border-radius: 2rem;
+		box-shadow: var(--shadow-card);
+		display: grid;
+		gap: 1.3rem;
+		padding: clamp(1rem, 2vw, 1.35rem);
+	}
+
+	.screenshots-page__item h2 {
+		color: var(--text-primary);
+		font-family: var(--font-body);
+		font-size: clamp(1.35rem, 1.05rem + 0.55vw, 1.75rem);
+		font-weight: var(--font-weight-card-title);
+		line-height: 0.98;
+		margin: 0;
+		text-align: center;
+	}
+
+	.screenshots-page__pair {
+		display: grid;
+		gap: 0.9rem;
+		grid-template-columns: repeat(2, minmax(0, 1fr));
+	}
+
+	.screenshots-page figure {
+		margin: 0;
+	}
+
+	.screenshots-page img {
+		border: 0.16rem solid #263339;
+		border-radius: 1.25rem;
+		box-shadow: 0 14px 34px rgba(45, 18, 16, 0.12);
+		display: block;
+		height: auto;
+		width: 100%;
+	}
+
+	.screenshots-page figcaption {
+		color: var(--text-secondary);
+		font-family: var(--font-body);
+		font-size: 1rem;
+		font-weight: var(--font-weight-ui);
+		line-height: 1;
+		margin-top: 0.55rem;
+		text-align: center;
+	}
+
+	@media (max-width: 1024px) {
+		.screenshots-page__grid {
+			grid-template-columns: repeat(2, minmax(0, 1fr));
+		}
+	}
+
+	@media (max-width: 640px) {
+		.screenshots-page__grid {
+			grid-template-columns: 1fr;
+		}
+	}
+</style>

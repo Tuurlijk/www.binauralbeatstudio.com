@@ -1,125 +1,226 @@
 ---
-import { loadTranslations, t } from '../utils/i18n';
+import { appScreenshots, featuredScreenshotIds } from '../data/appScreenshots';
+import { loadTranslations, t, getLocalizedLink } from '../utils/i18n';
 import type { Locale } from '../i18n/types';
-
-import phoneMixPlayerLight from '../assets/images/phone_mix_player_light.png';
-import phoneMixPlayerDark from '../assets/images/phone_mix_player_dark.png';
-import phoneMixBrowserLight from '../assets/images/phone_mix_browser_light.png';
-import phoneMixBrowserDark from '../assets/images/phone_mix_browser_dark.png';
-import phoneToneEditorLight from '../assets/images/phone_tone_editor_light.png';
-import phoneToneEditorDark from '../assets/images/phone_tone_editor_dark.png';
-import phoneQuickMixEditorLight from '../assets/images/phone_quick_mix_editor_light.png';
-import phoneQuickMixEditorDark from '../assets/images/phone_quick_mix_editor_dark.png';
-import phoneQrDisplayLight from '../assets/images/phone_qr_display_light.png';
-import phoneQrDisplayDark from '../assets/images/phone_qr_display_dark.png';
-import phoneAddTrackModalLight from '../assets/images/phone_add_track_modal_light.png';
-import phoneAddTrackModalDark from '../assets/images/phone_add_track_modal_dark.png';
-import phoneFullMixEditorLight from '../assets/images/phone_full_mix_editor_light.png';
-import phoneFullMixEditorDark from '../assets/images/phone_full_mix_editor_dark.png';
-import phoneRitualsListLight from '../assets/images/phone_rituals_list_light.png';
-import phoneRitualsListDark from '../assets/images/phone_rituals_list_dark.png';
-import phoneRitualEditLight from '../assets/images/phone_ritual_edit_light.png';
-import phoneRitualEditDark from '../assets/images/phone_ritual_edit_dark.png';
 
 const locale = Astro.currentLocale as Locale;
 const translations = await loadTranslations(locale);
 
-const screenshots = [
-	{
-		light: phoneMixPlayerLight,
-		dark: phoneMixPlayerDark,
-		caption: t('screenshots.player', locale, translations),
-		alt: 'MindState player with lock-screen controls and mix artwork',
-	},
-	{
-		light: phoneMixBrowserLight,
-		dark: phoneMixBrowserDark,
-		caption: t('screenshots.mixes', locale, translations),
-		alt: 'Mixes library with included and custom mixes by category',
-	},
-	{
-		light: phoneToneEditorLight,
-		dark: phoneToneEditorDark,
-		caption: t('screenshots.beatPicker', locale, translations),
-		alt: 'Beat picker with brainwave bands and Solfeggio tones',
-	},
-	{
-		light: phoneQuickMixEditorLight,
-		dark: phoneQuickMixEditorDark,
-		caption: t('screenshots.quickEditor', locale, translations),
-		alt: 'Quick editor with four mix slots',
-	},
-	{
-		light: phoneQrDisplayLight,
-		dark: phoneQrDisplayDark,
-		caption: t('screenshots.shareQr', locale, translations),
-		alt: 'Share screen with branded QR code for mix sharing',
-	},
-	{
-		light: phoneAddTrackModalLight,
-		dark: phoneAddTrackModalDark,
-		caption: t('screenshots.addTrack', locale, translations),
-		alt: 'Full editor add-track sheet with tone, noise, effect, and file types',
-	},
-	{
-		light: phoneFullMixEditorLight,
-		dark: phoneFullMixEditorDark,
-		caption: t('screenshots.fullEditor', locale, translations),
-		alt: 'Full editor with volume envelopes and track controls',
-	},
-	{
-		light: phoneRitualsListLight,
-		dark: phoneRitualsListDark,
-		caption: t('screenshots.ritualsList', locale, translations),
-		alt: 'Daily Rituals list with scheduled mixes',
-	},
-	{
-		light: phoneRitualEditLight,
-		dark: phoneRitualEditDark,
-		caption: t('screenshots.ritualEdit', locale, translations),
-		alt: 'Ritual editor with time, repeat days, and linked mix',
-	},
-];
+const featuredScreenshots = featuredScreenshotIds
+	.map((id) => appScreenshots.find((screenshot) => screenshot.id === id))
+	.filter((screenshot) => screenshot !== undefined);
 ---
 
-<section id="screenshots" class="section-plain py-24 px-4 sm:px-6 lg:px-8" aria-labelledby="screenshots-heading">
-	<div class="max-w-7xl mx-auto">
-		<div class="text-center mb-16">
-			<h2 id="screenshots-heading" class="text-5xl md:text-6xl font-bold mb-4 text-bhutan-primary">
+<section id="screenshots" class="screenshots-showcase section-plain" aria-labelledby="screenshots-heading">
+	<div class="screenshots-showcase__inner">
+		<div class="screenshots-showcase__header">
+			<h2 id="screenshots-heading" class="screenshots-showcase__title">
 				{t('screenshots.title', locale, translations)}
 			</h2>
-			<p class="text-xl max-w-3xl mx-auto text-bhutan-secondary">
+			<p class="screenshots-showcase__subtitle">
 				{t('screenshots.subtitle', locale, translations)}
 			</p>
 		</div>
 
-		<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-			{screenshots.map((screenshot) => (
-				<figure class="screenshot-card bg-bhutan-secondary rounded-3xl p-5 shadow-lg transition-all">
+		<div class="screenshots-showcase__stage">
+			{featuredScreenshots.map((screenshot, index) => (
+				<figure class={`screenshots-showcase__phone screenshots-showcase__phone--${index + 1}`}>
 					<picture>
 						<source srcset={screenshot.dark.src} media="(prefers-color-scheme: dark)" />
 						<img
 							src={screenshot.light.src}
 							alt={screenshot.alt}
-							class="rounded-2xl w-full aspect-[1284/2778] object-cover"
+							width={screenshot.light.width}
+							height={screenshot.light.height}
 							loading="lazy"
 						/>
 					</picture>
-					<figcaption class="text-center mt-4 font-medium text-bhutan-primary">{screenshot.caption}</figcaption>
+					<figcaption>{t(screenshot.captionKey, locale, translations)}</figcaption>
 				</figure>
 			))}
+		</div>
+
+		<div class="screenshots-showcase__more">
+			<span class="screenshots-showcase__rule" aria-hidden="true"></span>
+			<a class="screenshots-showcase__link" href={getLocalizedLink('/screenshots/', locale)}>
+				<span>{t('screenshots.seeMore', locale, translations)}</span>
+				<svg viewBox="0 0 48 16" aria-hidden="true">
+					<path d="M1 8h43m-6-6 6 6-6 6" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" />
+				</svg>
+			</a>
 		</div>
 	</div>
 </section>
 
 <style>
-	.screenshot-card {
-		border: 1px solid var(--border-light);
-		box-shadow: var(--shadow-card);
+	.screenshots-showcase {
+		background: #fffaf7;
+		overflow: hidden;
+		padding: clamp(4.5rem, 7vw, 6.5rem) 1rem clamp(5rem, 8vw, 7rem);
 	}
 
-	.screenshot-card:hover {
-		box-shadow: 0 24px 60px rgba(104, 31, 54, 0.2);
-		transform: translateY(-6px);
+	.screenshots-showcase__inner {
+		margin: 0 auto;
+		max-width: 76rem;
+	}
+
+	.screenshots-showcase__header {
+		margin: 0 auto clamp(2.3rem, 4vw, 3.4rem);
+		text-align: center;
+	}
+
+	.screenshots-showcase__title {
+		color: #70402f;
+		font-size: clamp(3.3rem, 2.7rem + 1.4vw, 4.55rem);
+		margin: 0 0 0.6rem;
+	}
+
+	.screenshots-showcase__subtitle {
+		color: rgba(77, 46, 42, 0.68);
+		font-family: var(--font-copy);
+		font-size: clamp(1.25rem, 1rem + 0.65vw, 1.85rem);
+		font-weight: var(--font-weight-body);
+		line-height: 1.18;
+		margin: 0 auto;
+		max-width: 60rem;
+	}
+
+	.screenshots-showcase__stage {
+		align-items: start;
+		display: grid;
+		gap: clamp(1.7rem, 4.3vw, 4.9rem);
+		grid-template-columns: minmax(12rem, 1.28fr) repeat(3, minmax(10rem, 1fr));
+	}
+
+	.screenshots-showcase__phone {
+		margin: 0;
+		position: relative;
+	}
+
+	.screenshots-showcase__phone img {
+		border: clamp(0.18rem, 0.36vw, 0.28rem) solid #263339;
+		border-radius: clamp(1.7rem, 2.3vw, 2.4rem);
+		box-shadow: 0 24px 62px rgba(45, 18, 16, 0.13);
+		display: block;
+		height: auto;
+		width: 100%;
+	}
+
+	.screenshots-showcase__phone figcaption {
+		border: 0;
+		clip: rect(0 0 0 0);
+		height: 1px;
+		margin: -1px;
+		overflow: hidden;
+		padding: 0;
+		position: absolute;
+		white-space: nowrap;
+		width: 1px;
+	}
+
+	.screenshots-showcase__phone--1 {
+		margin-top: -0.2rem;
+		width: min(100%, 17.2rem);
+	}
+
+	.screenshots-showcase__phone--2,
+	.screenshots-showcase__phone--3,
+	.screenshots-showcase__phone--4 {
+		margin-top: clamp(0.4rem, 1vw, 1rem);
+		width: min(100%, 13.2rem);
+	}
+
+	.screenshots-showcase__more {
+		align-items: center;
+		display: grid;
+		gap: 1rem;
+		grid-template-columns: 1fr auto;
+		margin-top: clamp(2.6rem, 5vw, 4.4rem);
+	}
+
+	.screenshots-showcase__rule {
+		background: rgba(77, 46, 42, 0.26);
+		height: 1px;
+		width: 100%;
+	}
+
+	.screenshots-showcase__link {
+		align-items: center;
+		border: 1px solid rgba(77, 46, 42, 0.32);
+		border-radius: 999px;
+		color: rgba(77, 46, 42, 0.72);
+		display: inline-flex;
+		font-family: var(--font-body);
+		font-size: clamp(1.05rem, 0.95rem + 0.25vw, 1.25rem);
+		font-weight: var(--font-weight-ui);
+		gap: 0.65rem;
+		line-height: 1;
+		padding: 0.55rem 0.75rem 0.55rem 1rem;
+		text-decoration: none;
+	}
+
+	.screenshots-showcase__link svg {
+		height: 0.9rem;
+		width: 2.8rem;
+	}
+
+	.screenshots-showcase__link:hover {
+		background: rgba(244, 95, 17, 0.08);
+		border-color: rgba(244, 95, 17, 0.46);
+		color: #e66a00;
+	}
+
+	@media (prefers-color-scheme: dark) {
+		.screenshots-showcase {
+			background: #220c12;
+		}
+
+		.screenshots-showcase__title {
+			color: #fff7f0;
+		}
+
+		.screenshots-showcase__subtitle,
+		.screenshots-showcase__link {
+			color: rgba(255, 232, 217, 0.72);
+		}
+
+		.screenshots-showcase__rule {
+			background: rgba(255, 232, 217, 0.2);
+		}
+
+		.screenshots-showcase__link {
+			border-color: rgba(255, 232, 217, 0.28);
+		}
+	}
+
+	@media (max-width: 900px) {
+		.screenshots-showcase__stage {
+			gap: 1.25rem;
+			grid-template-columns: repeat(2, minmax(0, 1fr));
+		}
+
+		.screenshots-showcase__phone--1,
+		.screenshots-showcase__phone--2,
+		.screenshots-showcase__phone--3,
+		.screenshots-showcase__phone--4 {
+			justify-self: center;
+			margin-top: 0;
+			width: min(100%, 13.5rem);
+		}
+	}
+
+	@media (max-width: 560px) {
+		.screenshots-showcase {
+			padding-inline: 1.25rem;
+		}
+
+		.screenshots-showcase__stage {
+			grid-template-columns: repeat(2, minmax(0, 1fr));
+		}
+
+		.screenshots-showcase__more {
+			align-items: stretch;
+			grid-template-columns: 1fr;
+		}
 	}
 </style>
