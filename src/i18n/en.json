@@ -1,16 +1,16 @@
 {
   "meta": {
-    "title": "MindState: Custom Beats & Noise",
-    "description": "Design multi-layer sound mixes with binaural, monaural, and isochronic beats, noise, ambient effects, and audio clips. 33 included mixes, Quick and Full editors, QR sharing, and Daily Rituals."
+    "title": "MindState: Custom beats and noise",
+    "description": "Design layered sound mixes with binaural, monaural, and isochronic beats, noise, ambient effects, and audio clips. Includes 33 mixes, Quick editor, Full editor, QR sharing, and daily rituals."
   },
   "nav": {
     "features": "Features",
-    "howItWorks": "How It Works",
+    "howItWorks": "How it works",
     "screenshots": "Screenshots",
     "about": "About",
     "benefits": "Benefits",
     "download": "Download",
-    "downloadApp": "Download App",
+    "downloadApp": "Download app",
     "appExamples": "App examples",
     "research": "Research",
     "more": "More",
@@ -18,53 +18,53 @@
     "faq": "FAQ"
   },
   "hero": {
-    "headline": "Support your brain potential",
-    "subtitle": "Discover custom-made beats and sounds that can help you <strong>relax</strong>, <strong>focus</strong>, <strong>meditate</strong>, unleash your <strong>creativity</strong>, enjoy deeper <strong>sleep</strong>, reduce <strong>tinnitus</strong>, and cultivate <strong>happy vibes</strong>. <strong>This is your go-to app for mental wellness.</strong>",
-    "tagline": "Available on Android with professional audio quality. Free to try.",
-    "ctaDownload": "Download on Play Store",
-    "ctaLearnMore": "Learn More"
+    "headline": "Sound mixes for calm, focus, and sleep",
+    "subtitle": "Build layered mixes with <strong>binaural beats</strong>, <strong>isochronic tones</strong>, <strong>noise</strong>, ambient sounds, and your own audio. Start with included mixes for <strong>relaxation</strong>, <strong>focus</strong>, <strong>meditation</strong>, <strong>creativity</strong>, and <strong>rest</strong>, then tune them until they feel right.",
+    "tagline": "Available on Android with native audio quality. Free to try.",
+    "ctaDownload": "Get it on Google Play",
+    "ctaLearnMore": "Learn more"
   },
   "features": {
-    "title": "Top Features",
-    "subtitle": "Professional tools for focus, relaxation, sleep, meditation, and creativity.",
+    "title": "Top features",
+    "subtitle": "Detailed tools for focus, relaxation, sleep, meditation, and creativity.",
     "feature1": {
-      "title": "Quick Editor and Full Editor",
+      "title": "Quick editor and Full editor",
       "description": "Quick editor: up to four tone, noise, effect, or file slots with live preview and beat picker. Full editor: unlimited tracks, volume envelopes, noise automation, and categorized add-track types. Switch between editors without losing work."
     },
     "feature2": {
-      "title": "Multi-Layer Mixing",
+      "title": "Layered mixing",
       "description": "Combine binaural, monaural, and isochronic beats; white, pink, brown, green, and colored noise; ambient effects (rain, ocean, wind, fan, waterfall, old record); and timed MP3, WAV, or FLAC clips, each with independent volume."
     },
     "feature3": {
-      "title": "33 Included Mixes",
-      "description": "Curated mixes across Sleep, Focus, Meditation, Relaxation, Creativity, Mood, Study, and Relaxed kid. 17 free to play; 16 extended mixes with a Starter subscription. Duplicate any included mix to customize."
+      "title": "33 included mixes",
+      "description": "Curated mixes across sleep, focus, meditation, relaxation, creativity, mood, study, and relaxed kid. 17 are free to play; 16 extended mixes come with a Starter subscription. Duplicate any included mix to customize."
     },
     "feature4": {
-      "title": "QR Code and Link Sharing",
+      "title": "QR code and link sharing",
       "description": "Encode mixes as mindstate:// URLs. Scan, preview, edit, and save. Branded QR with logo on a white background. Share links carry mix structure only (custom art and imported audio files are not included)."
     },
     "feature5": {
-      "title": "Daily Rituals",
-      "description": "Schedule a mix by time and repeat days. Create a ritual from the player toolbar or the Rituals screen. Opens the main player with lock-screen transport when it is time to listen."
+      "title": "Daily rituals",
+      "description": "Schedule a mix by time and repeat days. Create a ritual from the player toolbar or the Rituals screen. When it is time to listen, MindState opens the main player with lock-screen controls."
     },
     "feature6": {
-      "title": "Professional Native Audio",
-      "description": "Rust real-time synthesis with phase-continuous tones, smooth glides, and anti-click stream fade. Lock-screen play, pause, and seek, headset Smart Pause, and category-themed mix artwork."
+      "title": "Native audio engine",
+      "description": "Rust real-time synthesis with phase-continuous tones, smooth glides, and anti-click stream fade. Lock-screen play, pause, and seek, headset smart pause, and category-themed mix artwork."
     },
-    "titlePrefix": "Create Personalized",
-    "titleHighlight": "Multilayered",
-    "titleSuffix": "Mixes",
-    "pitch": "Unlike preset-only wellness apps, MindState gives you professional control over every layer, frequency, and volume envelope, or start from 33 included mixes across nine categories. Share mixes via QR code, schedule Daily Rituals, and listen with lock-screen controls and native audio quality powered by a Rust synthesis engine."
+    "titlePrefix": "Create personal",
+    "titleHighlight": "layered",
+    "titleSuffix": "mixes",
+    "pitch": "Start with an included mix or build your own from separate tone, noise, effect, and file layers. MindState lets you tune frequencies, volume, and timing with care, then share mixes by QR code, schedule daily rituals, and listen with lock-screen controls."
   },
   "howItWorks": {
-    "title": "How It Works",
+    "title": "How it works",
     "subtitle": "Browse, build, tune, save, and listen in five steps",
     "step1": {
-      "title": "Browse or Create",
+      "title": "Browse or create",
       "description": "Start from included mixes or a blank Quick or Full editor."
     },
     "step2": {
-      "title": "Add Layers",
+      "title": "Add layers",
       "description": "Add tones, noise, ambient effects, or your audio files. Pick types from illustrated chips in the Full editor add-track sheet."
     },
     "step3": {
@@ -72,144 +72,144 @@
       "description": "Set carrier and beat frequencies, Solfeggio carriers, and volumes. Shape envelopes and noise automation in the Full editor."
     },
     "step4": {
-      "title": "Preview and Save",
+      "title": "Preview and save",
       "description": "Live preview while editing. Save custom mixes to My mixes with a Starter subscription."
     },
     "step5": {
-      "title": "Listen, Share, Schedule",
-      "description": "Play with lock-screen controls, share via QR or link, and optionally schedule a Daily Ritual."
+      "title": "Listen, share, schedule",
+      "description": "Play with lock-screen controls, share via QR or link, and optionally schedule a daily ritual."
     }
   },
   "screenshots": {
-    "title": "App Examples",
-    "subtitle": "Professional interface with Material Design 3, dark mode, and full localization",
+    "title": "App examples",
+    "subtitle": "A clear interface for browsing, editing, sharing, and scheduling mixes.",
     "seeMore": "See more",
-    "allPageTitle": "All App Examples",
-    "allPageDescription": "Browse the complete MindState screenshot set, including light and dark mode views for player, mixes, editors, sharing, and Daily Rituals.",
+    "allPageTitle": "All app examples",
+    "allPageDescription": "Browse the complete MindState screenshot set, including light and dark mode views for the player, mixes, editors, sharing, and daily rituals.",
     "lightMode": "Light mode",
     "darkMode": "Dark mode",
     "backHome": "Back to app examples",
-    "ritualsList": "Schedule Daily Rituals",
-    "ritualEdit": "Time, repeat days, and mix",
+    "ritualEdit": "Schedule daily rituals",
     "player": "Peaceful player screen",
     "mixes": "Browse included and custom mixes",
     "beatPicker": "Pick brainwave bands and Solfeggio tones",
     "quickEditor": "Build a mix in four slots",
     "shareQr": "Share mixes via QR or link",
     "addTrack": "Add tones, noise, effects, and files",
-    "fullEditor": "Full control over every track"
+    "fullEditor": "Detailed controls for every track"
   },
   "cta": {
-    "title": "Start Creating Your Perfect Audio Experience",
-    "subtitle": "Start with 17 free included mixes, or unlock Starter to save unlimited custom mixes and play extended content.",
-    "ctaDownload": "Download on Play Store",
-    "ctaViewFeatures": "View Features",
+    "title": "Start with a mix that fits your day",
+    "subtitle": "Try 17 included mixes for free, or use Starter to save unlimited custom mixes and play extended included content.",
+    "ctaDownload": "Get it on Google Play",
+    "ctaViewFeatures": "View features",
     "benefit1": {
-      "title": "✓ 17 Free Mixes",
+      "title": "✓ 17 free mixes",
       "description": "Play included mixes, import via QR, and duplicate to customize"
     },
     "benefit2": {
-      "title": "✓ Starter Subscription",
+      "title": "✓ Starter subscription",
       "description": "Save unlimited custom mixes and play 16 extended included mixes"
     },
     "benefit3": {
-      "title": "✓ Professional Audio",
+      "title": "✓ Native audio",
       "description": "Rust synthesis engine with lock-screen playback controls"
     }
   },
   "aboutBinauralBeats": {
-    "heroTitle": "Unlock Your Brain's Potential",
-    "heroSubtitle": "Custom Beats & Noises to Relax, Focus, Meditate, Be Creative & Sleep Better",
+    "readMore": "Read more",
+    "heroTitle": "A calmer way to work with sound",
+    "heroSubtitle": "Custom beats and noise for relaxation, focus, meditation, creativity, and sleep",
     "benefits": {
       "title": "Backed by science. Designed for your mind.",
       "subtitle": "",
       "explore": "Explore",
       "benefit1": {
-        "title": "Deep Relaxation & Stress Relief",
-        "description": "Achieve profound relaxation and melt away stress. Calming noise and binaural beats, paired with isochronic tones or solfeggio frequencies, help your brain enter deeply relaxed states, reducing anxiety and promoting calm."
+        "title": "Deep relaxation and stress relief",
+        "description": "Create a quiet place to unwind. Calming noise, binaural beats, isochronic tones, and solfeggio frequencies can be layered into mixes for slower, steadier moments."
       },
       "benefit2": {
-        "title": "Enhanced Focus & Concentration",
-        "description": "Boost your cognitive performance and maintain laser-sharp focus. Isochronic tones and solfeggio frequencies, layered with binaural beats or background noise, support optimal states for work, study, and creative tasks."
+        "title": "Focus and concentration",
+        "description": "Give your work or study time a consistent sound bed. Combine tones and noise into mixes that support a clear, attentive state without getting in the way."
       },
       "benefit3": {
-        "title": "Better Sleep Quality",
-        "description": "Improve your sleep naturally. Solfeggio frequencies and soothing noise, combined with binaural beats or isochronic tones, support your brain's transition into deep, restorative sleep for better rest and recovery."
+        "title": "Sleep and rest",
+        "description": "Settle into the end of the day with slower tones, soft noise, and gentle layers. Build mixes that help make rest feel more familiar and repeatable."
       },
       "benefit4": {
-        "title": "Meditation Enhancement",
-        "description": "Unlock deeper meditation states and enhance your practice. Binaural beats and isochronic tones, optionally with solfeggio or gentle noise, can help you reach deeper mindfulness more easily."
+        "title": "Meditation support",
+        "description": "Use steady tones and gentle noise as an anchor for practice. MindState gives you simple starting points and deeper controls when you want to shape the sound."
       },
       "benefit5": {
-        "title": "Creativity & Flow States",
-        "description": "Access your creative potential and enter flow states. Build mixes from solfeggio frequencies, binaural beats, layered noise, or isochronic tones to support enhanced creativity, problem-solving, and peak performance."
+        "title": "Creativity and flow",
+        "description": "Shape a background that helps you stay with the work. Layer binaural beats, noise, solfeggio frequencies, or isochronic tones into mixes for writing, making, and problem-solving."
       },
       "benefit6": {
-        "title": "Mood Improvement",
-        "description": "Elevate your mood and emotional well-being. Various noise types, isochronic tones, binaural beats, and solfeggio frequencies can be combined in custom mixes to help improve mood, reduce negative emotions, and promote positive mental states."
+        "title": "Good mood",
+        "description": "Choose brighter, warmer, or calmer textures and tune them to the moment. Custom mixes make it easy to return to sounds that feel good to you."
       }
     },
     "howItWorks": {
-      "title": "Brainwave Entrainment Explained",
-      "subtitle": "The science behind the transformation",
+      "title": "Brainwave entrainment explained",
+      "subtitle": "How steady rhythm can guide attention and rest",
       "explanation": "Brainwave entrainment uses a steady rhythm, such as binaural beats or isochronic tones, to encourage your brain activity to follow a similar rhythm. This is often called a frequency-following response. With binaural beats, each ear hears a slightly different tone and your brain hears the difference as a gentle beat.",
       "noHeadphones": "Binaural beats need stereo headphones, because each ear must receive a different tone. Monaural beats and isochronic tones can also be used through speakers. Results vary by person, sound type, listening time, and how consistently you use it.",
       "frequencyIntro": "Brainwave ranges:",
-      "frequencyDelta": "Delta (0.5-4 Hz): deep sleep, profound relaxation, recovery, and pain or insomnia support.",
+      "frequencyDelta": "Delta (0.5-4 Hz): deep sleep, deep relaxation, and overnight rest.",
       "frequencyTheta": "Theta (4-8 Hz): drowsiness, deep meditation, hypnosis-like states, creativity, vivid imagery, and emotional processing.",
       "frequencyAlpha": "Alpha (8-12/14 Hz): relaxed wakefulness, calm alertness, stress reduction, light meditation, relaxed focus, and pre-sleep routines.",
       "frequencyBeta": "Beta (12-30 Hz): active thinking, concentration, problem-solving, alertness, work focus, and cognitive tasks.",
-      "frequencyGamma": "Gamma (30-100+ Hz): high-level cognition, insight, heightened perception, learning, memory, and peak-awareness practices.",
-      "personalization": "Whatever state you're after, MindState puts it at your fingertips. Pick a mix, tune every frequency and layer to your liking, and discover the sound that gets your mind exactly where you want it."
+      "frequencyGamma": "Gamma (30-100+ Hz): high-level cognition, insight, heightened perception, learning, and memory.",
+      "personalization": "MindState lets you start simple and tune with care. Pick a mix, adjust the layers, and keep the sound comfortable for the way you listen."
     },
     "adhdNoise": {
-      "title": "White & Pink Noise for AD/HD Focus",
-      "subtitle": "Research shows noise can help improve attention and reduce impulsivity in people with AD/HD",
+      "title": "White and pink noise for AD/HD focus",
+      "subtitle": "Studies suggest certain noise types may support attention for some people with AD/HD",
       "description": "A meta-analysis of 13 studies with 335 participants found that white and pink noise led to small but statistically significant improvements in task performance for children and young adults with AD/HD. Benefits included less impulsivity, better attention, and fewer errors. Interestingly, these noise types helped people with AD/HD but not those without, suggesting they work by optimizing brain arousal levels specifically for AD/HD brains."
     },
     "adhdBinaural": {
-      "title": "Binaural Beats for AD/HD Symptoms",
-      "subtitle": "Pilot studies show promise for attention and homework-related improvements",
+      "title": "Binaural beats for AD/HD symptoms",
+      "subtitle": "Pilot research has explored attention and homework-related outcomes",
       "description": "A randomized, double-blind, placebo-controlled pilot study with 20 children and adolescents with AD/HD found that listening to binaural beats (20 minutes, 3 times per week for 3 weeks) led to significant improvements reported by parents. While objective attention tests didn't show significant changes, parents reported fewer homework problems related to inattention, suggesting real-world benefits for daily functioning."
     },
     "safety": {
-      "title": "Safe & Well-Studied",
+      "title": "Safety and responsible listening",
       "subtitle": "Binaural beats are generally safe for most people when used responsibly",
       "general": "Binaural beats have been studied for decades and are considered safe for the majority of users. They work through natural brainwave entrainment and don't require any invasive procedures or substances.",
       "precautions": "If you have epilepsy or a history of seizures, consult with a healthcare provider before use. Keep volume at comfortable levels. Excessive volume can cause hearing damage. If you experience any discomfort, discontinue use. Binaural beats are not a replacement for medical treatment or professional mental health care."
     },
     "research": {
-      "title": "Backed by Research",
-      "subtitle": "Scientific studies support the benefits of binaural beats and brainwave entrainment",
-      "findings": "Research has shown that binaural beats can help reduce anxiety, improve focus, enhance meditation practice, and support better sleep. Studies have found positive effects on relaxation, stress reduction, and cognitive performance. While individual results may vary, the scientific evidence continues to grow, supporting the use of binaural beats as a tool for mental enhancement and well-being.",
+      "title": "Research",
+      "subtitle": "Binaural beats and brainwave entrainment have been studied across relaxation, attention, sleep, and mood.",
+      "findings": "Research on binaural beats and related sound patterns points to possible effects on relaxation, attention, anxiety, sleep, and pain perception. Results vary by person and study design, so MindState presents these sounds as flexible listening tools rather than medical treatment.",
       "studies": {
         "adhdNoise": {
-          "title": "AD/HD & White/Pink Noise Meta-Analysis",
+          "title": "AD/HD and white/pink noise meta-analysis",
           "description": "A meta-analysis of 13 studies (335 participants) found white and pink noise led to small but statistically significant improvements in attention, reduced impulsivity, and fewer errors in children and young adults with AD/HD.",
           "url": "https://pubmed.ncbi.nlm.nih.gov/38428577/"
         },
         "adhdBinaural": {
-          "title": "AD/HD Binaural Beats Pilot Study",
+          "title": "AD/HD binaural beats pilot study",
           "description": "A randomized controlled trial with 20 AD/HD children/adolescents found that binaural beats (20 min, 3×/week for 3 weeks) led to parents reporting significantly fewer homework problems related to inattention.",
           "url": "https://pubmed.ncbi.nlm.nih.gov/20117669/"
         },
         "metaAnalysis": {
-          "title": "Meta-Analysis: Cognition, Anxiety & Pain",
+          "title": "Meta-analysis: cognition, anxiety, and pain",
           "description": "A comprehensive analysis of 22 studies found medium, significant effects on memory, attention, anxiety, and pain perception (effect size g = 0.45).",
           "url": "https://pubmed.ncbi.nlm.nih.gov/30073406/"
         },
         "anxiety": {
-          "title": "Anxiety & Quality of Life Study",
+          "title": "Anxiety and quality of life study",
           "description": "Daily exposure to delta-frequency binaural beats over 60 days showed significant decreases in trait anxiety and increases in quality of life.",
           "url": "https://pubmed.ncbi.nlm.nih.gov/17309374/"
         },
         "memory": {
-          "title": "Memory Enhancement Research",
+          "title": "Memory research",
           "description": "Research found that alpha, beta, and gamma binaural beats can modulate cortical networks and improve short-term memory performance.",
           "url": "https://link.springer.com/article/10.1007/s00221-021-06132-6"
         },
         "tinnitus": {
-          "title": "Tinnitus Management Study",
+          "title": "Tinnitus management study",
           "description": "A randomized controlled trial found that alpha-frequency binaural beats combined with music therapy led to significant improvements in chronic tinnitus.",
           "url": "https://pubmed.ncbi.nlm.nih.gov/38723376/"
         }
@@ -290,14 +290,14 @@
     "starter": {
       "name": "Starter",
       "price": "Monthly or yearly",
-      "description": "Unlock full access with store-managed free trial.",
+      "description": "Unlock full access with a store-managed free trial.",
       "feature1": "Save unlimited custom mixes",
       "feature2": "Play 16 extended included mixes",
-      "feature3": "Create Daily Rituals from the player",
+      "feature3": "Create daily rituals from the player",
       "feature4": "Monthly and yearly plans via Google Play"
     },
     "samplePacks": {
-      "name": "Sample Packs",
+      "name": "Sample packs",
       "price": "One-time purchase",
       "description": "Optional audio packs for extra file-track sounds.",
       "feature1": "Example: Chakra Bar Chimes (7 tones)",
@@ -305,7 +305,7 @@
     }
   },
   "includedMixes": {
-    "title": "33 Included Mixes",
+    "title": "33 included mixes",
     "subtitle": "Curated starting points across nine categories. Duplicate any mix to make it yours.",
     "category1": "Sleep",
     "category2": "Focus",
@@ -318,7 +318,7 @@
     "note": "17 mixes are free to play. 16 extended mixes require a Starter subscription."
   },
   "rituals": {
-    "title": "Daily Rituals",
+    "title": "Daily rituals",
     "subtitle": "Schedule a mix by time and repeat days so listening fits your routine.",
     "bullet1": "Create a ritual from the Rituals screen or the player toolbar when subscribed.",
     "bullet2": "Choose time, repeat days, and which mix to play.",
@@ -326,14 +326,14 @@
     "bullet4": "iOS uses local notifications. Rituals reschedule when you travel across time zones."
   },
   "faq": {
-    "title": "Frequently Asked Questions",
+    "title": "Frequently asked questions",
     "q1": "What audio files can I import?",
     "a1": "MP3, WAV, and FLAC from device storage or bundled and sample-pack assets.",
     "q2": "Do QR codes include my custom audio?",
     "a2": "No. QR and share links include mix structure (tones, noise, effects) only. Re-attach file tracks after import.",
-    "q3": "How do Daily Rituals work on Android?",
+    "q3": "How do daily rituals work on Android?",
     "a3": "Alarms and notifications. Grant exact-alarm, battery, and notification permissions when prompted. Optional Do Not Disturb access lets playback continue during DND.",
-    "q4": "How do Daily Rituals work on iOS?",
+    "q4": "How do daily rituals work on iOS?",
     "a4": "Local notifications. Tap the alert to open MindState and play the scheduled mix.",
     "q5": "Can I start a ritual from a mix I am playing?",
     "a5": "Yes. Use Create ritual on the player toolbar when subscribed."

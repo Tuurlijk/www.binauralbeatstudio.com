@@ -97,22 +97,13 @@ export const appScreenshots: AppScreenshot[] = [
 		alt: 'Full editor with volume envelopes and track controls',
 	},
 	{
-		id: 'ritualsList',
-		light: framedImage('phone_rituals_list_light_framed.png'),
-		lightWebp: framedImage('phone_rituals_list_light_framed.webp'),
-		dark: framedImage('phone_rituals_list_dark_framed.png'),
-		darkWebp: framedImage('phone_rituals_list_dark_framed.webp'),
-		captionKey: 'screenshots.ritualsList',
-		alt: 'Daily Rituals list with scheduled mixes',
-	},
-	{
 		id: 'ritualEdit',
 		light: framedImage('phone_ritual_edit_light_framed.png'),
 		lightWebp: framedImage('phone_ritual_edit_light_framed.webp'),
 		dark: framedImage('phone_ritual_edit_dark_framed.png'),
 		darkWebp: framedImage('phone_ritual_edit_dark_framed.webp'),
 		captionKey: 'screenshots.ritualEdit',
-		alt: 'Ritual editor with time, repeat days, and linked mix',
+		alt: 'Daily ritual editor for scheduling mixes',
 	},
 ];
 

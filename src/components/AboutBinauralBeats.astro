@@ -1,4 +1,6 @@
 ---
+import ResearchHighlights from './ResearchHighlights.astro';
+import ResearchQuoteBanner from './ResearchQuoteBanner.astro';
 import { loadTranslations, t } from '../utils/i18n';
 import type { Locale } from '../i18n/types';
 
@@ -14,9 +16,9 @@ const frequencyKeys = [
 ] as const;
 ---
 
-<section id="about-binaural-beats" class="section-plain py-20 px-4 sm:px-6 lg:px-8" aria-labelledby="about-binaural-beats-heading">
-	<div class="max-w-7xl mx-auto">
-		<div class="brainwave-explainer mb-20">
+<section id="about-binaural-beats" class="section-plain py-20" aria-labelledby="about-binaural-beats-heading">
+	<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+		<div class="brainwave-explainer">
 			<div class="brainwave-explainer__header">
 				<h2 id="about-binaural-beats-heading" class="brainwave-explainer__title">
 					{t('aboutBinauralBeats.howItWorks.title', locale, translations)}
@@ -52,88 +54,14 @@ const frequencyKeys = [
 				</div>
 			</div>
 		</div>
+	</div>
 
-		<!-- AD/HD Research Sections -->
-		<div class="mb-12 grid grid-cols-1 md:grid-cols-2 gap-8">
-			<!-- AD/HD Noise -->
-			<div class="bg-bhutan-secondary p-8 rounded-2xl border" style="border-color: var(--border-light);">
-				<div class="w-12 h-12 rounded-lg flex items-center justify-center mb-4" style="background-color: var(--primary);">
-					<svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-						<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19V6l12-3v13M9 19c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zm12-3c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zM9 10l12-3" />
-					</svg>
-				</div>
-				<h3 class="text-2xl font-bold mb-3 text-bhutan-primary">
-					{t('aboutBinauralBeats.adhdNoise.title', locale, translations)}
-				</h3>
-				<p class="text-lg font-semibold mb-4 text-bhutan-secondary">
-					{t('aboutBinauralBeats.adhdNoise.subtitle', locale, translations)}
-				</p>
-				<p class="leading-relaxed text-bhutan-secondary">
-					{t('aboutBinauralBeats.adhdNoise.description', locale, translations)}
-				</p>
-			</div>
+	<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+		<ResearchQuoteBanner />
+	</div>
 
-			<!-- AD/HD Binaural -->
-			<div class="bg-bhutan-secondary p-8 rounded-2xl border" style="border-color: var(--border-light);">
-				<div class="w-12 h-12 rounded-lg flex items-center justify-center mb-4" style="background-color: var(--secondary);">
-					<svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-						<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19V6l12-3v13M9 19c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zm12-3c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zM9 10l12-3" />
-					</svg>
-				</div>
-				<h3 class="text-2xl font-bold mb-3 text-bhutan-primary">
-					{t('aboutBinauralBeats.adhdBinaural.title', locale, translations)}
-				</h3>
-				<p class="text-lg font-semibold mb-4 text-bhutan-secondary">
-					{t('aboutBinauralBeats.adhdBinaural.subtitle', locale, translations)}
-				</p>
-				<p class="leading-relaxed text-bhutan-secondary">
-					{t('aboutBinauralBeats.adhdBinaural.description', locale, translations)}
-				</p>
-			</div>
-		</div>
-
-		<!-- Safety & Research Section -->
-		<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-			<!-- Safety -->
-			<div class="bg-bhutan-secondary p-8 rounded-2xl border" style="border-color: var(--border-light);">
-				<div class="w-12 h-12 rounded-lg flex items-center justify-center mb-4" style="background-color: var(--accent);">
-					<svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-						<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
-					</svg>
-				</div>
-				<h3 class="text-2xl font-bold mb-3 text-bhutan-primary">
-					{t('aboutBinauralBeats.safety.title', locale, translations)}
-				</h3>
-				<p class="text-lg font-semibold mb-4 text-bhutan-secondary">
-					{t('aboutBinauralBeats.safety.subtitle', locale, translations)}
-				</p>
-				<p class="leading-relaxed text-bhutan-secondary mb-4">
-					{t('aboutBinauralBeats.safety.general', locale, translations)}
-				</p>
-				<p class="leading-relaxed text-bhutan-secondary text-sm">
-					{t('aboutBinauralBeats.safety.precautions', locale, translations)}
-				</p>
-			</div>
-
-			<!-- Research -->
-			<div class="bg-bhutan-secondary p-8 rounded-2xl border" style="border-color: var(--border-light);">
-				<div class="w-12 h-12 rounded-lg flex items-center justify-center mb-4" style="background-color: var(--tertiary);">
-					<svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-						<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
-					</svg>
-				</div>
-				<h3 class="text-2xl font-bold mb-3 text-bhutan-primary">
-					{t('aboutBinauralBeats.research.title', locale, translations)}
-				</h3>
-				<p class="text-lg font-semibold mb-4 text-bhutan-secondary">
-					{t('aboutBinauralBeats.research.subtitle', locale, translations)}
-				</p>
-				<p class="leading-relaxed text-bhutan-secondary">
-					{t('aboutBinauralBeats.research.findings', locale, translations)}
-				</p>
-			</div>
-		</div>
-
+	<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+		<ResearchHighlights />
 	</div>
 </section>
 

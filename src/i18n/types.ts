@@ -78,7 +78,6 @@ export interface Translations {
     shareQr: string;
     addTrack: string;
     fullEditor: string;
-    ritualsList: string;
     ritualEdit: string;
   };
   includedMixes: {
@@ -132,6 +131,7 @@ export interface Translations {
     benefit3: { title: string; description: string };
   };
   aboutBinauralBeats: {
+    readMore: string;
     heroTitle: string;
     heroSubtitle: string;
     benefits: {
