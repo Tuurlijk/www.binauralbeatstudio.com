@@ -1,6 +1,6 @@
-# MindState website
+# binauralbeatstudio.com
 
-Marketing site for [Binaural Beat Studio](https://binauralbeatstudio.com), built with **Astro 6** and **Tailwind CSS 4**.
+Static redirect site for [binauralbeatstudio.com](https://binauralbeatstudio.com). All routes send visitors to [mindstatelabs.com](https://www.mindstatelabs.com/).
 
 ## Requirements
 
@@ -12,41 +12,9 @@ Marketing site for [Binaural Beat Studio](https://binauralbeatstudio.com), built
 | Command | Action |
 |---------|--------|
 | `npm install` | Install dependencies |
-| `npm run dev` | Dev server at `localhost:4321` |
 | `npm run build` | Production build to `dist/` |
 | `npm run preview` | Preview the production build |
 
-## Project layout
-
-```text
-src/
-  components/       # UI sections (Hero, Features, …)
-  i18n/             # Translation JSON per locale
-  layouts/          # Shared Layout.astro
-  pages/
-    _templates/     # Shared page bodies (not routed directly)
-    index.astro     # English home (/)
-    demo.astro      # English demo (/demo/)
-    es/, nl/, …      # Locale wrappers → /es/, /nl/, …
-  utils/i18n.ts     # t(), link helpers
-```
-
-## Internationalization
-
-The site supports 10 languages (including Japanese at `/ja/`). English uses the root URL (`/`); other locales are prefixed (`/es/`, `/nl/`, …).
-
-## Store screenshots
-
-Phone screenshots follow the App Store listing order from the MindState Flutter repo. Refresh them with:
-
-```bash
-./scripts/sync-screenshots.sh
-```
-
-Source files: `~/Projects/Flutter/mindstate/screenshots/mindstate-phone-apple/` (see `docs/screenshots.md` in that repo).
-
-**Adding a language or page?** See [features/multi-language-i18n-implementation.md](features/multi-language-i18n-implementation.md) for the full checklist (config, translations, page wrappers, language switcher, build verification).
-
 ## Deployment
 
-GitHub Actions builds on push to `main` and deploys to GitHub Pages (Node 22).
+GitHub Actions builds on push to `main` and deploys to GitHub Pages.
