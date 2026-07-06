@@ -32,6 +32,5 @@ pnpm-debug.log*
 # Astro
 .astro/
 
-# Temporary files
+# Local screenshot sync (not deployed)
 screenshots/
-logo/

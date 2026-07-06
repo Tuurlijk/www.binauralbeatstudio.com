@@ -1,5 +1,2 @@
 User-agent: *
 Allow: /
-
-Sitemap: https://binauralbeatstudio.com/sitemap-index.xml
-

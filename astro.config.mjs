@@ -1,52 +1,62 @@
 // @ts-check
 import { defineConfig } from 'astro/config';
-import tailwindcss from '@tailwindcss/vite';
-import sitemap from '@astrojs/sitemap';
 
-const localeCodes = ['en', 'ar', 'es', 'hi', 'id', 'ja', 'nl', 'pt', 'ru', 'zh'];
-
-const sitemapLocales = {
-  en: 'en-US',
-  ar: 'ar-SA',
-  es: 'es-ES',
-  hi: 'hi-IN',
-  id: 'id-ID',
-  ja: 'ja-JP',
-  nl: 'nl-NL',
-  pt: 'pt-BR',
-  ru: 'ru-RU',
-  zh: 'zh-CN',
-};
+const redirectTarget = 'https://www.mindstatelabs.com/';
 
 // https://astro.build/config
 export default defineConfig({
-  base: '/',
-  output: 'static',
-  site: 'https://binauralbeatstudio.com',
-  trailingSlash: 'always',
-  build: {
-    format: 'directory',
-  },
-  i18n: {
-    locales: localeCodes,
-    defaultLocale: 'en',
-    routing: {
-      prefixDefaultLocale: false,
-      redirectToDefaultLocale: false,
-    },
-  },
-  devToolbar: {
-    enabled: false,
-  },
-  integrations: [
-    sitemap({
-      i18n: {
-        locales: sitemapLocales,
-        defaultLocale: 'en',
-      },
-    }),
-  ],
-  vite: {
-    plugins: [tailwindcss()],
-  },
+	base: '/',
+	output: 'static',
+	site: 'https://binauralbeatstudio.com',
+	trailingSlash: 'always',
+	build: {
+		format: 'directory',
+	},
+	devToolbar: {
+		enabled: false,
+	},
+	redirects: {
+		'/': redirectTarget,
+		'/benefits': redirectTarget,
+		'/demo': redirectTarget,
+		'/screenshots': redirectTarget,
+		'/privacy': redirectTarget,
+		'/terms': redirectTarget,
+		'/ar': redirectTarget,
+		'/ar/benefits': redirectTarget,
+		'/ar/demo': redirectTarget,
+		'/ar/screenshots': redirectTarget,
+		'/es': redirectTarget,
+		'/es/benefits': redirectTarget,
+		'/es/demo': redirectTarget,
+		'/es/screenshots': redirectTarget,
+		'/hi': redirectTarget,
+		'/hi/benefits': redirectTarget,
+		'/hi/demo': redirectTarget,
+		'/hi/screenshots': redirectTarget,
+		'/id': redirectTarget,
+		'/id/benefits': redirectTarget,
+		'/id/demo': redirectTarget,
+		'/id/screenshots': redirectTarget,
+		'/ja': redirectTarget,
+		'/ja/benefits': redirectTarget,
+		'/ja/demo': redirectTarget,
+		'/ja/screenshots': redirectTarget,
+		'/nl': redirectTarget,
+		'/nl/benefits': redirectTarget,
+		'/nl/demo': redirectTarget,
+		'/nl/screenshots': redirectTarget,
+		'/pt': redirectTarget,
+		'/pt/benefits': redirectTarget,
+		'/pt/demo': redirectTarget,
+		'/pt/screenshots': redirectTarget,
+		'/ru': redirectTarget,
+		'/ru/benefits': redirectTarget,
+		'/ru/demo': redirectTarget,
+		'/ru/screenshots': redirectTarget,
+		'/zh': redirectTarget,
+		'/zh/benefits': redirectTarget,
+		'/zh/demo': redirectTarget,
+		'/zh/screenshots': redirectTarget,
+	},
 });
